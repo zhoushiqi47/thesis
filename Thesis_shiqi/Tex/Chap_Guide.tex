@@ -98,7 +98,7 @@ Thesis.tex为主文档，其设计和规划了论文的整体框架，通过对�
 
 请见表~\ref{tab:sample}。制表的更多范例，请见 \href{https://en.wikibooks.org/wiki/LaTeX/Tables}{WiKibook Tables}。
 \begin{table}[!htbp]
-    \bicaption{这是一个样表。}{This is a sample table.}
+    \bicaption{这是一个样表，666。}{This is a sample table.}
     \label{tab:sample}
     \centering
     \footnotesize% fontsize
@@ -127,6 +127,14 @@ Thesis.tex为主文档，其设计和规划了论文的整体框架，通过对�
     \includegraphics[width=0.40\textwidth]{tc_q_criteria}
     \bicaption{Q判据等值面图，同时测试一下一个很长的标题，比如这真的是一个很长很长很长很长很长很长很长很长的标题。}{Isocontour of Q criteria, at the same time, this is to test a long title, for instance, this is a really very long very long very long very long very long title.}
     \label{fig:tc_q_criteria}
+\end{figure}
+
+测试插入后缀为(.eps)的图片,例如\ref{fig:eps_test}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.40\textwidth]{bi_circle.eps}
+	\caption{这是一张后缀为eps的图像}
+	\label{fig:eps_test}
 \end{figure}
 
 如果插图的空白区域过大，以图片\verb|shock_cyn|为例，自动裁剪如图\ref{fig:shock_cyn}。

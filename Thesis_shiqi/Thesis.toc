@@ -20,10 +20,12 @@
 \contentsline {subsection}{\numberline {2.3.4}算法}{7}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}参考文献引用}{8}{subsection.2.3.5}
 \contentsline {section}{\numberline {2.4}常见使用问题}{9}{section.2.4}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{11}{appendix.A}
-\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{11}{section.A.1}
-\contentsline {section}{\numberline {A.2}测试公式编号}{11}{section.A.2}
-\contentsline {section}{\numberline {A.3}测试生僻字}{11}{section.A.3}
-\contentsline {chapter}{参考文献}{13}{section*.14}
-\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{15}{appendix*.16}
-\contentsline {chapter}{致谢}{17}{appendix*.23}
+\contentsline {chapter}{\numberline {第3章\hspace {.3em}}测试}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}我的测试}{13}{section.3.1}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{15}{appendix.A}
+\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{15}{section.A.1}
+\contentsline {section}{\numberline {A.2}测试公式编号}{15}{section.A.2}
+\contentsline {section}{\numberline {A.3}测试生僻字}{15}{section.A.3}
+\contentsline {chapter}{参考文献}{17}{section*.15}
+\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{19}{appendix*.17}
+\contentsline {chapter}{致谢}{21}{appendix*.24}
