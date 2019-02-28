@@ -6,11 +6,11 @@
 & & \Delta_e [\N(x;y)q] + \omega^2 [\N(x,y)q] = -\mathbf{\delta}_y(x) q \ \ \mbox{in }\R^2_+ , \label{eq_n1} \\
 & & \sigma(\N(x,y)q)e_2 = 0 \ \ \mbox{on } \Gamma_0, \label{eq_n2}
 \ee
-其中(\ref{eq_n2})代表该green函数满足半空间自由边界条件，${\delta}_y(x)$代表位于点y的Dirac源。 由于半空间的特性，我们将利用对$x_1$变量作傅里叶变换的方式来推导Green函数，令
+其中(\ref{eq_n2})代表该green函数满足半空间自由边界条件，${\delta}_y(x)$代表位于点y的Dirac源。 由于半空间的特性，我们将利用对$x_1$变量作Fourier变换的方式来推导Green函数，令
 \be\label{a1}
 \hat \N(\xi,x_2;y_2)= \int_\R\N(x_1,x_2;y) e^{-\i (x_1-y_1)\xi} dx_1,\ \ \forall \xi\in\C,
 \ee
-记 $\G(x,y)$为弹性波方程的基本解， 且对其$x_1$变量做傅里叶变换后有
+记 $\G(x,y)$ \cite{ku63} 为弹性波方程的基本解， 且对其$x_1$变量做Fourier变换后有
 $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 \be
 & &\hat{\G}_s(\xi,x_2;y_2)=\frac{\i}{2\omega^2}
@@ -29,7 +29,7 @@ $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 \ben
 \N_c(x,y)=\N(x,y)-(\G(x,y)-\G(x,y'))
 \een
-其中$y'=(y_1,-y_2)$ 为y关于$x_1$轴的镜像点。于是由式（ \ref{eq_n1}-\ref{eq_n2}），得$\N_c(x,y)$满足如下方程：
+其中$y'=(y_1,-y_2)$ 为y关于$x_1$轴的镜像点。于是由式(\ref{eq_n1}-\ref{eq_n2})，得$\N_c(x,y)$满足如下方程：
 \be
 & & \Delta_e [\N_c(x;y)q] + \omega^2 [\N_c(x,y)q] = 0 \ \ \mbox{in }\R^2_+ , \label{eq_n3} \\
 & & \sigma(\N_c(x,y)q)e_2 =-\sigma(\G(x,y)-\G(x,y')) \ \ \mbox{on } \Gamma_0, \label{eq_n4}
@@ -42,8 +42,99 @@ $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 	当$z$位于右半实轴的上沿或是下沿时，取$z^{1/2}$为$\ep\rightarrow0^+$ 时$(z+\i\ep)^{1/2}$ 或是 $(z-\i\ep)^{1/2}$的极限即可。
 \end{remark}
 
-通过对式（ \ref{eq_n3}-\ref{eq_n4}）两边作傅里叶变换，我们得到关于变量$x_2$的常系数常微分方程组
+通过对式(\ref{eq_n3}-\ref{eq_n4})两边作Fourier变换，我们得到关于变量$x_2$的常系数常微分方程组：
+\be
+ \mu \frac{d^2(e_1^T\hat \N_c q)}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d(e_2^T\hat \N_c q)}{dx_2}+(\omega^2-(\lambda+2\mu)\xi^2)(e_1^T\hat \N_c q) = 0 \label{eq_n5}\\
+ (\lambda+2 \mu)\frac{d^2(e_2^T\hat \N_c q)}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d(e_1^T\hat \N_c q)}{dx_2}+(\omega^2-\mu \xi^2)(e_2^T\hat \N_c q) = 0 \label{eq_n6}
+\ee
+ 由于我们需要$\N(x,y)$为外行波解，因此方程 (\ref{eq_n5})的解为如下两个向量：
+\ben
+ \left[ \begin{array}{cc} \i\mu_s \\ -\i\xi \end{array} \right]e^{\i\mu_s x_2} \ , \ \ \ \ \ \left[ \begin{array}{cc} \i\xi \\ \i\mu_p \end{array} \right]e^{\i\mu_p x_2}
+\een
+的线性组合。 利用边界条件(\ref{eq_n6})及待定系数法，我们得到：
+\be\label{NGT}
+\hspace{-2cm}\hat \N_c(\xi,x_2;y_2) =  \frac{\i}{\omega^2\delta(\xi)}\sum_{\alpha,\beta=p,s}\mathbb{A}_{\al\beta}(\xi)e^{\i(\mu_\al x_2+\mu_{\beta} y_2)}, 
+\ee
+其中 $\varphi(\xi)=k_s^2-2\xi^2$, $\delta(\xi)=\varphi(\xi)^2+4\xi^2\mu_s\mu_p $(Rayleigh方程\cite{achenbach1980}), 以及
+\ben
+&&{\mathbb{A}_{ss}(\xi)} =
+\left( \begin{array}{ll}
+	\varphi^2\mu_s & -4\xi^3\mu_s\mu_p \\
+	-\xi\varphi^2  & 4\xi^4\mu_p
+\end{array} \right),\ \ 
+{\mathbb{A}_{sp}(\xi)} =
+\left( \begin{array}{ll}
+	2\xi^2\varphi\mu_s & -2\xi\varphi\mu_s\mu_p \\
+	-2\xi^3\varphi  & 2\xi^2\varphi\mu_p
+\end{array} \right),\\
+&&
+{\mathbb{A}_{ps}(\xi)} =
+\left( \begin{array}{ll}
+	2\xi^2\varphi\mu_s & 2\xi^3\varphi \\
+	2\xi\varphi\mu_s\mu_p  & 2\xi^2\varphi\mu_p
+\end{array} \right),\ \ 
+{\mathbb{A}_{pp}(\xi)} =
+\left( \begin{array}{ll}
+	4\xi^4\mu_s & \xi\varphi^2 \\
+	4\xi^3\mu_s\mu_p  & \varphi^2\mu_p
+\end{array} \right).
+\een
+按照惯例，原本我们只要对$\hat{\N}(\xi,x_2;y_2)$进行Fourier逆变换就可以得到所需要的Neumann Green函数. 然而，如下面的引理所述， 函数$\delta(\xi)$在实轴上存在零点\cite{achenbach1980, Harris2001Linear}，此时我们并不可以对其直接进行Fourier逆变换.
+\begin{lem} \label{rayleigh}
+	 Rayleigh方程 $\delta(\xi) = 0$在复平面$\C$中有且仅有两个根且记为 $\pm k_R$, 其中$k_R$满足$k_R>k_s$。
+\end{lem}
 
+\debproof
+ 由前文注记中的(\ref{convention_1}), 易得 $\delta(\xi)$ 的割支线为 $C_l=\{\xi=\xi_1+\i\xi_2\in\C: \xi_1\in [-k_s,-k_p],\xi_2=0\}$ 和 
+$C_r=\{\xi=\xi_1+\i\xi_2\in\C: \xi_1\in [k_p,k_s],\xi_2=0\}$. 于是$\delta(\xi)$在除 $C_l$ 和 $C_r$ 以外的区域解析。 而在割支线上，$\delta(\xi)$ 可表示成： 
+\ben
+\delta(\xi)=(k_s^2-2\xi^2)^2+\i\,[4\xi^2(k_s^2-\xi^2)^{1/2}(\xi^2-k_p^2)^{1/2}], \ \ \forall \xi\in C_l\cup C_r.
+\een
+显然, $\de(\xi)$ 在 $C_l\cup C_r$ 上没有零点。 又因为 $\de(\pm k_s)>0$ , $\de(\pm\infty)<0$ ，由函数的连续性得 $\de(\xi)$ 在区间 $(-\infty,-k_s)\cup(k_s,\infty)$ 上至少存在两个零点， 且由于其对称性，可以记为 $\pm k_R$。 下面， 我们将 $C_l, \ C_r$ 的上下沿分别记为 $C_l^\pm, \ C_r^\pm$。
 
+接下去， 利用幅角原理\cite{Ahlfors1979Complex}可以说明 $\delta(\xi)$ 在整个复平面只存在两个零点。 令 $\Ga_R$ 为半径 $R$ 充分大的圆. 我们考虑 $\mathcal D$ 是被周线 $\Ga_R$, $\Ga_l$ 以及 $\Ga_r$ 包围的区域。 其中 $\Ga_l$ 代表沿着 $C_l^+$ 从 $-k_s$ 到 $-k_p$  及然后沿着 $C_l^-$ 从 $-k_p$ 到 $-k_s$ ； 相应地， $\Ga_r$ 代表 沿着 $C_r^+$ 从 $k_p$ 到 $k_s$ 及然后 沿着 $C_r^-$ 从 $k_s$ 到 $k_p$ 。 因为 $\delta(\xi)$ 在整个整个复平面上没有极点,  我们可以通过幅角原理来计算其在区域
+ $\mathcal D$ 中的零点个数 $Z$ ：
+\be\label{zero}
+Z=\frac{1}{2\pi\i}\int_C \frac{\delta'(\xi)}{\delta(\xi)}d\xi.
+\ee
+由式子(\ref{convention_1})中的定义，我们可以得出当$\xi\in C_r^\pm$时 $\de(\xi)=\de^\pm(\xi)$， 其中
+\ben
+\de^\pm(\xi)=(k_s^2-2\xi^2)^2\mp\i\,[4\xi^2(k_s^2-\xi^2)^{1/2}(\xi^2-k_p^2)^{1/2}\,]:=f_1(\xi)\mp\i f_2(\xi).
+\een
+于是可以有如下计算
+\ben
+\int_{\Ga_r} \frac{\delta'(\xi)}{\delta(\xi)}d\xi&=&\int_{k_p}^{k_s}\left(\frac{{\delta}_{+}' (\xi)}{\delta_{+}(\xi)}-\frac{{\delta}_{-}' (\xi)}{\delta_{-}(\xi)}\right) d\xi\\
+&=&2\i\int_{k_p}^{k_s}\frac{f_1'(\xi) f_2(\xi)-f_1(\xi) f_2'(\xi)}{f_1^2(\xi)+ f_2^2(\xi)} d\xi\\
+&=&-2\i\arctan \frac{f_2(\xi)}{f_1(\xi)}\Bigg|^{k_s}_{k_p}=0.
+\een
+相似地, 在 $\xi\in C_r^\pm$ 时也有 $\int_{\Ga_l}\frac{\delta'(\xi)}{\delta(\xi)}d\xi=0$ 。 此外, 当 $|\xi|$ 足够大, 容易得到 $\de(\xi)$ 的渐近形式 $\delta(\xi)=-2(k_p^2+3k_s^2)\xi^2+O(1)$ 及 $\delta’(\xi)=-4(k_p^2+3k_s^2)\xi+O(1)$ 。 于是当 $R\gg 1$ ，可以计算得到
+$\int_{\Ga_R} \frac{\delta'(\xi)}{\delta(\xi)}d\xi=4\pi\i$ 。
+综上所述， 我们得出 $Z=2$ 。 于是该引理得到证明。
+\finproof
+
+为了解决这一问题，我们假设半空间的介质是耗散的，然后研究其相应的Green函数，最后通过极限吸收原理得到$\N(x,y)$。
+记 $\mathbb{N}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_n1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。 同样的， 对$\mathbb{N}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且其表达式与将(\ref{NGT})中将$k_s, k_p$替换为
+$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
+
+\begin{lem}\label{complex_rayleigh}
+	令$\delta_{\om(1+\i\ep)}(\xi)$为将$\delta(\xi)$中的$k_p,k_s$替换成$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的复Rayleigh方程。 那么， $\delta_{\om(1+\i\ep)}(\xi)$在$\C\bks\bar{\Om}$中有且仅有两个根且为$\pm k_R(1+\i\ep)$。 其中集合$\Om$为
+	\be\label{set:Om}
+	\Omega := \{\xi_1+\i\xi_2 \in \mathbb{C} \ | \ k_p(1+\i\ep)<\xi_1\xi_2<k_s(1+\i\ep) \ , \  \ \xi_2>\xi_1(1+\i\ep)\}
+	\ee
+\end{lem}
+
+ 由引理\ref{complex_rayleigh}得，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$在实轴上没有极点， 可以对其直接进行逆Fourier变换。 于是， Neumann Green函数 $\mathbb{N}(x,y)$ 可以利用极限吸收原理得到，即为
+\be\label{NGT1}
+\hspace{-1.5cm}\N(x,y)=\lim_{\ep\to 0^+} \N_{\om(1+\i\ep)}(x,y)=\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \N_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
+\ee
+
+现在， 我们已经得到 Neumann Green函数的具体表达形式了。 但是，式子(\ref{NGT1})中这种极限形式并不利于我们分析该函数的具体性质，特别是其无穷远处的衰减阶数。 为了便于得到更加简洁的表达形式， 我们引入下面这个关于柯西主值(cf. e.g. \cite[Chapter 4, Theorem 5]{Kuroda})的引理
+\begin{lem}\label{cauchy_pv}
+	令 $a,b\in\R,\  a<b$, 且 $t_0\in (a,b)$. 如果 $\gamma$ 在$[a,b]$上 H\"older 连续， 即存在常数 $\alpha\in (0,1]$ 及 $C>0$ 对于任意 $s,t\in [a,b]$, $|\gamma(s)-\gamma(t)|\le C|s-t|^\alpha$, 于是有
+	\ben
+	\lim_{z\to t_0,\pm\Im z>0}\int^b_a\frac{\gamma(t)}{t-z}dt={\rm p.v.}\int^b_a\frac{\gamma(t)}{t-t_0}dt\pm\pi\i\ga(t_0),
+	\een
+	其中 ${\rm p.v.}\int^b_a$ 表示积分的Cauchy主值。
+\end{lem}
 \section{正散射问题的适定性}
 

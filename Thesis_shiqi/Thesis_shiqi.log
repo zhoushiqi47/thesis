@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.21)  28 FEB 2019 11:02
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.21)  28 FEB 2019 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1973,62 +1973,62 @@ LaTeX Warning: Reference `sec:qa' on page 1 undefined on input line 33.
 ]
 第3章
 
-Overfull \hbox (0.64882pt too wide) in paragraph at lines 12--15
+Overfull \hbox (20.03867pt too wide) in paragraph at lines 12--15
 \TU/SimSun(1)/m/n/12.045 记 $\U/ntxsym/m/n/12.045 G\OT1/cmr/m/n/12.045 (\OML/ntx
-mi/m/it/12.045 x; y\OT1/cmr/m/n/12.045 )$ \TU/SimSun(1)/m/n/12.045 为 弹 性 波 方 程 
-的 基 本 解，|  且 对 其 $\OML/ntxmi/m/it/12.045 x[]$ \TU/SimSun(1)/m/n/12.045 变 量 做 傅 
-里 叶 变 换 后 有 $[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 ^^X; x[]\OT1/cmr/m/n
-/12.045 ; \OML/ntxmi/m/it/12.045 y[]\OT1/cmr/m/n/12.045 ) =
+mi/m/it/12.045 x; y\OT1/cmr/m/n/12.045 )$ \TU/entextsf/m/n/12.045 [[]] \TU/SimS
+un(1)/m/n/12.045 为 弹 性 波 方 程 的 基 本 解，|  且 对 其 $\OML/ntxmi/m/it/12.045 x[]$ \TU/
+SimSun(1)/m/n/12.045 变 量 做 \TU/entextsf/m/n/12.045 Fourier \TU/SimSun(1)/m/n/12
+.045 变 换 后 有 $[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 ^^X; x[]\OT1/cmr/m/
+n/12.045 ; \OML/ntxmi/m/it/12.045 y[]\OT1/cmr/m/n/12.045 ) =
  []
 
-[5]) (./Tex/Chap_RTM.tex [6]
-第4章
-)) [7
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
 
-] [8
+ []
+
+[7]) (./Tex/Chap_RTM.tex [8]
+第4章
+)) [9
+
+] [10
 
 ] (./Tex/Appendix.tex
 附录 A
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 17.
-(c:/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [9
-
-] [10]
-(./Thesis_shiqi.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 9.
-
-) (./Tex/Backmatter.tex [11
-
-
+) [11
 
 ] [12
 
-] [13] [14
+] (./Thesis_shiqi.bbl) (./Tex/Backmatter.tex [13
+
+
+] [14
 
 ] [15] [16
 
+]
+[17] [18
+
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
  (./Thesis_shiqi.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 215.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
 Package rerunfilecheck Info: File `Thesis_shiqi.out' has not changed.
-(rerunfilecheck)             Checksum: BE7E86A849000D208DA22E352EECEB35.
+(rerunfilecheck)             Checksum: 386796884F8FEE04BAB99CE57B826A7D.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 29522 strings out of 492970
- 579480 string characters out of 6137297
- 659246 words of memory out of 5000000
- 33103 multiletter control sequences out of 15000+600000
- 575144 words of font info for 156 fonts, out of 8000000 for 9000
+ 29496 strings out of 492970
+ 578891 string characters out of 6137297
+ 646706 words of memory out of 5000000
+ 33091 multiletter control sequences out of 15000+600000
+ 562491 words of font info for 148 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,13n,94p,10533b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,94p,10530b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Thesis_shiqi.pdf (34 pages).
+Output written on Thesis_shiqi.pdf (36 pages).
