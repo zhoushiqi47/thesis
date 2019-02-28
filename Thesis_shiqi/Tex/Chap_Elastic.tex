@@ -1,2 +1,49 @@
-\chapter{半空间中的弹性波散射问题}\label{chap:Elastic}
+\chapter{半空间中的弹性反散射问题的直接成像方法}\label{chap:Elastic}
+
+\section{Green函数}\label{Green Tensor}
+设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
+\be
+& & \Delta_e [\N(x;y)q] + \omega^2 [\N(x,y)q] = -\mathbf{\delta}_y(x) q \ \ \mbox{in }\R^2_+ , \label{eq_n1} \\
+& & \sigma(\N(x,y)q)e_2 = 0 \ \ \mbox{on } \Gamma_0, \label{eq_n2}
+\ee
+其中(\ref{eq_n2})代表该green函数满足半空间自由边界条件，${\delta}_y(x)$代表位于点y的Dirac源。 由于半空间的特性，我们将利用对$x_1$变量作傅里叶变换的方式来推导Green函数，令
+\be\label{a1}
+\hat \N(\xi,x_2;y_2)= \int_\R\N(x_1,x_2;y) e^{-\i (x_1-y_1)\xi} dx_1,\ \ \forall \xi\in\C,
+\ee
+记 $\G(x,y)$为弹性波方程的基本解， 且对其$x_1$变量做傅里叶变换后有
+$\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
+\be
+& &\hat{\G}_s(\xi,x_2;y_2)=\frac{\i}{2\omega^2}
+\left( \begin{array}{cc}
+	\mu_s & -\xi\frac{x_2-y_2}{|x_2-y_2|} \\
+	-\xi\frac{x_2-y_2}{|x_2-y_2|} & \frac{\xi^2}{\mu_s}
+\end{array} \right)e^{\i\mu_s|x_2-y_2|}, \label{G1}\\
+& &\hat{\G}_p(\xi,x_2;y_2)=\frac{\i}{2\omega^2} 
+\left( \begin{array}{cc}
+	\frac{\xi^2}{\mu_p} & \xi\frac{x_2-y_2}{|x_2-y_2|} \\
+	\xi\frac{x_2-y_2}{|x_2-y_2|} & \mu_p
+\end{array} \right) e^{\i\mu_p|x_2-y_2|}.\label{G2}
+\ee
+这里$\mu_\alpha=(k_\alpha^2-\xi^2)^{1/2}$且有$\alpha=s,p$, $k_p=\omega/\sqrt{\lam+2\mu}, k_s=\omega/\sqrt{\mu}$为p波和s波的波数。
+为了利用基本解$\G(x,y)$的特性，我们令：
+\ben
+\N_c(x,y)=\N(x,y)-(\G(x,y)-\G(x,y'))
+\een
+其中$y'=(y_1,-y_2)$ 为y关于$x_1$轴的镜像点。于是由式（ \ref{eq_n1}-\ref{eq_n2}），得$\N_c(x,y)$满足如下方程：
+\be
+& & \Delta_e [\N_c(x;y)q] + \omega^2 [\N_c(x,y)q] = 0 \ \ \mbox{in }\R^2_+ , \label{eq_n3} \\
+& & \sigma(\N_c(x,y)q)e_2 =-\sigma(\G(x,y)-\G(x,y')) \ \ \mbox{on } \Gamma_0, \label{eq_n4}
+\ee
+\begin{remark}
+	在全篇论文中，我们假设对于任意的$z\in \mathbb{C}\backslash\{0\}$， $z^{1/2}$是多值函数$\sqrt{z}$ 的如下解析分支：$\Im(z^{1/2})\geq 0$，这对应于在复平面取右半实轴为割支线。则对于$z=z_1+\mathbf{i}z_2$, $z_1,z_2\in\R$,
+	\be \label{convention_1}
+	z^{1/2}={\rm sgn}(z_2)\sqrt{\frac{|z|+z_1}{2}}+\i\sqrt{\frac{|z|-z_1}{2}},\ \ \forall z\in\C\backslash\bar{\R}_+.
+	\ee
+	当$z$位于右半实轴的上沿或是下沿时，取$z^{1/2}$为$\ep\rightarrow0^+$ 时$(z+\i\ep)^{1/2}$ 或是 $(z-\i\ep)^{1/2}$的极限即可。
+\end{remark}
+
+通过对式（ \ref{eq_n3}-\ref{eq_n4}）两边作傅里叶变换，我们得到关于变量$x_2$的常系数常微分方程组
+
+
+\section{正散射问题的适定性}
 
