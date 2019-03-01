@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -6,30 +6,50 @@
 \providecommand{\href}[2]{\url{#2}}
 \providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 
-\bibitem[Achenbach(1980)]{achenbach1980}
-Achenbach~J, 1980.
-\newblock Wave propagation in elastic solids\allowbreak[M].
-\newblock North-Holland: 544.
-
-\bibitem[Ahlfors(1979)]{Ahlfors1979Complex}
-Ahlfors~L~V, 1979.
-\newblock Complex analysis: An introduction to the theory of analytic functions
-  of one complex variable\allowbreak[M].
-\newblock McGraw-Hill: 155-173.
-
-\bibitem[Harris(2001)]{Harris2001Linear}
-Harris~J, 2001.
-\newblock Linear elastic waves\allowbreak[M].
-\newblock Cambridge University Press: B26.
-
 \bibitem[Kupradze(1963)]{ku63}
-Kupradze~V~D, 1963.
+Kupradze~V~D.
 \newblock Progress in solid mechanics. 3. dynamical problems in
   elasticity\allowbreak[M].
-\newblock North-Holland Publishing Company.
+\newblock North-Holland Publishing Company, 1963.
+
+\bibitem[Achenbach(1980)]{achenbach1980}
+Achenbach~J.
+\newblock Wave propagation in elastic solids\allowbreak[M].
+\newblock North-Holland, 1980: 544.
+
+\bibitem[Harris(2001)]{Harris2001Linear}
+Harris~J.
+\newblock Linear elastic waves\allowbreak[M].
+\newblock Cambridge University Press, 2001: B26.
+
+\bibitem[Ahlfors(1979)]{Ahlfors1979Complex}
+Ahlfors~L~V.
+\newblock Complex analysis: An introduction to the theory of analytic functions
+  of one complex variable\allowbreak[M].
+\newblock McGraw-Hill, 1979: 155-173.
 
 \bibitem[Kuroda(2003)]{Kuroda}
-Kuroda~S~T, 2003.
+Kuroda~S~T.
 \newblock An introduction to scattering theory.\allowbreak[M].
+\newblock 2003.
+
+\bibitem[Dur{\'a}n\ et~al.(2011)Dur{\'a}n, Muga, and
+  N{\'e}d{\'e}lec]{nedelec2011}
+Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
+\newblock The outgoing time-harmonic elastic wave in a half-plane with free
+  boundary\allowbreak[J].
+\newblock SIAM Journal on Applied Mathematics, 2011, 71\penalty0 (2):\penalty0
+  443-464.
+
+\bibitem[Grafakos(2004)]{grafakos}
+Grafakos~L.
+\newblock Classical and modern fourier analysis\allowbreak[M].
+\newblock Prentice Hall, 2004.
+
+\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
+Colton~D, Kress~R.
+\newblock Inverse acoustic and electromagnetic scattering theory:
+  volume~93\allowbreak[M].
+\newblock Springer Science and Business Media, 2012.
 
 \end{thebibliography}

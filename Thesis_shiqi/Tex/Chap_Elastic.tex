@@ -107,15 +107,18 @@ Z=\frac{1}{2\pi\i}\int_C \frac{\delta'(\xi)}{\delta(\xi)}d\xi.
 &=&2\i\int_{k_p}^{k_s}\frac{f_1'(\xi) f_2(\xi)-f_1(\xi) f_2'(\xi)}{f_1^2(\xi)+ f_2^2(\xi)} d\xi\\
 &=&-2\i\arctan \frac{f_2(\xi)}{f_1(\xi)}\Bigg|^{k_s}_{k_p}=0.
 \een
-相似地, 在 $\xi\in C_r^\pm$ 时也有 $\int_{\Ga_l}\frac{\delta'(\xi)}{\delta(\xi)}d\xi=0$ 。 此外, 当 $|\xi|$ 足够大, 容易得到 $\de(\xi)$ 的渐近形式 $\delta(\xi)=-2(k_p^2+3k_s^2)\xi^2+O(1)$ 及 $\delta’(\xi)=-4(k_p^2+3k_s^2)\xi+O(1)$ 。 于是当 $R\gg 1$ ，可以计算得到
+相似地, 在 $\xi\in C_r^\pm$ 时也有 $\int_{\Ga_l}\frac{\delta'(\xi)}{\delta(\xi)}d\xi=0$ 。 此外, 当 $|\xi|$ 足够大, 容易得到 $\de(\xi)$ 的渐近形式 $\delta(\xi)=-2(k_s^2-k_p^2)\xi^2+O(1)$ 及  。 于是当 $R\gg 1$ ，可以计算得到
 $\int_{\Ga_R} \frac{\delta'(\xi)}{\delta(\xi)}d\xi=4\pi\i$ 。
 综上所述， 我们得出 $Z=2$ 。 于是该引理得到证明。
 \finproof
 
-为了解决这一问题，我们假设半空间的介质是耗散的，然后研究其相应的Green函数，最后通过极限吸收原理得到$\N(x,y)$。
-记 $\mathbb{N}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_n1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。 同样的， 对$\mathbb{N}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且其表达式与将(\ref{NGT})中将$k_s, k_p$替换为
+为了克服上述问题，我们先假设半空间的介质是耗散的，然后研究其相应的Green函数，最后通过极限吸收原理得到$\N(x,y)$。
+记 $\mathbb{N}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_n1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。 同样的， 对$\mathbb{N}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且通过相同的推导，其表达式与将(\ref{NGT})中将$k_s, k_p$替换为
 $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
 
+\begin{remark}
+	通篇全文中， 我们都假设耗散介质所添加的 $\i\ep$ 是足够小的。
+\end{remark}
 \begin{lem}\label{complex_rayleigh}
 	令$\delta_{\om(1+\i\ep)}(\xi)$为将$\delta(\xi)$中的$k_p,k_s$替换成$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的复Rayleigh方程。 那么， $\delta_{\om(1+\i\ep)}(\xi)$在$\C\bks\bar{\Om}$中有且仅有两个根且为$\pm k_R(1+\i\ep)$。 其中集合$\Om$为
 	\be\label{set:Om}
@@ -123,9 +126,9 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我
 	\ee
 \end{lem}
 
- 由引理\ref{complex_rayleigh}得，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$在实轴上没有极点， 可以对其直接进行逆Fourier变换。 于是， Neumann Green函数 $\mathbb{N}(x,y)$ 可以利用极限吸收原理得到，即为
+ 由引理\ref{complex_rayleigh} 我们发现 $\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$ 在实轴上没有极点， 可以对其直接进行逆Fourier变换。 于是， Neumann Green函数 $\mathbb{N}(x,y)$ 可以利用极限吸收原理得到，即为
 \be\label{NGT1}
-\hspace{-1.5cm}\N(x,y)=\lim_{\ep\to 0^+} \N_{\om(1+\i\ep)}(x,y)=\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \N_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
+\N(x,y)=\lim_{\ep\to 0^+} \N_{\om(1+\i\ep)}(x,y)=\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \N_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
 \ee
 
 现在， 我们已经得到 Neumann Green函数的具体表达形式了。 但是，式子(\ref{NGT1})中这种极限形式并不利于我们分析该函数的具体性质，特别是其无穷远处的衰减阶数。 为了便于得到更加简洁的表达形式， 我们引入下面这个关于柯西主值(cf. e.g. \cite[Chapter 4, Theorem 5]{Kuroda})的引理
@@ -136,5 +139,178 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我
 	\een
 	其中 ${\rm p.v.}\int^b_a$ 表示积分的Cauchy主值。
 \end{lem}
+
+通过引理 \ref{rayleigh}, 引理 \ref{complex_rayleigh} , 易知 $\hat\N_{\omega(1+\i\ep)}(\xi\mp k_R(1+\i\ep))$ 在点 $\pm k_R$ 的某个小领域内解析且
+关于 $\ep$ 一致有界。 于是， 对于足够小的 $d>0$,  成立：
+\be
+& &\lim_{\ep\to 0^+}\int_{\pm k_R-d}^{\pm k_R+d}\hat \N_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
+&=& \lim_{\ep\to 0^+}\int_{\pm k_R-d}^{\pm k_R+d}\frac{\hat \N(\xi,x_2;y_2)(\xi-k_R)}{\xi\mp k_R(1+\i\ep)} e^{\i(x_1-y_1)\xi} d\xi
+\ee
+
+然后利用引理 \ref{cauchy_pv} ， 表达式 (\ref{NGT1}) 及上面的等式, 可以得到如下 Neumann Green 函数的表达式：
+\ben
+\N(x,y)&=&\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi\\
+& &-\frac{1}{2\omega^2}
+\left[\sum_{\alpha,\beta=p,s}\frac{\mathbb{A}_{\al\beta}(\xi)}{\de'(\xi)}e^{\i(\mu_\al x_2+\mu_\beta y_2)+\i(x_1-y_1)\xi}\right]^{k_R}_{-k_R},\ \ \forall x,y\in\R^2_+,
+\een
+这里 $[f(\xi)]^b_a:=f(b)-f(a)$ 。
+
+\begin{remark}
+	值得注意的是， 由于 $\hat\N(\xi,x_2;y_2)$ 在实轴上存在极点及研究目的的区别, 导致最终$\N(x,y)$可以存在多种等价的表达形式。 例如， 在文献 \cite{nedelec2011} 中 Duran 等人是利用 Cauchy 积分定理以及留数定理将积分路径从实轴变换到双曲线上， 从而避开被积函数的极点。 可以证明的是， 本文中推导出的 Green 函数与文献 \cite{nedelec2011} 中的是一致的。 
+\end{remark}
+
+观察式子 (\ref{G1}) , (\ref{G2}) , 及 (\ref{NGT}), 通过简单的变量替换， 我们易得 Neumann Green 函数满足如下对称性，即
+\be\label{symm}
+\N(x,y)=\N(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+
+\ee
+对于 $x_s\in\Ga_0$ 的情况， 我们定义这种 Green 函数 $\N(x,x_s),x\in\R^2_+$ 为 $\N(x,y)$ 在 $y\in\R^2_+,  \  y\to x_s$ 时的极限。
+由于半空间反散射问题中的点源一般都位于界面上， 所以接下去我们重点研究 $x\in\Ga_0 ,  \ y\in\R^2_+$ 时的 Neumann Green 函数 $\N(x,y)$ 。
+通过 (\ref{G1}) , (\ref{G2}) , (\ref{NGT})， 简单的计算可以简化 $\N(x,y)$ ：
+\be
+\hat
+\N(\xi,0;y_2)&=&\frac{\i}{\mu\delta(\xi)} \Bigg[ \Bigg(
+\begin{array}{cc}
+	2\xi^2\mu_s & -2\xi\mu_s\mu_p\\
+	-\xi\varphi & \mu_p\varphi
+\end{array} \Bigg)e^{\i\mu_p y_2}
++ \Bigg(
+\begin{array}{cc}
+	\mu_s\varphi & \xi\varphi \\
+	2\xi\mu_s\mu_p & 2\xi^2\mu_p
+\end{array} \Bigg)e^{\i\mu_s y_2} \Bigg] \nonumber\\
+&:=&\frac{1}{\delta(\xi)}(\Np(\xi)e^{\i\mu_p y_2}+\Ns(\xi)e^{\i\mu_s y_2}), \label{d2}
+\ee
+且, 当 $x\in\Ga_0, y\in\R^2_+$,
+\be\label{c8}
+\N(x,y)=\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,0;y_2) e^{\i(x_1-y_1)\xi} d\xi+\frac\i 2
+\left[\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i\mu_\al y_2+\i(x_1-y_1)\xi)}\right]^{k_R}_{-k_R}.
+\ee
+
+为了便于研究 Neumann Green 函数在边界 $\Ga_0$上水平方向的渐近行为， 我们下面引理中更为有用的表达形式。
+
+
+\begin{lem}\label{lem:2.3} 令 $x\in\Ga_0 \ , y\in \R^2_+$ 以及 $\phi\in (-\pi/2,\pi/2)$ 且存在如下表达 $y_2=|x-y|\cos\phi \ ,
+	x_1-y_1=|x-y|\sin\phi$ 。 假设 $x_1\not= y_1$, 于是可以得到
+	\be
+	\N(x,y)&=&\frac{1}{2\pi}\int_L\mathbb{N}_0(t)\cos(t+\phi)e^{\i\lam\cos t}dt\pm\i
+	\left[\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i\mu_\al y_2+\i(x_1-y_1)\xi}\right]_{\xi=\pm k_R},\label{h3}
+	\ee
+	其中 $\lam=k_s|x-y|$, $L$ 为复平面中的积分路径即 从 $-\pi/2+\i\infty$ to $-\pi/2$, $-\pi/2$ 到 $\pi/2$, 接着从 $\pi/2$ 到 $\pi/2-\i\infty$  ( 见图例 \ref{figure_trans}), 这里符号 $\pm$ 取决于 ${\rm sgn}(x_1-y_1)=\pm 1$, 且定义表达式：
+	\be\label{h2}
+	\mathbb{N}_{0}(t)=\sum_{\al=p,s}k_s\,\frac{\Na(k_s\sin(t+\phi))}{\de(k_s(\sin(t+\phi))}.
+	\ee
+\end{lem}
+
+\debproof
+不失一般性， 我们可以假设 $x_1>y_1$， 因此有 ${\rm sgn}(x_1-y_1)=1$。 注意到 $\hat{\N}(\xi,0;y_2)=\sum_{\al=p,s}\frac{\Na(\xi)}{\de(\xi)}e^{\i (y_2\mu_\al+(x_1-y_1)\xi)}$，所以对于 $\al=p,s$, 我们可以做经典的三角变量替换， 即为 $\xi=k_\al\sin t$ 。 由于三角函数的周期性， 这里我们规定 $-\pi<\Re t \leq\pi$ 以保证变换的一一对应。 相应地， $\xi$ 在复平面中的积分路径 $\R$ 对应于 $t$ 所在复平面中的积分路径 $L$ 。 于是得到如下等式：
+\ben
+& &\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,0;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
+&=&\frac 1{2\pi}\,{\rm p.v.}\int_L\sum_{\al=p,s}k_s\,\frac{\Na(k_s\sin t)}{\de(k_s\sin t)}\cos t\, e^{\i \lam\cos (t-\phi)}dt.
+\een
+令 $L_{-\phi}$ 为 $L$ 平移 $-\phi$ 后的积分路径, 立即得到
+\be\label{h1}
+& &\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,0;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
+&=&\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i\lam\cos t}dt,
+\ee
+这里 $\mathbb{N}_0(t)$ 如 (\ref{h1}) 所定义。
+
+设 $t_R\in L$ 满足等式 $k_R=k_s\sin t_R$， 于是 $k_R$ 即为 $t_R$ 在积分变换 $\xi=k_s\sin t$ 下的像点。 特别地， 由于 $k_R>k_s$, 则存在  $s_R>0$ 使得  $t_R=\pi/2-\i s_R\in L$ 。 对于任意$\ep>0$，令 $ L^\ep$ 表示如下积分路径： $-\pi/2+\i\infty\to -\pi/2+\i (s_R+\ep)\cup\pa B^+_\ep(-t_R)\to -\pi/2+\i(s_R-\ep)\to -\pi/2
+\to\pi/2\to\pi/2-\i(s_R-\ep)\to\pa B^+_\ep(t_R)\to\pi/2-\i(s_R+\ep)\to\pi/2-\i\infty$， 其中 $\pa B^+_\ep(\pm t_R)$ 表示圆心在 $\pm t_R$ 半径为 $\ep$ 的右半圆  (见图例 \ref{figure_trans})。 然后， 令 $L^\ep_{-\phi}$ 为 $L^\ep$ 平移 $-\phi$ 后的积分路径。 于是， 利用 Cauchy 主值的定义及留数定理， 我们可以得知
+\ben
+& &\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0(t)\cos(t+\phi)\,e^{\i \lam\cos t}dt \\
+&=&\lim_{\ep\to 0^+}\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt\\
+& &+\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0(t)\cos (t+\phi)e^{\i \lam\cos t},t').
+\een
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./Img/graphic/transformation4.png}
+	\caption{ 积分路径 $L$ 和 $L^\ep_{-\phi}$}\label{figure_trans}
+\end{figure}
+通过简单的计算， 易得相应留数为：
+\ben
+& &\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0(t)\cos (t+\phi)e^{\i \lam\cos t},t')\\
+&=&\frac \i 2\sum_{\xi=\pm k_R}\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i (y_2\mu_\al+(x_1-y_1)\xi)}.
+\een
+另一方面，通过 Cauchy 积分定理， 我们得到 
+\ben
+\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt
+=\frac 1{2\pi}\int_{L}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt.
+\een
+最后利用 (\ref{c8}) 和 (\ref{h1}) 引理得证。
+\finproof
+ 
+ 上述引理是我们研究 Neumann Green 函数 $\N(x,y)$ 在界面 $\Ga_0$ 上当 $x\to\infty$ 时衰减行为估计的一个出发点。 下面， 我们先回顾下关于振荡积分衰减阶数估计的 Van der Corput 引理 \cite[P.152]{grafakos} 。
+ 
+ \begin{lem}\label{van}
+ 	令 $\lam\ge 1$, $f\in C[a,b]$且其导函数绝对可积, 如果 $u\in C^k[a,b]$, 其中 $k\ge 1$ 及 $a<b$， 我们就有如下结论 \\
+ 	{\rm 1}. 如果 $|u'(t)|\ge 1$ 对于任意 $t\in (a,b)$ 成立，且 $u'$ 在 $(a,b)$ 上单调, 就断言
+ 	\ben
+ 	\left|\int^b_a f(t)e^{\i\lambda u(t)}dt\right|\le
+ 	3\lambda^{-1}\left(|f(b)|+\int^b_a |f'(t)|dt\right).
+ 	\een
+ 	{\rm 2}. 对于 $k\geq2$ 时, 如果 $|u^{(k)}(t)|\ge 1$ 对于任意 $t\in (a,b)$ 成立, 就断言 
+ 	\ben
+ 	\left|\int^b_a f(t)e^{\i\lambda u(t)}dt\right|\le
+ 	12k\lambda^{-1/k}\left(|f(b)|+\int^b_a|f'(t)|dt\right).
+ 	\een
+ \end{lem}
+The following lemma, which will be useful in the subsequent analysis, shows that the Van der Corput lemma is still valid when the singular points of the integrand $\phi(t)$ have a gap to the stationary phase points.
+
+\begin{lem}\label{lem:2.5}
+	Let $\lam\ge 1$ and $f\in C[-\pi/2,\pi/2]$ having absolutely integrable derivative. Then for any $(a,b)\subset (-\pi/2,\pi/2)$, we have
+	\be\label{c1}
+	\left|\int_a^bf(t)e^{\i\lam\cos t}dt\right| 
+	\leq C\lam^{-1/2}\left(|f(0)|+\int_a^b|f'(t)|dt\right),
+	\ee
+	where the constant $C$ is independent of $a,b,\lam$ and the integrand $f$. 
+	Moreover, let $\kappa\in (0,1)$ and $\phi\in (-\pi/2,\pi/2)$ such that $|\phi|\geq\phi^*>\arcsin \kappa:=\phi_\kappa$, we have
+	\be\label{c3}\hspace{-2cm}
+	\left|\int_{-\frac\pi 2}^{\frac\pi 2}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
+	\leq C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi2}|f'(t)|dt\right),
+	\ee
+	where $C$ depends only on $\phi^*$ and $\kappa$.
+\end{lem}
+\debproof
+The estimate (\ref{c1}) follows directly from Lemma \ref{van} since the interval $(a,b)$ can be divided into several subintervals so that in each subinterval, either $|\sin t|$ or $|\cos t|$ is bounded below by $1/\sqrt 2$. 
+
+Let $g(t)=\kappa^2-\sin^2(t+\phi)$. It is easy to see that $g(t)$ has two zeros $t_1, t_2$ in $(-\pi/2,\pi/2]$, where
+$t_1=\phi_\kappa-\phi$ and $t_2=-\phi_\kappa-\phi$ or $t_2=\pi-\phi_\kappa-\phi$ depending on whether $\phi+\phi_\kappa<\pi/2$ or $\phi+\phi_\kappa\ge \pi/2$. Without loss of generality, we assume the later case and thus $t_2=\pi-\phi_\kappa-\phi$. 
+
+Let $\ep_0=\min(\frac{\phi^*-\phi_\kappa}{2},\frac{\phi_\kappa}{2})>0$. Obviously, $t_1-\ep_0\le -\pi/2, t_1+\ep_0\le -(\phi^*-\phi_\kappa)/2$ and $t_2-\ep_0\ge(\phi^*-\phi_\kappa)/2$. We divide $(-\pi/2,\pi/2)$ into five intervals:
+$I_1=(-\pi/2,t_1-\ep_0), I_2=(t_1-\ep_0,t_1+\ep_0), I_3=(t_1+\ep_0,t_2-\ep_0), I_4=(t_2-\ep_0,t_2+\min(t_2+\ep_0,\pi/2))$ and $I_5=(\min(t_2+\ep_0,\pi/2),\pi/2)$.
+By (\ref{c1}) we have
+\be\label{c4}
+\hspace{-2.5cm}  \left|\int_{I_1\cup I_3\cup I_5}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
+\leq C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac\pi 2}|f'(t)|dt\right),
+\ee
+where the constant $C$ depends only on $\phi^*$ and $\kappa$. 
+
+Now we estimate the integral in $I_2, I_4$.  We first observe that $|\sin t|\ge \sin((\phi^*-\phi_\kappa)/2)$ in $I_2\cup I_4$. Moreover, $|g'(t)|=|\sin(2(t+\phi))|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))$ in $I_2\cup I_4$. Let $\de\in (0,\ep_0)$ be sufficiently small. Since $g(t_j)=0, j=1,2$, by the mean value theorem, we have
+\ben
+\hspace{-1cm}|g(t)|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))\de,\ \ \forall \de\le |t-t_j|\le \ep_0,j=1,2.
+\een
+By integration by parts we then obtain
+\ben
+\hskip-1cm& &\left|\int_{t_1-\ep_0}^{t_1-\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| \le C\delta^{-1/2}\lam^{-1}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
+\een
+Similarly, 
+\ben
+\hspace{-1.cm}\left|\int_{t_1+\de}^{t_1+\ep_0}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| 
+\le C\delta^{-1/2}\lam^{-1}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
+\een
+Finally, 
+\ben
+\hspace{-1.cm}\left|\int_{t_1-\delta}^{t_1+\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| 
+&\leq&C\max_{t\in(-\pi/2,\pi/2)}|f(t)|\int_{-\delta}^{\de}|\kappa -\sin(\phi_\kappa+t)|^{-1/2}dt\\
+\hspace{-1.cm}&\leq&C\de^{1/2}\max_{t\in(-\pi/2,\pi/2)}|f(t)|.
+\een
+In conclusion, by taking $\delta=\lam^{-1}$, we obtain
+\ben
+\hspace{-1.5cm}\left|\int_{I_2}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
+\leq C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
+\een
+The integral in $I_4$ can be estimated similarly. This completes the proof by combining with the estimate in (\ref{c4}).
+\finproof
+
 \section{正散射问题的适定性}
 
