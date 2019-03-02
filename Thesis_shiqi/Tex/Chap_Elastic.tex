@@ -338,46 +338,94 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 	这里常数 $C$ 只与 $\phi^*$ 和 $\kappa$ 有关。
 \end{lem}
 \debproof
+不失一般性， 我们这里假定 $\phi>0$ 。
 其中估计 (\ref{c1}) 可以 \ref{van} 直接得到。 这是因为区间 $(a,b)$ 可以被切割成若干个互不相交的子区间， 并且在任意一个子区间上面 $\sin t$ 单调且 $|\sin t|$ 存在下界 $1/\sqrt 2$ 或是 $|\cos t|$ 存在下界 $1/\sqrt 2$ 。
 
 令 $g(t)=\kappa^2-\sin^2(t+\phi)$ 。 由于 $0<\kappa<1$ $g(t)$, 易知 $g(t)$ 在区间 $(-\pi/2,\pi/2]$ 上有且仅有两个零点 $t_1, t_2$ ， 而且可以求出
 $t_1=\phi_\kappa-\phi$ 及 $t_2=-\phi_\kappa-\phi$ 或是 $t_2=\pi-\phi_\kappa-\phi$ , 这里 $t_2$ 取决于 $\phi+\phi_\kappa<\pi/2$ 或是 $\phi+\phi_\kappa\ge \pi/2$ 。 不失一般性， 我在后面的证明中都假设 $t_2=\pi-\phi_\kappa-\phi$ 。
 
-令 $\ep_0=\min(\frac{\phi^*-\phi_\kappa}{2},\frac{\phi_\kappa}{2})>0$. Obviously, $t_1-\ep_0\le -\pi/2, t_1+\ep_0\le -(\phi^*-\phi_\kappa)/2$ and $t_2-\ep_0\ge(\phi^*-\phi_\kappa)/2$. We divide $(-\pi/2,\pi/2)$ into five intervals:
-$I_1=(-\pi/2,t_1-\ep_0), I_2=(t_1-\ep_0,t_1+\ep_0), I_3=(t_1+\ep_0,t_2-\ep_0), I_4=(t_2-\ep_0,t_2+\min(t_2+\ep_0,\pi/2))$ and $I_5=(\min(t_2+\ep_0,\pi/2),\pi/2)$.
-By (\ref{c1}) we have
+令 $0<\ep_0 <\min(\frac{\phi^*-\phi_\kappa}{2},\frac{\phi_\kappa}{2})$ 。 显然成立 $t_1-\ep_0\geq -\pi/2, \ t_1+\ep_0\le -(\phi^*-\phi_\kappa)/2$ 以及 $t_2-\ep_0\ge(\phi^*-\phi_\kappa)/2$ 。于是， 我们可以把区间 $(-\pi/2,\pi/2)$ 切分成5个互补相交的子区间
+\ben
+I_1=(-\pi/2,t_1-\ep_0), \ I_2=(t_1-\ep_0,t_1+\ep_0),  \ I_3=(t_1+\ep_0,t_2-\ep_0), \\ I_4=(t_2-\ep_0,t_2+\min(t_2+\ep_0,\pi/2)), \ I_5=(\min(t_2+\ep_0,\pi/2),\pi/2)
+\een
+于是利用 (\ref{c1}) 可以得到
 \be\label{c4}
 & &  \left|\int_{I_1\cup I_3\cup I_5}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| \\ \nn
 &\leq& C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac\pi 2}|f'(t)|dt\right),
 \ee
-where the constant $C$ depends only on $\phi^*$ and $\kappa$. 
+其中常数 $C$ 只和 $\phi^*$ 及 $\kappa$ 有关。 
 
-Now we estimate the integral in $I_2, I_4$.  We first observe that $|\sin t|\ge \sin((\phi^*-\phi_\kappa)/2)$ in $I_2\cup I_4$. Moreover, $|g'(t)|=|\sin(2(t+\phi))|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))$ in $I_2\cup I_4$. Let $\de\in (0,\ep_0)$ be sufficiently small. Since $g(t_j)=0, j=1,2$, by the mean value theorem, we have
+现在我们来估计在区间 $I_2, \ I_4$ 上的积分。 首先， 我们观察到， 在区间 $I_2\cup I_4$ 上成立不等式
+ $|\sin t|\ge \sin((\phi^*-\phi_\kappa)/2)$ 。 此外在该区间上还成立，
+ \ben
+ |g'(t)|=|\sin(2(t+\phi))|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))
+ \een 
+  令 $\de\in (0,\ep_0)$ 充分小，因为 $g(t_j)=0, j=1,2$, 于是利用中值定理， 对于任意 $t$ 满足 $ \de\le |t-t_j|\le \ep_0,j=1,2$ 我们有
 \ben
-\hspace{-1cm}|g(t)|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))\de,\ \ \forall \de\le |t-t_j|\le \ep_0,j=1,2.
+\hspace{-1cm}|g(t)|\ge \min(\sin\phi_\kappa,\sin(\phi^*+\phi_\kappa))\de,\ \ 
 \een
-By integration by parts we then obtain
+通过分部积分后，得到
 \ben
-\hskip-1cm& &\left|\int_{t_1-\ep_0}^{t_1-\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| \le C\delta^{-1/2}\lam^{-1}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
+\left|\int_{t_1-\ep_0}^{t_1-\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| \le C\delta^{-1/2}\lam^{-1}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
 \een
-Similarly, 
+类似地，
 \ben
-\hspace{-1.cm}\left|\int_{t_1+\de}^{t_1+\ep_0}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| 
+\left|\int_{t_1+\de}^{t_1+\ep_0}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| 
 \le C\delta^{-1/2}\lam^{-1}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
 \een
-Finally, 
+最后，我们可以得到 
 \ben
-\hspace{-1.cm}\left|\int_{t_1-\delta}^{t_1+\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| 
+& &\left|\int_{t_1-\delta}^{t_1+\de}f(t)g(t)^{-1/2}e^{\i\lam\cos t}dt\right| \\
 &\leq&C\max_{t\in(-\pi/2,\pi/2)}|f(t)|\int_{-\delta}^{\de}|\kappa -\sin(\phi_\kappa+t)|^{-1/2}dt\\
-\hspace{-1.cm}&\leq&C\de^{1/2}\max_{t\in(-\pi/2,\pi/2)}|f(t)|.
+&\leq&C\de^{1/2}\max_{t\in(-\pi/2,\pi/2)}|f(t)|.
 \een
-In conclusion, by taking $\delta=\lam^{-1}$, we obtain
+如此， 我们只要取 $\delta=\lam^{-1}$ 就可以得到
 \ben
-\hspace{-1.5cm}\left|\int_{I_2}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
+\left|\int_{I_2}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
 \leq C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi 2}|f'(t)|dt\right).
 \een
-The integral in $I_4$ can be estimated similarly. This completes the proof by combining with the estimate in (\ref{c4}).
+同理，在区间 $I_4$ 上的积分也可以被估计。 结合式子 (\ref{c4}) 中的估计， 引理得证。
+
 \finproof
+
+The following lemma collects some facts about the Rayleigh function $\de(\xi)$.
+
+\begin{lem}\label{delta}
+	Let $d_R=(k_R-k_s)/2$, where $k_R$ is the wave number of the Rayleigh surface wave. There exist constants $C_1,C_2$ depending only on $\kappa$ such that $|\delta^{(k)}(\xi)|\le C_2k_s^{4-k}, k=0,1,2$, $|\delta(\xi)|\ge C_1k_s^4$ for any $|\xi|\le k_R+d_R$, and $|\de(\xi)|\ge 2k_s^2(|\xi|^2-k_R^2)$ for any $|\xi|\ge k_R$. Moreover, let $\de(\xi)=\de_1(\xi)(\xi^2-k_R^2)$ for $\xi\in\R$, then $|\de_1(\xi)|\ge C_1k_s^2$ for any $k_R-d_R\le |\xi|\le k_R+d_R$.
+\end{lem}
+
+\debproof
+By definition, we know that for $|\xi|\ge k_s$, $\de(\xi)=k_s^4f({\xi^2}/{k_s^2})$, where
+\ben
+f(t)=(2t-1)^2-4t\sqrt{t-1}\sqrt{t-\kappa^2},\ \ \forall t\ge 1.
+\een
+It is easy to see that $f'(t)\le -2$ for $t\ge 1$, $f(1)=1$ and $f((2-\kappa^2)/(1-\kappa^2))<0$. Thus $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$. The estimates for $\de(\xi)$ follows easily. 
+
+Next by the mean value theorem, 
+\ben 
+\min_{k_R-d_R\le|\xi|\le k_R+d_R}|\de_1(\xi)|\ge\min_{k_R-d_R\le|\xi|\le k_R+d_R}\frac{|\de'(\xi)|}{|\xi|+k_R}\ge C_1k_s^2,
+\een
+where we have used the fact $f'(t)\le -2$ for $t\ge 1$. This completes the proof.
+\finproof
+
+\begin{lem}\label{lem:2.7}
+	Let $\phi\in (0,\pi/2)$ and $H$ be the hyperbola $\{\xi=\xi_1+\i\xi_2\in\C:(\xi_1/(k_s\cos\phi))^2-(\xi_2/(k_s\sin\phi))^2=1\}$. Let $f(\xi)$ be analytic on $H$. Then there exists a constant $C$ depending only $\kappa$ such that
+	\ben
+	\hskip-2.2cm& &\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\right|+\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))\cos te^{\i\lam\cos t}dt\right|\\
+	\hskip-2cm&\le&C\lam^{-1}\max_{\xi\in H}(|f(\xi)|+k_s|f'(\xi)|).
+	\een 
+\end{lem}
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Dirichlet Green 函数}\label{Dirichlet Green Tensor}
 
