@@ -1,0 +1,72 @@
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_circle_8.eps}		
+	\caption{$\mathbf{R}_p^1$ and $\hat {\mathbf{R}}_p^1$ for the circle.}\label{figure_2}
+\end{figure}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_circle_8.eps}		
+	\caption{$\mathbf{R}_p^2$ and $\hat {\mathbf{R}}_p^2$ for the circle.}\label{figure_3}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_circle_8.eps}		
+	\caption{$\mathbf{R}_s^1$ and $\hat {\mathbf{R}}_s^1$ for the circle.}\label{figure_4}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_circle_8.eps}		
+	\caption{$\mathbf{R}_s^2$ and $\hat {\mathbf{R}}_s^2$ for the circle.}\label{figure_5}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p1_pear_8.eps}		
+	\caption{$\mathbf{R}_p^1$ and $\hat {\mathbf{R}}_p^1$ for the pear.}\label{figure_6}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_p2_pear_8.eps}		
+	\caption{$\mathbf{R}_p^2$ and $\hat {\mathbf{R}}_p^2$ for the pear.}\label{figure_7}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s1_pear_8.eps}		
+	\caption{$\mathbf{R}_s^1$ and $\hat {\mathbf{R}}_s^1$ for the pear.}\label{figure_8}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./Img/figure_sc_elastic/sc_s2_pear_8.eps}		
+	\caption{$\mathbf{R}_s^2$ and $\hat {\mathbf{R}}_s^2$ for the pear.}\label{figure_9}
+\end{figure}
