@@ -1,47 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis_shiqi.aux
 The style file: Biblio/gbt7714-unsrt.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: Biblio/ref.bib
-You've used 8 entries,
+You've used 9 entries,
             3798 wiz_defined-function locations,
-            860 strings with 6793 characters,
-and the built_in function-call counts, 28008 in all, are:
-= -- 374
-> -- 3150
-< -- 4202
-+ -- 1173
-- -- 37
-* -- 175
-:= -- 3895
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 16
-chr.to.int$ -- 1030
-cite$ -- 8
-duplicate$ -- 161
-empty$ -- 411
-format.name$ -- 71
-if$ -- 7313
+            869 strings with 6968 characters,
+and the built_in function-call counts, 32742 in all, are:
+= -- 429
+> -- 3705
+< -- 4933
++ -- 1370
+- -- 42
+* -- 209
+:= -- 4548
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 18
+chr.to.int$ -- 1211
+cite$ -- 9
+duplicate$ -- 181
+empty$ -- 459
+format.name$ -- 83
+if$ -- 8537
 int.to.chr$ -- 1
-int.to.str$ -- 9
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 49
-num.names$ -- 24
-pop$ -- 1567
+newline$ -- 54
+num.names$ -- 27
+pop$ -- 1854
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 9
 quote$ -- 0
-skip$ -- 2813
+skip$ -- 3277
 stack$ -- 0
-substring$ -- 1192
-swap$ -- 12
-text.length$ -- 54
+substring$ -- 1398
+swap$ -- 14
+text.length$ -- 61
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
+type$ -- 48
 warning$ -- 0
-while$ -- 75
+while$ -- 85
 width$ -- 0
-write$ -- 117
+write$ -- 133

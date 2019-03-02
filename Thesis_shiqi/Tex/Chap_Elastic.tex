@@ -1,6 +1,7 @@
 \chapter{半空间中的弹性反散射问题的直接成像方法}\label{chap:Elastic}
 
-\section{Green函数}\label{Green Tensor}
+\section{半空间弹性波方向的 Green 函数}\label{Green Tensor}
+\subsection{Neumann Green 函数}\label{Neumann Green Tensor}
 设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
 \be
 & & \Delta_e [\N(x;y)q] + \omega^2 [\N(x,y)q] = -\mathbf{\delta}_y(x) q \ \ \mbox{in }\R^2_+ , \label{eq_n1} \\
@@ -114,17 +115,73 @@ $\int_{\Ga_R} \frac{\delta'(\xi)}{\delta(\xi)}d\xi=4\pi\i$ 。
 
 为了克服上述问题，我们先假设半空间的介质是耗散的，然后研究其相应的Green函数，最后通过极限吸收原理得到$\N(x,y)$。
 记 $\mathbb{N}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_n1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。 同样的， 对$\mathbb{N}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且通过相同的推导，其表达式与将(\ref{NGT})中将$k_s, k_p$替换为
-$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
+$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的两个引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
 
 \begin{remark}
 	通篇全文中， 我们都假设耗散介质所添加的 $\i\ep$ 是足够小的。
 \end{remark}
+令$\delta_{\om(1+\i\ep)}(\xi)$为将$\delta(\xi)$中的$k_p,k_s$替换成$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的复Rayleigh方程。 为了展现 $\delta_{\om(1+\i\ep)}(\xi)$ 的零点 与 $\delta(\xi)$ 的零点的关系，我们先来刻画在何种情况下可以结合或是分离根式 $z^{1/2}$ 。
+\begin{lem}\label{lem23}
+	令 $0<\ep<1$ ， 假设 $z=R e^{\i\phi}$, $(1+\i\varepsilon)=r e^{\i\psi}$ 其中有 $0\leq\phi<2\pi$, $0<\psi<\pi/2$ 和  $R,r>0$. 于是等式
+	\be
+	z^{1/2}=(1+\i\varepsilon)(\frac{z}{{1+\i\varepsilon}^2})^{1/2}
+	\ee
+	当且仅当  $2\psi\leq\phi<2\pi$
+\end{lem}
+\debproof
+令 $z_\ep=z/(1+\i\ep)^2:=R_\ep e^{\i\phi_\ep}$ , 其中 $0\leq\phi_\ep<2\pi$。于是，易得当 $2\psi\leq\phi<2\pi$ 时， 成立 $\phi_\ep=\phi-2\psi , \ R_\ep=R/r$ ，则有
+\ben
+z^{1/2}=\sqrt{R}e^{\i\phi/2}=\sqrt{R/r}\sqrt{r}e^{\i(\phi/2-\psi)+\i\psi}=\sqrt{R_\ep}\sqrt{r}e^{\i(\phi_\ep)+\i\psi}=(1+\i\ep)z_\ep^{1/2}
+\een
+同样地, 当 $0\leq\phi<2\psi$ 时, 成立 $\phi_\ep=\phi-2\psi+2\pi$ 则有 $z^{1/2}=-(1+\i\ep)z_\ep^{1/2}$。 引理得证
+\finproof
+
+下面的引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
+
 \begin{lem}\label{complex_rayleigh}
-	令$\delta_{\om(1+\i\ep)}(\xi)$为将$\delta(\xi)$中的$k_p,k_s$替换成$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的复Rayleigh方程。 那么， $\delta_{\om(1+\i\ep)}(\xi)$在$\C\bks\bar{\Om}$中有且仅有两个根且为$\pm k_R(1+\i\ep)$。 其中集合$\Om$为
+	复Rayleigh方程 $\delta_{\om(1+\i\ep)}(\xi)$在$\C\bks\bar{\Om}$中有且仅有两个根且为$\pm k_R(1+\i\ep)$。 其中集合$\Om$为
 	\be\label{set:Om}
 	\Omega := \{\xi_1+\i\xi_2 \in \mathbb{C} \ | \ k_p(1+\i\ep)<\xi_1\xi_2<k_s(1+\i\ep) \ , \  \ \xi_2>\xi_1(1+\i\ep)\}
 	\ee
 \end{lem}
+\debproof
+ 我们定义 $\mu_\ep=(k^2(1+\i\ep)^2-\xi^2)^{1/2},k\in\R^+$ ， 令 $\xi=\xi_1+\i\xi_2,\xi_1,\xi_2\in\R$ and $(1+\i\varepsilon)=r e^{\i\psi}$ 。通过简单的计算， 我们有
+\be
+\mu_\ep^2 = k^2(1-\ep^2)-\xi_1^2+\xi_2^2+\i(2k^2\ep-2\xi_1\xi_2):=Re^{\i\Theta} := a_1+\i a_2
+\ee
+定义 $\Delta:=\{ \xi | 2\psi\leq\Theta<2\pi \} $ ， 于是由引理 \ref{lem23} 成立 $ \mu_\ep = (k^2-\xi_\ep^2)^{1/2} (1+\i\ep)$ 当 $\xi \in\Delta$ ，另一方面 $ \mu_\ep = - (k^2-\xi_\ep^2)^{1/2} (1+\i\ep)$ 当 $\xi \notin\Delta$ 。 由于 $\ep$ 足够小， 我们可以有如下关于集合 $\Delta$ 的等价形式：
+\be\nn
+\Delta &=& (\pi/2\geq\Theta<2\pi)\cup(2\psi<\Theta<\pi/2) \\
+&=& \{ \xi | a_1 \leq 0 \} \cup \{ \xi | a_2 \leq 0 \} \cup \{ \xi | a_1 >0,a_2 >0 \ ,\ \ \tan\Theta \geq \tan(2\psi) \} \\ \nn
+&:=& \Delta_1 \cup \Delta_2 \cup \Delta_3
+\ee
+Our goal now is to show where domain $\Delta$ occupies. A simple computation show that
+\be
+\Delta_1 = \{ \xi | \xi_1^2-\xi_2^2 \geq k^2(1-\ep^2) \}  \\
+\Delta_2 = \{ \xi | \xi_1\xi_2 \geq k^2\ep \}
+\ee
+and
+\be
+\hspace{-2cm}
+\Delta_3 = \{ \xi | \xi_1^2-\xi_2^2 \leq k^2(1-\ep^2), \xi_1\xi_2 \leq k^2\ep ,
+\frac{k^2\ep-\xi_1\xi_2}{k^2(1-\ep^2)-(\xi_1^2-\xi_2^2)} \geq \frac{\ep}{1-\ep^2} \}
+\ee
+The domains denote by $\Delta_1,\Delta_2$ are obvious in complex plane. To locate $\Delta_3$ in complex plane, we divide $\Delta_3$ into tree parts $\Delta_3=\Delta_{31}\cup\Delta_{32}\cup\Delta_{33}$
+where
+\ben
+\Delta_{31} &=& \{ \xi_1\xi_2 \leq 0, 0\leq\xi_1^2-\xi_2^2 \leq k^2(1-\ep^2) \} \\
+\Delta_{32} &=& \{ 0 \leq \xi_1\xi_2 \leq k^2\ep, 0\leq\xi_1^2-\xi_2^2 \leq k^2(1-\ep^2), \frac{\xi_1\xi_2}{\xi_1^2-\xi_2^2} \leq \frac{\ep}{1-\ep^2} \} \\
+&=& \{ 0 \leq \xi_1\xi_2 \leq k^2\ep, 0\leq\xi_1^2-\xi_2^2 \leq k^2(1-\ep^2), \frac{\xi_2}{\xi_1} \leq \ep \} \\
+\Delta_{33} &=& \{ \xi_1\xi_2 \leq 0, \xi_1^2-\xi_2^2 \leq 0 ,\frac{\xi_1\xi_2}{\xi_1^2-\xi_2^2} \geq \frac{\ep}{1-\ep^2} \} \\
+&=& \{ \xi_1\xi_2 \leq 0, \xi_1^2-\xi_2^2 \leq 0 ,-\frac{\xi_1}{\xi_2} \geq \ep \}
+\een
+Substituting $k_s,k_p$ into $\mu_\ep$ and let $\Delta_s,\Delta_p$ denote their corresponding areas, we have
+\be
+\C\bks\Omega = (\Delta_s \cap \Delta_p )\cup (\C\backslash(\Delta_s \cup \Delta_p))
+\ee
+Moreover, when $\xi\in\Omega$ it is easy to see $\delta_\ep(\xi)=\delta(\xi)(1-\i\ep)^4 $.
+This complete the proof by lemma \ref{lem2.1}
+\finproof
 
  由引理\ref{complex_rayleigh} 我们发现 $\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$ 在实轴上没有极点， 可以对其直接进行逆Fourier变换。 于是， Neumann Green函数 $\mathbb{N}(x,y)$ 可以利用极限吸收原理得到，即为
 \be\label{NGT1}
@@ -254,21 +311,23 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的引理告诉我
  	12k\lambda^{-1/k}\left(|f(b)|+\int^b_a|f'(t)|dt\right).
  	\een
  \end{lem}
-The following lemma, which will be useful in the subsequent analysis, shows that the Van der Corput lemma is still valid when the singular points of the integrand $\phi(t)$ have a gap to the stationary phase points.
+
+在文献\cite{RTMhalf_aco}中，Chen 等对半空间逆时偏移算法的研究时，引理 \ref{van} 起到了关键的作用。该引理相对于驻相定理的优势在于，对于振幅函数 $f(t)$ 的光滑性要求更低，且对于 $\lambda$ 阶数的刻画具有一致性。然而， 当振幅函数具有弱奇异点时，直接使用引理 \ref{van} 就行不通了。 幸运的是，经过研究我们发现 当振幅函数存在弱奇异点， 且其与相位函数 $\phi(t)$ 的驻相点的距离存在正下界时， Van der corput 引理仍然成立，如下述引理刻画。
+
 
 \begin{lem}\label{lem:2.5}
-	Let $\lam\ge 1$ and $f\in C[-\pi/2,\pi/2]$ having absolutely integrable derivative. Then for any $(a,b)\subset (-\pi/2,\pi/2)$, we have
+	令 $\lam\ge 1$， 假设$f\in C[-\pi/2,\pi/2]$ 且其导函数绝对可积。 于是对任意区间 $(a,b)\subset (-\pi/2,\pi/2)$, 可以得到
 	\be\label{c1}
 	\left|\int_a^bf(t)e^{\i\lam\cos t}dt\right| 
 	\leq C\lam^{-1/2}\left(|f(0)|+\int_a^b|f'(t)|dt\right),
 	\ee
-	where the constant $C$ is independent of $a,b,\lam$ and the integrand $f$. 
-	Moreover, let $\kappa\in (0,1)$ and $\phi\in (-\pi/2,\pi/2)$ such that $|\phi|\geq\phi^*>\arcsin \kappa:=\phi_\kappa$, we have
-	\be\label{c3}\hspace{-2cm}
+	这里常数 $C$ 与 $a,b,\lam$ 及被积函数 $f$ 无关。 
+	此外， 令 $\kappa\in (0,1)$ 以及 $\phi\in (-\pi/2,\pi/2)$ 满足条件 $|\phi|\geq\phi^*>\arcsin \kappa:=\phi_\kappa$ ， 可以得到
+	\be\label{c3}
 	\left|\int_{-\frac\pi 2}^{\frac\pi 2}f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}e^{\i\lam\cos t}dt\right| 
 	\leq C\lam^{-1/2}\left(|f(0)|+\int_{-\frac\pi 2}^{\frac \pi2}|f'(t)|dt\right),
 	\ee
-	where $C$ depends only on $\phi^*$ and $\kappa$.
+	这里常数 $C$ 只与 $\phi^*$ 和 $\kappa$ 有关。
 \end{lem}
 \debproof
 The estimate (\ref{c1}) follows directly from Lemma \ref{van} since the interval $(a,b)$ can be divided into several subintervals so that in each subinterval, either $|\sin t|$ or $|\cos t|$ is bounded below by $1/\sqrt 2$. 
@@ -311,6 +370,9 @@ In conclusion, by taking $\delta=\lam^{-1}$, we obtain
 \een
 The integral in $I_4$ can be estimated similarly. This completes the proof by combining with the estimate in (\ref{c4}).
 \finproof
+
+\subsection{Dirichlet Green 函数}\label{Dirichlet Green Tensor}
+
 
 \section{正散射问题的适定性}
 

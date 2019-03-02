@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -45,6 +45,12 @@ Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
 Grafakos~L.
 \newblock Classical and modern fourier analysis\allowbreak[M].
 \newblock Prentice Hall, 2004.
+
+\bibitem[Chen\ et~al.(2015)Chen and Huang]{RTMhalf_aco}
+Chen~Z, Huang~G.
+\newblock Reverse time migration for reconstructing extended obstacles in the
+  half space\allowbreak[J].
+\newblock Inverse Problems, 2015, 31\penalty0 (5):\penalty0 055007.
 
 \bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
 Colton~D, Kress~R.
