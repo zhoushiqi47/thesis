@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  2 MAR 2019 23:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  3 MAR 2019 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1926,35 +1926,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--115
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 135--138
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 184--189
+Underfull \hbox (badness 10000) in paragraph at lines 185--190
 
  []
 
-[9] [10] [11]
+[9]
+Overfull \hbox (15.44234pt too wide) in paragraph at lines 224--225
+[]\TU/SongtiSCLight(0)/m/it/12.045 从 \TU/entextrm/m/it/12.045 Neumann Green \TU
+/SongtiSCLight(0)/m/it/12.045 函 数 的 表 达 式 \TU/entextrm/m/it/12.045 ([][]3.25[][
+]) \TU/SongtiSCLight(0)/m/it/12.045 中，|  我 们 发 现 在 第 二 项 中，| $\OML/ntxmi/m/it/1
+2.045 ^^V[]\OT1/cmr/m/n/12.045 (\LMS/ntxsy/m/n/12.045 ^^F\OML/ntxmi/m/it/12.045
+ k[]\OT1/cmr/m/n/12.045 ) =
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
+
+ []
+
+[11] [12]
 File: ./Img/graphic/transformation4.png Graphic file (type bmp)
 <./Img/graphic/transformation4.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 340--343
 
  []
 
-[12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
 
-Overfull \hbox (7.449pt too wide) in paragraph at lines 412--413
+Overfull \hbox (7.449pt too wide) in paragraph at lines 431--432
 []\TU/entextrm/m/it/12.045 Let $\OML/ntxmi/m/it/12.045 ^^^ \LMS/ntxsy/m/n/12.04
 5 2 \OT1/cmr/m/n/12.045 (0\OML/ntxmi/m/it/12.045 ; ^^Y\OT1/cmr/m/n/12.045 /2)$ 
 \TU/entextrm/m/it/12.045 and $\OML/ntxmi/m/it/12.045 H$ \TU/entextrm/m/it/12.04
@@ -1986,7 +1995,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
-[19] [20]
+[19]
+Overfull \hbox (3.3307pt too wide) in paragraph at lines 166--169
+\TU/entextsf/m/n/12.045 and discretizing the integral equation by standard Nyst
+röm methods [[]]. Let $[][]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 x\OT1/cm
+r/m/n/12.045 ; \OML/ntxmi/m/it/12.045 d\OT1/cmr/m/n/12.045 ) =
+ []
+
+[20]
 File: ./Img/figure_sc_elastic/circle.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/circle.eps>
 File: ./Img/figure_sc_elastic/pear.eps Graphic file (type eps)
@@ -2011,11 +2027,11 @@ File: ./Img/figure_sc_elastic/pear.eps Graphic file (type eps)
 
 ])
 
-Package caption Warning: Unused \captionsetup[bi-first] on input line 289.
+Package caption Warning: Unused \captionsetup[bi-first] on input line 326.
 See the caption package documentation for explanation.
 
 
-Package caption Warning: Unused \captionsetup[bi-second] on input line 289.
+Package caption Warning: Unused \captionsetup[bi-second] on input line 326.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
@@ -2031,10 +2047,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29416 strings out of 492970
- 575999 string characters out of 6133939
- 647290 words of memory out of 5000000
- 33008 multiletter control sequences out of 15000+600000
+ 29420 strings out of 492970
+ 576086 string characters out of 6133939
+ 647385 words of memory out of 5000000
+ 33012 multiletter control sequences out of 15000+600000
  555980 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,15n,94p,10530b,521s stack positions out of 5000i,500n,10000p,200000b,80000s

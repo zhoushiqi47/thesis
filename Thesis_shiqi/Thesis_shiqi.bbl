@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -40,6 +40,11 @@ Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
   boundary\allowbreak[J].
 \newblock SIAM Journal on Applied Mathematics, 2011, 71\penalty0 (2):\penalty0
   443-464.
+
+\bibitem[Aki\ et~al.(2002)Aki and Richards]{aki2002quantitative}
+Aki~K, Richards~P~G.
+\newblock Quantitative seismology\allowbreak[M].
+\newblock 2002.
 
 \bibitem[Grafakos(2004)]{grafakos}
 Grafakos~L.

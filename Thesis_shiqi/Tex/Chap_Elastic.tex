@@ -113,6 +113,7 @@ $\int_{\Ga_R} \frac{\delta'(\xi)}{\delta(\xi)}d\xi=4\pi\i$ 。
 综上所述， 我们得出 $Z=2$ 。 于是该引理得到证明。
 \finproof
 
+
 为了克服上述问题，我们先假设半空间的介质是耗散的，然后研究其相应的Green函数，最后通过极限吸收原理得到$\N(x,y)$。
 记 $\mathbb{N}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_n1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。 同样的， 对$\mathbb{N}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且通过相同的推导，其表达式与将(\ref{NGT})中将$k_s, k_p$替换为
 $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的两个引理告诉我们，$\hat\N_{\omega(1+\i\ep)}(\xi,x_2;y_2)$的零点所在何处。
@@ -209,16 +210,52 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 \ee
 
 然后利用引理 \ref{cauchy_pv} ， 表达式 (\ref{NGT1}) 及上面的等式, 可以得到如下 Neumann Green 函数的表达式：
-\ben
+\be\label{NGT2}
 \N(x,y)&=&\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi\\
 & &-\frac{1}{2\omega^2}
 \left[\sum_{\alpha,\beta=p,s}\frac{\mathbb{A}_{\al\beta}(\xi)}{\de'(\xi)}e^{\i(\mu_\al x_2+\mu_\beta y_2)+\i(x_1-y_1)\xi}\right]^{k_R}_{-k_R},\ \ \forall x,y\in\R^2_+,
-\een
+\ee
 这里 $[f(\xi)]^b_a:=f(b)-f(a)$ 。
 
 \begin{remark}
 	值得注意的是， 由于 $\hat\N(\xi,x_2;y_2)$ 在实轴上存在极点及研究目的的区别, 导致最终$\N(x,y)$可以存在多种等价的表达形式。 例如， 在文献 \cite{nedelec2011} 中 Duran 等人是利用 Cauchy 积分定理以及留数定理将积分路径从实轴变换到双曲线上， 从而避开被积函数的极点。 可以证明的是， 本文中推导出的 Green 函数与文献 \cite{nedelec2011} 中的是一致的。 
 \end{remark}
+\begin{remark}
+从 Neumann Green 函数的表达式 (\ref{NGT2})中， 我们发现在第二项中， $\mu_{\al}(\pm k_R)=\i\sqrt{k_R^2-k_\al^2}$， 易知当 $x_2$ 增大时， 第二项的值是指数衰减的。所以，式 (\ref{NGT2}) 中第二项对应的波只在 $\Ga_0$ 附近以波数 $k_R$ 传播，当远离 $\Ga_0$时非常微弱， 且称为表面波 (Rayleigh 波) \cite{aki2002quantitative}。
+\end{remark}
+
+为了后文分析的便利， 我们给出以下引理， 其关于 Rayleigh 函数 $\delta(\xi)$ 若干性质。
+
+\begin{lem}\label{delta}
+	令 $d_R=(k_R-k_s)/2$，其中 $k_R$ 为Rayleigh 表面波的波数。我们与如下结论： \\
+	\rm{1}.对于任意 $|\xi|\le k_R+d_R$， 存在只与 $\kappa$ 有关的常数 $C_1,C_2$，我们有
+	 \ben
+	 |\delta^{(k)}(\xi)|\le C_2k_s^{4-k}, k=0,1,2  \ \ \  |\delta(\xi)|\ge C_1k_s^4
+	 \een 
+	  \rm{2} 对于任意 $|\xi|\le k_R+d_R$， 我们有
+	  \ben
+	  |\de(\xi)|\ge 2k_s^2(|\xi|^2-k_R^2)
+	  \een
+	  \rm{3} 
+	  令$\de(\xi)=\de_1(\xi)(\xi^2-k_R^2)$， 对于任意 $k_R-d_R\le |\xi|\le k_R+d_R$， 存在只与 $\kappa$ 有关的常数 $C$，我们有
+	  \ben
+	  |\de_1(\xi)|\ge C_1k_s^2
+	  \een
+\end{lem}
+
+\debproof
+By definition, we know that for $|\xi|\ge k_s$, $\de(\xi)=k_s^4f({\xi^2}/{k_s^2})$, where
+\ben
+f(t)=(2t-1)^2-4t\sqrt{t-1}\sqrt{t-\kappa^2},\ \ \forall t\ge 1.
+\een
+It is easy to see that $f'(t)\le -2$ for $t\ge 1$, $f(1)=1$ and $f((2-\kappa^2)/(1-\kappa^2))<0$. Thus $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$. The estimates for $\de(\xi)$ follows easily. 
+
+Next by the mean value theorem, 
+\ben 
+\min_{k_R-d_R\le|\xi|\le k_R+d_R}|\de_1(\xi)|\ge\min_{k_R-d_R\le|\xi|\le k_R+d_R}\frac{|\de'(\xi)|}{|\xi|+k_R}\ge C_1k_s^2,
+\een
+where we have used the fact $f'(t)\le -2$ for $t\ge 1$. This completes the proof.
+\finproof
 
 观察式子 (\ref{G1}) , (\ref{G2}) , 及 (\ref{NGT}), 通过简单的变量替换， 我们易得 Neumann Green 函数满足如下对称性，即
 \be\label{symm}
@@ -338,7 +375,7 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 	这里常数 $C$ 只与 $\phi^*$ 和 $\kappa$ 有关。
 \end{lem}
 \debproof
-不失一般性， 我们这里假定 $\phi>0$ 。
+我们不妨假定 $\phi>0$ 。
 其中估计 (\ref{c1}) 可以 \ref{van} 直接得到。 这是因为区间 $(a,b)$ 可以被切割成若干个互不相交的子区间， 并且在任意一个子区间上面 $\sin t$ 单调且 $|\sin t|$ 存在下界 $1/\sqrt 2$ 或是 $|\cos t|$ 存在下界 $1/\sqrt 2$ 。
 
 令 $g(t)=\kappa^2-\sin^2(t+\phi)$ 。 由于 $0<\kappa<1$ $g(t)$, 易知 $g(t)$ 在区间 $(-\pi/2,\pi/2]$ 上有且仅有两个零点 $t_1, t_2$ ， 而且可以求出
@@ -388,25 +425,7 @@ I_1=(-\pi/2,t_1-\ep_0), \ I_2=(t_1-\ep_0,t_1+\ep_0),  \ I_3=(t_1+\ep_0,t_2-\ep_0
 
 \finproof
 
-The following lemma collects some facts about the Rayleigh function $\de(\xi)$.
 
-\begin{lem}\label{delta}
-	Let $d_R=(k_R-k_s)/2$, where $k_R$ is the wave number of the Rayleigh surface wave. There exist constants $C_1,C_2$ depending only on $\kappa$ such that $|\delta^{(k)}(\xi)|\le C_2k_s^{4-k}, k=0,1,2$, $|\delta(\xi)|\ge C_1k_s^4$ for any $|\xi|\le k_R+d_R$, and $|\de(\xi)|\ge 2k_s^2(|\xi|^2-k_R^2)$ for any $|\xi|\ge k_R$. Moreover, let $\de(\xi)=\de_1(\xi)(\xi^2-k_R^2)$ for $\xi\in\R$, then $|\de_1(\xi)|\ge C_1k_s^2$ for any $k_R-d_R\le |\xi|\le k_R+d_R$.
-\end{lem}
-
-\debproof
-By definition, we know that for $|\xi|\ge k_s$, $\de(\xi)=k_s^4f({\xi^2}/{k_s^2})$, where
-\ben
-f(t)=(2t-1)^2-4t\sqrt{t-1}\sqrt{t-\kappa^2},\ \ \forall t\ge 1.
-\een
-It is easy to see that $f'(t)\le -2$ for $t\ge 1$, $f(1)=1$ and $f((2-\kappa^2)/(1-\kappa^2))<0$. Thus $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$. The estimates for $\de(\xi)$ follows easily. 
-
-Next by the mean value theorem, 
-\ben 
-\min_{k_R-d_R\le|\xi|\le k_R+d_R}|\de_1(\xi)|\ge\min_{k_R-d_R\le|\xi|\le k_R+d_R}\frac{|\de'(\xi)|}{|\xi|+k_R}\ge C_1k_s^2,
-\een
-where we have used the fact $f'(t)\le -2$ for $t\ge 1$. This completes the proof.
-\finproof
 
 \begin{lem}\label{lem:2.7}
 	Let $\phi\in (0,\pi/2)$ and $H$ be the hyperbola $\{\xi=\xi_1+\i\xi_2\in\C:(\xi_1/(k_s\cos\phi))^2-(\xi_2/(k_s\sin\phi))^2=1\}$. Let $f(\xi)$ be analytic on $H$. Then there exists a constant $C$ depending only $\kappa$ such that
@@ -415,7 +434,6 @@ where we have used the fact $f'(t)\le -2$ for $t\ge 1$. This completes the proof
 	\hskip-2cm&\le&C\lam^{-1}\max_{\xi\in H}(|f(\xi)|+k_s|f'(\xi)|).
 	\een 
 \end{lem}
-
 
 
 
