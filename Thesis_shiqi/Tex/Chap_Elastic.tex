@@ -224,15 +224,16 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 从 Neumann Green 函数的表达式 (\ref{NGT2})中， 我们发现在第二项中， $\mu_{\al}(\pm k_R)=\i\sqrt{k_R^2-k_\al^2}$， 易知当 $x_2$ 增大时， 第二项的值是指数衰减的。所以，式 (\ref{NGT2}) 中第二项对应的波只在 $\Ga_0$ 附近以波数 $k_R$ 传播，当远离 $\Ga_0$时非常微弱， 且称为表面波 (Rayleigh 波) \cite{aki2002quantitative}。
 \end{remark}
 
-为了后文分析的便利， 我们给出以下引理， 其关于 Rayleigh 函数 $\delta(\xi)$ 若干性质。
+为了后文分析的便利， 我们给出以下引理， 叙述若干关于 Rayleigh 函数 $\delta(\xi)$ 的性质。
 
 \begin{lem}\label{delta}
 	令 $d_R=(k_R-k_s)/2$，其中 $k_R$ 为Rayleigh 表面波的波数。我们与如下结论： \\
-	\rm{1}.对于任意 $|\xi|\le k_R+d_R$， 存在只与 $\kappa$ 有关的常数 $C_1,C_2$，我们有
+	\rm{1}.对于任意 $|\xi|\le k_s+ d_R$， 存在只与 $\kappa$ 有关的常数 $C_1,C_2,C_3$，我们有
 	 \ben
-	 |\delta^{(k)}(\xi)|\le C_2k_s^{4-k}, k=0,1,2  \ \ \  |\delta(\xi)|\ge C_1k_s^4
-	 \een 
-	  \rm{2} 对于任意 $|\xi|\le k_R+d_R$， 我们有
+	 & & C_1k_s^4\le |\delta(\xi)|\le C_2k_s^4 \\
+	 & &|\delta^{(k)}(\xi)|\le C_3(|k_s^2-\xi^2|^{-k+1/2}+|k_p^2-\xi^2|^{-k+1/2}),  \ \ \ \ k=1,2  
+	 \een
+	  \rm{2} 对于任意 $|\xi|\geq k_R$， 我们有
 	  \ben
 	  |\de(\xi)|\ge 2k_s^2(|\xi|^2-k_R^2)
 	  \een
@@ -244,17 +245,21 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 \end{lem}
 
 \debproof
-By definition, we know that for $|\xi|\ge k_s$, $\de(\xi)=k_s^4f({\xi^2}/{k_s^2})$, where
+利用简单的求导计算，我们易得结论1。 
+通过 Rayleigh 函数的定义， 有 $|\xi|\ge k_s$, $\de(\xi)=k_s^4f({\xi^2}/{k_s^2})$, 其中
 \ben
 f(t)=(2t-1)^2-4t\sqrt{t-1}\sqrt{t-\kappa^2},\ \ \forall t\ge 1.
 \een
-It is easy to see that $f'(t)\le -2$ for $t\ge 1$, $f(1)=1$ and $f((2-\kappa^2)/(1-\kappa^2))<0$. Thus $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$. The estimates for $\de(\xi)$ follows easily. 
-
-Next by the mean value theorem, 
-\ben 
-\min_{k_R-d_R\le|\xi|\le k_R+d_R}|\de_1(\xi)|\ge\min_{k_R-d_R\le|\xi|\le k_R+d_R}\frac{|\de'(\xi)|}{|\xi|+k_R}\ge C_1k_s^2,
+对于任意 $t\geq 1$, 易得：
+\ben
+f'(t)&=&8t-2-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt{t-\kappa^2}/\sqrt{t-1}\\
+&\leq& 8t -2 -4\sqrt{t-1}\sqrt{t-1}-4t =-2
 \een
-where we have used the fact $f'(t)\le -2$ for $t\ge 1$. This completes the proof.
+又因为 $f(1)=1$ 以及 $f((2-\kappa^2)/(1-\kappa^2))<0$ 。 于是立得 $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$ 。 然后由中值定理及 $f'(t)\leq -2$ 得
+\ben 
+\min_{|\xi|\ge k_s}|\frac{\de(\xi)}{\xi^2-k_R^2}|\ge\min_{t\geq1}|f'(t)|k_s^2\ge 2k_s^2,
+\een
+结论2， 3得证。
 \finproof
 
 观察式子 (\ref{G1}) , (\ref{G2}) , 及 (\ref{NGT}), 通过简单的变量替换， 我们易得 Neumann Green 函数满足如下对称性，即
@@ -425,19 +430,93 @@ I_1=(-\pi/2,t_1-\ep_0), \ I_2=(t_1-\ep_0,t_1+\ep_0),  \ I_3=(t_1+\ep_0,t_2-\ep_0
 
 \finproof
 
-
-
 \begin{lem}\label{lem:2.7}
-	Let $\phi\in (0,\pi/2)$ and $H$ be the hyperbola $\{\xi=\xi_1+\i\xi_2\in\C:(\xi_1/(k_s\cos\phi))^2-(\xi_2/(k_s\sin\phi))^2=1\}$. Let $f(\xi)$ be analytic on $H$. Then there exists a constant $C$ depending only $\kappa$ such that
+	令 $\phi\in (0,\pi/2)$ 以及 $H$ 表示双曲线 
 	\ben
-	\hskip-2.2cm& &\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\right|+\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))\cos te^{\i\lam\cos t}dt\right|\\
+	\{\xi=\xi_1+\i\xi_2\in\C:(\xi_1/(k_s\cos\phi))^2-(\xi_2/(k_s\sin\phi))^2=1\}
+	\een 
+	定义 $f(\xi)$ 为 $H$ 领域上的解析函数。 于是， 存在只与 $\kappa$ 有关的常数 $C$, 成立
+	\ben
+	& &\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\right|+\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))\cos te^{\i\lam\cos t}dt\right|\\
 	\hskip-2cm&\le&C\lam^{-1}\max_{\xi\in H}(|f(\xi)|+k_s|f'(\xi)|).
 	\een 
 \end{lem}
 
+\debproof
+注意到， 对于 $t=-\pi/2+\i s$, $s>0$ 有 $k_s\sin(t+\phi)=-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi\in H$ 。 于是
+\ben
+& &\int_{-\pi/2}^{-\pi/2+\i\infty}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\\
+&=&\i\int^\infty_0f(-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi)e^{-\lam\sinh(s)}ds.
+\een
+于是， 利用分部积分就可以得到在 $-\pi/2+\i\infty\to -\pi/2$ 积分值关于 $\lambda$ 是一阶衰减的。 同样利用分布积分也可以得到在区间 $\pi/2\to\pi/2-\i\infty$ 上的积分值的估计。 于是， 不等式中的第一项估计得证。 类似地， 可以证明不等式中的第二项的估计。 引理得证。
+\finproof
 
+经过前述若干引理的铺垫， 我们下面给出当 $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数相对于变量 $x_1$ 的阶数估计。 
 
+\begin{thm}\label{thm:2.1}
+	假定 $x\in\Gamma_0$, $y\in\R_+^2$ 且满足 $|x_1-y_1|/|x-y|\ge(1+\kappa)/2$ 及 $k_sy_2\ge 1$ 。存在只与 $\kappa$ 有关的常数 $C$ ， 有如下估计
+	\ben
+	|\N(x,y)|+k_s^{-1}|\na_y\N(x,y)|\leq \frac{C}{\mu}\left(\frac{k_sy_2}{(k_s|x-y|)^{3/2}}+e^{-\sqrt{k_R^2-k_s^2}y_2}\right).
+	\een
+\end{thm}
 
+\debproof 这里我们只证明关于 $\N(x,y)$ 的估计。 由于 $\na_y\N(x,y)$ 的函数特性和  $\N(x,y)$ 一直， 同理可证。   由引理 \ref{lem:2.3} 中的式子 (\ref{h3}) 启发， 不失一般性， 我们假定 $x_1>y_1$ ， 即有 $\phi\in (0,\pi/2)$ 且满足 
+\ben
+\phi\ge\phi^*=\arcsin (1+\kappa)/2>\phi_\kappa
+\een
+
+ 通过引理 \ref{delta} 中的结论 3 ，我们易得式子 (\ref{h3}) 中的第二项存在上界 $C\mu^{-1}e^{-\sqrt{k_R^2-k_s^2}y_2}$ ， 即该项随着 $y_2$ 增大指数衰减。
+
+针对式子 (\ref{h3}) 中的第一项，我们将其分成 p 波和 s 波两项：
+\ben
+& &\frac 1{2\pi}\int_L\mathbb{N}_0(t)\cos(t+\phi)e^{\i\lam\cos t}dt\\
+&=&
+\frac 1{2\pi}\int_L\sum_{\al=p,s} k_s\frac{\Na(k_s\sin(t+\phi))}{\de(k_s\sin(t+\phi))}\cos(t+\phi)e^{\i\lam\cos t}dt.
+\een
+由于， p 波和 s 波在表达形式上是相似的， 这里我们只分析含有 $[\Np(k_s\sin(t+\phi))]_{22}=\mu^{-1}(\varphi\mu_p)(k_s\sin(t+\phi))$ 这项， 然后另一项的分析就同理可得。 为了表达简便， 我规定如下表示
+\ben
+g(t)&=&k_s\frac{[\Np(k_s\sin(t+\phi))]_{22}}{\delta(k_s\sin(t+\phi))}\\
+&:=&f(t)(\kappa^2-\sin^2(t+\phi))^{1/2}, \\ f(t)&=&\frac{k_s^2}{\mu}\frac{\varphi(k_s\sin(t+\phi))}{\de(k_s\sin(t+\phi))}.
+\een
+于是， 利用分部积分， 可以得到
+\ben
+& &\int_{L}g(t)\cos(t+\phi)e^{\i\lam\cos t}dt\\
+&=&\cos\phi\int_Lg(t)\cos te^{\i\lam\cos t}dt-\sin\phi\int_{L}g(t)\sin te^{\i\lam\cos t}dt\\
+&=&\cos\phi\int_Lg(t)\cos te^{\i\lam\cos t}dt-\frac{\sin\phi}{\i\lam}\int_{L}g'(t)e^{\i\lam\cos t}dt\\
+&=&{\rm I}_1+{\rm I}_2.
+\een
+通过引理 \ref{delta} 中的结论 1 及引理 \ref{lem:2.5} 中的式 (\ref{c1})， 我们得到
+\ben
+& &\left|\int_{-\frac\pi 2}^{\frac \pi 2}g(t)\cos te^{\i\lam\cos t}dt\right|\\
+&\le& C\lam^{-1/2}\left(|g(0)|+\int^{\frac\pi 2}_{-\frac\pi 2}|(g(t)\cos t)'|dt\right) \\
+&\le& C\mu^{-1}\lam^{-1/2}.
+\een
+又因为 $\pm k_R$不在在双曲线 $H$ 上， 于是当 $\xi\in H$ 时， 成立
+\ben
+|[\Np(\xi)]_{22}|\le C|\xi|^3, \ \ 
+|[\Np'(\xi)]_{22}|\le C|\xi|^2 , \ \
+\de(\xi)\ge Ck_s^2|\xi|^2 
+\een
+利用引理 \ref{lem:2.7} 我们得到
+\ben
+\left|\int_{L\bks [-\frac\pi 2,\frac\pi 2]}g(t)\cos te^{\i\lam\cos t}dt\right|\le C\mu^{-1}\lam^{-1}.
+\een
+于是得到 $|{\rm I}_1|\le C\mu^{-1}\lam^{-1/2}\cos\phi$ 。
+
+ 类似地，我们可以得到 $|{\rm I}_2|\le C\mu^{-1}\lam^{-3/2}$。 事实上，唯一的区别在于， 因为
+\ben
+g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\sin(t+\phi)\cos(t+\phi),
+\een
+所以， 利用引理 \ref{lem:2.5} 中的  (\ref{c1}) 和 (\ref{c3}) 可以得到
+\ben
+\left|\int_{-\frac\pi 2}^{\frac \pi 2}g'(t)e^{\i\lam\cos t}dt\right|\le  C\mu^{-1}\lam^{-1/2}.
+\een
+于是， 我们最终得出
+ \ben
+ |{\rm I}_1+{\rm I}_2|\le C\mu^{-1}\lam^{-1/2}\cos\phi+C\mu^{-1}\lam^{-3/2}\le C\mu^{-1}(k_sy_2)/(k_s|x-y|)^{3/2},
+ \een
+  这里使用了条件 $k_sy_2\ge 1$ 。 引理得证。
+\finproof
 
 
 

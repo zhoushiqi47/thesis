@@ -7,19 +7,19 @@
 \contentsline {chapter}{\numberline {第3章\hspace {.3em}}半空间中的弹性反散射问题的直接成像方法}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}半空间弹性波方向的 Green 函数}{5}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Neumann Green 函数}{5}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dirichlet Green 函数}{16}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}正散射问题的适定性}{16}{section.3.2}
-\contentsline {chapter}{\numberline {第4章\hspace {.3em}}逆时偏移算法}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}数值算例}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}散射系数与 Kirchhoff 逼近}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}反射面为$x_1$轴}{17}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}$p$-波情形}{17}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}$s$-波情形}{18}{subsubsection.4.2.1.2}
-\contentsline {subsection}{\numberline {4.2.2}反射面为任意平面}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}数值算例}{20}{subsection.4.2.3}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{23}{appendix.A}
-\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{23}{section.A.1}
-\contentsline {section}{\numberline {A.2}测试公式编号}{23}{section.A.2}
-\contentsline {chapter}{参考文献}{25}{section*.12}
-\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{27}{appendix*.14}
-\contentsline {chapter}{致谢}{29}{appendix*.19}
+\contentsline {subsection}{\numberline {3.1.2}Dirichlet Green 函数}{19}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}正散射问题的适定性}{19}{section.3.2}
+\contentsline {chapter}{\numberline {第4章\hspace {.3em}}逆时偏移算法}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}数值算例}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}散射系数与 Kirchhoff 逼近}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}反射面为$x_1$轴}{21}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}$p$-波情形}{21}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}$s$-波情形}{22}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}反射面为任意平面}{22}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}数值算例}{24}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{27}{appendix.A}
+\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{27}{section.A.1}
+\contentsline {section}{\numberline {A.2}测试公式编号}{27}{section.A.2}
+\contentsline {chapter}{参考文献}{29}{section*.12}
+\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{31}{appendix*.14}
+\contentsline {chapter}{致谢}{33}{appendix*.19}
