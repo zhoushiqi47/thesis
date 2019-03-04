@@ -438,17 +438,22 @@ I_1=(-\pi/2,t_1-\ep_0), \ I_2=(t_1-\ep_0,t_1+\ep_0),  \ I_3=(t_1+\ep_0,t_2-\ep_0
 	定义 $f(\xi)$ 为 $H$ 领域上的解析函数。 于是， 存在只与 $\kappa$ 有关的常数 $C$, 成立
 	\ben
 	& &\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\right|+\left|\int_{L\bks [-\pi/2,\pi/2]}f(k_s\sin(t+\phi))\cos te^{\i\lam\cos t}dt\right|\\
-	\hskip-2cm&\le&C\lam^{-1}\max_{\xi\in H}(|f(\xi)|+k_s|f'(\xi)|).
+	\hskip-2cm&\le&C\lam^{-1}(|f(0)|+\max_{\xi\in H}(k_s|f'(\xi)|)).
 	\een 
 \end{lem}
 
 \debproof
 注意到， 对于 $t=-\pi/2+\i s$, $s>0$ 有 $k_s\sin(t+\phi)=-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi\in H$ 。 于是
 \ben
-& &\int_{-\pi/2}^{-\pi/2+\i\infty}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\\
-&=&\i\int^\infty_0f(-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi)e^{-\lam\sinh(s)}ds.
+I&= &\int_{-\pi/2}^{-\pi/2+\i\infty}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\\
+&=&\i\int^\infty_0f(-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi)e^{-\lam\sinh(s)}ds
 \een
-于是， 利用分部积分就可以得到在 $-\pi/2+\i\infty\to -\pi/2$ 积分值关于 $\lambda$ 是一阶衰减的。 同样利用分布积分也可以得到在区间 $\pi/2\to\pi/2-\i\infty$ 上的积分值的估计。 于是， 不等式中的第一项估计得证。 类似地， 可以证明不等式中的第二项的估计。 引理得证。
+于是， 利用分部积分就可以得到
+\ben
+|I|&=&|\int^\infty_0f(-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi) /(-\lam\cosh(s)) \ de^{-\lam\sinh(s)}| \\
+&\leq&\lam^{-1}(|f(0)|+\int^\infty_0|\frac{df(-\cosh(s)\cos\phi+\i\sinh(s)\sin\phi)/\cosh(s))} {ds}|e^{-\lam\sinh(s)}ds)
+\een
+ 得到 $\pi/2\to\pi/2-\i\infty$ 上的积分值的估计。 于是， 不等式中的第一项估计得证。 类似地， 可以证明不等式中的第二项的估计。 引理得证。
 \finproof
 
 经过前述若干引理的铺垫， 我们下面给出当 $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数相对于变量 $x_1$ 的阶数估计。 
@@ -518,14 +523,78 @@ g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\
   这里使用了条件 $k_sy_2\ge 1$ 。 引理得证。
 \finproof
 
-
-
+从以上定理可以得知， $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数被两项控制， 其中第一项随着 $x_1$ 变大，以 3/2 阶衰减， 而第二项关于 $x_1$ 是常数， 但关于 $y_2$ 指数衰减。值得注意的是， 弹性波基本解在横向关于 $x_1$ 是以 1/2 阶衰减的。除了存在表面波， 该横向衰减性质也是弹性波 Neumann Green 函数与 声波 Neumann Green 函数大大不同的地方。
 
 
 
 
 \subsection{Dirichlet Green 函数}\label{Dirichlet Green Tensor}
 
+由于相比于 Dirichlet Green 函数， Neumann Green 函数的形式更为复杂， 所以上一节中，我们先详细讨论了 Neumann Green 函数。现在，我们可以类似且更加简单地来讨论 Dirichlet Green 函数 $\D(x,y), y\in\R^2_+$ \cite{arens1999}， 其满足如下方程及边界条件 
+\be
+& & \De_e [\D(x,y)q] + \omega^2 [\D(x,y)q] = -\mathbf{\de}_y(x)q \ \ \mbox{in } \R^2_+ , \label{eq_d1} \\
+& &  \D(x,y)q = 0 \ \ \mbox{on } \Ga_0. \label{eq_d2}
+\ee 
+同样地， 类似于 (\ref{a1}) 中的频域 Neumann Green 函数 ， 我们定义经过 Fourier 变换后的频域 Dirichlet Green 函数 $\hat{\D}(\xi,x_2;y_2)$。 经过类似地推到， 我们可以将它表达成如下形式：
+\be\nn
+\hat \D(\xi,x_2;y_2) &=& \hat \G(\xi,x_2;y_2)  -\hat \G(\xi,x_2;-y_2) \\
+& &+ \frac{\i}{\omega^2 \gamma(\xi)}\sum_{\al,\beta=s,p}\mathbb{B}_{\al\beta}(\xi)e^{\i(x_2\mu_\alpha+y_2\mu_\beta)},\label{DGT}
+\ee
+这里有
+\ben
+& &\gamma(\xi)=\xi^2+\mu_s\mu_p , \ \mathbb{B}_{sp}(\xi)=-\mathbb{B}_{ss}(\xi), \ \mathbb{B}_{ps}(\xi)=-\mathbb{B}_{pp}(\xi)
+\\
+& &{\mathbb{B}_{ss}(\xi)} =
+\left( \begin{array}{ll}
+	\xi^2\mu_s & -\xi\mu_s\mu_p \\
+	-\xi^3  & \xi^2\mu_p
+\end{array} \right),\ \ \ \ \ \
+{\mathbb{B}_{pp}(\xi)} =
+\left( \begin{array}{ll}
+	\xi^2\mu_s & \xi^3 \\
+	\xi\mu_s\mu_p  & \xi^2\mu_p
+\end{array} \right).
+\een
+于是， 通过极限吸收原理， Dirichlet Green 函数 $\D(x,y)$ 可以看作是 $\D_{\om(1+\i\ep)}(x,y)$ 当 $\ep\to 0^+$ 的极限 ，其中 $\mathbb{D}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_d1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。
+同样地， 对$\mathbb{D}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\D_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且通过相同的推导，其表达式与将(\ref{DGT})中将$k_s, k_p$替换为
+$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 Thus 
+\ben
+\hspace{-1cm}\D(x,y)=\lim_{\ep\to 0^+} \D_{\om(1+\i\ep)}(x,y)=\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \D_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
+\een
+We have the following representation of Dirichlet Green tensor
+\be\label{DGT1}
+D(x,y)&=&\G(x,y)-\G(x,y')\\
+& &+\frac{\i}{2\pi\omega^2}\int_{\R}
+\sum_{\al,\beta=s,p}\frac{\mathbb{B}_{\al\beta}(\xi)}{\ga(\xi)}e^{\i(\mu_\alpha x_2+\mu_\beta y_2)+\i(x_1-y_1)\xi}d\xi.
+\ee
+It is easy to check that $\D(x,y)=\D(y,x)^T$ for $x,y\in\R^2_+$.
+
+For $x\in\Ga_0, y\in\R^2_+$, let $\T_D(x,y)\in\C^{2\times 2}$ denote the traction tensor of $\D(x,y)$ in the direction $e_2$ with respect to $x$, that is,
+$\T_D(x,y)q=\sigma(\D(x,y)q)e_2, \forall q\in\R^2$. By  (\ref{DGT1}) we have
+\be\label{DGT2}
+\T_D(x,y)=\frac{1}{2\pi}\int_{\R}\hat \T_D(\xi,0;y_2) e^{\i(x_1-y_1)\xi}d\xi,\ \ \ \ \forall x\in\Ga_0,
+\ee
+where 
+\be\hspace{-1cm} 
+\hat\T_D(\xi,0;y_2)&=&\frac 1{\gamma(\xi)}\left[\left(   \begin{array}{cc}
+	\xi^2 & -\xi\mu_p \\
+	-\xi\mu_s & \mu_p\mu_s
+\end{array} \right)e^{\i\mu_p y_2}+
+\left(   \begin{array}{cc}
+	\mu_s\mu_p & \xi\mu_p \\
+	\xi\mu_s & \xi^2
+\end{array}\right)e^{\i\mu_s y_2}\right]\nonumber\\
+&:=&\Tp(\xi)e^{\i\mu_p y_2}+\Ts(\xi)e^{\i\mu_s y_2}.\label{d1}
+\ee
+
+The following theorem on the decay behavior of the traction tensor on $\Ga_0$ improves \cite[Lemma 2.2]{arens1999} in the sense that we provide exact dependence on $y_2$ in the numerator. It can be proved by the same (and simpler) argument as that in the proof of Theorem \ref{thm:2.1}. We omit the details.
+
+\begin{thm}\label{thm:2.2}
+	Let $x\in\Gamma_0$, $y\in\R_+^2$ satisfy $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ and $k_s y_2\ge 1$. There exists a constant $C$ depending only on $\kappa$ such that
+	\ben
+	|\T_D(x,y)|+k_s^{-1}|\na_y\T_D(x,y)|\leq C\frac{k_s^2 y_2}{(k_s|x-y|)^{3/2}}.
+	\een
+\end{thm}
 
 \section{正散射问题的适定性}
 

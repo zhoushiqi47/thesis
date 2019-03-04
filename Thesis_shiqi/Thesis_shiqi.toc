@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {3.1}半空间弹性波方向的 Green 函数}{5}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Neumann Green 函数}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Dirichlet Green 函数}{19}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}正散射问题的适定性}{19}{section.3.2}
+\contentsline {section}{\numberline {3.2}正散射问题的适定性}{20}{section.3.2}
 \contentsline {chapter}{\numberline {第4章\hspace {.3em}}逆时偏移算法}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}数值算例}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}散射系数与 Kirchhoff 逼近}{21}{section.4.2}
