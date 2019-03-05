@@ -1,6 +1,6 @@
-\chapter{半空间中的弹性反散射问题的直接成像方法}\label{chap:Elastic}
+\chapter{半空间弹性波散射问题}\label{chap:Elastic}
 
-\section{半空间弹性波方向的 Green 函数}\label{Green Tensor}
+\section{半空间弹性波 Green 函数}\label{Green Tensor}
 \subsection{Neumann Green 函数}\label{Neumann Green Tensor}
 设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
 \be
@@ -458,7 +458,7 @@ I&= &\int_{-\pi/2}^{-\pi/2+\i\infty}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\\
 
 经过前述若干引理的铺垫， 我们下面给出当 $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数相对于变量 $x_1$ 的阶数估计。 
 
-\begin{thm}\label{thm:2.1}
+\begin{thm}\label{es_NGT}
 	假定 $x\in\Gamma_0$, $y\in\R_+^2$ 且满足 $|x_1-y_1|/|x-y|\ge(1+\kappa)/2$ 及 $k_sy_2\ge 1$ 。存在只与 $\kappa$ 有关的常数 $C$ ， 有如下估计
 	\ben
 	|\N(x,y)|+k_s^{-1}|\na_y\N(x,y)|\leq \frac{C}{\mu}\left(\frac{k_sy_2}{(k_s|x-y|)^{3/2}}+e^{-\sqrt{k_R^2-k_s^2}y_2}\right).
@@ -557,24 +557,39 @@ g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\
 \een
 于是， 通过极限吸收原理， Dirichlet Green 函数 $\D(x,y)$ 可以看作是 $\D_{\om(1+\i\ep)}(x,y)$ 当 $\ep\to 0^+$ 的极限 ，其中 $\mathbb{D}_{\omega(1+\i\ep)}(x,y)$ 为满足将式子(\ref{eq_d1})中将实圆频率$\omega$ 替换为复圆频率$\om(1+\i\ep)$后相应方程的Green函数。
 同样地， 对$\mathbb{D}_{\omega(1+\i\ep)}(x,y)$关于$x_2$变量的Fourier变换，得到$\hat\D_{\omega(1+\i\ep)}(\xi,x_2;y_2)$，且通过相同的推导，其表达式与将(\ref{DGT})中将$k_s, k_p$替换为
-$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 Thus 
+$k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 \ben
-\hspace{-1cm}\D(x,y)=\lim_{\ep\to 0^+} \D_{\om(1+\i\ep)}(x,y)=\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \D_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
+\D(x,y)&=&\lim_{\ep\to 0^+} \D_{\om(1+\i\ep)}(x,y)\\
+&=&\lim_{\ep\to 0^+}\frac{1}{2\pi}\int_\R\hat \D_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi.
 \een
-We have the following representation of Dirichlet Green tensor
+同样类似于 Rayleigh 方程, 关于 $\gamma(\xi)$ 有如下定理
+\begin{lem} \label{root_Ga}
+	令 $k_s,k_p\in \C$ 且有 $\Im(k_s)\geq0, \Im(k_p)\geq0$， 于是方程 $\gamma(\xi) = 0$ 在复平面中无零点。
+\end{lem}
+\debproof
+令 $F(\xi)= \gamma(\xi)*(\xi^2-\mu_s\mu_p)$ ， 于是观察到 $\gamma(\xi) = 0$的根一定 $F(\xi)=0$ 的根。 通过简单的计算， 可以得到 $F(\xi)=(k_s^2+k_p^2)\xi^2-k_p^2 k_s^2$ 。然而， 又易得当且仅当 $\xi_0^2=k_p^2 k_s^2 / (k_s^2+k_p^2)$, $F(\xi_0)=0$ 时， 有 $F(\xi)=0$。 但是此时 $\gamma(\xi_0)=2 k_p^2 k_s^2 / (k_s^2+k_p^2)$ 。
+引理得证。
+\finproof
+于是， 通过引理 \ref{root_Ga}及极限吸收原理， 我们得到如下 $\D(x,y)$ 的表达式：
 \be\label{DGT1}
-D(x,y)&=&\G(x,y)-\G(x,y')\\
+\D(x,y)&=&\G(x,y)-\G(x,y')\\
 & &+\frac{\i}{2\pi\omega^2}\int_{\R}
 \sum_{\al,\beta=s,p}\frac{\mathbb{B}_{\al\beta}(\xi)}{\ga(\xi)}e^{\i(\mu_\alpha x_2+\mu_\beta y_2)+\i(x_1-y_1)\xi}d\xi.
 \ee
-It is easy to check that $\D(x,y)=\D(y,x)^T$ for $x,y\in\R^2_+$.
+同样地，易得 Dirichlet Green 函数满足如下对称性，即
+\be\label{symm1}
+\D(x,y)=\D(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+
+\ee
 
-For $x\in\Ga_0, y\in\R^2_+$, let $\T_D(x,y)\in\C^{2\times 2}$ denote the traction tensor of $\D(x,y)$ in the direction $e_2$ with respect to $x$, that is,
-$\T_D(x,y)q=\sigma(\D(x,y)q)e_2, \forall q\in\R^2$. By  (\ref{DGT1}) we have
+由于我们的成像算法中， 需要对 $\Ga_0$ 上接受的数据反传， 这就需要用到 Dirichlet Green 函数 D(x,y) 的相关应力张量。 特别地， 我们针对 $x\in\Ga_0, y\in\R^2_+$， 定义 $\T_D(x,y)\in\C^{2\times 2}$ 为 Dirichlet Green 函数 $\D(x,y)$ 在 $e_2$ 方向的关于变量 $x_2$ 的应力向量 ， 记为
+\ben
+\T_D(x,y)q=\sigma(\D(x,y)q)e_2, \forall q\in\R^2
+\een 
+于是， 通过(\ref{DGT1}) 及求导计算， 我们得到
 \be\label{DGT2}
 \T_D(x,y)=\frac{1}{2\pi}\int_{\R}\hat \T_D(\xi,0;y_2) e^{\i(x_1-y_1)\xi}d\xi,\ \ \ \ \forall x\in\Ga_0,
 \ee
-where 
+其中 
 \be\hspace{-1cm} 
 \hat\T_D(\xi,0;y_2)&=&\frac 1{\gamma(\xi)}\left[\left(   \begin{array}{cc}
 	\xi^2 & -\xi\mu_p \\
@@ -587,14 +602,16 @@ where
 &:=&\Tp(\xi)e^{\i\mu_p y_2}+\Ts(\xi)e^{\i\mu_s y_2}.\label{d1}
 \ee
 
-The following theorem on the decay behavior of the traction tensor on $\Ga_0$ improves \cite[Lemma 2.2]{arens1999} in the sense that we provide exact dependence on $y_2$ in the numerator. It can be proved by the same (and simpler) argument as that in the proof of Theorem \ref{thm:2.1}. We omit the details.
+下面的定理与定理 \ref{es_NGT} 相似， 其阐述了 $\D(x,y)$ 在 $\Ga_0$ 上的应力张量 $\T(x,y)$ 关于变量 $x_1$ 的衰减行为。 观察式子 \ref{DGT2}， 我们发现它与式子相比 \ref{c8} 其形式更为简洁。于是， 我们用类似于估计 $\N(x,y)$ 的方法， 即通过变量替换， 然后利用引理 \ref{lem:2.5} 及引理 \ref{lem:2.7}, 我们可以证明如下定理， 这里我们省略细节。
 
-\begin{thm}\label{thm:2.2}
-	Let $x\in\Gamma_0$, $y\in\R_+^2$ satisfy $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ and $k_s y_2\ge 1$. There exists a constant $C$ depending only on $\kappa$ such that
+\begin{thm}\label{es_DGT}
+	令 $x\in\Gamma_0$, $y\in\R_+^2$ 满足 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 和 $k_s y_2\ge 1$ 。 存在只与 $\kappa$ 有关的常数 $C$ 成立如下估计
 	\ben
 	|\T_D(x,y)|+k_s^{-1}|\na_y\T_D(x,y)|\leq C\frac{k_s^2 y_2}{(k_s|x-y|)^{3/2}}.
 	\een
 \end{thm}
-
+\begin{remark}
+观察定理 \ref{es_DGT}, 我们发现 $\T_D(x,y)$ 及其导数在 $x_2$ 增大时，其值是关于 $x_2$ 3/2 阶衰减的， 这与声波 Dirichlet Green 函数的 $e_2$ 方向导数表现一致 \cite{RTMhalf_aco} 。特别地， 相比于其它文献的该函数的估计 \cite[Lemma 2.2]{arens1999}， 我们给出了更准确的常数刻画， 即分子中的 $y_2$。 而且在 $\N(x,y )$这种依赖于 $y_2$ 的估计表示， 这对对我们后面的算法分析是非常关键的。
+\end{remark}
 \section{正散射问题的适定性}
 

@@ -1,6 +1,118 @@
-\chapter{逆时偏移算法}\label{chap:RTM}
 
-\section{数值算例}
+\chapter{半空间弹性波反散射问题} \label{chap：RTM}
+
+\section{点扩散函数}
+在这一节中， 我们将详细介绍半空间弹性波点扩散函数(point spread function)。 点扩散函数是一种针对半空间介质中点源的成像函数。 在文献 \cite{RTMhalf_aco} 中， Chen 等提出了半空间声波的点扩散函数， 我们这里将其推广到半空间弹性波的情形， 特别的， 此时的点扩散函数是一个 $2\times2$ 的矩阵。
+假设在半空间的表面 $\Ga_0^d=\{(x_1,x_2)^T\in\Ga_0: x_1\in (-d,d)\}$ 上接受到的数据为 Neumann Green 函数 $\N(x,y)$, 即位于 $y$ 处的点源的数据， 这里 $d>0$ 称为孔径。 于是， 我们将有限孔径点扩散函数 $\J_d(x,y)$, $x,y\in\R^2_+$ 定义为将数据 $\N(x,y)\chi_{(-d,d)}$ 作为在 $\Ga_0$ 上的 Dirichlet 边界条件的反传波长， 这里 $\chi_{(-d,d)}$ 为区间 $\chi_{(-d,d)}$ 上的特征函数。 
+更准确的来说， $\J_d(x,y)e_j, j=1,2,$ 是如下散射问题的解：
+\ben
+& &\De_e[\J_d(x,y)e_j]+\om^2[\J_d(x,y)e_j]=0\ \ \mbox{in }\R^2_+,\\
+& &\J_d(x,y)e_j=[\overline{\N(x,y)}e_j]\chi_{(-d,d)}\ \ \mbox{on }\Ga_0.
+\een
+利用弹性波的积分表示公式, 我们有，对于任意 $z,y\in\R^2_+$ ，
+\ben
+[\J_d(z,y)]_{ij}&=&e_i\cdot[\J_d(z,y)e_j]\\
+&=&\int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+\een
+利用矩阵表达， 可以简化为
+\be\label{jd}
+\J_d(z,y)=\int_{\Ga_0^d}\T_D(x,z)^T\overline{\N(x,y)}ds(x).
+\ee
+
+观察表达式 (\ref{jd}) 及定理\ref{es_NGT}， 定理 \ref{es_DGT}不难发现， 当 $d\to\infty$时， $\J_d(z,y)$ 收敛。 因此， 自然地， 我们就可以定义半空间弹性波点扩散函数 $\J(x,y)\in \C^{2\times 2}$, $x,y\in\R^2_+$， 即为
+\be\label{j}
+\J(z,y)=\int_{\Ga_0}\T_D(x,z)^T\overline{\N(x,y)}ds(x).
+\ee
+于是， 利用极限吸收原理， 我们有
+\ben
+\J(z,y)=\lim_{\ep\to 0^+}\int_{\Ga_0} \T_D^{\,\omega(1+\i\ep)}(x,z)^T\,
+\overline{\N_{\om(1+\i\ep)}(x,y)}ds(x),
+\een
+这里 $\T_D^{\,\omega(1+\i\ep)}(x,z)q=\sigma(\D_{\om(1+\i\omega)}(x,z)q)e_2,\forall q\in\R^2$。
+利用 Parserval 等式， Lemma \ref{cauchy_pv}, (\ref{d2}) and (\ref{d1}), 我们可以得到
+\be
+\J(z,y)&=&\frac{1}{2\pi}\sum_{\al,\beta=p,s}{\rm p.v.}\int_{\R}\frac{{\Ta}(\xi)^T \overline{\Nb(\xi)}}{\overline{\delta(\xi)}} e^{\i (\mu_\alpha z_2-\overline{\mu}_\beta y_2)+\i(y_1-z_1)\xi} d\xi \nn \\
+& &-\frac\i 2\sum_{\al,\beta=p,s}\left[\frac{{\Ta}(\xi)^T \overline{\Nb(\xi)}}{\overline{\delta'(\xi)}} e^{\i (\mu_\alpha z_2-\overline{\mu}_\beta y_2)+\i(y_1-z_1)\xi}\right]^{k_R}_{-k_R}. \label{d3}
+\ee
+为了后文讨论方便， 我们把 $\J(z,y)$ 中的一部分定义为：
+\be
+\F(z,y)&=&\frac{1}{2\pi}\int^{k_p}_{-k_p} \  \frac{{\Tp}(\xi)^T \overline{\Np(\xi)}}{\overline{\delta(\xi)}} e^{\i \mu_p (z_2- y_2)+\i(y_1-z_1)\xi} d\xi\nn \\
+&&+\frac{1}{2\pi}\int^{k_s}_{-k_s} \  \frac{{\Ts}(\xi)^T \overline{\Ns(\xi)}}{\overline{\delta(\xi)}} e^{\i \mu_s (z_2- y_2)+\i(y_1-z_1)\xi} d\xi. \label{d4}
+\ee
+
+在研究半空间弹性波点扩散函数之前， 我们先来定义成像函数的采样区域。 令 $\Omega$ 为成像函数的采样区域， 定义 $h=\dist(\Omega,\Gamma_0)$ 是 $\Omega$ 与 $\Gamma_0$ 的距离。 我们假设存在常数 $0<c_1<1,c_2>0$ 成立
+\be\label{d0}
+|x_1|\leq c_1 d , \ \ |x-y|\leq c_2 h ,\ \ \ \ \forall x,y \in \Omega.
+\ee
+\begin{remark}
+	上述假设中， 第一个条件代表成像函数的采样区域不能太靠近孔径边缘， 第二个条件代表采样区域的尺寸相比于其与 $\Ga_0$的距离不能太大。第二个条件通常是合理的， 因为我们感兴趣的障碍物的尺寸大小要比入射波的波长小或是相当， 也就是 $k_s h\gg 1$。
+\end{remark}
+
+下面的引理不仅说明了 $\J(z,y)$ 是 $\J_d(z,y)$ 在 $d\to\infty$ 的极限， 而且还给出了 $\J_d(z,y)$ 与 $\J(z,y)$ 关于 $(h/d)$ 的误差估计。
+\begin{lem} \label{error_jd}
+	Let $k_s h\geq 1$ and $d\gg h$. For any $z,y\in\Omega$, we have
+	\ben
+	& &|\J(z,y)-\J_d(z,y)|+k_s^{-1}|\nabla_y(\J(z,y)-\J_d(z,y))| \\
+	&\leq&\frac{C}{\mu} \left[\left(\frac{h}{d}\right)^{2}+(k_s h)^{1/2}e^{-k_s h\sqrt{\kappa_R^2-1}}\left(\frac{h}{d}\right)^{1/2}\right],
+	\een
+	where the constant C depends only on $\kappa$.
+\end{lem}
+\debproof
+By Theorem \ref{thm:2.1} and Theorem \ref{thm:2.2},  when $k_s h\geq 1$ and $d\gg h$, we have
+\ben
+& &\left| \int_{d}^{\infty} \left[\T_D(x,z)^T\overline{\N(x,y)}\right]_{x_2=0}dx_1
+\right| \\
+&\leq&
+\frac{C}{\mu}\int_{d}^{\infty}\frac{k_s^{1/2} z_2}{|x-z|^{3/2}}\left(
+\frac{k_s^{-1/2} y_2}{|x-y|^{3/2}}+e^{-\sqrt{k_R^2-k_s^2}y_2}\right) dx_1\\
+&\leq&
+\frac{C}{\mu}\int_{(1-c_1)d/h}^{\infty}\left(\frac{1}{(1+t^2)^{3/2}}+\frac{(k_s h)^{1/2}}{(1+t^2)^{3/4}} e^{-\sqrt{k_R^2-k_s^2}h}\right)  dt\\
+&\leq&\frac{C}{\mu} \left[\left(\frac{h}{d}\right)^{2}+\frac{(k_s h)^{1/2}}{ e^{\sqrt{k_R^2-k_s^2}h}}\left(\frac{h}{d}\right)^{1/2}\right].
+\een
+Here we have used the first inequality in (\ref{d0}). Similarly, we can prove that the estimate for the integral in $(-\infty,-d)$. This shows the estimate for $\J(z,y)-\J_d(z,y)$. The estimate for $\nabla_y(\J(z,y)-\J_d(z,y))$ can be proved similarly.
+\finproof
+ 有了以上引理， 现在我们可以只研究 $\J(z,y)$ 的性质， 然后通过引理 \ref{error_jd} 得到 $\J_d(z,y)$ 的性质。 由于我们只关心障碍物远离边界 $\Ga_0$ 时的情况， 即 $k_s h \gg 1$ ， 所以， 针对点扩散函数 $\J(z,y)$, 我们希望将其分成两项， 其中第一项与 $k_s h$ 无关， 即主项； 第二项关于 $k_s h $ 是衰减的。
+下面， 我们将说明当 $z,y\in\Om$时， $\F(z,y)$ 是 $\J_d(z,y)$ 的 $\F(z,y)$ 主项， 而且当 $|z-y|\to\infty$ 它是衰减的。 特别地， 对于 $\F(z,y)$ 的虚部 $|\Im\F_{ii}(z,y)|, i=1,2$， 其在 $z=y$ 处存在峰值。
+
+The following lemma shows the second term on the right-hand side of (\ref{d3}) is small.
+
+\begin{lem}\label{lem:3.2}
+	There exists a constant $C$ depending only on $\kappa$ such that for any $z,y\in\Om$,
+	\ben
+	\left|\sum_{\al,\beta=p,s}\left[\frac{{\Ta}(\xi)^T \overline{\Nb(\xi)}}{\overline{\delta'(\xi)}} e^{\i (\mu_\alpha z_2-\overline{\mu}_\beta y_2)+\i(y_1-z_1)\xi}\right]^{k_R}_{-k_R}\right|\le \frac C\mu e^{-\sqrt{k_R^2-k_s^2}h}.
+	\een
+\end{lem}
+\debproof
+We know that from (\ref{d1}), (\ref{d2}) that for $\al=p,s$, $|\Ta(\pm k_R)|\le Ck_R^2/k_s^2\le C$, $|\Na(\pm k_R)|\le Ck_R^3$. The lemma now follows easily by using Lemma \ref{delta}. 
+\finproof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{散射系数与 Kirchhoff 逼近}
 
 \subsection{反射面为$x_1$轴}
