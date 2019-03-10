@@ -3,3 +3,16 @@
 \begin{definition}\label{def:pv}
 	Cauchy 主值定义
 \end{definition}
+
+We start by introducing some notation. For any Lipschitz domain $\mathcal{D}\subset \R^2$ with boundary $\Ga_\mathcal{D}$, let $\|u\|_{H^1(\mathcal{D})}=(\|\na \phi\|_{L^2(\mathcal{D})}^2+d_\mathcal{D}^{-2}\|\phi\|_{L^2(\mathcal{D})}^2)^{1/2}$ be the weighted $H^1(\mathcal{D})$ norm
+and
+$\|v\|_{H^{1/2}(\Ga_\mathcal{D})}=(d_\mathcal{D}^{-1}\|v\|_{L^2(\Ga_\mathcal{D})}^2+|v|_{\frac 12,\Ga_\mathcal{D}}^2)^{1/2}$ be the weighted $H^{1/2}(\Ga_\mathcal{D})$ norm,
+where $d_\mathcal{D}$ is the diameter of $\mathcal{D}$ and
+\ben
+|v|_{\frac 12,\Ga_\mathcal{D}}=\left(\int_{\Ga_\mathcal{D}}\int_{\Ga_\mathcal{D}}\frac{|v(x)-v(y)|^2}{|x-y|^2}ds(x)ds(y)\right)^{1/2}.
+\een
+By the scaling argument and trace theorem we know that there exists a constant $C>0$ independent of $d_\mathcal{D}$ such that for any $\phi\in C^1(\bar{\mathcal{D}})^2$ \cite[corollary 3.1]{RTMhalf_aco},
+\be\label{q0}
+\|\phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_\mathcal{D})}\le C\max_{x\in \bar{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na\phi(x)|).
+\ee
+In this paper, for any Sobolev space $X$, we still denote $X$ the vector valued space $X^2$ or tensor valued space $X^{2\times 2}$. The norms of $X, X^2, X^{2\times 2}$ are all denoted by $\|\cdot\|_X$.

@@ -233,14 +233,14 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 	 & & C_1k_s^4\le |\delta(\xi)|\le C_2k_s^4 \\
 	 & &|\delta^{(k)}(\xi)|\le C_3(|k_s^2-\xi^2|^{-k+1/2}+|k_p^2-\xi^2|^{-k+1/2}),  \ \ \ \ k=1,2  
 	 \een
-	  \rm{2} 对于任意 $|\xi|\geq k_R$， 我们有
+	  \rm{2} 对于任意 $|\xi|\geq k_R$， 存在只与 $\kappa$ 有关的常数 $C$，我们有
 	  \ben
-	  |\de(\xi)|\ge 2k_s^2(|\xi|^2-k_R^2)
+	  |\de(\xi)|\ge Ck_s^2(|\xi|^2-k_R^2)
 	  \een
 	  \rm{3} 
 	  令$\de(\xi)=\de_1(\xi)(\xi^2-k_R^2)$， 对于任意 $k_R-d_R\le |\xi|\le k_R+d_R$， 存在只与 $\kappa$ 有关的常数 $C$，我们有
 	  \ben
-	  |\de_1(\xi)|\ge C_1k_s^2
+	  |\de_1(\xi)|\ge Ck_s^2
 	  \een
 \end{lem}
 
@@ -251,18 +251,19 @@ $\delta_{\om(1+\i\ep)}=\delta(\xi_\ep)(1+\i\ep)^4 $
 f(t)=(2t-1)^2-4t\sqrt{t-1}\sqrt{t-\kappa^2},\ \ \forall t\ge 1.
 \een
 对于任意 $t\geq 1$, 易得：
-\ben
-f'(t)&=&8t-2-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt{t-\kappa^2}/\sqrt{t-1}\\
-&\leq& 8t -2 -4\sqrt{t-1}\sqrt{t-1}-4t =-2
-\een
-又因为 $f(1)=1$ 以及 $f((2-\kappa^2)/(1-\kappa^2))<0$ 。 于是立得 $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$ 。 然后由中值定理及 $f'(t)\leq -2$ 得
+\be\nn
+f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt{t-\kappa^2}/\sqrt{t-1}\\ \label{df}
+&\leq& 8t -4 -4\sqrt{t-1}\sqrt{t-k_R^2}-4t 
+\ee
+显然，当 $t\to1, \ t>1$ 时，$f'(t)\to-\infty$, 于是存在$\delta>0$ 即 $A_1>0$, 当 $1<t<1+\delta$ 时， $f'(t)<-A_1$。 而当 $t\geq 1+\delta$ 时， 由式子 (\ref{df})得，存在 $A_2>0$ , 有$f'(t)\leq -A_2$
+又因为 $f(1)=1$ 以及 $f((2-\kappa^2)/(1-\kappa^2))<0$ 。 于是立得 $k_R^2\le\frac{2-\kappa^2}{1-\kappa^2}k_s^2$ 。 然后由中值定理及 $f'(t)\leq -\max(A_1,A_2)$ 得
 \ben 
-\min_{|\xi|\ge k_s}|\frac{\de(\xi)}{\xi^2-k_R^2}|\ge\min_{t\geq1}|f'(t)|k_s^2\ge 2k_s^2,
+\min_{|\xi|\ge k_s}|\frac{\de(\xi)}{\xi^2-k_R^2}|\ge\min_{t\geq1}|f'(t)|k_s^2\ge \max(A_1,A_2)k_s^2,
 \een
 结论2， 3得证。
 \finproof
 
-观察式子 (\ref{G1}) , (\ref{G2}) , 及 (\ref{NGT}), 通过简单的变量替换， 我们易得 Neumann Green 函数满足如下对称性，即
+观察式子 (\ref{G1}) , (\ref{G2}) , 及 (\ref{NGT}), 通过简单的变量替换， 我们易得 Neumann Green 函数满足如下对称性或是空间互易性，即
 \be\label{symm}
 \N(x,y)=\N(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+
 \ee
@@ -576,7 +577,7 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 & &+\frac{\i}{2\pi\omega^2}\int_{\R}
 \sum_{\al,\beta=s,p}\frac{\mathbb{B}_{\al\beta}(\xi)}{\ga(\xi)}e^{\i(\mu_\alpha x_2+\mu_\beta y_2)+\i(x_1-y_1)\xi}d\xi.
 \ee
-同样地，易得 Dirichlet Green 函数满足如下对称性，即
+同样地，易得 Dirichlet Green 函数满足如下对称性或是空间互易性，即
 \be\label{symm1}
 \D(x,y)=\D(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+
 \ee
