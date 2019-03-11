@@ -611,8 +611,79 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 	|\T_D(x,y)|+k_s^{-1}|\na_y\T_D(x,y)|\leq C\frac{k_s^2 y_2}{(k_s|x-y|)^{3/2}}.
 	\een
 \end{thm}
+观察定理 \ref{es_DGT}, 我们发现 $\T_D(x,y)$ 及其导数在 $x_2$ 增大时，其值是关于 $x_2$ 3/2 阶衰减的， 这与声波 Dirichlet Green 函数的 $e_2$ 方向导数表现一致 \cite{RTMhalf_aco} 。特别地， 相比于其它文献的该函数的估计 \cite[Lemma 2.2]{arens1999}， 我们给出了更准确关于常数的刻画， 即分子中的 $y_2$。 而且在 $\N(x,y )$这种依赖于 $y_2$ 的估计表示， 这对对我们后面的算法分析是非常关键的。
 \begin{remark}
-观察定理 \ref{es_DGT}, 我们发现 $\T_D(x,y)$ 及其导数在 $x_2$ 增大时，其值是关于 $x_2$ 3/2 阶衰减的， 这与声波 Dirichlet Green 函数的 $e_2$ 方向导数表现一致 \cite{RTMhalf_aco} 。特别地， 相比于其它文献的该函数的估计 \cite[Lemma 2.2]{arens1999}， 我们给出了更准确的常数刻画， 即分子中的 $y_2$。 而且在 $\N(x,y )$这种依赖于 $y_2$ 的估计表示， 这对对我们后面的算法分析是非常关键的。
+在这一节， 我们注意到，在对 $\N(x,y)$ 或是 $\T_D(x,y$ 的估计时， 我们都要求满足条件 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 的前提， 这里作出说明。 第一，经过分析此条件是必要的， 该条件是为了保证振幅函数的弱奇异点与相位函数的稳像点不在同一点。 若我们去除此条件， 我们只能得到更弱的阶数估计。 第二， 在后文分析中， 当需要用到 $\N(x,y)$ 或是 $\T_D(x,y$ 的衰减性质时， 该条件都可以满足。 如果读者关心在去除条件 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 后， 关于 $\N(x,y)$ 或是 $\T_D(x,y$ 的估计， 可见附录。
 \end{remark}
 \section{正散射问题的适定性}
 
+Now we briefly recall the classical argument of limiting absorption principle (see e.g. \cite{leis, wilcox1975, Yves1988}) to define the scattering solution for the exterior elastic scattering problem in the half space:
+\be
+\Delta_e u + \omega^2 u =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp1}\\
+u= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u)e_2=0 \ \ \mbox{\rm on } \Ga_0,  \label{pp2}
+\ee
+where $g \in H^{1/2}(\Ga_D)$. Let $\ep>0$ and $u_\ep$ be the solution of the problem
+\be
+\Delta_e u_\ep + [\omega(1+\i\ep)]^2 u_\ep =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp3}\\
+u_\ep= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u_\ep)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
+\ee
+By the Lax-Milgram lemma, the problem (\ref{pp3})-(\ref{pp4}) has a unique solution $u_\ep\in H^1(\R^2_+\bks\bar D)$. Let \ben
+\mathcal{D}(\De_e)=\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), v=0\ \ \mbox{on }\Ga_D, \sigma(v)e_2=0\ \ \mbox{on }\Ga_0\}
+\een
+ as the domain of the operator $-\De_e$, it is shown in \cite{Yves1988} that if $\om^2$ is not the eigenvalue for $-\De_e$ in the domain $\mathcal D(\De_e)$, $u_\ep$ converges to some function $u$ satisfying (\ref{pp1})-(\ref{pp2}) in $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$, where the weighted Sobolev space $H^{1,s}(\R^2_+\bks\bar D),s \in \R$, is defined as the set of functions in 
+ \ben
+ L^{2,s}(\R^2_+\bks\bar D)=\{v \in L^2_{\rm loc}(\R^2_+\bks\bar D): (1+|x|^2)^{s/2}v \in L^2(\R^2_+\bks\bar D) \}
+ \een
+  whose first derivatives are also in $L^{2,s}(\R^2_+\bks\bar D)$. The norm 
+  \ben
+  \| v \|_{ H^{1,s}(\R^2_+\bks\bar D)} = (\| v \|^2_{ L^{2,s} (\R^2_+\bks\bar D)} + \| \nabla v \|^2_{ L^{2,s}(\R^2_+\bks\bar D)})^{1/2}
+  \een,  
+  where 
+  \ben
+  \| v \|_{ L^{2,s}(\mathcal D)} = (\int_{\mathcal D}(1+|x|^2)^{s}|v|^2 dx )^{1/2}.
+  \een
+   The absence of the positive eigenvalue for the operator $-\De_e$ is proved in \cite{sini2004} in the domain 
+   \ben
+   \mathcal D'(\De_e)=\{v\in H^1(\R^2_+\bks\bar D), \De_e v\in L^2(\R^2_+\bks\bar D), \sigma(v)\nu=0\ \mbox{on }\Ga_D, \sigma(v)e_2=0\ \mbox{on }\Ga_0\}.
+   \een
+    One can easily extend the argument in \cite{sini2004} to show the absence of the positive eigenvalue for
+$-\De_e$ also in the domain $\mathcal D(\De_e)$ and thus obtain the following theorem for the forward scattering problem.
+
+\begin{thm} \label{thm:4.1}
+	Let $g \in H^{1/2}(\Ga_D)$. The half-space elastic scattering problem (\ref{pp1})-(\ref{pp2})
+	admits a unique solution $u\in H^{1}_{\rm loc}(\R^2_+ \backslash \bar D)$. Moreover, for any bounded open set $\mathcal O\subset \R^2_+\bks\bar D$ there exists a constant $C>0$ such that
+	$\|u\|_{H^{1}(\mathcal O)}\le C\|g\|_{H^{1/2}(\Ga_D)}$.
+\end{thm}
+
+
+For the sake of convenience, we introduce the following notation: for any $u,v\in H^1(\R^2\bks\bar D)$ such that $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$,
+\be\label{g1}
+\GG(u,v)=\int_{\Ga_D} [u(x)\cdot \sigma(v(x))\nu- \sigma(u(x))\nu\cdot v(x)]ds(x).
+\ee
+Using this notation, the integral representation formula for the solution of the half-space elastic scattering problem reads: 
+\be\label{g2}
+u(y)\cdot q=\GG(u(\cdot),\N(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D,\ \ \forall q\in\R^2.
+\ee
+
+
+
+
+
+The following theorem which extends \cite[Theorem 4.1]{RTMhalf_aco} for acoustic waves will be proved in the Appendix of this paper. It shows that the difference between the half-space scattering solution and the full space scattering solution is small when the scatterer is far away from the boundary $\Ga_0$.
+
+\begin{thm}\label{thm:4.2}
+	Let $g\in H^{1/2}(\Ga_D)$ and $u_1,u_2$ be the scattering solution of following problems:
+	\be\label{e1}
+	\Delta_e u_1 + \omega^2 u_1=0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D},\ \  u_1= g \ \ \mbox{\rm on } \Ga_D,\ \ \sigma(u_1)e_2=0 \ \ \mbox{\rm on } \Ga_0,\\
+	\label{e2}
+	\Delta_e u_2 + \omega^2 u_2=0 \ \ \mbox{\rm in }\R^2\bks \bar{D},\ \ u_2 = g \ \ \mbox{\rm on } \Ga_D.
+	\ee
+	Then there exits a constant C depending only on $\kappa$ but independent of $k_s, h,d_D$ such that
+	\ben\hskip-2cm
+	\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}
+	\le\frac{C}{\mu}(1+\|T_1\|)(1+\|T_2\|)(1+k_s d_D)^2(k_sh)^{-1/2}\|g\|_{ H^{1/2}(\Ga_D)}.
+	\een
+	Here $T_1, T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ are the Dirichlet to Neumann mapping associated with the elastic scattering problem (\ref{e1}) and (\ref{e2}), respectively. $\|T_1\|, \|T_2\|$ denote their operator norms.
+\end{thm}
+
+We remark that the well-posedness of the full space elastic scattering problem (\ref{e2}) under the so-called Sommerfeld-Kupradze radiation condition is well known (cf. e.g. \cite{ku63}). It is equivalent to the solution defined by the limiting absorption principle \cite{leis, cxz2016}.

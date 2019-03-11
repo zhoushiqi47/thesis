@@ -1,6 +1,12 @@
 
 \chapter{半空间弹性波反散射问题} \label{chap：RTM}
+从本章开始， 我们将研究半空间弹性波逆散射问题。 在地球物理反问题， 弹性介质的无损检测等领域中， 半空间弹性波模型得到了非常重要的实际应用。 不同于半空间声波模型， 半空间弹性波模型存在一种表面波， 这种波只在半空间表面传播且其波数比相应的弹性波体波要大。
 
+我们先针对障碍物为一点源时，提出点扩散函数，并对点扩散函数进行分辨率分析及数值实验。 然后， 
+我们提出了求解开半空间弹性介质中的障碍物成像问
+题的单频逆时偏移算法。该算法能够对不同类型的障碍物进行有效成像，确定其
+位置、大小和形状，并且不需要提前知道障碍物的先验信息。由于， 每一个散射波都可以利用 Green 积分公式看成是在障碍物表面的二次点源波的叠加，即为惠更斯原理。 于是我们可以利用点扩散函数及相应方程的正则性来研究逆时偏移成像函数的分辨率。 最后， 我们用大量的数值算例验证了开波导逆时偏移
+算法对障碍物成像问题的有效性。
 \section{点扩散函数}
 在这一节中， 我们将详细介绍半空间弹性波点扩散函数(point spread function)。 点扩散函数是一种针对半空间介质中点源的成像函数。 在文献 \cite{RTMhalf_aco} 中， Chen 等提出了半空间声波的点扩散函数， 我们这里将其推广到半空间弹性波的情形， 特别的， 此时的点扩散函数是一个 $2\times2$ 的矩阵。
 假设在半空间的表面 $\Ga_0^d=\{(x_1,x_2)^T\in\Ga_0: x_1\in (-d,d)\}$ 上接受到的数据为 Neumann Green 函数 $\N(x,y)$, 即位于 $y$ 处的点源的数据， 这里 $d>0$ 称为孔径。 于是， 我们将有限孔径点扩散函数 $\J_d(x,y)$, $x,y\in\R^2_+$ 定义为将数据 $\N(x,y)\chi_{(-d,d)}$ 作为在 $\Ga_0$ 上的 Dirichlet 边界条件的反传波长， 这里 $\chi_{(-d,d)}$ 为区间 $\chi_{(-d,d)}$ 上的特征函数。 
@@ -326,8 +332,7 @@ f(t)=k_s\frac{\Tp(k_st)\overline{\Ns(k_st)}}{\overline{\de(k_st)}},\ \ \ \lam=k_
 而当 $k_s|z-y|< 1$ 时，显然有 $|{\rm III}_1|\le C\mu^{-1}\le C\mu^{-1}(k_s|z-y|)^{-1}$。 而针对 ${\rm III}_2+{\rm III}_3$ 的估计可以类似地使用 Van der Corput 引理 \ref{van} 来证明。 引理得证。
 \finproof
 
-结合引理 \ref{error_jd}， 定理\ref{J_F_diff}， 定理\ref{thm:3.2} 及图\ref{figure_psf}, 我们发现点扩散函数 $J_d(z,y)$ 确实可以把位于 $y$ 的点源分辨出来， 即在 $z=y$ 处达到峰值， 在 $z$ 远离 $y$ 其值渐渐衰减。
-
+结合引理 \ref{error_jd}， 定理\ref{J_F_diff}， 定理\ref{thm:3.2} 及图\ref{figure_psf}, 我们发现点扩散函数 $J_d(z,y)$ 确实可以把位于 $y$ 的点源分辨出来， 即在 $z=y$ 处达到峰值， 在 $z$ 远离 $y$ 其值渐渐衰减。如文献 \cite{RTMhalf_aco} 中针对声波点扩散函数的表述， 我们也可以认为弹性波点扩展函数是对寻找弹性点源分辨率的度量函数。
 
 为便于后文分析， 我们介绍如下在范数意义下的估计式。
 \begin{lem}\label{lem:4.1}
@@ -340,9 +345,158 @@ f(t)=k_s\frac{\Tp(k_st)\overline{\Ns(k_st)}}{\overline{\de(k_st)}},\ \ \ \lam=k_
 	其中 $\R_d(z,\cdot)=\J_d(z,\cdot)-\F(z,\cdot)$.
 \end{lem}
 
+
 \debproof
-上面第一估计式可有不等式 (\ref{q0}) 以及 $\F(z,\cdot)$ 的定义 (\ref{d4}) 立即得到。 第二估计式可有不等式 (\ref{q0})， Lemma \ref{error_jd} and Theorem \ref{J_F_diff} 立即得到。这里我们将不再赘述细节。 引理得证。
+由 $\F(z,\cdot)$ 的定义 (\ref{d4})， 我们易得：
+\ben
+|F(z,y)|\leq \frac{C}{\mu}
+\een 
+于是， 上面第一估计式可有不等式 (\ref{q0}) 立即得到。 第二估计式可有不等式 (\ref{q0})， 由引理 \ref{error_jd} 和定理 \ref{J_F_diff} 立即得到。这里我们将不再赘述细节。 引理得证。
 \finproof
+\section{弹性波半空间中的逆时偏移算法}
+这一节， 我们将提出半空间弹性波散射问题的逆时偏移算法 (Reverse Time Migration, RTM)。 该逆时偏移算法是对文献 \cite{RTMhalf_aco} 中半空间声波散射问题的逆时偏移算法的一个推广。 我们的逆时偏移算法可以分成两步 \cite{zhang2009,Zhang2007}， 第一步为将在半空间表面的孔径 $\Ga_d$ 上接受到的 s-波与 p-波的混合全波数据取复共轭化， 然后反传到半空间中。 第二步，将反传后的数据和入射波数据在采样区域 $\Om$ 内进行互相关， 然后关于各个炮点进行叠加。特别地，类似与文献 \cite{RTMhalf_aco} ， 这里的入射波是将点源放在 $\Ga_d$ 上， 然后作为 Dirichlet 边界条件后弹性波方程的解。而反传波是将接受到的数据共轭化后作为 Dirichlet 边界条件后弹性波方程的解。
+
+\begin{alg}
+	假设在 $\Ga_d$ 内均匀分布着 $N_s$ 个发射器， 位于 $x_s, \ s= 1,...,N_s$, 及分布着 $N_r$ 个接收器， 位于 $x_r, \ r=1,...,N_r$。 假设障碍物 $D\subset \Om$。 假设散射数据 $u_q^s(x_r,x_s)$ 为在 $x_r$ 处接受， 由位于 $x_s$ 处的点源沿着极化方向 $q=e_1, e_2$ 激发。
+	
+	$1^\circ$ 反传: 计算反传波 $v_q(x,x_s)$ 是如下半空间弹性波散射问题的解
+	\ben
+	& &\Delta_e v_q(x,x_s) + \omega^2 v_q(x,x_s) =0 \ \ \ \ \ \mbox{\rm in } \ \ \R^2_+, \\
+	& &v_q(x,x_s)=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\overline{u_q^s(x_r,x_s)}\delta_{x_r}(x) \ \ \mbox{\rm on }  \ \ \Ga_d.
+	\een
+	
+	$2^\circ$ 互相关: 对于任意 $q\in\R^2$，令入射波 $u^i_q$ 为如下半空间弹性波方程的解
+	\ben
+	& &\Delta_e u_q^i(x,x_s) + \omega^2 u_q^i(x,x_s) =0 \ \ \mbox{\rm in } \ \ \R^2_+,\ \ \\ & &u^i_q(x,x_s)=q\de_{x_s}(x)\ \ \mbox{on } \ \ \Ga_d.
+	\een
+	
+	对于任意 $z\in\Om$， 计算成像函数：
+	\be\label{cor1} 
+	I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|}{N_s}\sum^{N_s}_{s=1} u^i_q(z,x_s)\cdot v_q(z,x_s)\right\}. 
+	\ee
+\end{alg}
+于是， 由 Green 表示公式可以得到：
+\ben
+& &u^i_q(x,x_s)=\T_D(x_s,x)^Tq, \\
+& &v_q(x,x_s)\cdot e_j=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\T_D(x_r,x)e_j\cdot\overline{u_q^s(x_r,x_s)},
+\een 
+于是马上可以得到：
+which yields
+\be\label{cor}
+I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\sum^{N_r}_{r=1}
+[\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\right\}.
+\ee
+
+上面的成像函数是离散形式的， 可以直接用于数值计算。 为了便于后面的理论分析， 我们令 $N_s,N_r\to\infty$， 于是离散形式的成像函数 (\ref{cor1}) 可以看成是采用数值积分对如下连续形式的成像函数的一种积分逼近：
+\be
+\hat{I}_d(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+[\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\,ds(x_r)ds(x_s).\label{cor2}
+\ee
+
+
+下面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来。 有了前文中对 $\J_d(z,y)$ 相关分析结论，我们可以由此来分析半空间反弹性波散射问题的逆时偏移方法的分辨率。下面的定理， 告诉我们当采样点 $z$ 远离障碍物边界的时候， 成像函数在改点的值是非常小的。这种现象反映在后面的数值实验中， 就是在原理边界的时候， 在该处的颜色会非常浅。
+\begin{thm}\label{thm:4.3}
+	对于任意 $z\in\Omega$， 令 $\U(z,x)\in\C^{2\times2}$ 且 $\U(z,x)e_j$, $j=1,2$， 是如下弹性波方程的散射解：
+	\ben
+	& &\Delta_e [\U(z,x)e_j]+ \omega^2[\U(z,x)e_j]= 0 \ \ \mbox{in } \ \ \R^2\bks \bar{D},  \\
+	& &
+	\U(z,x)e_j= -\overline{\F(z,x)}e_j \ \ \mbox{on } \ \ \Ga_D.  
+	\een
+	于是， 成像函数 $\hat{I}_d(z)$ 有如下表达：
+	\be
+	\hat{I}_d(z)=\Im\sum_{j=1}^2\int_{\Gamma_D}[\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu]\cdot [\overline{\F(z,x)}e_j]ds(x)+R_d(z),\label{id}
+	\ee
+	这里 
+	\ben
+	|R_d(z)|\leq C\mu^{-2}(1+\|T_1\|)(1+\|T_2\|)(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right],
+	\een
+	其中常数 $C$ 仅依赖与 $\kappa$ 而与 $k_s,k_p, h, d, d_D$ 无关。
+\end{thm}
+\debproof
+观察算法中的 (\ref{cor2}) 我们可以得到：
+\be\label{g5}
+\hat I_d(z)=\Im\sum_{q=e_1,e_2}\int_{\Ga_0^d}[\T_D(x_s,z)^Tq]\cdot\hat v_q(z,x_s)ds(x_s),
+\ee
+其中 $j=1,2$，
+\ben
+\hat v_q(z,x_s)\cdot e_j=\int_{\Ga_0^d}\T_D(x_r,z)e_j\cdot\overline{u^s_q(x_r,x_s)}ds(x_r).
+\een
+利用 (\ref{g2}) 我们得到 $u^s_q(x_r,x_s)\cdot e_i=\GG(u^s_q(\cdot,x_s),\N(\cdot,x_r)e_i), i=1,2$, 于是有
+\ben
+\hat v_q(z,x_s)\cdot e_j&=&\int_{\Ga_0^d}\T_D(x_r,z)e_j\cdot\overline{[u^s_q(x_r,x_s)\cdot e_1,u^s_q(x_r,x_s)\cdot e_2]^T}ds(x_r)\\
+&=&\GG(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(\cdot,x_r)}e_ids(x_r)\right]\,).
+\een
+利用 Neumann Green 函数的空间互易性 $\N(x,x_r)=\N(x_r,x)^T$ 以及点扩展函数 $\J_d(\cdot,\cdot)$ 的定义 (\ref{jd})， 我们有
+\be\nn
+& &\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(x,x_r)}e_ids(x_r)\\ \nn
+&=&\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{T\N(x_r,x))^Te_i}ds(x_r)\\ \label{g6}
+&=&\int_{\Ga_0^d}(\T_D(x_r,z)e_j)^T\overline{\N(x_r,x)^T)}ds(x_r)
+=\J_d(z,x)^Te_j.
+\ee
+This implies $\hat v_q(z,x_s)e_j=\GG(\overline{u^s_q(\cdot,x_s)},\J_d(z,\cdot)^Te_j)$. Substitute it into (\ref{g5}) we have
+\be\label{g3}
+\hat I_d(z)=\Im\sum_{j=1}^2\GG(\W(z,\cdot)e_j,\J_d(z,\cdot)^Te_j),
+\ee
+where $\W(z,x)\in \C^{2\times 2}$ is the tensor defined by
+\ben
+\W(z,x)e_j=\int_{\Ga_0^d}\sum^2_{k=1}[\T_D(x_s,z)]_{kj}\overline{u^s_{e_k}(x,x_s)}ds(x_s),\ \ j=1,2.
+\een
+Notice that $\overline{\W(z,x)}e_j$ can be viewed as the weighted superposition of $u^s_{e_k}(x,x_s)$ and thus it satisfies
+\be\label{g7}
+& &\De_e[\overline{\W(z,x)}e_j]+\om^2[\overline{\W(z,x)}e_j]=0\ \ \mbox{in } \ \R^2_+\bks\bar D,\ \ \ \\
+& & \sigma(\overline{\W(z,x)}e_j)e_2=0\ \ \mbox{on } \ \Ga_0.
+\ee
+On the boundary of the obstacle $\Gamma_D$, by using (\ref{g6}) we have
+\be
+\hskip-1cm\overline{\W(z,x)}e_j=-\int_{\Ga_0^d}\sum^2_{k=1}[\overline{\T_D(x_s,z)}]_{kj}\N(x,x_s)e_kds(x_s)
+=-\overline{\J_d(z,x)}^Te_j.\label{g8}
+\ee
+Now define the tensor $\W_d(z,x)\in \C^{2\times 2}$ such that $\W_d(z,x)e_j$, $j=1,2$, is the scattering solution of the problem
+\be
+& & \Delta_e [\W_d(z,x)e_j]+ \omega^2 [\W_d(z,x)e_j]= 0 \ \ \ \ \mbox{in }\R^2_+\bks \bar{D},\label{g9}\\
+& &\W_d(z,x)e_j= -\overline{\F(z,x)}e_j \ \ \mbox{on } \ \ \Ga_D,\ \ \ \  \\
+& &\sigma(\W_d(z,x)e_j)e_2=0 \ \ \ \ \ \ \ \mbox{on }  \ \ \ \Ga_0 \label{g10}
+\ee
+By (\ref{g3}) we deduce
+\be
+\hat I_d(z)&=&\Im\sum^2_{j=1}\GG(\W(z,\cdot)e_j,J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j)\nn\\
+& &+\Im\sum^2_{j=1}\GG(\W(z,\cdot)e_j-\overline{\W_d(z,\cdot)}e_j,\F(z,\cdot)e_j)\nn\\
+& &+\Im\sum^2_{j=1}\GG(\overline{\W_d(z,\cdot)}e_j-\overline{\U(z,\cdot)}e_j,\F(z,\cdot)e_j)\nn\\
+& &+\Im\sum^2_{j=1}\GG(\overline{\U(z,\cdot)}e_j,\F(z,\cdot)e_j):={\rm VI}_1+\cdots+{\rm VI}_4.\label{g11}
+\ee
+Recall that $\F(z,y)^T=\F(z,y)$ by Theorem \ref{thm:3.2}. By Lemma \ref{lem:4.1}, 
+\ben
+\|\J_d(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}+\|\sigma(\J_d(z,\cdot)e_j)\nu\|_{H^{-1/2}(\Ga_D)}\le\frac C\mu (1+k_sd_D).
+\een
+This implies, by (\ref{g7})-(\ref{g8}) and Lemma \ref{lem:4.1}, that
+\ben
+|{\rm VI}_1|&\le&\sum_{j=1}^2\Big(\|\W(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}\|\sigma(\J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j)e_2\|_{H^{-1/2}(\Ga_D)}\\
+& &+\|\sigma(\W(z,\cdot)e_j)e_2\|_{H^{-1/2}(\Ga_D)}\|\J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}\Big)\\
+&\le&\frac C{\mu^2}(1+\|T_1\|)(1+k_sd_D)^2\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right].
+\een
+From (\ref{g7})-(\ref{g8}) and (\ref{g9})-(\ref{g10}), we obtain by using Lemma \ref{lem:4.1} that
+\ben
+|{\rm VI}_2|\le\frac C{\mu^2}(1+\|T_1\|)(1+k_sd_D)^2\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right].
+\een
+To estimate the third term, we use Theoremn \ref{thm:4.2} and Lemma {\ref{lem:4.1} to obtain
+	\ben
+	|{\rm VI}_3|\le\frac C{\mu^2}(1+\|T_1\|)(1+\|T_2\|)(1+k_sd_D)^3(k_sh)^{-1/2}.
+	\een
+	Finally, since $\U(z,x)e_j=-\overline{\F(z,x)}e_j$ on $\Ga_D$,
+	\ben
+	\hskip-1.5cm{\rm IV}_4&=&\Im\sum^2_{j=1}\int_{\Ga_D}(\overline{\U(z,x)}e_j\cdot\sigma(\F(z,x)e_j)\nu-\sigma(\overline{\U(z,x)}e_j)\nu\cdot\F(z,x)e_j)ds(x)\\
+	\hskip-1.5cm&=&-\Im\sum^2_{j=1}\int_{\Ga_D}\sigma(\overline{\U(z,x)}e_j+\F(z,x)e_j)\nu\cdot\F(z,x)e_jds(x)\\
+	\hskip-1.5cm&=&\Im\sum^2_{j=1}\int_{\Ga_D}\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu\cdot\overline{\F(z,x)}e_jds(x).
+	\een
+	The theorem follows now from (\ref{g11}).
+	\finproof
+
+
+
+
+
+
+
 
 \section{散射系数与 Kirchhoff 逼近}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  10 MAR 2019 22:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  11 MAR 2019 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2022,12 +2022,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 523--526
 
  []
 
-[19] [20]) (./Tex/Chap_RTM.tex [21] [22
+[19] [20] [21]
+Overfull \hbox (15.66272pt too wide) in alignment at lines 646--648
+ [][][] []
+ []
+
+[22]) (./Tex/Chap_RTM.tex [23] [24
 
 ]
 第4章
-[23] [24]
-Overfull \hbox (1.0825pt too wide) in paragraph at lines 71--74
+[25] [26]
+Overfull \hbox (1.0825pt too wide) in paragraph at lines 77--80
 \TU/SongtiSCLight(0)/m/n/12.045 上 的 不 等 式 估 计。|  这 就 说 明 了 $\U/ntxsym/m/n/12.04
 5 J\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 z; y\OT1/cmr/m/n/12.045 ) \LMS/n
 txsy/m/n/12.045 ^^@ \U/ntxsym/m/n/12.045 J[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/i
@@ -2038,100 +2043,107 @@ t/12.045 z; y\OT1/cmr/m/n/12.045 )$ \TU/SongtiSCLight(0)/m/n/12.045 的 误 差 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-[26] [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+[28] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-Invalid UTF-8 byte or sequence at line 252 replaced by U+FFFD.
+[31]
+Invalid UTF-8 byte or sequence at line 258 replaced by U+FFFD.
 File: ./Img/graphic/psf_om_2_lm_5_mu_25_im.eps Graphic file (type eps)
 <./Img/graphic/psf_om_2_lm_5_mu_25_im.eps>
-Invalid UTF-8 byte or sequence at line 257 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 263 replaced by U+FFFD.
 File: ./Img/graphic/green_om_2_lm_5_mu_25_im.eps Graphic file (type eps)
 <./Img/graphic/green_om_2_lm_5_mu_25_im.eps>
-[29] [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
+ [32] [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 331--334
 
  []
 
-[32]
-Overfull \hbox (19.24684pt too wide) in alignment at lines 335--339
+
+Overfull \hbox (19.24684pt too wide) in alignment at lines 340--344
  [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
+
+ []
+
+[35] [36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 490--493
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 349.
+(hyperref)                removing `math shift' on input line 503.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 349.
+(hyperref)                removing `subscript' on input line 503.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 349.
+(hyperref)                removing `math shift' on input line 503.
 
-[33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 449--452
+[39] [40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 603--606
 
  []
 
 
-Overfull \hbox (1.45079pt too wide) in paragraph at lines 453--454
-[]\TU/entextsf/m/n/12.045 By this theorem, we obtain from ([][][][]4.14[][])-([
-][][][]4.16[][]) that for $\OML/ntxmi/m/it/12.045 u[]$\TU/entextsf/m/n/12.045 ,
+Overfull \hbox (1.45079pt too wide) in paragraph at lines 607--608
+[]\TU/entextsf/m/n/12.045 By this theorem, we obtain from ([][][][]4.28[][])-([
+][][][]4.30[][]) that for $\OML/ntxmi/m/it/12.045 u[]$\TU/entextsf/m/n/12.045 ,
  $\OML/ntxmi/m/it/12.045 d[] \OT1/cmr/m/n/12.045 = ([](\OML/ntxmi/m/it/12.045 ^
 ^R \LMS/ntxsy/m/n/12.045 ^^@ \OML/ntxmi/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 )\OM
 L/ntxmi/m/it/12.045 ; []\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 ^^R \LMS/nt
 xsy/m/n/12.045 ^^@
  []
 
-[35] [36]
-Overfull \hbox (2.88373pt too wide) in paragraph at lines 510--513
+[42]
+Overfull \hbox (3.3307pt too wide) in paragraph at lines 664--667
 \TU/entextsf/m/n/12.045 and discretizing the integral equation by standard Nyst
 röm methods [][[]]. Let $[][]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 x\OT1/
 cmr/m/n/12.045 ; \OML/ntxmi/m/it/12.045 d\OT1/cmr/m/n/12.045 ) =
  []
 
+[43]
 File: ./Img/figure_sc_elastic/circle.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/circle.eps>
 File: ./Img/figure_sc_elastic/pear.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/pear.eps>
-)) [37] [38] (./Tex/Appendix.tex
+)) [44] (./Tex/Appendix.tex
 附录 A
-) [39
+) [45
 
 
-] [40
+] [46
 
-] (./Thesis_shiqi.bbl) (./Tex/Backmatter.tex [41
+] (./Thesis_shiqi.bbl) (./Tex/Backmatter.tex [47
 
 
-] [42
+] [48
 
-] [43] [44
+] [49] [50
 
 ]
-[45] [46
+[51] [52
 
 ])
 
@@ -2148,19 +2160,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 217.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
 Package rerunfilecheck Info: File `Thesis_shiqi.out' has not changed.
-(rerunfilecheck)             Checksum: 8A3FF8E6552C6E0991D7EDD8F2FCBBB2.
+(rerunfilecheck)             Checksum: 3434BDA38E7F07AEC6E9B92E1A4F0EDF.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 481 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 29555 strings out of 492970
- 579356 string characters out of 6133939
- 652865 words of memory out of 5000000
- 33130 multiletter control sequences out of 15000+600000
+ 29599 strings out of 492970
+ 579807 string characters out of 6133939
+ 654175 words of memory out of 5000000
+ 33174 multiletter control sequences out of 15000+600000
  556012 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,15n,94p,10530b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,94p,10530b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Thesis_shiqi.pdf (64 pages).
+Output written on Thesis_shiqi.pdf (70 pages).
