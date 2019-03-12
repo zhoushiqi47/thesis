@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  11 MAR 2019 16:07
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  12 MAR 2019 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2084,66 +2084,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--356
 
  []
 
-[35] [36] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 490--493
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+
+ []
+
+[40]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 554.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 554.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 554.
+
+[41] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 654--657
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 503.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 503.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 503.
-
-[39] [40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 603--606
-
- []
-
-
-Overfull \hbox (1.45079pt too wide) in paragraph at lines 607--608
-[]\TU/entextsf/m/n/12.045 By this theorem, we obtain from ([][][][]4.28[][])-([
-][][][]4.30[][]) that for $\OML/ntxmi/m/it/12.045 u[]$\TU/entextsf/m/n/12.045 ,
+Overfull \hbox (1.45079pt too wide) in paragraph at lines 658--659
+[]\TU/entextsf/m/n/12.045 By this theorem, we obtain from ([][][][]4.30[][])-([
+][][][]4.32[][]) that for $\OML/ntxmi/m/it/12.045 u[]$\TU/entextsf/m/n/12.045 ,
  $\OML/ntxmi/m/it/12.045 d[] \OT1/cmr/m/n/12.045 = ([](\OML/ntxmi/m/it/12.045 ^
 ^R \LMS/ntxsy/m/n/12.045 ^^@ \OML/ntxmi/m/it/12.045 ^^^\OT1/cmr/m/n/12.045 )\OM
 L/ntxmi/m/it/12.045 ; []\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 ^^R \LMS/nt
 xsy/m/n/12.045 ^^@
  []
 
-[42]
-Overfull \hbox (3.3307pt too wide) in paragraph at lines 664--667
+[43] [44]
+Overfull \hbox (3.3307pt too wide) in paragraph at lines 715--718
 \TU/entextsf/m/n/12.045 and discretizing the integral equation by standard Nyst
 röm methods [][[]]. Let $[][]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 x\OT1/
 cmr/m/n/12.045 ; \OML/ntxmi/m/it/12.045 d\OT1/cmr/m/n/12.045 ) =
  []
 
-[43]
 File: ./Img/figure_sc_elastic/circle.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/circle.eps>
 File: ./Img/figure_sc_elastic/pear.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/pear.eps>
-)) [44] (./Tex/Appendix.tex
+[45]
+
+LaTeX Warning: Reference `alg_rtm' on page 46 undefined on input line 750.
+
+[46]
+Overfull \hbox (6.01732pt too wide) in paragraph at lines 771--772
+[]\TU/entextsf/m/n/12.045 For the penetrable obstacle, the measured data is $\O
+ML/ntxmi/m/it/12.045 u[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 x[]:x[]\OT1
+/cmr/m/n/12.045 ) = \OML/ntxmi/m/it/12.045 u[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m
+/it/12.045 x[]; x[]\OT1/cmr/m/n/12.045 ) + \U/ntxsym/m/n/12.045 N\OT1/cmr/m/n/1
+2.045 (\OML/ntxmi/m/it/12.045 x[]; x[]\OT1/cmr/m/n/12.045 )\OML/ntxmi/m/it/12.0
+45 q$\TU/entextsf/m/n/12.045 ,
+ []
+
+)) [47] [48
+
+] (./Tex/Appendix.tex
 附录 A
-) [45
+) [49
+
+] [50
+
+] (./Thesis_shiqi.bbl) (./Tex/Backmatter.tex [51
 
 
-] [46
+] [52
 
-] (./Thesis_shiqi.bbl) (./Tex/Backmatter.tex [47
-
-
-] [48
-
-] [49] [50
+] [53] [54
 
 ]
-[51] [52
+[55] [56
 
 ])
 
@@ -2160,7 +2175,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 217.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
 Package rerunfilecheck Info: File `Thesis_shiqi.out' has not changed.
-(rerunfilecheck)             Checksum: 3434BDA38E7F07AEC6E9B92E1A4F0EDF.
+(rerunfilecheck)             Checksum: 7E5A174B85D3370D085F23D93DEAEE83.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2168,15 +2186,15 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 481 ({)
+### simple group (level 1) entered at line 498 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29599 strings out of 492970
- 579807 string characters out of 6133939
- 654175 words of memory out of 5000000
- 33174 multiletter control sequences out of 15000+600000
+ 29604 strings out of 492970
+ 579854 string characters out of 6133939
+ 654347 words of memory out of 5000000
+ 33179 multiletter control sequences out of 15000+600000
  556012 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,15n,94p,10530b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,94p,10530b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Thesis_shiqi.pdf (70 pages).
+Output written on Thesis_shiqi.pdf (74 pages).

@@ -394,7 +394,7 @@ I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\s
 \ee
 
 
-下面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来。 有了前文中对 $\J_d(z,y)$ 相关分析结论，我们可以由此来分析半空间反弹性波散射问题的逆时偏移方法的分辨率。下面的定理， 告诉我们当采样点 $z$ 远离障碍物边界的时候， 成像函数在改点的值是非常小的。这种现象反映在后面的数值实验中， 就是在原理边界的时候， 在该处的颜色会非常浅。
+下面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来。 有了前文中对 $\J_d(z,y)$ 相关分析结论，我们可以由此来分析半空间反弹性波散射问题的逆时偏移方法的分辨率。下面的定理， 告诉我们当采样点 $z$ 远离障碍物边界的时候， 成像函数在改点的值是非常小的。这种现象反映在后面的数值实验中， 就是在原理边界的时候， 在该处的颜色会非常浅。下面的定理是当障碍物边界为 $Dirichlet$ 边界时的成像函数分辨率分析。 其它边界条件的相关结论可以被类似证明， 我们会不加证明地罗列在后文。
 \begin{thm}\label{thm:4.3}
 	对于任意 $z\in\Omega$， 令 $\U(z,x)\in\C^{2\times2}$ 且 $\U(z,x)e_j$, $j=1,2$， 是如下弹性波方程的散射解：
 	\ben
@@ -421,7 +421,11 @@ I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\s
 \ben
 \hat v_q(z,x_s)\cdot e_j=\int_{\Ga_0^d}\T_D(x_r,z)e_j\cdot\overline{u^s_q(x_r,x_s)}ds(x_r).
 \een
-利用 (\ref{g2}) 我们得到 $u^s_q(x_r,x_s)\cdot e_i=\GG(u^s_q(\cdot,x_s),\N(\cdot,x_r)e_i), i=1,2$, 于是有
+利用 (\ref{g2}) 我们得到 
+\ben
+u^s_q(x_r,x_s)\cdot e_i=\GG(u^s_q(\cdot,x_s),\N(\cdot,x_r)e_i), i=1,2,
+\een
+ 于是有
 \ben
 \hat v_q(z,x_s)\cdot e_j&=&\int_{\Ga_0^d}\T_D(x_r,z)e_j\cdot\overline{[u^s_q(x_r,x_s)\cdot e_1,u^s_q(x_r,x_s)\cdot e_2]^T}ds(x_r)\\
 &=&\GG(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(\cdot,x_r)}e_ids(x_r)\right]\,).
@@ -429,74 +433,123 @@ I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\s
 利用 Neumann Green 函数的空间互易性 $\N(x,x_r)=\N(x_r,x)^T$ 以及点扩展函数 $\J_d(\cdot,\cdot)$ 的定义 (\ref{jd})， 我们有
 \be\nn
 & &\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(x,x_r)}e_ids(x_r)\\ \nn
-&=&\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{T\N(x_r,x))^Te_i}ds(x_r)\\ \label{g6}
+&=&\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(x_r,x))^Te_i}ds(x_r)\\ \label{g6}
 &=&\int_{\Ga_0^d}(\T_D(x_r,z)e_j)^T\overline{\N(x_r,x)^T)}ds(x_r)
 =\J_d(z,x)^Te_j.
 \ee
-This implies $\hat v_q(z,x_s)e_j=\GG(\overline{u^s_q(\cdot,x_s)},\J_d(z,\cdot)^Te_j)$. Substitute it into (\ref{g5}) we have
-\be\label{g3}
-\hat I_d(z)=\Im\sum_{j=1}^2\GG(\W(z,\cdot)e_j,\J_d(z,\cdot)^Te_j),
+进一步可以推出
+ \ben
+ \hat v_q(z,x_s)e_j=\GG(\overline{u^s_q(\cdot,x_s)},\J_d(z,\cdot)^Te_j).
+ \een
+  将上式代入 (\ref{g5}) 中， 我们可以得到
+\be\nn
+\hat I_d(z)&=&\Im\sum_{j=1}\sum_{q=e_1,e_2}\int_{\Ga_0^d}[\T_D(x_s,z)^Tq\cdot e_j][\hat v_q(z,x_s)\cdot e_j]ds(x_s)
+\\  \nn
+&=&\Im\sum_{j=1}^2\GG(\sum_{k=1}^2[\T_D(x_s,z)^Te_k\cdot e_j]\overline{u^s_{e_k}(x,x_s)},\J_d(z,\cdot)^Te_j)
+\\ 
+\label{g3}
+&=&\Im\sum_{j=1}^2\GG(\W(z,\cdot)e_j,\J_d(z,\cdot)^Te_j),
 \ee
-where $\W(z,x)\in \C^{2\times 2}$ is the tensor defined by
+这里 $\W(z,x)\in \C^{2\times 2}$ 是一个 $2\times2$ 的矩阵， 定义为
 \ben
 \W(z,x)e_j=\int_{\Ga_0^d}\sum^2_{k=1}[\T_D(x_s,z)]_{kj}\overline{u^s_{e_k}(x,x_s)}ds(x_s),\ \ j=1,2.
 \een
-Notice that $\overline{\W(z,x)}e_j$ can be viewed as the weighted superposition of $u^s_{e_k}(x,x_s)$ and thus it satisfies
+注意到 $\overline{\W(z,x)}e_j$ 可以看成是 $u^s_{e_k}(x,x_s)$ 加权叠加， 于是它满足如下方程：
 \be\label{g7}
 & &\De_e[\overline{\W(z,x)}e_j]+\om^2[\overline{\W(z,x)}e_j]=0\ \ \mbox{in } \ \R^2_+\bks\bar D,\ \ \ \\
 & & \sigma(\overline{\W(z,x)}e_j)e_2=0\ \ \mbox{on } \ \Ga_0.
 \ee
-On the boundary of the obstacle $\Gamma_D$, by using (\ref{g6}) we have
+由于在边界 $\Gamma_D$, $u^s_{e_k}(x,x_s)$ 满足 Dirichlet 边界条件，即 $u^s_{e_k}(x,x_s)=-\N(x,x_s)e_k$。 于是利用式 (\ref{g6}) 我们得到
 \be
 \hskip-1cm\overline{\W(z,x)}e_j=-\int_{\Ga_0^d}\sum^2_{k=1}[\overline{\T_D(x_s,z)}]_{kj}\N(x,x_s)e_kds(x_s)
 =-\overline{\J_d(z,x)}^Te_j.\label{g8}
 \ee
-Now define the tensor $\W_d(z,x)\in \C^{2\times 2}$ such that $\W_d(z,x)e_j$, $j=1,2$, is the scattering solution of the problem
+现在我们定义矩阵 $\W_d(z,x)\in \C^{2\times 2}$ ， 其中向量  $\W_d(z,x)e_j$, $j=1,2$ ， 是如下半空间弹性波方程的散射解：
 \be
 & & \Delta_e [\W_d(z,x)e_j]+ \omega^2 [\W_d(z,x)e_j]= 0 \ \ \ \ \mbox{in }\R^2_+\bks \bar{D},\label{g9}\\
 & &\W_d(z,x)e_j= -\overline{\F(z,x)}e_j \ \ \mbox{on } \ \ \Ga_D,\ \ \ \  \\
 & &\sigma(\W_d(z,x)e_j)e_2=0 \ \ \ \ \ \ \ \mbox{on }  \ \ \ \Ga_0 \label{g10}
 \ee
-By (\ref{g3}) we deduce
+利用 (\ref{g3}) 我们可以推出：
 \be
 \hat I_d(z)&=&\Im\sum^2_{j=1}\GG(\W(z,\cdot)e_j,J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j)\nn\\
 & &+\Im\sum^2_{j=1}\GG(\W(z,\cdot)e_j-\overline{\W_d(z,\cdot)}e_j,\F(z,\cdot)e_j)\nn\\
 & &+\Im\sum^2_{j=1}\GG(\overline{\W_d(z,\cdot)}e_j-\overline{\U(z,\cdot)}e_j,\F(z,\cdot)e_j)\nn\\
-& &+\Im\sum^2_{j=1}\GG(\overline{\U(z,\cdot)}e_j,\F(z,\cdot)e_j):={\rm VI}_1+\cdots+{\rm VI}_4.\label{g11}
+& &+\Im\sum^2_{j=1}\GG(\overline{\U(z,\cdot)}e_j,\F(z,\cdot)e_j) \nn \\
+&:=&{\rm VI}_1+{\rm VI}_2+{\rm VI}_3+{\rm VI}_4.\label{g11}
 \ee
-Recall that $\F(z,y)^T=\F(z,y)$ by Theorem \ref{thm:3.2}. By Lemma \ref{lem:4.1}, 
+观察 $\F(z,y)$ 的定义 ($\ref{d4}$)， 易得 $\F(z,y)^T=\F(z,y)$。 利用引理 \ref{lem:4.1}, 
 \ben
-\|\J_d(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}+\|\sigma(\J_d(z,\cdot)e_j)\nu\|_{H^{-1/2}(\Ga_D)}\le\frac C\mu (1+k_sd_D).
+& &\|\J_d(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}+\|\sigma(\J_d(z,\cdot)e_j)\nu\|_{H^{-1/2}(\Ga_D)}\\ &\le&
+\|\F(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}+\|\sigma(\F(z,\cdot)e_j)\nu\|_{H^{-1/2}(\Ga_D)}\\
+& &+\|\R_d(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}+\|\sigma(\R_d(z,\cdot)e_j)\nu\|_{H^{-1/2}(\Ga_D)}\\
+&\le&\frac C\mu (1+k_sd_D).
 \een
-This implies, by (\ref{g7})-(\ref{g8}) and Lemma \ref{lem:4.1}, that
+这就意味着，通过 (\ref{g7})-(\ref{g8}) 以及引理 \ref{lem:4.1}， 可以得到：
 \ben
 |{\rm VI}_1|&\le&\sum_{j=1}^2\Big(\|\W(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}\|\sigma(\J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j)e_2\|_{H^{-1/2}(\Ga_D)}\\
 & &+\|\sigma(\W(z,\cdot)e_j)e_2\|_{H^{-1/2}(\Ga_D)}\|\J_d(z,\cdot)^Te_j-\F(z,\cdot)e_j\|_{H^{1/2}(\Ga_D)}\Big)\\
 &\le&\frac C{\mu^2}(1+\|T_1\|)(1+k_sd_D)^2\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right].
 \een
-From (\ref{g7})-(\ref{g8}) and (\ref{g9})-(\ref{g10}), we obtain by using Lemma \ref{lem:4.1} that
+类似地， 通过 (\ref{g7})-(\ref{g8}) 和 (\ref{g9})-(\ref{g10})， 及引理 \ref{lem:4.1} ， 可以得到：
 \ben
 |{\rm VI}_2|\le\frac C{\mu^2}(1+\|T_1\|)(1+k_sd_D)^2\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right].
 \een
-To estimate the third term, we use Theoremn \ref{thm:4.2} and Lemma {\ref{lem:4.1} to obtain
+对于第三项 ${\rm VI}_3$, 我们可以针对 $\W_d(z,x)$ 和 $\U(z,y)$, 使用定理 \ref{thm:4.2} 和引理 {\ref{lem:4.1}， 可以得到：
 	\ben
 	|{\rm VI}_3|\le\frac C{\mu^2}(1+\|T_1\|)(1+\|T_2\|)(1+k_sd_D)^3(k_sh)^{-1/2}.
 	\een
-	Finally, since $\U(z,x)e_j=-\overline{\F(z,x)}e_j$ on $\Ga_D$,
+	最后， 由定义有， 当$z\in\Ga_D$ 时 $\U(z,x)e_j=-\overline{\F(z,x)}e_j$  $\Ga_D$。 于是，可以推出
 	\ben
-	\hskip-1.5cm{\rm IV}_4&=&\Im\sum^2_{j=1}\int_{\Ga_D}(\overline{\U(z,x)}e_j\cdot\sigma(\F(z,x)e_j)\nu-\sigma(\overline{\U(z,x)}e_j)\nu\cdot\F(z,x)e_j)ds(x)\\
+	{\rm IV}_4&=&\Im\sum^2_{j=1}\int_{\Ga_D}(\overline{\U(z,x)}e_j\cdot\sigma(\F(z,x)e_j)\nu-\sigma(\overline{\U(z,x)}e_j)\nu\cdot\F(z,x)e_j)ds(x)\\
 	\hskip-1.5cm&=&-\Im\sum^2_{j=1}\int_{\Ga_D}\sigma(\overline{\U(z,x)}e_j+\F(z,x)e_j)\nu\cdot\F(z,x)e_jds(x)\\
 	\hskip-1.5cm&=&\Im\sum^2_{j=1}\int_{\Ga_D}\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu\cdot\overline{\F(z,x)}e_jds(x).
 	\een
-	The theorem follows now from (\ref{g11}).
+	综上所述， 利用式子 (\ref{g11})， 引理得证。
 	\finproof
 
 
+由于本文中关心的障碍物都为扩展障碍物(Extended Obstacles)，即为 $k_s d_D\approx 1$。由于 $k_s=2\pi/\lambda_s$, 这里 $\lambda_s$ 为 s-波的波长， 于是意味着障碍物的尺寸与入射波的s-波的波长相当。然后，通过定理 \ref{thm:4.3}, 我可以看到， 当障碍物 $D$ 远离半空间表面 $\Ga_0$ 时, 即 $k_s h \gg 1$, 且孔径较大时，即 $d\gg h$, 我们可以认为 $\R_d(z)$ 是非常小的。于是， 我们在这种情况下可以把式 (\ref{id}) 右端第一项看作是该成像函数的 $\hat I_d(z)$ 的主项
+\ben
+\hat{I}_d(z)&\approx&\Im\sum_{j=1}^2\int_{\Gamma_D}[\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu]\cdot [\overline{\F(z,x)}e_j]ds(x) \\
+&:=&\hat{I}_F(z)
+\een 
 
+观察 $\F(z,x)$ 的表达式 (\ref{d8})， 对于任意 $z\in\Om$，存在标量函数 $A_j(\xi), B_j(\xi)$, $j=1,2$，可以将 $\F(z,x)$ 表示成
+\ben
+\F(z,x)e_j&=&\int_{-k_p}^{k_p}A_j(\xi)\left(\begin{array}{c}
+	\hskip-6pt-\xi \hskip-6pt \\
+	\hskip-6pt \mu_p \hskip-6pt
+\end{array}\right)e^{\i(z-x)\cdot(-\xi,\mu_p)^T}d\xi+\int_{-k_s}^{k_s}B_j(\xi)\left(\begin{array}{c}
+	\hskip-6pt\mu_s \hskip-6pt\\
+	\hskip-6pt\xi \hskip-6pt
+\end{array}\right)e^{\i(z-x)\cdot(-\xi,\mu_s)^T}d\xi\\
+&=&\int^\pi_0\left[\tilde A_j(\theta)\tau(\theta)e^{\i k_p(z-x)\cdot\tau(\theta)}+\tilde B_j(\theta)\tau(\theta)^\perp e^{\i k_s(z-x)\cdot\tau(\theta)}\right]d\theta,
+\een
+其中第二个等式使用了变量替换 $\xi=\cos\theta$, 且有
+\ben
+ & &\tilde A_j(\theta)=k_pA_j(k_p\cos\theta)\sin\theta,  \ \tilde B_j(\theta)=k_sB_j(k_s\cos\theta)\sin\theta, \\ & &\tau(\theta)=(-\cos\theta,\sin\theta)^T, \ \tau(\theta)^\perp=(\sin\theta,\cos\theta)^T.
+\een
 
+于是 $\overline{\F(z,x)}e_j$ 可以看成是弹性波 $p$ 平面波加权叠加与 $s$ 平面波的加权叠加之和， 显然有 $\overline{\F(z,x)}e_j$ 关于变量 $z$ 满足弹性波方程。 因此， 由 $\U(z,x)e_j$ 的定义， 自然地可以把它看成是以 $\overline{\F(z,x)}e_j$ 为入射波且满住 Dirichlet 边界条件的弹性波散射解。 通过定理 \ref{thm:3.2} ， 我们知道 $\overline{\F(z,x)}$ 随着 $|x-z|$ 增大而逐渐衰减。于是易知， 当$x\in \Ga_D$ 时，$\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu$ 也随着 $|x-z|$ 增大而逐渐衰减。 因此， 当点 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_F(z)$ 变得非常小。 于是， 当 $k_s h \gg 1$ ， $d\gg h$ 以及 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_d(z)$ 变得非常小， 即此时在 $z$ 点无法成像。
 
+为了分析当 $z$ 靠近障碍物边界时成像函数主项$\hat{I}_F(z)$ 的函数性质， 我们将提出平面入射波在障碍物边界处的散射系数。 类似与声波散射系数， 我们将给弹性波散射系数如下定义。
 
-
+\begin{definition}\label{scarr_con}
+	对于任意单位向量 $\tau\in \R^2$， 令 $u^i_p =\tau e^{\i k_p x\cdot \tau}$ ，  $u^i_s= \tau^\perp e^{\i k_s x\cdot \tau}$ 分别是 $p$ 平面入射波和 $s$ 平面入射波。   令 $u^s_\alpha (x) := u^s_\alpha(x;\tau), \al=p,s$ 为相应的弹性波散射解：
+	\be\label{sc1}
+	& &\De_e u^s_\alpha + \om^2u^s_\alpha = 0\ \ \mbox{in }   \ \ \R^2\bks\bar{D}, \ \ \ \  \\
+	& & u^s_\alpha =-u^i_\alpha \ \ \mbox{on }  \ \ \Ga_D.
+	\ee
+	于是相应的散射系数 $R_\al(x;\tau)$, $x\in\Ga_D$ 满足如下关系
+	\ben
+	\sigma(u^s_\alpha(x)+u^i_\alpha(x))\nu(x)= \i k_\alpha R_\alpha(x;\tau)e^{\i k_\alpha x\cdot \tau}  \ \ \ \mbox{on } \ \ \  \Ga_D.
+	\een
+	其中对于 $\tau=(\tau_1,\tau_2)^T\in\R^2$,， 有$\tau^\perp=(\tau_2,-\tau_1)^T$。
+\end{definition}
+\begin{remark}
+	由全空间弹性波散射问题的唯一性和存在性 \cite{cxz2016,}
+\end{remark}
 
 \section{散射系数与 Kirchhoff 逼近}
 
@@ -694,5 +747,46 @@ In the following examples, we take the angular frequency $\omega= \pi,2\pi,4\pi,
 \end{figure}
 
 
+\section{Extensions}
+
+In this section we consider the reconstruction of non-penetrable obstacles with the impedance boundary condition and penetrable obstacles in the half space by the RTM algorithm \ref{alg_rtm}. For non-penetrable obstacles with the impedance boundary condition on the obstacle, the measured data $u_q(x_r,x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1, e_2$, where $u^s_q(x,x_s)$ is the scattering solution of the following problem:
+\ben
+\hskip-1cm\Delta_e u^s_q(x,x_s) + \omega^2 u^s_q(x,x_s) =0\ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \\
+\hskip-1cm \sigma(u^s_q(x,x_s))\nu+\i\eta(x)u^s_q(x,x_s)=-[\sigma(\N(x,x_s)q)\nu+\i\eta(x)\N(x,x_s)q]\ \ \mbox{\rm on } \Ga_D, \\ 
+\hskip-1cm\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on } \Ga_0,
+\een
+where $\eta\in L^\infty(\Ga_D)$ and $\eta\ge 0$ on $\Ga_D$. By modifying the argument in the proof of Theorem \ref{thm:4.3}, we can show the following theorem whose proof is omitted.
+\begin{thm}\label{thm:5.1}
+	For any $z\in\Omega$, let $\U(z,x)\in\C^{2\times2}$ such that $\U(z,x)e_j$, $j=1,2$, is the scattering solution of the problem:
+	\ben
+	\hskip-1cm& & \Delta_e[\U(z,x)e_j]+ \omega^2[\U(z,x) e_j]= 0 \ \ \mbox{\rm in }\R^2\bks \bar{D},\\
+	\hskip-1cm& &\sigma(\U(z,x)e_j)\nu+\i\eta(x)[\U(z,x)e_j]= -[\sigma(\overline{\F(z,x)}e_j)\nu+\i\eta(x)\overline{\F(z,x)}e_j ]\ \ \mbox{\rm on} \ \Ga_D.
+	\een
+	Then the imaging function (\ref{cor2}) for the half-space elastic scattering data $u^s_q(x_r,x_s)$ of the non-penetrable obstacle with the impedance boundary condition satisfies
+	\ben\hspace{-2.cm}
+	\hat{I}_d(z)&=&-\Im\sum_{j=1}^2\int_{\Gamma_D} [\U(z,x)e_j+\overline{\F(z,x)}e_j]\cdot[\sigma(\overline{\F(z,x)}e_j)\nu+\i\eta(x)\overline{\F(z,x)}e_j]ds(x)\\
+	\hspace{-2.cm}	& &+R_d(z),\ \ \forall z\in\Om,
+	\een
+	where $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ for some constant $C$ depending only on $\kappa$ but independent of $k_s,k_p, h, d, d_D$.
+\end{thm}
+
+For the penetrable obstacle, the measured data is $u_q(x_r.x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1,e_2$, where $u^s_q(x,x_s)$ is the scattering solution of the following problem:
+\ben
+\Delta_e u^s_q(x,x_s) + \omega^2n(x) u^s_q(x,x_s) =-\om^2(n(x)-1)\N(x,x_s)q\ \ \mbox{\rm in } \R^2_+, \\
+\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on }\Ga_0, 
+\een
+where $n(x)\in L^{\infty}({\R^2_+})$ is a positive function which is equal to 1 outside $D$. By modifying the argument in Theorem \ref{thm:4.3}, the following theorem can be proved.
+
+\begin{thm}\label{resolution2}
+	For any $z\in\Omega$, let $\U(z,x)\in\C^{2\times2}$ such that $\U(z,x)e_j$, $j=1,2$, is the scattering solution of the problem:
+	\ben
+	& & \Delta_e [\U(z,x)e_j] + \omega^2n(x)[\U(z,x)e_j]= -\omega^2(n(x)-1)\overline{\F(z,x)}e_j \ \ \mbox{\rm in }\R^2.
+	\een
+	Then the imaging function (\ref{cor2}) for the half-space elastic scattering data $u^s_q(x_r,x_s)$ of the penetrable obstacle satisfies
+	\ben\hspace{-2cm}
+	\hat{I}_d(z)=\Im\sum_{j=1}^2 \int_{D}\omega^2(n(x)-1)[(\U(z,x)e_j+\overline{\F(z,x)}e_j)\cdot\overline{\F(z,x)}e_j]dx+R_d(z),
+	\een
+	where $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ for some constant $C$ depending only on $\kappa$ but independent of $k_s,k_p, h, d, d_D$.
+\end{thm}
 
 
