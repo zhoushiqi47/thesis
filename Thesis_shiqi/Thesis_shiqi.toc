@@ -12,16 +12,14 @@
 \contentsline {chapter}{\numberline {第4章\hspace {.3em}}半空间弹性波反散射问题}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}点扩散函数}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}弹性波半空间中的逆时偏移算法}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}散射系数与 Kirchhoff 逼近}{41}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}反射面为$x_1$轴}{41}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}$p$-波情形}{41}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {4.3.1.2}$s$-波情形}{42}{subsubsection.4.3.1.2}
-\contentsline {subsection}{\numberline {4.3.2}反射面为任意平面}{43}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}数值算例}{45}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Extensions}{46}{section.4.4}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{49}{section.A.1}
-\contentsline {section}{\numberline {A.2}测试公式编号}{49}{section.A.2}
-\contentsline {chapter}{参考文献}{51}{section*.14}
-\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{53}{appendix*.16}
-\contentsline {chapter}{致谢}{55}{appendix*.21}
+\contentsline {subsection}{\numberline {4.2.1}反射面为$x_1$轴}{42}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}$p$-波情形}{42}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}$s$-波情形}{43}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}反射面为任意平面}{44}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Extensions}{51}{section.4.3}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}中国科学院大学学位论文撰写要求}{55}{appendix.A}
+\contentsline {section}{\numberline {A.1}论文无附录者无需附录部分}{55}{section.A.1}
+\contentsline {section}{\numberline {A.2}测试公式编号}{55}{section.A.2}
+\contentsline {chapter}{参考文献}{57}{section*.18}
+\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与研究成果}{59}{appendix*.20}
+\contentsline {chapter}{致谢}{61}{appendix*.25}

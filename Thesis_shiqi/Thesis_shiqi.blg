@@ -4,44 +4,57 @@ The top-level auxiliary file: Thesis_shiqi.aux
 The style file: Biblio/gbt7714-unsrt.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: Biblio/ref.bib
-You've used 18 entries,
+Repeated entry---line 280 of file Biblio/ref.bib
+ : @book{bleistein2013mathematics
+ :                               ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 378 of file Biblio/ref.bib
+ :  
+ :  year={1983},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in hor
+Warning--empty year in hor
+Warning--empty year in hor
+You've used 21 entries,
             3798 wiz_defined-function locations,
-            928 strings with 8533 characters,
-and the built_in function-call counts, 72646 in all, are:
-= -- 932
-> -- 8315
-< -- 11029
-+ -- 3033
-- -- 89
-* -- 481
-:= -- 10046
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 36
-chr.to.int$ -- 2715
-cite$ -- 18
-duplicate$ -- 364
-empty$ -- 936
-format.name$ -- 184
-if$ -- 18898
+            945 strings with 8983 characters,
+and the built_in function-call counts, 86810 in all, are:
+= -- 1075
+> -- 9988
+< -- 13228
++ -- 3628
+- -- 106
+* -- 571
+:= -- 11999
+add.period$ -- 62
+call.type$ -- 21
+change.case$ -- 42
+chr.to.int$ -- 3259
+cite$ -- 24
+duplicate$ -- 423
+empty$ -- 1085
+format.name$ -- 223
+if$ -- 22582
 int.to.chr$ -- 1
-int.to.str$ -- 19
+int.to.str$ -- 22
 missing$ -- 0
-newline$ -- 99
-num.names$ -- 54
-pop$ -- 4136
+newline$ -- 113
+num.names$ -- 63
+pop$ -- 4993
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 21
 quote$ -- 0
-skip$ -- 7284
+skip$ -- 8684
 stack$ -- 0
-substring$ -- 3162
-swap$ -- 31
-text.length$ -- 125
+substring$ -- 3751
+swap$ -- 39
+text.length$ -- 148
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
-warning$ -- 0
-while$ -- 179
+type$ -- 140
+warning$ -- 3
+while$ -- 209
 width$ -- 0
-write$ -- 267
+write$ -- 306
+(There were 2 error messages)
