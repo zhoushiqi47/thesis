@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -6,17 +6,128 @@
 \providecommand{\href}[2]{\url{#2}}
 \providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 
-\bibitem[Chen\ et~al.(2015)Chen and Huang]{RTMhalf_aco}
-Chen~Z, Huang~G.
-\newblock Reverse time migration for reconstructing extended obstacles in the
-  half space\allowbreak[J].
-\newblock Inverse Problems, 2015, 31\penalty0 (5):\penalty0 055007.
+\bibitem[lan()]{landau}
+\allowbreak[M].
+
+\bibitem[Bonnet\ et~al.(2005)Bonnet and Constantinescu]{bonnet2005inverse}
+Bonnet~M, Constantinescu~A.
+\newblock Inverse problems in elasticity\allowbreak[J].
+\newblock Inverse problems, 2005, 21\penalty0 (2):\penalty0 R1.
+
+\bibitem[Bao\ et~al.(2018)Bao, Hu, Kian, and Yin]{bao2018inverse}
+Bao~G, Hu~G, Kian~Y, et~al.
+\newblock Inverse source problems in elastodynamics\allowbreak[J].
+\newblock Inverse Problems, 2018, 34\penalty0 (4):\penalty0 045009.
+
+\bibitem[Liu\ et~al.(2019)Liu, Zhang, and Zhang]{liu2019near}
+Liu~X, Zhang~B, Zhang~H.
+\newblock Near-field imaging of an unbounded elastic rough surface with a
+  direct imaging method\allowbreak[J].
+\newblock SIAM Journal on Applied Mathematics, 2019, 79\penalty0 (1):\penalty0
+  153-176.
+
+\bibitem[Chang(1987)]{ela_reverse}
+Chang~W~F.
+\newblock Elastic reverse-time migration\allowbreak[J].
+\newblock Geophysical Prospecting, 1987, 37\penalty0 (3):\penalty0 243-256.
+
+\bibitem[Grant\ et~al.(1965)Grant and West]{grant1965interpretation}
+Grant~F~S, West~G~F.
+\newblock Interpretation theory in applied geophysics\allowbreak[J].
+\newblock 1965.
 
 \bibitem[Kupradze(1963)]{ku63}
 Kupradze~V~D.
 \newblock Progress in solid mechanics. 3. dynamical problems in
   elasticity\allowbreak[M].
 \newblock North-Holland Publishing Company, 1963.
+
+\bibitem[Kupradze\ et~al.(1976)Kupradze, Gegelia, Basheleishvili, and
+  Burchuladze]{kupradze1976three}
+Kupradze~V, Gegelia~T, Basheleishvili~M, et~al.
+\newblock Three-dimensional problems of the mathematical theory of elasticity
+  and thermoelasticity\allowbreak[M].
+\newblock Moscow Nauka, 1976.
+
+\bibitem[Chen\ et~al.(2016)Chen, Xiang, and Zhang]{cxz2016}
+Chen~Z, Xiang~X, Zhang~X.
+\newblock Convergence of the pml method for elastic wave scattering
+  problems\allowbreak[J].
+\newblock Mathematics of Computation, 2016, 85\penalty0 (302):\penalty0
+  2687-2714.
+
+\bibitem[Bramble\ et~al.(2008)Bramble and Pasciak]{bramble2008note}
+Bramble~J~H, Pasciak~J~E.
+\newblock A note on the existence and uniqueness of solutions of frequency
+  domain elastic wave problems: A priori estimates in h1\allowbreak[J].
+\newblock Journal of Mathematical Analysis and Applications, 2008, 345\penalty0
+  (1):\penalty0 396-404.
+
+\bibitem[Chaillat\ et~al.(2014)Chaillat and Bonnet]{chaillat2014new}
+Chaillat~S, Bonnet~M.
+\newblock A new fast multipole formulation for the elastodynamic half-space
+  greenʼs tensor\allowbreak[J].
+\newblock Journal of Computational Physics, 2014, 258:\penalty0 787-808.
+
+\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
+Colton~D, Kress~R.
+\newblock Inverse acoustic and electromagnetic scattering theory:
+  volume~93\allowbreak[M].
+\newblock Springer Science and Business Media, 2012.
+
+\bibitem[N{\'e}d{\'e}lec(2001)]{nedelec2001acoustic}
+N{\'e}d{\'e}lec~J~C.
+\newblock Acoustic and electromagnetic equations: integral representations for
+  harmonic problems: volume 144\allowbreak[M].
+\newblock Springer Science \& Business Media, 2001.
+
+\bibitem[Dur{\'a}n\ et~al.(2011)Dur{\'a}n, Muga, and
+  N{\'e}d{\'e}lec]{nedelec2011}
+Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
+\newblock The outgoing time-harmonic elastic wave in a half-plane with free
+  boundary\allowbreak[J].
+\newblock SIAM Journal on Applied Mathematics, 2011, 71\penalty0 (2):\penalty0
+  443-464.
+
+\bibitem[Arens(2001)]{arens2001uniqueness}
+Arens~T.
+\newblock Uniqueness for elastic wave scattering by rough
+  surfaces\allowbreak[J].
+\newblock SIAM Journal on Mathematical Analysis, 2001, 33\penalty0
+  (2):\penalty0 461-476.
+
+\bibitem[Arens(2002)]{arens2002existence}
+Arens~T.
+\newblock Existence of solution in elastic wave scattering by unbounded rough
+  surfaces\allowbreak[J].
+\newblock Mathematical methods in the applied sciences, 2002, 25\penalty0
+  (6):\penalty0 507-528.
+
+\bibitem[Charalambopoulos\ et~al.(2002)Charalambopoulos, Gintides, and
+  Kiriaki]{charalambopoulos2002radiation}
+Charalambopoulos~A, Gintides~D, Kiriaki~K.
+\newblock Radiation conditions for rough surfaces in linear
+  elasticity\allowbreak[J].
+\newblock Quarterly Journal of Mechanics and Applied Mathematics, 2002,
+  55\penalty0 (3):\penalty0 421-441.
+
+\bibitem[Alem\ et~al.(2003)Alem and Chorfi]{alem2003theoreme}
+Alem~L, Chorfi~L.
+\newblock Th{\'e}or{\`e}me d'unicit{\'e} pour un probl{\`e}me d'ondes
+  {\'e}lastiques\allowbreak[J].
+\newblock Comptes Rendus Mathematique, 2003, 336\penalty0 (6):\penalty0
+  525-530.
+
+\bibitem[Madyarov\ et~al.(2006)Madyarov and Guzina]{Guzina2006}
+Madyarov~A~I, Guzina~B~B.
+\newblock A radiation condition for layered elastic media\allowbreak[J].
+\newblock Journal of Elasticity, 2006, 82\penalty0 (1):\penalty0 73-98.
+
+\bibitem[Chen\ et~al.(2015)Chen and Huang]{RTMhalf_aco}
+Chen~Z, Huang~G.
+\newblock Reverse time migration for reconstructing extended obstacles in the
+  half space\allowbreak[J].
+\newblock Inverse Problems, 2015, 31\penalty0 (5):\penalty0 055007.
 
 \bibitem[Achenbach(1980)]{achenbach1980}
 Achenbach~J.
@@ -38,14 +149,6 @@ Ahlfors~L~V.
 Kuroda~S~T.
 \newblock An introduction to scattering theory.\allowbreak[M].
 \newblock 2003.
-
-\bibitem[Dur{\'a}n\ et~al.(2011)Dur{\'a}n, Muga, and
-  N{\'e}d{\'e}lec]{nedelec2011}
-Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
-\newblock The outgoing time-harmonic elastic wave in a half-plane with free
-  boundary\allowbreak[J].
-\newblock SIAM Journal on Applied Mathematics, 2011, 71\penalty0 (2):\penalty0
-  443-464.
 
 \bibitem[Aki\ et~al.(2002)Aki and Richards]{aki2002quantitative}
 Aki~K, Richards~P~G.
@@ -90,13 +193,6 @@ Sini~M.
 \newblock Integral Equations and Operator Theory, 2004, 49\penalty0
   (2):\penalty0 255-277.
 
-\bibitem[Chen\ et~al.(2016)Chen, Xiang, and Zhang]{cxz2016}
-Chen~Z, Xiang~X, Zhang~X.
-\newblock Convergence of the pml method for elastic wave scattering
-  problems\allowbreak[J].
-\newblock Mathematics of Computation, 2016, 85\penalty0 (302):\penalty0
-  2687-2714.
-
 \bibitem[Zhang\ et~al.(2009)Zhang and Sun]{zhang2009}
 Zhang~Y, Sun~J.
 \newblock Practical issues of reverse time migration: True amplitude gathers,
@@ -124,12 +220,6 @@ Melrose~R~B, Taylor~M~E.
 \newblock Near peak scattering and the corrected kirchhoff approximation for a
   convex obstacle\allowbreak[J].
 \newblock Advances in Mathematics, 1985, 55\penalty0 (3):\penalty0 242-315.
-
-\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
-Colton~D, Kress~R.
-\newblock Inverse acoustic and electromagnetic scattering theory:
-  volume~93\allowbreak[M].
-\newblock Springer Science and Business Media, 2012.
 
 \bibitem[Hormander()]{hor}
 Hormander.

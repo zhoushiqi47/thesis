@@ -13,48 +13,58 @@ I was expecting a `,' or a `}'---line 378 of file Biblio/ref.bib
  :  year={1983},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 381 of file Biblio/ref.bib
+ :  
+ :  title={Theory of Elasticity}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in landau
+Warning--empty year in hor
+Warning--empty title in landau
+Warning--empty year in landau
+Warning--empty year in landau
+Warning--empty journal in grant1965interpretation
 Warning--empty year in hor
 Warning--empty year in hor
-Warning--empty year in hor
-You've used 21 entries,
+You've used 36 entries,
             3798 wiz_defined-function locations,
-            945 strings with 8983 characters,
-and the built_in function-call counts, 86810 in all, are:
-= -- 1075
-> -- 9988
-< -- 13228
-+ -- 3628
-- -- 106
-* -- 571
-:= -- 11999
-add.period$ -- 62
-call.type$ -- 21
-change.case$ -- 42
-chr.to.int$ -- 3259
-cite$ -- 24
-duplicate$ -- 423
-empty$ -- 1085
-format.name$ -- 223
-if$ -- 22582
+            1032 strings with 11131 characters,
+and the built_in function-call counts, 150461 in all, are:
+= -- 1870
+> -- 17362
+< -- 22949
++ -- 6277
+- -- 182
+* -- 1040
+:= -- 20798
+add.period$ -- 105
+call.type$ -- 36
+change.case$ -- 71
+chr.to.int$ -- 5666
+cite$ -- 45
+duplicate$ -- 722
+empty$ -- 1816
+format.name$ -- 397
+if$ -- 39055
 int.to.chr$ -- 1
-int.to.str$ -- 22
+int.to.str$ -- 37
 missing$ -- 0
-newline$ -- 113
-num.names$ -- 63
-pop$ -- 4993
+newline$ -- 186
+num.names$ -- 105
+pop$ -- 8600
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 36
 quote$ -- 0
-skip$ -- 8684
+skip$ -- 15111
 stack$ -- 0
-substring$ -- 3751
-swap$ -- 39
-text.length$ -- 148
+substring$ -- 6500
+swap$ -- 71
+text.length$ -- 252
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
-warning$ -- 3
-while$ -- 209
+type$ -- 276
+warning$ -- 8
+while$ -- 360
 width$ -- 0
-write$ -- 306
-(There were 2 error messages)
+write$ -- 526
+(There were 3 error messages)

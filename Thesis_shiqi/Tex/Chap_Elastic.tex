@@ -1,5 +1,5 @@
 \chapter{半空间弹性波散射问题}\label{chap:Elastic}
-
+为了研究半空间弹性波反散射问题， 我们得先来研究正文题。
 \section{半空间弹性波 Green 函数}\label{Green Tensor}
 \subsection{Neumann Green 函数}\label{Neumann Green Tensor}
 设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
@@ -685,5 +685,91 @@ The following theorem which extends \cite[Theorem 4.1]{RTMhalf_aco} for acoustic
 	\een
 	Here $T_1, T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ are the Dirichlet to Neumann mapping associated with the elastic scattering problem (\ref{e1}) and (\ref{e2}), respectively. $\|T_1\|, \|T_2\|$ denote their operator norms.
 \end{thm}
+
+In this section we prove Theorem \ref{thm:4.2}.
+Let $w(x)$ be the scattering solution of the problem:
+\be\label{f2}
+\Delta_e w + \omega^2 w=0 \ \ \mbox{\rm in } \R^2_+,\ \ 
+\sigma(w)e_2=-\sigma(u_2)e_2 \ \ \mbox{\rm on } \Ga_0 .
+\ee
+Then $u_1-u_2-w$ is the scattering solution of the problem (\ref{e1}) with the boundary condition $u_1-u_2-w=-w$ on $\Gamma_D$. Thus by Theorem \ref{thm:4.1} and (\ref{q0}), we have
+\be
+\hskip-1cm\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}&\leq&\|T_1(u_1-u_2-w)\|_{H^{-1/2}(\Gamma_D)}+\|\sigma(w)\nu\|_{H^{-1/2}(\Gamma_D)}\nn\\
+&\leq&C (1+\|T_1\|)\max_{x\in \bar D}(|w(x)|+d_D|\nabla w(x)|),\label{f5}
+\ee
+where we recall that $T_1:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ is the Dirichlet to Neumann mapping associated to the half-space elastic scattering problem (\ref{e1}) and $\|T_1\|$ denotes its operator norm.
+
+By the integral representation formula, the scattering solution of the problem (\ref{f2}) satisfies
+\be\label{f3}
+w(y)\cdot e_j=\int_{\Ga_0} \sigma(u_2(x))e_2\cdot \N(x,y) e_j ds(x),\ \ \forall y\in \R^2,\ j=1,2.
+\ee
+On the other hand, by the integral representation formula, we have
+\ben
+u_2(x)\cdot e_j=\GG(u_2(\cdot),\G(\cdot,x)e_j),\ \ \forall x\in\Ga_0, \ j=1,2,
+\een
+where $\GG(\cdot,\cdot)$ is defined in (\ref{g1}) and $\G(\cdot,\cdot)$ is the fundamental solution tensor of the elastic wave equation introduced in section 2. For any $x\in\Ga_0, z\in\R^2$, denote by $\T(z,x)\in\C^{2\times 2}$ the traction tensor, $\T(z,x)q=\sigma(\G(z,x)q)e_2,\forall q\in\R^2$. The $(i,j)$-th element of $\T(z,x)$ is 
+\ben
+[\T(z,x)]_{ij}=[\sigma(\G(z,x)e_j)e_2]e_i,\ \ i,j=1,2.
+\een
+Simple calculation shows that
+\ben
+\sigma(u_2(x))e_2\cdot e_i=\GG(u_2(\cdot),\T(\cdot,x)^Te_i),\ \ \forall x\in\Ga_0, i=1,2,
+\een
+which yields from (\ref{f3}) that
+\be
+\hskip-1cmw(y)\cdot e_j&=&\GG(u_2(\cdot),\left[\int_{\Ga_0}\sum^2_{i=1}[\T(\cdot,x)^Te_i]\cdot [e_i^T\N(x,y)e_j]ds(x)\right])\nn\\
+\hskip-1cm&=&\GG(u_2(\cdot),\V(\cdot,y)e_j),\label{f4}
+\ee
+where 
+\ben
+\V(z,y)=\int_{\Ga_0}\T(z,x)^T\N(x,y)ds(x),\ \ \forall y\in \R^2, z\in\Ga_D.
+\een
+Notice that $\|\sigma(u_2)\nu\|_{H^{-1/2}(\Gamma_D)}\leq \|T_2\| \|g\|_{H^{1/2}(\Gamma_D)}$, where $T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ is the Dirichlet to Neumann mapping associated to the scattering problem (\ref{e2}) and $\|T_2\|$ denotes its operator norm. We obtain from (\ref{f4}) and (\ref{q0}) that
+\be
+\hskip-1.5cm |w(y)|+d_D|\na w(y)|&\le&C (1+\|T_2\|) \|g\|_{H^{1/2}(\Gamma_D)}
+\max_{z\in \Ga_D}\sum^1_{i,j=0}d_D^{i+j}|\na_z^i\na_y^j\V(z,y)|.\label{f6}
+\ee
+To estimate the term involving $\V(z,y)$, we use Parserval identity and Lemma \ref{lem:2.2} to obtain
+\ben
+\V(z,y)&=&\frac 1{2\pi}\,\pv\int_{\R}\hat{\T}(z_2;\xi,0)^T\hat{\N}(\xi,0;y_2)e^{-\i\xi(y_1+z_1)}d\xi\\
+&&-\frac\i 2
+\left[\hat{\T}(z_2;\xi,0)^T\hat{\N}(\xi,0;y_2)e^{-\i\xi(y_1+z_1)}\right]^{k_R}_{-k_R}.
+\een
+It is easy to see from (\ref{G1})-(\ref{G2}) that
+\ben \hspace{-1cm}
+\hat{\T}(z_2;\xi,0)&=&\frac \mu{2\om^2}\Bigg( \begin{array}{cc}
+	\varphi & \frac{\xi\varphi}{\mu_s} \\
+	2\xi\mu_s & 2\xi^2
+\end{array} \Bigg)e^{\i\mu_s z_2}
++\frac{\mu}{2\om^2}
+\Bigg(\begin{array}{cc}
+	2\xi^2 & -2\xi\mu_p \\
+	-\frac{\xi\varphi}{\mu_p} & \varphi
+\end{array}\Bigg)e^{\i\mu_p z_2} \\
+&:=&\tilde{\mathbb{T}}_{s}(\xi)e^{\i\mu_p z_2}+\tilde{\mathbb{T}}_{p}(\xi)e^{\i\mu_s z_2}.
+\een
+Now by using (\ref{d2}) we have
+\ben
+\hskip-1cm\V(z,y)&=&\frac 1{2\pi}\sum_{\al,\beta=p,s}{\rm p.v.}\int_{\R}\frac{\tilde{\mathbb T}_{\alpha}(\xi)^T{\mathbb N}_\beta(\xi)}{\de(\xi)}e^{\i(\mu_\al z_2+\mu_\beta y_2)-\i(y_1+z_1)\xi}d\xi\\
+\hskip-1cm& &-\frac\i 2\sum_{\al,\beta=p,s}\left[\frac{\tilde{\mathbb T}_\alpha(\xi)^T{\mathbb{N}}_\beta(\xi)}{\de'(\xi)}e^{\i(\mu_\al z_2+\mu_\beta y_2)-\i(y_1+z_1)\xi}\right]^{k_R}_{-k_R}:={\rm V}_1+{\rm V}_2.
+\een
+To estimate ${\rm V}_1$ we split the integral into two domains $(-k_s,k_s)$ and $\R\bks[-k_s,k_s]$ and use the Van der Corput lemma \ref{van} to estimate the integral in the first interval and the argument in Lemma \ref{lem:3.4}
+to estimate
+the integral in $\R\bks[-k_s,k_s]$. This yields $|{\rm V}_1|\le C\mu^{-1}(k_sh)^{-1/2}$. By the same argument as in
+Lemma \ref{lem:3.2} we can show $|{\rm V}_2|\le C\mu^{-1}e^{-\sqrt{k_R-k_s}h}$. This shows
+\ben
+\max_{z\in\Ga_D}|\V(z,y)|\le \frac C\mu (k_sh)^{-1/2},\ \ \forall y\in \bar D.
+\een
+A similar argument shows that
+\ben
+\max_{z\in\Ga_D} k_s^{i+j}|\na_z^i\na^j_y\V(z,y)|\le \frac C\mu (k_sh)^{-1/2},\ \ \forall y\in \bar D,\ i,j=0,1.
+\een
+Substitute the above two estimates into (\ref{f6}) we obtain
+\ben
+\hskip-1cm\max_{y\in \bar D}(|w(y)|+d_D|\na w(y)|)\le\frac C\mu (1+\|T_2\|)(1+k_sd_D)^2(k_sh)^{-1/2} \|g\|_{H^{1/2}(\Gamma_D)}.
+\een
+This completes the proof of the theorem from (\ref{f5}).
+\finproof
+
 
 We remark that the well-posedness of the full space elastic scattering problem (\ref{e2}) under the so-called Sommerfeld-Kupradze radiation condition is well known (cf. e.g. \cite{ku63}). It is equivalent to the solution defined by the limiting absorption principle \cite{leis, cxz2016}.

@@ -1,5 +1,5 @@
 
-\chapter{半空间弹性波反散射问题} \label{chap：RTM}
+\chapter{半空间反散射问题的逆时偏移算法} \label{chap：RTM}
 从本章开始， 我们将研究半空间弹性波逆散射问题。 在地球物理反问题， 弹性介质的无损检测等领域中， 半空间弹性波模型得到了非常重要的实际应用。 不同于半空间声波模型， 半空间弹性波模型存在一种表面波， 这种波只在半空间表面传播且其波数比相应的弹性波体波要大。
 
 我们先针对障碍物为一点源时，提出点扩散函数，并对点扩散函数进行分辨率分析及数值实验。 然后， 
@@ -7,6 +7,25 @@
 题的单频逆时偏移算法。该算法能够对不同类型的障碍物进行有效成像，确定其
 位置、大小和形状，并且不需要提前知道障碍物的先验信息。由于， 每一个散射波都可以利用 Green 积分公式看成是在障碍物表面的二次点源波的叠加，即为惠更斯原理。 于是我们可以利用点扩散函数及相应方程的正则性来研究逆时偏移成像函数的分辨率。 最后， 我们用大量的数值算例验证了开波导逆时偏移
 算法对障碍物成像问题的有效性。
+\section{问题介绍}
+我们先来介绍半空间弹性波反散射问题的模型设置, 如图。 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./Img/graphic/half_forward.eps}
+	\caption{半空间弹性波障碍物散射模型} \label{figure_half}
+\end{figure}
+ 令 $D\subset\R_+^2=\{(x_1,x_2)^T\in\R^2:x_2>0\}$ 是嵌入在半空间中的有界 Lipschitz 区域， 其中 $\nu$ 是边界 $\Ga_D$ 的单位外法向。 我们假设入射波是由位于半空间表面 $\Ga_0=\{(x_1,x_2)^T\in\R^2:x_2=0\}$ 上的 $x_s$ 的点源激发，且其激发的极化方向为 $q\in\R^2$。 假设半空间中的背景介质是弹性介质，且其表面满足自由边界条件 (Traction Free), 于是入射波即为半空间弹性波的 Neumann Green 函数 $\N(x,x_s)$ 。
+假设接收点 $x_r\in \Ga_0$, 于是接受到的测量数据为 $u_q(x_r,x_s)=u^s_q(x_r,x_s)+\N(x_r,x_s)q, x_r\in\Ga_0$， 其中 $u_q^s(x,x_s)$ 是如下半空间弹性波方程的散射解。
+\be
+& &\Delta_e u_q^s(x,x_s)+ \rho\,\omega^2u_q^s(x,x_s)= 0 \ \ \ \ \mbox{in }\R_+^2\bks \bar{D},\label{p1}\\
+& &u^s_q(x,x_s)=-\N(x,x_s)q \ \ \mbox{on} \ \Ga_D,\\
+& & \sigma(u_q^s(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0,\label{p2}
+\ee
+这里 
+$e_i$ 是沿着 $x_i$, $i=1,2$ 轴的单位向量。
+
+如何通过测量到的散射数据来确定散射体 $D$ 的位置、大小和形状就是本章将
+要解决的问题。
 \section{点扩散函数}
 在这一节中， 我们将详细介绍半空间弹性波点扩散函数(point spread function)。 点扩散函数是一种针对半空间介质中点源的成像函数。 在文献 \cite{RTMhalf_aco} 中， Chen 等提出了半空间声波的点扩散函数， 我们这里将其推广到半空间弹性波的情形， 特别的， 此时的点扩散函数是一个 $2\times2$ 的矩阵。
 假设在半空间的表面 $\Ga_0^d=\{(x_1,x_2)^T\in\Ga_0: x_1\in (-d,d)\}$ 上接受到的数据为 Neumann Green 函数 $\N(x,y)$, 即位于 $y$ 处的点源的数据， 这里 $d>0$ 称为孔径。 于是， 我们将有限孔径点扩散函数 $\J_d(x,y)$, $x,y\in\R^2_+$ 定义为将数据 $\N(x,y)\chi_{(-d,d)}$ 作为在 $\Ga_0$ 上的 Dirichlet 边界条件的反传波长， 这里 $\chi_{(-d,d)}$ 为区间 $\chi_{(-d,d)}$ 上的特征函数。 
@@ -353,7 +372,7 @@ f(t)=k_s\frac{\Tp(k_st)\overline{\Ns(k_st)}}{\overline{\de(k_st)}},\ \ \ \lam=k_
 \een 
 于是， 上面第一估计式可有不等式 (\ref{q0}) 立即得到。 第二估计式可有不等式 (\ref{q0})， 由引理 \ref{error_jd} 和定理 \ref{J_F_diff} 立即得到。这里我们将不再赘述细节。 引理得证。
 \finproof
-\section{弹性波半空间中的逆时偏移算法}
+\section{逆时偏移算法}
 这一节， 我们将提出半空间弹性波散射问题的逆时偏移算法 (Reverse Time Migration, RTM)。 该逆时偏移算法是对文献 \cite{RTMhalf_aco} 中半空间声波散射问题的逆时偏移算法的一个推广。 我们的逆时偏移算法可以分成两步 \cite{zhang2009,Zhang2007}， 第一步为将在半空间表面的孔径 $\Ga_d$ 上接受到的 s-波与 p-波的混合全波数据取复共轭化， 然后反传到半空间中。 第二步，将反传后的数据和入射波数据在采样区域 $\Om$ 内进行互相关， 然后关于各个炮点进行叠加。特别地，类似与文献 \cite{RTMhalf_aco} ， 这里的入射波是将点源放在 $\Ga_d$ 上， 然后作为 Dirichlet 边界条件后弹性波方程的解。而反传波是将接受到的数据共轭化后作为 Dirichlet 边界条件后弹性波方程的解。
 
 \begin{alg}\label{alg_rtm}
@@ -398,9 +417,9 @@ I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\s
 \begin{thm}\label{thm:4.3}
 	对于任意 $z\in\Omega$， 令 $\U(z,x)\in\C^{2\times2}$ 且 $\U(z,x)e_j$, $j=1,2$， 是如下弹性波方程的散射解：
 	\ben
-	& &\Delta_e [\U(z,x)e_j]+ \omega^2[\U(z,x)e_j]= 0 \ \ \mbox{in } \ \ \R^2\bks \bar{D},  \\
+	& &\Delta_e [\U(z,x)e_j]+ \omega^2[\U(z,x)e_j]= 0 \ \  \ \ x\in\R^2\bks \bar{D},  \\
 	& &
-	\U(z,x)e_j= -\overline{\F(z,x)}e_j \ \ \mbox{on } \ \ \Ga_D.  
+	\U(z,x)e_j= -\overline{\F(z,x)}e_j \ \  \ \ x\in\Ga_D.  
 	\een
 	于是， 成像函数 $\hat{I}_d(z)$ 有如下表达：
 	\be
@@ -439,7 +458,7 @@ u^s_q(x_r,x_s)\cdot e_i=\GG(u^s_q(\cdot,x_s),\N(\cdot,x_r)e_i), i=1,2,
 & &\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(x,x_r)}e_ids(x_r)\\ \nn
 &=&\int_{\Ga_0^d}\sum^2_{i=1}[\T_D(x_r,z)]_{ij}\overline{\N(x_r,x))^Te_i}ds(x_r)\\ \nn
 &=&\int_{\Ga_0^d}(\T_D(x_r,z)e_j)^T\overline{\N(x_r,x)^T)}ds(x_r) \\  \nn
-&=&\J_d(z,x)^Te_j. v
+&=&\J_d(z,x)^Te_j. v \label{g6}
 \ee
 进一步可以推出
  \ben
@@ -541,7 +560,7 @@ u^s_q(x_r,x_s)\cdot e_i=\GG(u^s_q(\cdot,x_s),\N(\cdot,x_r)e_i), i=1,2,
  & &\tau(\theta)^\perp=(\sin\theta,\cos\theta)^T.
 \een
 
-于是 $\overline{\F(z,x)}e_j$ 可以看成是弹性波 $p$ 平面波加权叠加与 $s$ 平面波的加权叠加之和， 显然有 $\overline{\F(z,x)}e_j$ 关于变量 $z$ 满足弹性波方程。 因此， 由 $\U(z,x)e_j$ 的定义， 自然地可以把它看成是以 $\overline{\F(z,x)}e_j$ 为入射波且满住 Dirichlet 边界条件的弹性波散射解。 通过定理 \ref{thm:3.2} ， 我们知道 $\overline{\F(z,x)}$ 随着 $|x-z|$ 增大而逐渐衰减。于是易知， 当$x\in \Ga_D$ 时，$\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu$ 也随着 $|x-z|$ 增大而逐渐衰减。 因此， 当点 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_F(z)$ 变得非常小。 于是， 当 $k_s h \gg 1$ ， $d\gg h$ 以及 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_d(z)$ 变得非常小， 即此时在 $z$ 点无法成像。
+于是 $\overline{\F(z,x)}e_j$ 可以看成是弹性波 $p$ 平面波加权叠加与 $s$ 平面波的加权叠加之和， 显然对于固定的 $z$, $\overline{\F(z,x)}e_j$ 关于变量 $x$ 满足弹性波方程。 因此， 由 $\U(z,x)e_j$ 的定义， 自然地可以把它看成是以 $\overline{\F(z,x)}e_j$ 为入射波且满住 Dirichlet 边界条件的弹性波散射解。 通过定理 \ref{thm:3.2} ， 我们知道 $\overline{\F(z,x)}$ 随着 $|x-z|$ 增大而逐渐衰减。于是易知， 当$x\in \Ga_D$ 时，$\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu$ 也随着 $|x-z|$ 增大而逐渐衰减。 因此， 当点 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_F(z)$ 变得非常小。 于是， 当 $k_s h \gg 1$ ， $d\gg h$ 以及 $z$ 远离障碍物边界 $\Ga_D$ 时， $\hat{I}_d(z)$ 变得非常小， 即此时在 $z$ 点无法成像。
 
 为了分析当 $z$ 靠近障碍物边界时成像函数主项$\hat{I}_F(z)$ 的函数性质， 我们将提出平面入射波在障碍物边界处的散射系数。 类似与声波散射系数， 我们将给弹性波散射系数如下定义。
 
@@ -876,65 +895,174 @@ R_\alpha(x;\tau)\approx 0\ \ \mbox{if } x \in \Ga_D^{+}(\tau)=\{x\in \Ga_D, \nu(
 \een
 由于 $\nu(x_-(\theta))=-\tau(\theta)$， 通过 (\ref{kir_p}) 和 (\ref{kir_s}) 我们可以得到
 \be\label{sc5}
-& &R_p(x_-(\theta);\tau(\theta))\approx-2(\lam+2\mu)\tau(\theta),\ \ \\  & &R_s(x_-(\theta);\tau(\theta))\approx-2\mu\tau(\theta)^\perp.
+& &R_p(x_-(\theta);\tau(\theta))\approx-2(\lam+2\mu)\tau(\theta),\ \ \\ 
+\label{sc6} & &R_s(x_-(\theta);\tau(\theta))\approx-2\mu\tau(\theta)^\perp.
 \ee
-Now for $z$ in the part of $\Ga_D$ which is back to $\Ga_0$, i.e., $\nu(z)\cdot\tau(\theta)>0$ for any $\theta\in (0,\pi)$, we know that $z$ and $x_-(\theta)$ are far away and thus $\hat{I}_d(z)\approx0$. This indicates that one cannot image the back part of the obstacle with only the data collected on $\Ga_0$. This is confirmed in our numerical examples in section 6.
-On the other hand, if $z$ is in the illuminating part of $\Ga_D$, it follows from (\ref{sc5}) that $\hat I_d(z)$ is the weighted sum of $[\kappa(x_-(\theta))]^{-1/2}$ for $x_-(\theta)$ close to $z$ on $\Ga_D$.
+
+现在， 我们来观察边界 $\Ga_D$ 上的点 $z$。 当$\nu(z)\cdot\tau(\theta)>0$ 时，其中 $\theta\in (0,\pi)$， 此时 $z$ 点位于 $\Ga_D$ 背对于 $\Ga_0$ 的那一部分。同时，此时 $x_-(\theta)$ 位于 $\Ga_D$ 正对于 $\Ga_0$ 的那一部分。 于是， $z$ 距离 $x_-(\theta)$ 就较远， 因此得到 $\F(z,x_-(\theta))e_j\approx 0$, 然后有  $\hat{I}_d(z)\approx0$。 这就说明，只利用 $\Ga_0$ 上收集的数据无法将障碍物背对于 $\Ga_0$ 那部分成像， 而且这一结论在后文中的数值算例中也得到证实。 
+另一方面， 如果 $z$ 位于 $\Ga_D$ 正对于 $\Ga_0$ 的阳面， 利用 (\ref{sc5}),(\ref{sc6}) , 我们可以发现 $\hat I_d(z)$ 正是 $[\kappa(x_-(\theta))]^{-1/2}$ 的加权和， 其中 $x_-(\theta)$ 在$\Ga_D$ 上 $z$ 附近的那部分点。综上所述， 成像函数 $\hat{I}_d(z)$ 可以将障碍物边界成像， 且仅能将障碍物的阳面成像。
 
 
+\section{其它类型障碍物的RTM分辨率分析}
+在这一节中， 我们将考虑在半空间弹性介质中利用 RTM 算法 \ref{alg_rtm} 来重构具有阻抗边界条件的不可穿透障碍物和可穿透障碍物。
 
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Extensions}
-
-In this section we consider the reconstruction of non-penetrable obstacles with the impedance boundary condition and penetrable obstacles in the half space by the RTM algorithm \ref{alg_rtm}. For non-penetrable obstacles with the impedance boundary condition on the obstacle, the measured data $u_q(x_r,x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1, e_2$, where $u^s_q(x,x_s)$ is the scattering solution of the following problem:
+对于具有阻抗边界的不可穿透的障碍物，我们接收到的测量数据为 $u_q(x_r,x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1, e_2$, 其中 $u^s_q(x,x_s)$ 是如下半空间弹性波方程的散射解：
 \ben
-\hskip-1cm\Delta_e u^s_q(x,x_s) + \omega^2 u^s_q(x,x_s) =0\ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \\
-\hskip-1cm \sigma(u^s_q(x,x_s))\nu+\i\eta(x)u^s_q(x,x_s)=-[\sigma(\N(x,x_s)q)\nu+\i\eta(x)\N(x,x_s)q]\ \ \mbox{\rm on } \Ga_D, \\ 
-\hskip-1cm\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on } \Ga_0,
+& &\Delta_e u^s_q(x,x_s) + \omega^2 u^s_q(x,x_s) =0\ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \\
+& &\sigma(u^s_q(x,x_s))\nu+\i\eta(x)u^s_q(x,x_s)=-[\sigma(\N(x,x_s)q)\nu+\i\eta(x)\N(x,x_s)q]\ \ \mbox{\rm on } \Ga_D, \\ 
+& &\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on } \Ga_0,
 \een
-where $\eta\in L^\infty(\Ga_D)$ and $\eta\ge 0$ on $\Ga_D$. By modifying the argument in the proof of Theorem \ref{thm:4.3}, we can show the following theorem whose proof is omitted.
+这里在 $\Ga_D$ 上 $\eta\in L^\infty(\Ga_D)$ 以及 $\eta\ge 0$，特别地， 当 $\eta=0$ 时， 上面的障碍物边界条件对应的是 Neumann边界条件，因此这里我们不在单独讨论满足 Neumann 边界条件的障碍物。 对定理 \ref{thm:4.3} 稍作修改， 我们可以得到如下针对具有阻抗边界的不可穿透型障碍物的 RTM 方法的分辨率分析的定理， 这里我们不在赘述定理证明。
 \begin{thm}\label{thm:5.1}
-	For any $z\in\Omega$, let $\U(z,x)\in\C^{2\times2}$ such that $\U(z,x)e_j$, $j=1,2$, is the scattering solution of the problem:
+	对于任意 $z\in\Omega$， 令 $\U(z,x)\in\C^{2\times2}$， 其中 $\U(z,x)e_j$, $j=1,2$ 是如下弹性波方程的散射解：
 	\ben
 	\hskip-1cm& & \Delta_e[\U(z,x)e_j]+ \omega^2[\U(z,x) e_j]= 0 \ \ \mbox{\rm in }\R^2\bks \bar{D},\\
 	\hskip-1cm& &\sigma(\U(z,x)e_j)\nu+\i\eta(x)[\U(z,x)e_j]= -[\sigma(\overline{\F(z,x)}e_j)\nu+\i\eta(x)\overline{\F(z,x)}e_j ]\ \ \mbox{\rm on} \ \Ga_D.
 	\een
-	Then the imaging function (\ref{cor2}) for the half-space elastic scattering data $u^s_q(x_r,x_s)$ of the non-penetrable obstacle with the impedance boundary condition satisfies
-	\ben\hspace{-2.cm}
-	\hat{I}_d(z)&=&-\Im\sum_{j=1}^2\int_{\Gamma_D} [\U(z,x)e_j+\overline{\F(z,x)}e_j]\cdot[\sigma(\overline{\F(z,x)}e_j)\nu+\i\eta(x)\overline{\F(z,x)}e_j]ds(x)\\
-	\hspace{-2.cm}	& &+R_d(z),\ \ \forall z\in\Om,
+	于是针对具有阻抗边界的不可穿透障碍物的散射数据 $u^s_q(x_r,x_s)$，RTM 成像函数(\ref{cor2}) 有如下表示
+	\ben
+	\hat{I}_d(z)&=&-\Im\sum_{j=1}^2\int_{\Gamma_D} [\U(z,x)e_j+\overline{\F(z,x)}e_j]\cdot[\sigma(\overline{\F(z,x)}e_j)\nu+\i\eta(x)\overline{\F(z,x)}e_j]ds(x)\ \\
+	& &+R_d(z),\ \ \ \ \ \ \ \ \forall z\in\Om,
 	\een
-	where $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ for some constant $C$ depending only on $\kappa$ but independent of $k_s,k_p, h, d, d_D$.
+	这里 $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ 其中常数 $C$ 仅依赖于 $\kappa$ 而与 $k_s,k_p, h, d, d_D$ 无关。
 \end{thm}
 
-For the penetrable obstacle, the measured data is $u_q(x_r.x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1,e_2$, where $u^s_q(x,x_s)$ is the scattering solution of the following problem:
+对于可穿透型障碍物, 我们接收到的测量数据为 $u_q(x_r.x_s)=u_q^s(x_r,x_s)+\N(x_r,x_s)q$, $q=e_1,e_2$, 其中 $u^s_q(x,x_s)$ 是如下弹性波方程的散射解：
 \ben
-\Delta_e u^s_q(x,x_s) + \omega^2n(x) u^s_q(x,x_s) =-\om^2(n(x)-1)\N(x,x_s)q\ \ \mbox{\rm in } \R^2_+, \\
-\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on }\Ga_0, 
+& &\Delta_e u^s_q(x,x_s) + \omega^2n(x) u^s_q(x,x_s) =-\om^2(n(x)-1)\N(x,x_s)q\ \ \mbox{\rm in } \R^2_+, \\
+& &\sigma(u^s_q(x,x_s))e_2=0 \ \ \mbox{\rm on }\Ga_0, 
 \een
-where $n(x)\in L^{\infty}({\R^2_+})$ is a positive function which is equal to 1 outside $D$. By modifying the argument in Theorem \ref{thm:4.3}, the following theorem can be proved.
+这里 $n(x)\in L^{\infty}({\R^2_+})$ 是正函数，且当 $x\notin D$ 时，$n(x)==1$。类似地， 对定理 \ref{thm:4.3} 稍作修改， 我们可以得到如下针对可穿透型障碍物的 RTM 方法的分辨率分析的定理， 这里我们不在赘述定理证明。
 
 \begin{thm}\label{resolution2}
-	For any $z\in\Omega$, let $\U(z,x)\in\C^{2\times2}$ such that $\U(z,x)e_j$, $j=1,2$, is the scattering solution of the problem:
+	对于 $z\in\Omega$, 令 $\U(z,x)\in\C^{2\times2}$ 其中 $\U(z,x)e_j$, $j=1,2$ 是如下弹性波方程的散射解：
 	\ben
 	& & \Delta_e [\U(z,x)e_j] + \omega^2n(x)[\U(z,x)e_j]= -\omega^2(n(x)-1)\overline{\F(z,x)}e_j \ \ \mbox{\rm in }\R^2.
 	\een
-	Then the imaging function (\ref{cor2}) for the half-space elastic scattering data $u^s_q(x_r,x_s)$ of the penetrable obstacle satisfies
-	\ben\hspace{-2cm}
+	于是针对可穿透型障碍物的散射数据 $u^s_q(x_r,x_s)$，RTM 成像函数(\ref{cor2}) 有如下表示
+	\ben
 	\hat{I}_d(z)=\Im\sum_{j=1}^2 \int_{D}\omega^2(n(x)-1)[(\U(z,x)e_j+\overline{\F(z,x)}e_j)\cdot\overline{\F(z,x)}e_j]dx+R_d(z),
 	\een
-	where $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ for some constant $C$ depending only on $\kappa$ but independent of $k_s,k_p, h, d, d_D$.
+	这里 $|R_d(z)|\leq C\mu^{-2}(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ 其中常数 $C$ 仅依赖于 $\kappa$ 而与 $k_s,k_p, h, d, d_D$ 无关。
 \end{thm}
 
+
+\section{数值测试}
+
+在这一节中， 我们将呈现若干数值实验来展示 
+RTM 算法的有效性。 为了合成散射数据， 我们对要计算的半空间弹性波方程的散射解 $u^s_q(x,x_s)$ 表示成以 Neumann Green 函数 $\N(x,y)$ 为积分核的单层位势，然后通过 Dirichlet 边界条件，与入射波 $u^i_q(x,x_s)$ 组合成边界积分方程。
+由于当$ x=y$ 时，Neumann Green 函数 $\N(x,y)$ 只具有弱奇异性，即$\log |x-y|$。于是， 我们可以利用 Nystr\"{o}m 方法 \cite{colton-kress} 来离散边界 $\Ga_D$ 上的积分方程。 针对边界的离散剖分， 我们采用一致网格， 且每一个 p 入射波长均匀设置 10 个网格点。发射器和接收器均匀地分布在 $\Ga_d$ 上， 且对于所有数值实验， 都取 $h = 10, d = 50$ 及 {Lam\'{e}} 常数 $\lambda=1/2$, $\mu=1/4$。 下面实验中的各种障碍物形状， 其边界参数化表示如下： 
+\ben
+\mbox{圆形:}\ \ \ \ &&x_1=\rho\cos(\theta),\ \ x_2=\rho\sin(\theta);\ \ \\
+\mbox{风筝形:}\ \ \ \ &&x_1=\cos(\theta) + 0.65\cos(2\theta) - 0.65,\ \ x_2=1.5 \sin (\theta);\ \ \\
+\mbox{$p$-叶形:}\ \ \ \ &&r(\theta)=1+0.2\cos(p\theta); \\
+\mbox{花生形:}\ \ \ \ &&x_1 = \cos \theta + 0:2 \cos 3\theta; x_2 = \sin \theta + 0:2 \sin 3\theta; \\
+\mbox{方形:}\ \ \ \ &&x_1 = \cos3 \theta + \cos \theta; x_2 = \sin3\theta + \sin \theta.
+\een
+这里
+$\theta\in[0,2\pi]$。且这里的数值成像函数为：
+\ben
+I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\sum^{N_r}_{r=1}
+[\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\right\}.
+\een
+
+\bigskip
+
+在下文中，我们所谓的 Dirichlet, Neumann 或是阻抗 (Impedance) 障碍物， 就意味着该障碍物是不可穿透的，而且其边界 $\Ga_D$ 满足 Dirichlet, Neumann 或是 阻抗边界条件。
+
+
+\bigskip
+\textbf{算例 1}. 这里我们只考虑  Dirichlet 障碍物来成像， 而变量是障碍物的形状， 包括圆形，花生形，四叶草形 以及旋转后的方形。 同样地， 
+我们考虑针对 Dirichlet 障碍物,  Neumann 障碍物, 阻抗障碍物, 以及可穿透障碍物进行成像。 每个成像区域都为 $\Om=(-2,2) \times (8, 12)$ 且其样本点网格取为 $201 \times 201$。 我们设置发射器和接收器数量为 $N_s = N_r = 401$。 这里针对单频， 我们取角频率 $\om = 3\pi,4\pi$ ； 针对多频，取 $\om=\pi\times[2:0.5:8]$ ，再将成像函数值叠加。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_3pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_5pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/peanut_3pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/peanut_5pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/peanut.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/p_leaf_3pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/p_leaf_5pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/p_leaf.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/rectangle_3pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/rectangle_5pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/rectangle.eps}
+	
+	\caption{算例 1: 从上到下是不同形状的 Dirichlet 障碍物，依次是圆形，花生形，四叶草形 以及旋转后的方形的成像结果。 其中，第一列是关于单频的， 其角频率为 $\om=3\pi$, 第二列是关于单频的， 其角频率为 $\om=5\pi$ 以及第三列是关于多频叠加的}\label{figure_21}
+\end{figure}
+如图 \ref{figure_21}, 针对不同形状的障碍物， RTM 算法都可以将其上沿给成像出来。 而且， 当对多个单频成像进行叠加后得到的多频成像结果可以显著提高单频的成像效果。
+
+\bigskip
+\textbf{算例 2}.
+我们考虑针对 Dirichlet 障碍物,  Neumann 障碍物, 阻抗障碍物, 以及可穿透障碍物进行成像。 每个成像区域都为 $\Om=(-2,2) \times (8, 12)$ 且其样本点网格取为 $201 \times 201$。 我们设置发射器和接收器数量为 $N_s = N_r = 401$， 角频率为 $\om=2\pi$。 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.24\textwidth]{./Img/graphic/peanut_3pi.eps}
+	\includegraphics[width=0.24\textwidth]{./Img/graphic/peanut_3pi_neumann.eps}
+	\includegraphics[width=0.24\textwidth]{./Img/graphic/peanut_3pi_impedance_1.eps}
+	\includegraphics[width=0.24\textwidth]{./Img/graphic/peanut_3pi_transmission.eps}
+	\caption{算例 2: 从左到右： Neumann 障碍物, 阻抗障碍物, 以及衍射指数为$n(x)=0.25$
+		可穿透障碍物的成像结果} \label{figure_11}
+\end{figure}
+
+成像结果见图 \ref{figure_11} 所示。我们可以清晰可见，对于不可穿透障碍物， 障碍物的上边界都被 RTM 方法成像出来，且这部分边界刚好是正对着分布着发射器和接收器的半空间表面 $\Ga_0$，相比较下， 位于障碍物边界的阴暗部分的点以及远离边界的点的成像函数值都是非常小的。
+
+显然， 成像算法(\ref{cor})与障碍是否可穿透， 可穿透时是哪种边界条件无关。在不知道障碍物边界的先验信息下，如图\ref{figure_11}所示，针对不同类型的障碍物， RTM 方法都可以成像。
+
+\bigskip
+\textbf{算例 3} 我们考虑来针对两个障碍物同时成像。第一个模型是在水平方向上并排两个障碍物； 第二个模型是一个圆和一个花生在竖直方向上排列 (圆上花生下)；第三个模型是一个圆和一个花生在竖直方向上排列 (圆下花生上)。 针对单频的成像实验， 我们取角频率为 $\om=3\pi$ ， 而针对多频的成像实验， 我们取多频角频率为 $\om=\pi\times[2:0.5:8]$ 。 如图 \ref{figure_31} 所示，是第一个模型的成像结果。 其成像区域为 $\Om=(-4, 4) \times (8,12)$ ， 采样网格点数量 $401 \times 201$。我们设置发射器和接收器数量为 $N_s = N_r = 301$。 如图 \ref{figure_32}和\ref{figure_33} 所示，是第二个模型和第三个模型的成像结果。 其成像区域为 $\Om=(-4, 4)\times (8,12)$ ， 采样网格点数量 $401 \times 401$。 我们设置发射器和接收器数量为 $N_s = N_r = 301$。在图 \ref{figure_31} ，图 \ref{figure_32}和图\ref{figure_33} 中的多频 RTM 成像只是简单地将每个不同的单频 RTM 成像结果直接叠加而得。 我们可以发现， 通过这样简单的多个单频叠加后， 成像质量得到显著地提高。
+ 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.32\textwidth,height=0.16\textheight]{./Img/graphic/bi_circle_profile.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_3pi.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle.eps}
+	
+	\caption{算例 3: 从左到右分别为,  真实的两个障碍物：圆， 关于单频角频率为 $\om=3\pi$的成像结果, 关于多频叠加的成像结果。}\label{figure_31}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.32\textwidth,height=0.16\textheight]{./Img/graphic/circle_0_4_peanut_1_profile.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_0_4_peanut_1_3pi_1.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_0_4_peanut_1_multi_1.eps}
+	
+	\caption{算例 3: 从左到右分别为,  真实的两个障碍物：圆上和花生下， 关于单频角频率为 $\om=3\pi$的成像结果, 关于多频叠加的成像结果。}\label{figure_32}
+\end{figure}
+
+ 如图 \ref{figure_32} 所示, 我们发现即使圆形挡在花生的上面， RTM 算法还是可以将圆和花生的上沿都给成像出来， 进一步说明了 RTM 算法的有效性。而如图 \ref{figure_33} 所示，我们法向当大一号的花生挡在圆的上面时，只能将花生的上沿给成像出来， 而无法对圆成像，我们可以猜测在这种情况下由于花生的阻挡，可能在 $\Ga_0$ 上接受到关于圆的信息是极少的。
+\begin{figure}[htbp]
+ 	\centering
+ 	\includegraphics[width=0.32\textwidth,height=0.16\textheight]{./Img/graphic/circle_0_4_peanut_1_profile_reverse.eps}
+ 	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_0_4_peanut_1_3pi_down.eps}
+ 	\includegraphics[width=0.32\textwidth]{./Img/graphic/circle_0_4_peanut_1_multi_down.eps}
+ 	
+ 	\caption{算例 3: 从左到右分别为,  真实的两个障碍物：圆下和花生上， 关于单频角频率为 $\om=3\pi$的成像结果, 关于多频叠加的成像结果。}\label{figure_33}
+ \end{figure}
+ 
+\bigskip
+\textbf{Example 4}
+我们考虑半空间弹性波 RTM 算法关于复加性 Gaussian 噪声的稳定性。 这里加性 Gaussian 噪声定义为 
+\ben
+u_{\rm noise}=u_s+\nu_{\rm noise},
+\een
+其中 $u_s$ 合成的散射数据， $\nu_{\rm noise}$ 是 Gaussian 噪声， 且均值为0， 其标准差是散射数据 $|u_s|$ 中最大值的 $\sigma$ 倍， 即为 $\nu_{\rm noise}=\frac{\sigma \max |u_s|}{\sqrt{2}}(\ep_1+\i\ep_2)$ 和 $\ep_i\thicksim \mathcal{N}(0,1)$。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_4pi_error2.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_4pi_error4.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_4pi_error6.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_multi_2_8_error2.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_multi_2_8_error4.eps}
+	\includegraphics[width=0.32\textwidth]{./Img/graphic/bi_circle_multi_2_8_error6.eps}
+	
+	\caption{算例 4: 从左到右，分别是含有噪声水平 $\mu =  0.2; 0.3; 0.4$ Dirichlet 障碍物的成像结果。 其中第一行是关于单频成像， 其角频率为 $\om=4\pi$, 第二行是多个单频成像的叠加}\label{figure_4}
+\end{figure}
+
+如图 \ref{figure_4} 所示， 即使在加了加性 Gaussian 噪声后， 单频 RTM 成像算法还是可以把障碍物的上沿给清晰成像，说明了该算法的稳定性。  而且在通过多个角频率 $\omega = \pi\times [2:0.5:8]$ 的成像结果叠加后， 其成像质量显著提高，而且消除了 Gaussian 噪声的影响。
+
+
+\section{本章小结}
 
