@@ -8,63 +8,46 @@ Repeated entry---line 280 of file Biblio/ref.bib
  : @book{bleistein2013mathematics
  :                               ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 378 of file Biblio/ref.bib
- :  
- :  year={1983},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 381 of file Biblio/ref.bib
- :  
- :  title={Theory of Elasticity}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty year in landau
-Warning--empty year in hor
-Warning--empty title in landau
-Warning--empty year in landau
-Warning--empty year in landau
 Warning--empty journal in grant1965interpretation
-Warning--empty year in hor
-Warning--empty year in hor
-You've used 36 entries,
+You've used 38 entries,
             3798 wiz_defined-function locations,
-            1032 strings with 11131 characters,
-and the built_in function-call counts, 150461 in all, are:
-= -- 1870
-> -- 17362
-< -- 22949
-+ -- 6277
-- -- 182
-* -- 1040
-:= -- 20798
-add.period$ -- 105
-call.type$ -- 36
-change.case$ -- 71
-chr.to.int$ -- 5666
-cite$ -- 45
-duplicate$ -- 722
-empty$ -- 1816
-format.name$ -- 397
-if$ -- 39055
+            1048 strings with 11505 characters,
+and the built_in function-call counts, 160555 in all, are:
+= -- 2011
+> -- 18525
+< -- 24506
++ -- 6712
+- -- 196
+* -- 1082
+:= -- 22213
+add.period$ -- 114
+call.type$ -- 38
+change.case$ -- 76
+chr.to.int$ -- 6048
+cite$ -- 39
+duplicate$ -- 766
+empty$ -- 1909
+format.name$ -- 423
+if$ -- 41647
 int.to.chr$ -- 1
-int.to.str$ -- 37
+int.to.str$ -- 39
 missing$ -- 0
-newline$ -- 186
-num.names$ -- 105
-pop$ -- 8600
+newline$ -- 199
+num.names$ -- 114
+pop$ -- 9159
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 38
 quote$ -- 0
-skip$ -- 15111
+skip$ -- 16144
 stack$ -- 0
-substring$ -- 6500
-swap$ -- 71
-text.length$ -- 252
+substring$ -- 6961
+swap$ -- 74
+text.length$ -- 271
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 276
-warning$ -- 8
-while$ -- 360
+type$ -- 296
+warning$ -- 1
+while$ -- 389
 width$ -- 0
-write$ -- 526
-(There were 3 error messages)
+write$ -- 563
+(There was 1 error message)

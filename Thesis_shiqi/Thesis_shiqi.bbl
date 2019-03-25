@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -6,8 +6,10 @@
 \providecommand{\href}[2]{\url{#2}}
 \providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 
-\bibitem[lan()]{landau}
-\allowbreak[M].
+\bibitem[Landar\ et~al.(1986)Landar and Lifshitz]{landau}
+Landar~L~D, Lifshitz~E.
+\newblock Theory of elasticity\allowbreak[M].
+\newblock 1986.
 
 \bibitem[Bonnet\ et~al.(2005)Bonnet and Constantinescu]{bonnet2005inverse}
 Bonnet~M, Constantinescu~A.
@@ -49,6 +51,17 @@ Kupradze~V, Gegelia~T, Basheleishvili~M, et~al.
   and thermoelasticity\allowbreak[M].
 \newblock Moscow Nauka, 1976.
 
+\bibitem[Sommerfeld(1912)]{sommerfeld1912greensche}
+Sommerfeld~A.
+\newblock Die greensche funktion der schwingungsgleichung\allowbreak[J].
+\newblock J.-Ber. Deutsch Math.-Verein, 1912, 21:\penalty0 309-353.
+
+\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
+Colton~D, Kress~R.
+\newblock Inverse acoustic and electromagnetic scattering theory:
+  volume~93\allowbreak[M].
+\newblock Springer Science and Business Media, 2012.
+
 \bibitem[Chen\ et~al.(2016)Chen, Xiang, and Zhang]{cxz2016}
 Chen~Z, Xiang~X, Zhang~X.
 \newblock Convergence of the pml method for elastic wave scattering
@@ -63,17 +76,18 @@ Bramble~J~H, Pasciak~J~E.
 \newblock Journal of Mathematical Analysis and Applications, 2008, 345\penalty0
   (1):\penalty0 396-404.
 
+\bibitem[Rellich(1943)]{rellich1943über}
+Rellich~F.
+\newblock Über das asymptotische verhalten der lösungen von $\delta u+\lambda
+  u=0 $ in unendlichen gebieten.\allowbreak[J].
+\newblock Jahresbericht Der Deutschen Mathematiker-vereinigung, 1943,
+  53:\penalty0 57-65.
+
 \bibitem[Chaillat\ et~al.(2014)Chaillat and Bonnet]{chaillat2014new}
 Chaillat~S, Bonnet~M.
 \newblock A new fast multipole formulation for the elastodynamic half-space
   greenʼs tensor\allowbreak[J].
 \newblock Journal of Computational Physics, 2014, 258:\penalty0 787-808.
-
-\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
-Colton~D, Kress~R.
-\newblock Inverse acoustic and electromagnetic scattering theory:
-  volume~93\allowbreak[M].
-\newblock Springer Science and Business Media, 2012.
 
 \bibitem[N{\'e}d{\'e}lec(2001)]{nedelec2001acoustic}
 N{\'e}d{\'e}lec~J~C.
@@ -123,6 +137,25 @@ Madyarov~A~I, Guzina~B~B.
 \newblock A radiation condition for layered elastic media\allowbreak[J].
 \newblock Journal of Elasticity, 2006, 82\penalty0 (1):\penalty0 73-98.
 
+\bibitem[Dermenjian\ et~al.(1988)Dermenjian and Guillot]{Yves1988}
+Dermenjian~Y, Guillot~J~C.
+\newblock Scattering of elastic waves in a perturbed isotropic half space with
+  a free boundary. the limiting absorption principle\allowbreak[J].
+\newblock Mathematical Methods in the Applied Sciences, 1988, 10\penalty0
+  (2):\penalty0 87¨C124.
+
+\bibitem[Wilcox(1975)]{wilcox1975}
+Wilcox~C~H.
+\newblock Scattering theory for the d'alembert equation in exterior
+  domains\allowbreak[D].
+\newblock Springer Berlin Heidelberg, 1975.
+
+\bibitem[Leis(1986)]{leis}
+Leis~R.
+\newblock Initial boundary value problems in mathematical
+  physics\allowbreak[M].
+\newblock J. Wiley, 1986: 354-355.
+
 \bibitem[Chen\ et~al.(2015)Chen and Huang]{RTMhalf_aco}
 Chen~Z, Huang~G.
 \newblock Reverse time migration for reconstructing extended obstacles in the
@@ -167,25 +200,6 @@ Arens~T.
 \newblock Journal of Integral Equations and Applications, 1999, 11\penalty0
   (3):\penalty0 232¨C245.
 
-\bibitem[Leis(1986)]{leis}
-Leis~R.
-\newblock Initial boundary value problems in mathematical
-  physics\allowbreak[M].
-\newblock J. Wiley, 1986: 354-355.
-
-\bibitem[Wilcox(1975)]{wilcox1975}
-Wilcox~C~H.
-\newblock Scattering theory for the d'alembert equation in exterior
-  domains\allowbreak[D].
-\newblock Springer Berlin Heidelberg, 1975.
-
-\bibitem[Dermenjian\ et~al.(1988)Dermenjian and Guillot]{Yves1988}
-Dermenjian~Y, Guillot~J~C.
-\newblock Scattering of elastic waves in a perturbed isotropic half space with
-  a free boundary. the limiting absorption principle\allowbreak[J].
-\newblock Mathematical Methods in the Applied Sciences, 1988, 10\penalty0
-  (2):\penalty0 87¨C124.
-
 \bibitem[Sini(2004)]{sini2004}
 Sini~M.
 \newblock Absence of positive eigenvalues for the linearized elasticity
@@ -221,9 +235,10 @@ Melrose~R~B, Taylor~M~E.
   convex obstacle\allowbreak[J].
 \newblock Advances in Mathematics, 1985, 55\penalty0 (3):\penalty0 242-315.
 
-\bibitem[Hormander()]{hor}
+\bibitem[Hormander(1983)]{hor}
 Hormander.
 \newblock The analysis of linear partial differential operators,
   i\allowbreak[M].
+\newblock 1983.
 
 \end{thebibliography}
