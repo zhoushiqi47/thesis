@@ -1,6 +1,16 @@
 \chapter{半空间弹性波散射问题}\label{chap:Elastic}
-为了研究半空间弹性波反散射问题， 我们得先来研究正文题。
+正散射问题的研究一般包括 Green 函数的推导及其性质研究和散射解的适定性。 一般 Green 函数的推导都是通过对偏微分方程其中一个变量作 Fourier 变换后，得到常微分方程组， 然后结合基本解得出。 特别的， 二维弹性波方程的基本解 $\G(x,y)$ \cite{ku63} 为：
+\ben
+\G(x,y)=\frac{1}{\mu}g_{k_s}(x,y)  \I+\frac{1}{\om^2}\nabla\nabla(g_{k_s}(x,y)-g_{k_p}(x,y))
+\een
+这里
+\ben
+g_{k}=\frac{\i}{4}\mathit{H}_0^{(1)}(k|x-y|)
+\een
+是波数为 $k$ 的 Helmholtz 方程的基本解 \cite{colton-kress}， 这里 $\mathit{H}_0^{(1)}(t)$ 是零阶第一类 Hankel 函数 \cite{watson1995treatise}。 关于散射问题的适定性研究， 一般都是通过研究 Green 函数在无穷远处的渐近性质，然后据此推出辐射条件来保证方程的唯一性。 而存在性和稳定性一般是用变分方法或是边界积分法， 然后通过经典的 Riesz–Fredholm 理论 \cite{colton2013integral,kress1989linear} 结合唯一性得到。 但是，由于横波和纵波在半空间表面初的耦合以及表面波的存在， 很难得出一个既保证唯一性又保证存在性的辐射条件。 因此，本文中我们不在依赖辐射条件，将利用极限吸收原理 \cite{agmon1975spectral,Yves1988} 来得出方程的适定性。在本章最后， 我们还将展示， 当障碍物远离半空间表面时， 其相应的散射解和在全空间情形下的散射解之间的差距。
+
 \section{半空间弹性波 Green 函数}\label{Green Tensor}
+由于本文研究的正散射问题中， 弹性波需要在半空间表面 $\Ga_0$ 上满足 Neumann 边界条件 (\ref{eq2}), 所以我们先来研究满足 Neumann 边界条件的半空间 Green 函数。 之后， 由于逆时偏移算法中需要计算反传波， 因此我们还需要推导 满足 Dirichlet 边界条件的半空间 Green 函数及其 $e_2$ 方向的应力张量。
 \subsection{Neumann Green 函数}\label{Neumann Green Tensor}
 设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
 \be
@@ -11,7 +21,7 @@
 \be\label{a1}
 \hat \N(\xi,x_2;y_2)= \int_\R\N(x_1,x_2;y) e^{-\i (x_1-y_1)\xi} dx_1,\ \ \forall \xi\in\C,
 \ee
-记 $\G(x,y)$ \cite{ku63} 为弹性波方程的基本解， 且对其$x_1$变量做Fourier变换后有
+于是， 通过简单的推导计算， 对基本解 $\G(x,y)$ 的 $x_1$变量做Fourier变换后有
 $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 \be
 & &\hat{\G}_s(\xi,x_2;y_2)=\frac{\i}{2\omega^2}

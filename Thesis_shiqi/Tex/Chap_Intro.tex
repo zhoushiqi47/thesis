@@ -34,7 +34,7 @@ x:=(x_1,x_2)^T\in\R^2_+:=\{(y_1,y_2)^T\in\R^2:y_2>0\}
 \be\label{eq0}
 & &\Delta_e u_q(x,x_s)+ \omega^2u_q(x,x_s)= -\delta_{x_s}(x)\ \ \ \ \mbox{in }\ \ \ \R_+^2\bks \bar{D},\\ \label{eq1}
 & &u_q(x,x_s)=0 \ \ \mbox{on} \ \Ga_D,\  \\
-& & \sigma(u_q(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0,
+& & \sigma(u_q(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0, \label{eq2}
 \ee
 这里 $\Ga_D$ 表示障碍物的表面，且令其外单位法向为 $\nu(x)$, 
 \ben
@@ -129,7 +129,7 @@ k_s=\frac{\om}{\sqrt{\mu}}=\frac{\om}{c_s}, \ \ \ \ \  k_p=\frac{\om}{\sqrt{\lam
 
 本文主要对上述半空间弹性波散射问题的反障碍物问题感兴趣。我们在远离障碍物的接受点 $x_r$ 上测量数据 $u^s_q(x_r,x_s)$。 然后， 我们通过接受到的数据来重构出障碍物的位置、大小、形状。	特别地，由地震勘探模型启发 (如图\ref{figure_seismic})， 我们假设发射点和接收点都在半空间表面， 即 $x_s\in\Ga_0$, $x_r\in \Ga_0$。其中， 为了使式子 (\ref{eq0}) 中的源项 $\delta_{x_s}(x)$ 有意义， 我们这里将 $x_s\in\Ga_0$ 看作是 $x_s\in\R^2_+\bks\bar{D}$ 趋向于 $\Ga_0$ 的极限。
 
-
+由于反问题是高度线性不适定问题 \cite{hadamard1923lectures}， 换言之， 如果我们测量到的数据不准确或是有一个微小的扰动， 都会可能导致相对应的障碍物带来巨大的误差。
 
 
 
