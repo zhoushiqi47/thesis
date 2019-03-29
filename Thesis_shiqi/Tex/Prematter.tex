@@ -1,32 +1,39 @@
 \chapter*{符号列表}
 \chaptermark{符号列表}
 
-\section*{字符}
-\nomenclatureitem[\textbf{Unit}]{\textbf{Symbol}}{\textbf{Description}}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2} \cdot K^{-1}}$]{$R$}{the gas constant}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2} \cdot K^{-1}}$]{$C_v$}{specific heat capacity at constant volume}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2} \cdot K^{-1}}$]{$C_p$}{specific heat capacity at constant pressure}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2}}$]{$E$}{specific total energy}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2}}$]{$e$}{specific internal energy}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2}}$]{$h_T$}{specific total enthalpy}
-\nomenclatureitem[$\Unit{m^{2} \cdot s^{-2}}$]{$h$}{specific enthalpy}
-\nomenclatureitem[$\Unit{kg \cdot m \cdot s^{-3} \cdot K^{-1}}$]{$k$}{thermal conductivity}
-\nomenclatureitem[$\Unit{kg \cdot m^{-1} \cdot s^{-2}}$]{$S_{ij}$}{deviatoric stress tensor}
-\nomenclatureitem[$\Unit{kg \cdot m^{-1} \cdot s^{-2}}$]{$\tau_{ij}$}{viscous stress tensor}
-\nomenclatureitem[$\Unit{1}$]{$\delta_{ij}$}{Kronecker tensor}
-\nomenclatureitem[$\Unit{1}$]{$I_{ij}$}{identity tensor}
-
-\section*{算子}
-\nomenclatureitem{\textbf{Symbol}}{\textbf{Description}}
-\nomenclatureitem{$\Delta$}{difference}
-\nomenclatureitem{$\nabla$}{gradient operator}
-\nomenclatureitem{$\delta^{\pm}$}{upwind-biased interpolation scheme}
-
-\section*{缩写}
-\nomenclatureitem{CFD}{Computational Fluid Dynamics}
-\nomenclatureitem{CFL}{Courant-Friedrichs-Lewy}
-\nomenclatureitem{EOS}{Equation of State}
-\nomenclatureitem{JWL}{Jones-Wilkins-Lee}
-\nomenclatureitem{WENO}{Weighted Essentially Non-oscillatory}
-\nomenclatureitem{ZND}{Zel'dovich-von Neumann-Doering}
-
+\section*{符号}
+\nomenclatureitem[逆时偏移]{RTM}{Reverse Time Migration}
+\nomenclatureitem[实数域]{$\R$}{$\{x;-\infty<x<\infty\}$}
+\nomenclatureitem[复数域]{$\mathbb{C}$}{$\{\xi=\xi_1+\i\xi_2;\xi_1,\xi_2\in\R\}$}
+\nomenclatureitem[二维实数空间]{$\R^2$}{$\{(x_1,x_2);x_1,x_2\in\R\}$}
+\nomenclatureitem[二维半空间]{$\R^2_+$}{$\{(x_1,x_2);x_1\in\R,x_2>0\}$}
+\nomenclatureitem[半空间边界]{$\Gamma_0$}{$\{(x_1,x_2);x_1\in\R,x_2=0\}$}
+\nomenclatureitem[发射面或是接受面]{$\Gamma_0^d$}{$\{(x_1,x_2);x_1\in(-d,d),x_2=0\}$}
+\nomenclatureitem[源点在$x_s$处的 Dirac 源]{$\delta_{x_s}(\cdot)$}{}
+\nomenclatureitem[角频率]{$\omega$}{}
+\nomenclatureitem[横波速度]{$c_s$}{}
+\nomenclatureitem[纵波速度]{$c_p$}{}
+\nomenclatureitem[横波波数]{$k_s$}{}
+\nomenclatureitem[纵波波数]{$k_p$}{}
+\nomenclatureitem[Rayleigh 波波数]{$k_R$}{}
+\nomenclatureitem[折射系数]{$n(x)$}{}
+\nomenclatureitem[阻抗系数]{$\eta(x)$}{}
+\nomenclatureitem[Lam\'{e}常数]{$\lambda,\mu$}{}
+\nomenclatureitem[应力张量]{$\sigma(\cdot)$}{}
+\nomenclatureitem[应变张量]{$\ep(\cdot)$}{}
+\nomenclatureitem[线性弹性波算子]{$\Delta_e$}{}
+\nomenclatureitem[第一类零阶Hankel函数]{$H^{(1)}_0(t)$}{}
+\nomenclatureitem[波数为$k$的 声波方程基本解]{$\Phi_k(x,y)$}{$\frac{\i}{4}H^{(1)}_0(k|x-y|)$}
+\nomenclatureitem[$y=(y_1,y_2)$关于$\Gamma_0$的镜像点]{$y'$}{$(y_1,-y_2)$}
+\nomenclatureitem[弹性波半基本解]{$\G(x,y)$}{表达式见式 (\ref{Green})}
+\nomenclatureitem[弹性波半空间 Dirichlet Green 函数]{$\D(x,y)$}{表达式见式 (\ref{DGT1})}
+\nomenclatureitem[弹性波半空间 Neumann Green 函数]{$\N(x,y)$}{表达式见式 （(\ref{NGT1})}
+\nomenclatureitem[点扩散函数]{$\J(z,y)$}{}
+\nomenclatureitem[有限孔穴点扩散函数]{$\J_d(z,y)$}{}
+\nomenclatureitem[障碍物或散射体]{$D$}{有界的Lipschitz区域}
+\nomenclatureitem[$D$上的Lebesgue可积函数集]{$L^1(D)$}{$\left\{f(x);\int_D|f(x)|dx<+\infty\right\}$}
+\nomenclatureitem[$D$上的平方可积函数集]{$L^2(D)$}{$\left\{f(x);\int_D|f(x)|^2dx<+\infty\right\}$}
+\nomenclatureitem[Sobolev空间]{$H^1(D)$}{$\left\{f(x);f,\nabla f\in L^2(D)\right\}$}
+\nomenclatureitem[加权Sobolev空间]{$H^1,s(D)$}{}
+\nomenclatureitem[采样区域]{$\Omega$}{}
+\nomenclatureitem[弹性波散射系数]{$\mathbf{R}_\al(\cdot,\cdot)$}{$\al=p,s$}

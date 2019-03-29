@@ -1,8 +1,8 @@
 \chapter{半空间弹性波散射问题}\label{chap:Elastic}
 正散射问题的研究一般包括 Green 函数的推导及其性质研究和散射解的适定性。 一般 Green 函数的推导都是通过对偏微分方程其中一个变量作 Fourier 变换后，得到常微分方程组， 然后结合基本解得出。 特别的， 二维弹性波方程的基本解 $\G(x,y)$ \cite{ku63} 为：
-\ben
+\be\label{Green}
 \G(x,y)=\frac{1}{\mu}g_{k_s}(x,y)  \I+\frac{1}{\om^2}\nabla\nabla(g_{k_s}(x,y)-g_{k_p}(x,y))
-\een
+\ee
 这里
 \ben
 g_{k}=\frac{\i}{4}\mathit{H}_0^{(1)}(k|x-y|)
@@ -597,7 +597,8 @@ g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\
 \een
 于是， 我们最终得出
  \ben
- |{\rm I}_1+{\rm I}_2|\le C\mu^{-1}\lam^{-1/2}\cos\phi+C\mu^{-1}\lam^{-3/2}\le C\mu^{-1}(k_sy_2)/(k_s|x-y|)^{3/2},
+ |{\rm I}_1+{\rm I}_2|&\le& C\mu^{-1}\lam^{-1/2}\cos\phi+C\mu^{-1}\lam^{-3/2}\\
+ &\le& C\mu^{-1}(k_sy_2)/(k_s|x-y|)^{3/2},
  \een
   这里使用了条件 $k_sy_2\ge 1$ 。 引理得证。
 \finproof
@@ -697,126 +698,370 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 \end{remark}
 \section{正散射问题的适定性}
 
-Now we briefly recall the classical argument of limiting absorption principle (see e.g. \cite{leis, wilcox1975, Yves1988}) to define the scattering solution for the exterior elastic scattering problem in the half space:
+现在，我们将利用经典的极限吸收原理 (见文献 \cite{leis, wilcox1975, Yves1988}) 来定义半空间正散射问题的散射解。假设 $D$ 为有界 Lipschitz 区域。 对于 $g\in H^{1/2}(\Ga_D)$，令 $\ep>0$ 以及 $u_\ep$ 满足如下方程
 \be
-\Delta_e u + \omega^2 u =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp1}\\
-u= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u)e_2=0 \ \ \mbox{\rm on } \Ga_0,  \label{pp2}
+& &\Delta_e u_\ep + [\omega(1+\i\ep)]^2 u_\ep =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp3}\\
+& &u_\ep= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \\
+& &\sigma(u_\ep)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
 \ee
-where $g \in H^{1/2}(\Ga_D)$. Let $\ep>0$ and $u_\ep$ be the solution of the problem
-\be
-\Delta_e u_\ep + [\omega(1+\i\ep)]^2 u_\ep =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp3}\\
-u_\ep= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u_\ep)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
-\ee
-By the Lax-Milgram lemma, the problem (\ref{pp3})-(\ref{pp4}) has a unique solution $u_\ep\in H^1(\R^2_+\bks\bar D)$. Let \ben
-\mathcal{D}(\De_e)=\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), v=0\ \ \mbox{on }\Ga_D, \sigma(v)e_2=0\ \ \mbox{on }\Ga_0\}
-\een
- as the domain of the operator $-\De_e$, it is shown in \cite{Yves1988} that if $\om^2$ is not the eigenvalue for $-\De_e$ in the domain $\mathcal D(\De_e)$, $u_\ep$ converges to some function $u$ satisfying (\ref{pp1})-(\ref{pp2}) in $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$, where the weighted Sobolev space $H^{1,s}(\R^2_+\bks\bar D),s \in \R$, is defined as the set of functions in 
- \ben
- L^{2,s}(\R^2_+\bks\bar D)=\{v \in L^2_{\rm loc}(\R^2_+\bks\bar D): (1+|x|^2)^{s/2}v \in L^2(\R^2_+\bks\bar D) \}
- \een
-  whose first derivatives are also in $L^{2,s}(\R^2_+\bks\bar D)$. The norm 
-  \ben
-  \| v \|_{ H^{1,s}(\R^2_+\bks\bar D)} = (\| v \|^2_{ L^{2,s} (\R^2_+\bks\bar D)} + \| \nabla v \|^2_{ L^{2,s}(\R^2_+\bks\bar D)})^{1/2}
-  \een,  
-  where 
-  \ben
-  \| v \|_{ L^{2,s}(\mathcal D)} = (\int_{\mathcal D}(1+|x|^2)^{s}|v|^2 dx )^{1/2}.
-  \een
-   The absence of the positive eigenvalue for the operator $-\De_e$ is proved in \cite{sini2004} in the domain 
-   \ben
-   \mathcal D'(\De_e)=\{v\in H^1(\R^2_+\bks\bar D), \De_e v\in L^2(\R^2_+\bks\bar D), \sigma(v)\nu=0\ \mbox{on }\Ga_D, \sigma(v)e_2=0\ \mbox{on }\Ga_0\}.
-   \een
-    One can easily extend the argument in \cite{sini2004} to show the absence of the positive eigenvalue for
-$-\De_e$ also in the domain $\mathcal D(\De_e)$ and thus obtain the following theorem for the forward scattering problem.
-
-\begin{thm} \label{thm:4.1}
-	Let $g \in H^{1/2}(\Ga_D)$. The half-space elastic scattering problem (\ref{pp1})-(\ref{pp2})
-	admits a unique solution $u\in H^{1}_{\rm loc}(\R^2_+ \backslash \bar D)$. Moreover, for any bounded open set $\mathcal O\subset \R^2_+\bks\bar D$ there exists a constant $C>0$ such that
-	$\|u\|_{H^{1}(\mathcal O)}\le C\|g\|_{H^{1/2}(\Ga_D)}$.
-\end{thm}
-
-
-For the sake of convenience, we introduce the following notation: for any $u,v\in H^1(\R^2\bks\bar D)$ such that $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$,
+ 由于上述方程中 $(1+\i\ep)$ 的存在， 将方程转化为变分形式后， 易得相应双线性算子是有界且椭圆的， 于是由 Lax-Milgram 立得， 方程
+ (\ref{pp3})-(\ref{pp4}) 在空间 $ H^1(\R^2_+\bks\bar D)$ 中存在唯一解 $u_\ep$ 。显然， 当 $s>1/2$ 时，有 $u^\ep
+ \in H^{1,-s}(\R^2_+\bks\bar D)$。
+ 
+为了后文表述方便， 我么引入如下双线性形式 $\GG(\cdot,\cdot)$: 对于任意 $u,v\in H^1(\R^2\bks\bar D)$ 且满足 $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$, 令
 \be\label{g1}
 \GG(u,v)=\int_{\Ga_D} [u(x)\cdot \sigma(v(x))\nu- \sigma(u(x))\nu\cdot v(x)]ds(x).
+\ee 
+于是， 由于 $\N_{\om(1+\i\ep)}(x,y)$ 在无穷远处指数衰减，以及 $u^\ep(x)\in H^1(\R^2_+\bks\bar D)$, 利用 Betti 公式 (\ref{betti}) 易得 $u^\ep$ 的 Green 积分表达式，对于任意 $q\in\R^2$ 有
+\be\label{gg2}
+u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D.
 \ee
-Using this notation, the integral representation formula for the solution of the half-space elastic scattering problem reads: 
+
+如果当$\ep\to 0^+$ 时， $u^\ep$ 在加权 Sobolev 空间$H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中存在极限 $u\in H^{1,-s}(\R^2_+\bks\bar D)$。显然，$u$ 满足如下方程：
+\be
+& &\Delta_e u + \omega^2 u =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp1}\\
+& &u= g \ \ \mbox{\rm on }   \ \ \ \ \ \Ga_D, \ \ \ \ \\
+& &\sigma(u)e_2=0 \ \ \ \ \ \ \mbox{\rm on } \Ga_0,  \label{pp2}
+\ee
+并且我们由此定义 $u$ 为方程(\ref{pp1})-(\ref{pp2})的散射解。
+下面， 我们将说明 $u^\ep$ 在空间 $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中，当 $\ep\to 0^+$时，一定存在极限。首先，
+定义微分算子 $-\De_e$ 的定义域为：
+\ben
+\mathcal{D,\R^2_+\bks\bar D}(\De_e)&=&\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), \\
+& &v=0\ \ \mbox{on }\Ga_D, \ \  \sigma(v)e_2=0\ \ \mbox{on }\Ga_0\}
+\een
+ 对文献 \cite{Yves1988}中的结果作适当的拓展， 我们可以得到如下结论：
+ \begin{lem}\label{lap1}
+ 	若 $\om^2$ 不是算子 $-\De_e$ 在定义域 $\mathcal D(\De_e,\R^2_+\bks\bar D)$ 中的特征值, 则存在 $u\in H^{1,-s}(\R^2_+\bks\bar D)$ 当 $\ep\to0$ 时， $u_\ep$ 在空间  $H^{1,-s}(\R^2_+\bks\bar D)$ 中收敛到 u， 即
+ 	\ben
+ 	\lim_{\ep\to 0} \|u^\ep-u\|_{H^{1,-s}(\R^2_+\bks\bar D)}=0
+ 	\een 
+ 	且 u 满足方程 (\ref{pp1})-(\ref{pp2})。
+ \end{lem}
+根据引理 \ref{lap1}， 只需要证明算子 $-\De_e$ 在定义域 $\mathcal D(\De_e,\R^2_+\bks\bar D)$ 中不存在正特征值，就可以得到半空间障碍物散射问题的适定性。 在文献 \cite{sini2004} 中，Sini 针对半空间局部扰动问题证明了 
+算子    $-\De_e$  在定义域 $\mathcal D'(\De_e,\Om)$ 中不存在正特征值，其中
+   \ben
+   \mathcal D'(\De_e,\Om)=\{v\in H^1(\Om), \ \De_e v\in L^2(\Om), \ \ \sigma(v)\nu=0\ \mbox{on }\Gamma_\Om \}.
+   \een
+   这里 $\Om\subset\R^2_+$ 是半空间 $\R^2_+$ 的局部扰动， $\Gamma_\Om$ 表示 $\Om$ 的边界， 且对于足够大的$R>0$, 满足
+   \ben
+   \{x\in\Om: \ \|x\|> R\}=\{x\in\R^2_+: \ \|x\|> R\}.
+   \een
+
+下面我们将 \cite{sini2004} 中的结果推广到半空间障碍物问题，即算子
+$-\De_e$ 在定义域 $\mathcal D(\De_e,\R^2_+\bks\bar D)$ 也不存在正特征值。
+\begin{lem}\label{2.1}\label{absence1}
+	假设 $\om\in \R$ 以及 $u\in \mathcal{D}(\De_e,\R^2_+\bks\bar D)$ 满足如下方程： 
+	\be\label{elastic_eq}
+& &	\Delta_e u + \rho\omega^2 u=  \ \ \ \ \mbox{in } \ \ \ \R_+^2\bks \bar{D}\\ \label{elastic_bd}
+& &	u=0 \ \ \mbox{on} \  \ \  \ \ \  \Ga_D , \ \ \\
+& & \sigma(u)\cdot e_2=0 \ \ \ \ \ \mbox{on} \ \ \  \ \ \ \Ga_0,
+	\ee
+	于是我们断言有 $u=0$。
+\end{lem}
+在证明定理 \ref{absence1} 前， 我们先引入如下结果。 有了该结果可以发现上述定理中的边界条件 (\ref{elastic_bd}) 不是本质的， 当将其换成其它边界条件时，例如 Neumann 或是 阻抗边界条件， 定理 \ref{absence1} 依然成立。
+
+\begin{lem}\label{absence2}
+	令函数 $f\in L^2(\R^2_+)$ 且有紧支集 $B\subsetneq \R\times(h,+\infty), \ h>0$。 假设 $\omega\in \R$ 以及 $u\in \mathcal{D'}(\De_e,\R^2_+)$ 满足如下方程:
+	\be\label{eqq2}
+	\De_e u +\om^2u = f
+	\ee
+	我们断言在 $\mathcal{D'}(\De_e,\R\times(h,+\infty))$ 中 $u=0$。
+\end{lem}
+\debproof
+令 $\mathcal{F}_{x_1}(\cdot): L^2(R^2_+) \rightarrow L^2(R^2_+)$ 是针对单变量 $x_1$ 的 Fourier 变换， 即对于任意 $\xi\in \R$，
+\ben
+\hat{g}(\xi):=\mathcal{F}_{x_1}(g):=\int_\R g(x_1,x_2)e^{\i x_1\xi}dx_1.
+\een
+于是对于方程 (\ref{eq2})-(\ref{elastic_bd})作变换 $\mathcal{F}_{x_1}(\cdot)$ 后得到关于变量 $x_2\in R_+$ 的常微分方程组， 即对于任意 $\xi\in \R$ 有，
+\ben
+& & \mu \frac{d^2\hat u_1}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d\hat u_2}{dx_2}+(\omega^2-(\lambda+2\mu)\xi^2)\hat u_1 =\hat{f_1} \\
+& & (\lambda+2 \mu)\frac{d^2\hat u_2}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d\hat u_1}{dx_2}+(\omega^2-\mu \xi^2)\hat u_2 = \hat{f_2} 
+\een
+以及在 $x_2=0$ 处的边界条件，
+\ben
+& & \mu\frac{d\hat u_1}{dx_2}+\i\mu\xi\hat u_2 = 0\\
+& & (\lambda+2\mu)\frac{d\hat u_2}{dx_2}+\i\lambda\xi\hat u_1 = 0 
+\een
+为了将上述方程组的系数变化成实数， 我们作如下函数替换：
+\ben
+v_1=\i \hat{u}_1 , \ \ \ \  v_2=\hat{u}_2,  \ \ \ \  \v=(v_1,v_2)^T \\
+q_1=\i \hat{f}_1 , \ \ \ \  q_2=\hat{f}_2,  \ \ \ \  \q=(q_1,q_2)^T
+\een
+于是通过整理得到只含实系数的方程组：
+\be\label{eq3}
+& &[\A_1 \frac{d^2}{dx_2^2} +(\A_2-(\A_2)^T)\xi\frac{d}{dx_2}-\A_3\xi^2+\omega^2]\v=\q \ \ \ \ \ \mbox{in} \ \  \R_+ \\
+& &(\A_1 \frac{d}{dx_2} +\A_2\xi) \ \ \v =0 \ \   \ \ \ \ \  \ \ \ \  \ \ \mbox{on} \ \ x_2=0
+\ee
+其中 
+\ben
+\A_1=\Bigg( \begin{array}{cc}
+	\mu &  0\\
+	0 & \lambda+2\mu
+\end{array} \Bigg) ,\ \  \ \ \
+\A_2=\Bigg( \begin{array}{cc}
+	0 & -\mu\\
+	\lambda & 0
+\end{array} \Bigg), \ \ \ \
+\A_3=\Bigg( \begin{array}{cc}
+	\lambda+2\mu &  0\\
+	0 & \mu
+\end{array} \Bigg)
+\een
+为了消去方程 (\ref{eq3}) 中的源函数 $\q$， 我们引入辅助函数 $\w$ 且其满足如下二次常微分方程组初值问题，
+\ben
+& &[\A_1 \frac{d^2}{dx_2^2} +(\A_2-(\A_2)^T)\xi\frac{d}{dx_2}-\A_3\xi^2+\omega^2]\w=\q \ \ \ \ \ \mbox{in} \ \  (0,h) \\
+& &\w=0, \ \ \  (\A_1 \frac{d}{dx_2} +\A_2\xi) \ \ \w =0 \ \ \ \mbox{on} \ \  \ \ \ \ \ \ x_2=h
+\een
+引入新的向量函数 $\W=(\w,(\A_1 \frac{d}{dx_2} +\A_2\xi) \w)^T$, $\Q=(0,0,\q)^T$， 可以将关于 $\w$ 的二次常微分方程组转化成关于 $\W$ 的一次常微分方程组，
+\ben
+& &\frac{d}{dx_2}\W = \A \W +\Q \ \ \ \ \ \mbox{in} \ \  (0,h) \\
+& &\W=0  \ \ \ \mbox{on} \ \ \ \ \ \ \ \ \ x_2=h
+\een
+其中 
+\ben
+\A=\left(
+\begin{array}{cc}
+	-\A_1^{-1}\A_2\xi & \A_1^{-1} \\
+	-\A_2^T\A_1^{-1}\A_2\xi^2+\A_3\xi^2-\om^2 & \A_2^T\A_1^{-1}\xi
+\end{array}
+\right)
+\een
+利用针对常系数一次常微分方程组的标准理论， 我们可以得到，
+\ben
+\W(\xi,x_2)=-\Phi(\xi,x_2) \int_{h}^{x_2} \Phi^{-1}(\xi,t)\Q(\xi,t)dt
+\een
+其中
+\ben
+\Phi(\xi,t)=\left(\begin{array}{cccc}
+	-\mu_s(\xi) e^{\i \mu_s(\xi) t} & -\xi e^{\i\mu_p(\xi) t} & -\mu_s(\xi) e^{-\i \mu_s(\xi) t} & \xi e^{-\i\mu_p(\xi) t}  \\
+	-\i \xi e^{\i \mu_s(\xi)(\xi) t} & \i\mu_p(\xi) e^{\i\mu_p(\xi) t} & \i \xi e^{-\i \mu_s(\xi) t} & \i\mu_p(\xi)  e^{-\i\mu_p(\xi) t} \\
+	-\i\mu\beta(\xi) e^{\i \mu_s(\xi) t} & -2\i\mu \xi\mu_p(\xi)  e^{\i\mu_p(\xi) t} & \i\mu\beta e^{-\i \mu_s(\xi) t} & -2\i\mu \xi\mu_p(\xi)  e^{-\i\mu_p(\xi) t} \\
+	2\mu \xi \mu_s(\xi) e^{\i \mu_s(\xi) t} & -\mu \beta(\xi)  e^{\i\mu_p(\xi) t} & 2\mu \xi \mu_s(\xi) e^{-\i \mu_s(\xi) t} & \mu \beta(\xi)   e^{-\i\mu_p(\xi) t}
+\end{array}\right)
+\een
+\\
+下面， 我们将 $\w(\xi,x_2)$ 在区间 $(h,\infty)$ 上延拓为零。 易得 $\w(\xi,x_2)$ 在 $\R_+$ 满足方程组 (\ref{eq3})。
+因此，由 $\mu_p(\xi)$ 和 $\mu_s(\xi)$ 的性质及引理 \ref{rayleigh}， 易得 对于任意 $t\geq0$ 有 
+$\Phi(\xi,t)$ 及 $\Phi(\xi,t)^{-1}$ 关于 $\xi$ 在 $\R\bks\{\pm k_p,\pm k_s,\pm k_R\}$ 中实解析， 即在 $\R\bks\{\pm k_p,\pm k_s,\pm k_R \}$ 中任一点的某个小领域内函数都存在 Taylor 级数展开。 又因为 $f(x)$ 存在紧支集, 我们可以推出关于几乎所有的 $\xi\in \R$,  $\w(\xi,x_2), \ x_2\geq 0$ 实解析。同理 $(\A_1 \frac{d}{dx_2} +\A_2\xi) \w$ 也具有该性质。
+
+
+
+令 $\UU=\v-\w$ 且表示为 $\UU=(U_1,U_2)^T$。 于是， 易得 $\UU$ 满足如下
+\be\label{eq4}
+& &[\A_1 \frac{d^2}{dx_2^2} +(\A_2-(\A_2)^T)\xi\frac{d}{dx_2}-\A_3\xi^2+\omega^2]\UU=0 \ \ \ \mbox{in} \ \ \  x_2\in\R_+ \\
+& &(\A_1 \frac{d}{dx_2} +\A_2\xi)  \UU =(\A_1 \frac{d}{dx_2} +\A_2\xi)    \w \ \ \ \ \ \ \ \mbox{on} \ \ x_2=0 \label{bd2}
+\ee
+又因为上述方程组的系数相对于变量 $x_2$ 是常数，于是可以得到 $\UU(\xi,x_2)$ 有如下形式，
+\ben\hspace{-2.5cm}
+\UU(\xi,x_2)&=&c_1(\xi)\left(\begin{array}{l}
+	-\mu_s \\
+	-\i \xi
+\end{array}\right)e^{\i \mu_s x_2}+c_2(\xi)\left(\begin{array}{l}
+	-\xi \\
+	\i \mu_p
+\end{array}\right)e^{\i \mu_p x_2}\\
+& &+c_3(\xi)\left(\begin{array}{l}
+	-\mu_s \\
+	\i \xi
+\end{array}\right)e^{-\i \mu_s x_2}+c_4(\xi)\left(\begin{array}{l}
+	\xi \\
+	\i \mu_p
+\end{array}\right)e^{-\i \mu_p x_2}
+\een
+
+当 $\xi^2\leq k^2_p$ 时， 易得在 $L^2_{x_2}(\R_+)$ 中有 $\UU=0$ 。 因此, 由边界条件 (\ref{bd2}) 易得当 $\xi^2\leq k^2_p$ 时 ，
+\ben
+(\A_1 \frac{d}{dx_2} +\A_2\xi)   \w|_{x_2=0} =0.
+\een
+于是由 $(\A_1 \frac{d}{dx_2} +\A_2\xi)   \w|_{x_2=0}$
+ 关于几乎所有的 $\xi \in \R$ 解析及边界条件 (\ref{bd2}) 我们可以推出， 关于几乎所有的 $\xi \in \R$，成立
+\be\label{bd_1}
+(\A_1 \frac{d}{dx_2} +\A_2\xi)  \UU =0  \ \ \ \ \ \mbox{on} \ \ \ x_2=0
+\ee
+进一步， 当 $\xi^2>k^2_p$, $\UU\in L^2_{x_2}(\R_+)$ 存在如下形式，
+\ben
+\UU(\xi,x_2) = \left\{
+\begin{array}{l}
+	c_0(\xi)\left(\begin{array}{l}
+		-\xi \\
+		\i \mu_p
+	\end{array}\right)e^{\i \mu_p x_2},     \ \ \ \ \   k_p^2<   \xi^2\leq k_s^2  \\
+	c_1(\xi)\left(\begin{array}{l}
+		-\mu_s \\
+		-\i \xi
+	\end{array}\right)e^{\i \mu_s x_2}+c_2(\xi)\left(\begin{array}{l} 
+		-\xi \\
+		\i \mu_p
+	\end{array}\right)e^{\i \mu_p x_2}, \ \ \xi^2>k_s^2
+\end{array}
+\right.
+\een
+于是有
+\ben 
+(\A_1 \frac{d}{dx_2} +\A_2\xi)  \UU = \left\{
+\begin{array}{l}
+	c_0(\xi)\left(\begin{array}{l}
+		-2\i\mu\xi\mu_p \\
+		-\mu\beta
+	\end{array}\right)e^{\i \mu_p x_2},     \ \ \ \ \   k_p^2<   \xi^2\leq k_s^2  \\
+	c_1(\xi)\left(\begin{array}{l}
+		-\i\mu\beta \\
+		2\mu\xi\mu_s
+	\end{array}\right)e^{\i \mu_s x_2}+c_2(\xi)\left(\begin{array}{l} 
+		-2\i\mu\xi\mu_p \\
+		-\mu\beta
+	\end{array}\right)e^{\i \mu_p x_2}, \ \ \xi^2>k_s^2
+\end{array}
+\right.
+\een
+因此， 利用条件 (\ref{bd_1}), 易得 $c_0(\xi)=0$  和
+
+\be
+\mathbf{det} \left(\begin{array}{ll}
+	-\i\mu\beta & -2\i\mu\xi\mu_p \\
+	2\mu\xi\mu_s &	-\mu\beta
+\end{array}\right)=-\i\mu(\beta^2+4\xi^2\mu_s\mu_p)=0
+\ \ \ \  \mbox{for} \ \ \xi^2>k_s^2
+\ee
+ 利用引理 \ref{rayleigh}，易得当$\xi\neq\pm k_R$ 时 $c_1(\xi)=c_2(\xi)=0$ 。于是， 关于几乎所有的 $\xi\in\R$ 及 $x\in \R^+$， 成立$\UU(\xi,x_2)=0$。由于 $\v=\UU+\w$， 易知关于几乎所有的   $\xi\in\R$ 及 $x_2\in(h,+\infty)$ 成立 $\v(\xi,x_2)=0$。 于是通过将 $\hat{\u}(\xi,x_2)$ 作逆 Fourier 变换，引理得证。
+ 
+\finproof
+
+
+
+{\noindent \bf 引理 \ref{absence1} 的证明：} 
+
+由于 $D\subsetneq\R^2_+$， 我们可以找到半径分别为 $R_1$ 和 $R_2$ 的同心圆 $B_{R_1},B_{R_2}$ 且满足关系式 $D\subsetneq B_{R_1}\subsetneq B_{R_2}  \subsetneq \R^2_+$。 令 $\chi \in C_{0}^{\infty}(\R^2_+)$ 是一截断函数， 且满足 $0 \leq \chi \leq 1$,当$x\in B_{R_1}$ 时 $\chi=0$  以及当 $x\notin \overline{B_{R_2}}$ 时 $\chi=1$。
+
+进一步， 我们定义 $v=\chi u$，
+易得 $v$ 满足方程 (\ref{eqq2})， 且其中
+\ben
+f=\sigma(u)\na\chi+(\lambda+\mu)(\na^2 \chi u+ \na u \na\chi)+\mu\Delta\chi u +\mu\div u\na\chi,
+\een
+ 这里 $\na^2 \chi$ 是 $\chi$ Hessian 矩阵。 显然成立 $q\in L^2(\R^2_+)$ 且存在紧支集。 因此， 利用引理 \ref{absence2}, 可以得到存在足够大的 $h>0$, 当 $x\in \R\times(h,+\infty)$ 时， $u=v=0$。 最后，利用弹性波方程的唯一延拓性原理 \cite{Morassi2001STRONG}，
+立得在 $\R^2_+$ 中， u=0 。 引理得证。
+\finproof
+
+利用相似的理论推导， 上述结果可以推广到可穿透障碍物情形，即有如下定理，
+\begin{lem}
+	假设 $\om\in \R$ 以及 $u\in \mathcal{D}(\De_e,\R^2_+)$ 满足如下方程： 
+
+	\ben
+	\De_e \u + \om^2 (1+n(x)) \u =0
+	\een
+	这里 $n(x)\in L^{\infty}(D)$ 是一个在 $D$ 存在紧支集的正标量函数,
+	于是我们断言有 $\u=0$.
+\end{lem}
+
+
+于是， 利用引理 \ref{lap1} 和引理 \ref{absence1}， 易得如下半空间弹性波问题散射解的适定性。
+\begin{thm} \label{thm:4.1}\label{lap2}
+	对于任意 $g \in H^{1/2}(\Ga_D)$， 半空间散射问题 (\ref{pp1})-(\ref{pp2})
+	存在唯一的散射解 $u\in H^{1}_{\rm loc}(\R^2_+ \backslash \bar D)$。此外， 对于任意有界区域 $\mathcal O\subset \R^2_+\bks\bar D$ 存在常数 $C>0$ 成立如下估计:
+	\ben
+	\|u\|_{H^{1}(\mathcal O)}\le C\|g\|_{H^{1/2}(\Ga_D)}.
+	\een
+\end{thm}
+
+关于半空间散射问题在其它边界条件的情形或是对于可穿透障碍的情形， 以上论证都可以类似的推广到相应情形。利用 $u^\ep$ 的 Green 表示公式 (\ref{gg2}), 令 $\ep\to 0$, 可以得到关于半空间弹性波问题散射解 $u$ Green 表示公式: 
 \be\label{g2}
 u(y)\cdot q=\GG(u(\cdot),\N(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D,\ \ \forall q\in\R^2.
 \ee
+\begin{remark}
+	我们针对散射解作一说明，在通篇全文中提到的散射解， 无论方程建立在哪种背景介质或是无界区域 $\Om
+	$ 内，散射解 $u$ 都是指将原方程中的角频率 $\om$ 替换成 $\om(1+\i\ep)$ 后得到相应方程的解 $u^\ep$ 在空间 $H^{1,-s}(\Om)$, $s>1/2$ 中的极限。特别地， 利用极限吸收原理得到的全空间散射问题的散射解 \cite{leis, cxz2016} 与所谓的 Kupradze's 辐射条件下得出的散射解等价。
+\end{remark}
+
+从上面的讨论， 我们得知由于半空间表面的自由边界条件存在， 使得相应的散射问题与全空间弹性波散射问题的研究截然不同。于是， 一个自然的想法就是， 当散射体远离半空间的表面时，该自由边界条件对于散射波的影响是否可以忽略， 即此时是否可以近似看成一个全空间弹性波散射问题。
 
 
-
-
-
-The following theorem which extends \cite[Theorem 4.1]{RTMhalf_aco} for acoustic waves will be proved in the Appendix of this paper. It shows that the difference between the half-space scattering solution and the full space scattering solution is small when the scatterer is far away from the boundary $\Ga_0$.
+下面的定理推广了文献 \cite[Theorem 4.1]{RTMhalf_aco} 中关于声波情形下半空间散射解与相应的全空间散射解的差距的刻画。事实上， 当障碍物远离半空间表面 $\Ga_0$ 时，我们可以认为半空间散射解和全空间散射解非常相近。
 
 \begin{thm}\label{thm:4.2}
-	Let $g\in H^{1/2}(\Ga_D)$ and $u_1,u_2$ be the scattering solution of following problems:
-	\be\label{e1}
-	\Delta_e u_1 + \omega^2 u_1=0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D},\ \  u_1= g \ \ \mbox{\rm on } \Ga_D,\ \ \sigma(u_1)e_2=0 \ \ \mbox{\rm on } \Ga_0,\\
-	\label{e2}
-	\Delta_e u_2 + \omega^2 u_2=0 \ \ \mbox{\rm in }\R^2\bks \bar{D},\ \ u_2 = g \ \ \mbox{\rm on } \Ga_D.
-	\ee
-	Then there exits a constant C depending only on $\kappa$ but independent of $k_s, h,d_D$ such that
-	\ben\hskip-2cm
-	\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}
-	\le\frac{C}{\mu}(1+\|T_1\|)(1+\|T_2\|)(1+k_s d_D)^2(k_sh)^{-1/2}\|g\|_{ H^{1/2}(\Ga_D)}.
-	\een
-	Here $T_1, T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ are the Dirichlet to Neumann mapping associated with the elastic scattering problem (\ref{e1}) and (\ref{e2}), respectively. $\|T_1\|, \|T_2\|$ denote their operator norms.
-\end{thm}
-
-In this section we prove Theorem \ref{thm:4.2}.
-Let $w(x)$ be the scattering solution of the problem:
-\be\label{f2}
-\Delta_e w + \omega^2 w=0 \ \ \mbox{\rm in } \R^2_+,\ \ 
-\sigma(w)e_2=-\sigma(u_2)e_2 \ \ \mbox{\rm on } \Ga_0 .
+	假设 $g\in H^{1/2}(\Ga_D)$ ，\\
+	 $u_1$ 是如下半空间散射问题的散射解，
+	\be\label{e11}
+& &	\Delta_e u_1 + \omega^2 u_1=0 \ \ \ \ \ \ \mbox{\rm in } \R^2_+\bks \bar{D},\ \ \\
+& &	 u_1= g \ \ \mbox{\rm on } \Ga_D,\ \ \sigma(u_1)e_2=0 \ \ \mbox{\rm on } \Ga_0, \label{e12}
 \ee
-Then $u_1-u_2-w$ is the scattering solution of the problem (\ref{e1}) with the boundary condition $u_1-u_2-w=-w$ on $\Gamma_D$. Thus by Theorem \ref{thm:4.1} and (\ref{q0}), we have
+	$u_2$是如下全空间散射问题的散射解，
+	\be\label{e21}
+& &	\Delta_e u_2 + \omega^2 u_2=0 \ \ \ \ \ \ \mbox{\rm in }\R^2\bks \bar{D},\ \ \\
+& &	u_2 = g \ \ \mbox{\rm on } \Ga_D. \label{e22}
+	\ee
+	于是存在仅依赖于 $\kappa$ 而与 $k_s,k_p h,d_D$ 都无关的常数 $C>0$, 成立如下估计，
+	\ben
+	& &\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}\\
+	&\le&\frac{C}{\mu}(1+\|T_1\|)(1+\|T_2\|)(1+k_s d_D)^2(k_sh)^{-1/2}\|g\|_{ H^{1/2}(\Ga_D)}.
+	\een
+	这里 $T_1, \ T_2 \ :H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$  是弹性波散射问题 (\ref{e11})-(\ref{e12}) 和 (\ref{e21})-(\ref{e22}) 相应的 Dirichlet-to-Neumann 算子。 $\|T_1\|, \|T_2\|$ 表示相应的算子范数。
+\end{thm}
+\debproof
+ 我们先做如下说明，以下过程中如有必要，都是先在将 $\om$ 替换成  $\om(1+\ep)$ 后进行的， 最后通过令 $\ep\to 0$ 得到结果。为了表述简便， 后文中我们将省略极限吸收这一步骤的叙述。
+
+令 $w(x)$ 为如下方程的散射解：
+\be\label{f2}
+& &\Delta_e w + \omega^2 w=0 \ \ \mbox{\rm in } \R^2_+,\ \  \\ \label{f21}
+& &\sigma(w)e_2=-\sigma(u_2)e_2 \ \ \mbox{\rm on } \Ga_0 .
+\ee
+于是易得 $u_1-u_2-w$ 是方程 (\ref{e11})-(\ref{e12}) 的散射解， 且满足边界条件
+ \ben
+ u_1-u_2-w=-w \ \ \ \ \ \ \ \mbox{on} \ \ \ \ \ \Gamma_D.
+ \een
+于是利用定理 \ref{absence2} 和估计 (\ref{q0})， 我们得到：
 \be
-\hskip-1cm\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}&\leq&\|T_1(u_1-u_2-w)\|_{H^{-1/2}(\Gamma_D)}+\|\sigma(w)\nu\|_{H^{-1/2}(\Gamma_D)}\nn\\
+\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}&\leq&\|T_1(u_1-u_2-w)\|_{H^{-1/2}(\Gamma_D)}+\|\sigma(w)\nu\|_{H^{-1/2}(\Gamma_D)}\nn\\
 &\leq&C (1+\|T_1\|)\max_{x\in \bar D}(|w(x)|+d_D|\nabla w(x)|),\label{f5}
 \ee
-where we recall that $T_1:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ is the Dirichlet to Neumann mapping associated to the half-space elastic scattering problem (\ref{e1}) and $\|T_1\|$ denotes its operator norm.
+这里第二个不等式利用了 $T_1:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ 是半空间散射问题(\ref{e11})-(\ref{e12}) 的 Dirichlet-to-Neumann 算子的定义。
 
-By the integral representation formula, the scattering solution of the problem (\ref{f2}) satisfies
+利用积分表示公式， 散射问题 (\ref{f2})-(\ref{f21}) 的散射解 $w(x)$ 有如下表示：
 \be\label{f3}
 w(y)\cdot e_j=\int_{\Ga_0} \sigma(u_2(x))e_2\cdot \N(x,y) e_j ds(x),\ \ \forall y\in \R^2,\ j=1,2.
 \ee
-On the other hand, by the integral representation formula, we have
+另一方面， 同样利用全空间散射解的积分表达公式， 我们有：
 \ben
 u_2(x)\cdot e_j=\GG(u_2(\cdot),\G(\cdot,x)e_j),\ \ \forall x\in\Ga_0, \ j=1,2,
 \een
-where $\GG(\cdot,\cdot)$ is defined in (\ref{g1}) and $\G(\cdot,\cdot)$ is the fundamental solution tensor of the elastic wave equation introduced in section 2. For any $x\in\Ga_0, z\in\R^2$, denote by $\T(z,x)\in\C^{2\times 2}$ the traction tensor, $\T(z,x)q=\sigma(\G(z,x)q)e_2,\forall q\in\R^2$. The $(i,j)$-th element of $\T(z,x)$ is 
+这里的双线性算子 $\GG(\cdot,\cdot)$ 在 (\ref{g1}) 中定义。 $\G(\cdot,\cdot)$ 是基本解 (\ref{Green})。对于任意 $x\in\Ga_0, z\in\R^2$， 我们定义 $\T(z,x)\in\C^{2\times 2}$ 是基本解 $\G(z,x)$ 在 $e_2$ 方向的应力张量， 即对于任意 $q\in\R^2$ 有： \ben
+\T(z,x)q=\sigma(\G(z,x)q)e_2,
+\een
+其中 $\T(z,x)$ 的第 $(i,j)$ 个元素表示为：
 \ben
 [\T(z,x)]_{ij}=[\sigma(\G(z,x)e_j)e_2]e_i,\ \ i,j=1,2.
 \een
-Simple calculation shows that
+利用基本解的对称性 $\G(x,y)=\G(x,y)^T$, 通过简单的计算，可以得到：
 \ben
 \sigma(u_2(x))e_2\cdot e_i=\GG(u_2(\cdot),\T(\cdot,x)^Te_i),\ \ \forall x\in\Ga_0, i=1,2,
 \een
-which yields from (\ref{f3}) that
+于是， 将上式代入式 (\ref{f3}) 易得：
 \be
-\hskip-1cmw(y)\cdot e_j&=&\GG(u_2(\cdot),\left[\int_{\Ga_0}\sum^2_{i=1}[\T(\cdot,x)^Te_i]\cdot [e_i^T\N(x,y)e_j]ds(x)\right])\nn\\
+w(y)\cdot e_j&=&\GG(u_2(\cdot),\left[\int_{\Ga_0}\sum^2_{i=1}[\T(\cdot,x)^Te_i]\cdot [e_i^T\N(x,y)e_j]ds(x)\right])\nn\\
 \hskip-1cm&=&\GG(u_2(\cdot),\V(\cdot,y)e_j),\label{f4}
 \ee
-where 
+其中有： 
 \ben
 \V(z,y)=\int_{\Ga_0}\T(z,x)^T\N(x,y)ds(x),\ \ \forall y\in \R^2, z\in\Ga_D.
 \een
-Notice that $\|\sigma(u_2)\nu\|_{H^{-1/2}(\Gamma_D)}\leq \|T_2\| \|g\|_{H^{1/2}(\Gamma_D)}$, where $T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ is the Dirichlet to Neumann mapping associated to the scattering problem (\ref{e2}) and $\|T_2\|$ denotes its operator norm. We obtain from (\ref{f4}) and (\ref{q0}) that
+注意到 $T_2:H^{1/2}(\Ga_D)\to H^{-1/2}(\Ga_D)$ 全空间散射问题(\ref{e21})-(\ref{e22}) 的 Dirichlet-to-Neumann 算子，所以有：
+\ben
+\|\sigma(u_2)\nu\|_{H^{-1/2}(\Gamma_D)}\leq \|T_2\| \|g\|_{H^{1/2}(\Gamma_D)}
+\een
+通过等式 (\ref{f4}) 及估计 (\ref{q0}) ，我们得到：
 \be
-\hskip-1.5cm |w(y)|+d_D|\na w(y)|&\le&C (1+\|T_2\|) \|g\|_{H^{1/2}(\Gamma_D)}
+& & |w(y)|+d_D|\na w(y)|\\
+&\le&C (1+\|T_2\|) \|g\|_{H^{1/2}(\Gamma_D)}
 \max_{z\in \Ga_D}\sum^1_{i,j=0}d_D^{i+j}|\na_z^i\na_y^j\V(z,y)|.\label{f6}
 \ee
-To estimate the term involving $\V(z,y)$, we use Parserval identity and Lemma \ref{lem:2.2} to obtain
+为了估计 $\V(z,y)$, 类似于推导 Neumann Green 函数的方法 利用 Parseval 等式和引理 \ref{cauchy_pv} 得到：
 \ben
 \V(z,y)&=&\frac 1{2\pi}\,\pv\int_{\R}\hat{\T}(z_2;\xi,0)^T\hat{\N}(\xi,0;y_2)e^{-\i\xi(y_1+z_1)}d\xi\\
 &&-\frac\i 2
 \left[\hat{\T}(z_2;\xi,0)^T\hat{\N}(\xi,0;y_2)e^{-\i\xi(y_1+z_1)}\right]^{k_R}_{-k_R}.
 \een
-It is easy to see from (\ref{G1})-(\ref{G2}) that
-\ben \hspace{-1cm}
+利用基本解 $\G(z,x)$ 在频域中的表达式 (\ref{G1})-(\ref{G2})，可以得到 
+\ben 
 \hat{\T}(z_2;\xi,0)&=&\frac \mu{2\om^2}\Bigg( \begin{array}{cc}
 	\varphi & \frac{\xi\varphi}{\mu_s} \\
 	2\xi\mu_s & 2\xi^2
@@ -828,28 +1073,33 @@ It is easy to see from (\ref{G1})-(\ref{G2}) that
 \end{array}\Bigg)e^{\i\mu_p z_2} \\
 &:=&\tilde{\mathbb{T}}_{s}(\xi)e^{\i\mu_p z_2}+\tilde{\mathbb{T}}_{p}(\xi)e^{\i\mu_s z_2}.
 \een
-Now by using (\ref{d2}) we have
+进一步， 利用表达式 (\ref{d2}) ， 我们得到
 \ben
 \hskip-1cm\V(z,y)&=&\frac 1{2\pi}\sum_{\al,\beta=p,s}{\rm p.v.}\int_{\R}\frac{\tilde{\mathbb T}_{\alpha}(\xi)^T{\mathbb N}_\beta(\xi)}{\de(\xi)}e^{\i(\mu_\al z_2+\mu_\beta y_2)-\i(y_1+z_1)\xi}d\xi\\
-\hskip-1cm& &-\frac\i 2\sum_{\al,\beta=p,s}\left[\frac{\tilde{\mathbb T}_\alpha(\xi)^T{\mathbb{N}}_\beta(\xi)}{\de'(\xi)}e^{\i(\mu_\al z_2+\mu_\beta y_2)-\i(y_1+z_1)\xi}\right]^{k_R}_{-k_R}:={\rm V}_1+{\rm V}_2.
+\hskip-1cm& &-\frac\i 2\sum_{\al,\beta=p,s}\left[\frac{\tilde{\mathbb T}_\alpha(\xi)^T{\mathbb{N}}_\beta(\xi)}{\de'(\xi)}e^{\i(\mu_\al z_2+\mu_\beta y_2)-\i(y_1+z_1)\xi}\right]^{k_R}_{-k_R}\\
+&:=&{\rm V}_1+{\rm V}_2.
 \een
-To estimate ${\rm V}_1$ we split the integral into two domains $(-k_s,k_s)$ and $\R\bks[-k_s,k_s]$ and use the Van der Corput lemma \ref{van} to estimate the integral in the first interval and the argument in Lemma \ref{lem:3.4}
-to estimate
-the integral in $\R\bks[-k_s,k_s]$. This yields $|{\rm V}_1|\le C\mu^{-1}(k_sh)^{-1/2}$. By the same argument as in
-Lemma \ref{lem:3.2} we can show $|{\rm V}_2|\le C\mu^{-1}e^{-\sqrt{k_R-k_s}h}$. This shows
+为了估计 ${\rm V}_1$ 我们将积分区间分解成 $(-k_s,k_s)$ 和 $\R\bks[-k_s,k_s]$。 利用 Van der Corput 引理 \ref{van} 易得在区间 $(-k_s,k_s)$ 上的相应积分的估计。 利用第\ref{chap：RTM}章中引理 \ref{decay_2}中的论证，可以得到在区间 $\R\bks[-k_s,k_s]$ 上相应积分的估计。由此得到， 
+\ben
+|{\rm V}_1|\le C\mu^{-1}(k_sh)^{-1/2}.
+\een
+进一步， 通过第\ref{chap：RTM}章中引理
+ \ref{decay_1} 的论证方法易得：
+ \ben
+ |{\rm V}_2|\le C\mu^{-1}e^{-\sqrt{k_R-k_s}h}.
+ \een
+ 最终，结合以上两个估计， 我们得到：
 \ben
 \max_{z\in\Ga_D}|\V(z,y)|\le \frac C\mu (k_sh)^{-1/2},\ \ \forall y\in \bar D.
 \een
-A similar argument shows that
+通过类似的理论推导可以得到：
 \ben
 \max_{z\in\Ga_D} k_s^{i+j}|\na_z^i\na^j_y\V(z,y)|\le \frac C\mu (k_sh)^{-1/2},\ \ \forall y\in \bar D,\ i,j=0,1.
 \een
-Substitute the above two estimates into (\ref{f6}) we obtain
+将上述两个估计代入式子 (\ref{f6}) 中， 我们有：
 \ben
-\hskip-1cm\max_{y\in \bar D}(|w(y)|+d_D|\na w(y)|)\le\frac C\mu (1+\|T_2\|)(1+k_sd_D)^2(k_sh)^{-1/2} \|g\|_{H^{1/2}(\Gamma_D)}.
+\max_{y\in \bar D}(|w(y)|+d_D|\na w(y)|)\le\frac C\mu (1+\|T_2\|)(1+k_sd_D)^2(k_sh)^{-1/2} \|g\|_{H^{1/2}(\Gamma_D)}.
 \een
-This completes the proof of the theorem from (\ref{f5}).
+利用式子估计式 (\ref{f5})， 引理得证。
 \finproof
 
-
-We remark that the well-posedness of the full space elastic scattering problem (\ref{e2}) under the so-called Sommerfeld-Kupradze radiation condition is well known (cf. e.g. \cite{ku63}). It is equivalent to the solution defined by the limiting absorption principle \cite{leis, cxz2016}.

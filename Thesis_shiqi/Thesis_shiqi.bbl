@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{86}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -338,6 +338,45 @@ Hokstad~K, Mittet~R, Landr{\o}~M.
   profiling data\allowbreak[J].
 \newblock Geophysics, 1998, 63\penalty0 (5):\penalty0 1685-1695.
 
+\bibitem[Sun\ et~al.(2001)Sun and McMechan]{sun2001scalar}
+Sun~R, McMechan~G~A.
+\newblock Scalar reverse-time depth migration of prestack elastic seismic
+  data\allowbreak[J].
+\newblock Geophysics, 2001, 66\penalty0 (5):\penalty0 1519-1527.
+
+\bibitem[Denli\ et~al.(2008)Denli and Huang]{denli2008elastic}
+Denli~H, Huang~L.
+\newblock Elastic-wave reverse-time migration with a wavefield-separation
+  imaging condition: 78th annual international meeting, seg, expanded
+  abstracts, 2346--2350\allowbreak[Z].
+\newblock 2008.
+
+\bibitem[Chung\ et~al.(2012)Chung, Pyun, Bae, Shin, and
+  Marfurt]{chung2012implementation}
+Chung~W, Pyun~S, Bae~H~S, et~al.
+\newblock Implementation of elastic reverse-time migration using wavefield
+  separation in the frequency domain\allowbreak[J].
+\newblock Geophysical Journal International, 2012, 189\penalty0 (3):\penalty0
+  1611-1625.
+
+\bibitem[Etgen(1988)]{etgen1988prestacked}
+Etgen~J~T.
+\newblock Prestacked migration of p and
+  sv-waves\allowbreak[M]//\allowbreak{}SEG Technical Program Expanded Abstracts
+  1988.
+\newblock Society of Exploration Geophysicists, 1988: 972-975.
+
+\bibitem[Zhe\ et~al.(1997)Zhe and Greenhalgh]{zhe1997prestack}
+Zhe~J, Greenhalgh~S~A.
+\newblock Prestack multicomponent migration\allowbreak[J].
+\newblock Geophysics, 1997, 62\penalty0 (2):\penalty0 598-613.
+
+\bibitem[Dellinger\ et~al.(1990)Dellinger and Etgen]{dellinger1990wave}
+Dellinger~J, Etgen~J.
+\newblock Wave-field separation in two-dimensional anisotropic
+  media\allowbreak[J].
+\newblock Geophysics, 1990, 55\penalty0 (7):\penalty0 914-919.
+
 \bibitem[Beylkin(1984)]{beylkin1984inversion}
 Beylkin~G.
 \newblock The inversion problem and applications of the generalized radon
@@ -404,6 +443,11 @@ Chen~Z, Fang~S, Huang~G.
 \newblock A direct imaging method for the half-space inverse scattering problem
   with phaseless data\allowbreak[J].
 \newblock Inverse Probl. Imaging, 2017, 11:\penalty0 901-916.
+
+\bibitem[Adams\ et~al.(2003)Adams and Fournier]{adams2003sobolev}
+Adams~R~A, Fournier~J~J.
+\newblock Sobolev spaces: volume 140\allowbreak[M].
+\newblock Elsevier, 2003.
 
 \bibitem[Watson(1995)]{watson1995treatise}
 Watson~G~N.
@@ -472,6 +516,13 @@ Sini~M.
   system\allowbreak[J].
 \newblock Integral Equations and Operator Theory, 2004, 49\penalty0
   (2):\penalty0 255-277.
+
+\bibitem[Morassi(2001)]{Morassi2001STRONG}
+Morassi~A.
+\newblock Strong unique continuation for the lamÉ system of
+  elasticity\allowbreak[J].
+\newblock Communications in Partial Differential Equations, 2001, 26\penalty0
+  (9-10):\penalty0 1787-1810.
 
 \bibitem[Melrose\ et~al.(1985)Melrose and Taylor]{melrose1985near}
 Melrose~R~B, Taylor~M~E.

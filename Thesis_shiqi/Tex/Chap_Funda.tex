@@ -1,18 +1,96 @@
 \chapter{基础知识}\label{chap:fundamental}
-
-\begin{definition}\label{def:pv}
-	Cauchy 主值定义
-\end{definition}
-
-We start by introducing some notation. For any Lipschitz domain $\mathcal{D}\subset \R^2$ with boundary $\Ga_\mathcal{D}$, let $\|u\|_{H^1(\mathcal{D})}=(\|\na \phi\|_{L^2(\mathcal{D})}^2+d_\mathcal{D}^{-2}\|\phi\|_{L^2(\mathcal{D})}^2)^{1/2}$ be the weighted $H^1(\mathcal{D})$ norm
-and
-$\|v\|_{H^{1/2}(\Ga_\mathcal{D})}=(d_\mathcal{D}^{-1}\|v\|_{L^2(\Ga_\mathcal{D})}^2+|v|_{\frac 12,\Ga_\mathcal{D}}^2)^{1/2}$ be the weighted $H^{1/2}(\Ga_\mathcal{D})$ norm,
-where $d_\mathcal{D}$ is the diameter of $\mathcal{D}$ and
+\section{函数空间}
+我们首先引入后文需要用的记号和 Sobolev 空间 \cite{adams2003sobolev}。 令 $D$ 是 $\R^2$ 中的 Lipschitz 区域， 定义 $\Ga_D$ 是 $D$ 的边界。于是， 令 $L^2(D)$ 为 $D$ 上 Lebesgue 平方可积函数构成的 Hilbert 空间， 即
+\ben
+L^2(D)=\{u(x):\int_D|u|^2 dx<\infty\}
+\een
+该空间的内积和范数定义如下：
+\ben
+<u,v>=\int_D u(x)\overline{v(x)} dx, \ \ \ \|u\|_{L^2(D)}=<u,u>^{1/2}
+\een
+关于任意整数 $d\geq 0$, 可以定义 Sobolev 空间 $H^d(D)$ 为;
+\ben
+H^d(D)=\{u(x), \pa^\al u\in L^2(D), \ \ |\al|\leq d\}
+\een
+其中 $\al=(\al_1,\al_2)$, $\al_1,\al_2$ 为非负整数。 
+当区域 $D$ 有界时， 我们引入如下 $H^1(D)$的加权范数：
+\ben
+\|u\|_{H^1({D})}=(\|\na \phi\|_{L^2({D})}^2+d_{D}^{-2}\|\phi\|_{L^2({D})}^2)^{1/2}
+\een
+其中 $d_D$ 是有界区域 $D$ 的直径。进一步， 定义边界上的分数次 Sobolev 空间 $H^{1/2}(\Ga_{D})$ 为：
+\ben
+H^{1/2}(\Ga_{D})=\{v(x):  \|v\|_{L^2(\Ga_\mathcal{D})}^2<\infty, \ \ |v|_{\frac 12,\Ga_\mathcal{D}}^2)^{1/2}<\infty      \}
+\een
+其中有：
 \ben
 |v|_{\frac 12,\Ga_\mathcal{D}}=\left(\int_{\Ga_\mathcal{D}}\int_{\Ga_\mathcal{D}}\frac{|v(x)-v(y)|^2}{|x-y|^2}ds(x)ds(y)\right)^{1/2}.
 \een
-By the scaling argument and trace theorem we know that there exists a constant $C>0$ independent of $d_\mathcal{D}$ such that for any $\phi\in C^1(\bar{\mathcal{D}})^2$ \cite[corollary 3.1]{RTMhalf_aco},
-\be\label{q0}
-\|\phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_\mathcal{D})}\le C\max_{x\in \bar{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na\phi(x)|).
-\ee
-In this paper, for any Sobolev space $X$, we still denote $X$ the vector valued space $X^2$ or tensor valued space $X^{2\times 2}$. The norms of $X, X^2, X^{2\times 2}$ are all denoted by $\|\cdot\|_X$.
+且$H^{1/2}(\Ga_{D})$加权范数定义为：
+\ben
+\|v\|_{H^{1/2}(\Ga_{D})}=(d_{D}^{-1}\|v\|_{L^2(\Ga_{D})}^2+|v|_{\frac 12,\Ga_{D}}^2)^{1/2}
+\een
+于是， 通过尺度变换技巧和迹定理，易得如下不等式估计 \cite[corollary 3.1]{RTMhalf_aco}
+\begin{lem}
+	对于任意 $\phi\in C^1(\bar{\mathcal{D}})^2$$C>0$ 存在于 $d_{D}$ 无关的常数 $C>0$ ，成立如下不等式：
+	\be\label{q0}
+	\|\phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_\mathcal{D})}\le C\max_{x\in \bar{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na\phi(x)|).
+	\ee
+\end{lem}
+由于， 散射问题都是定义在无穷区域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间。 假设 $\Om$ 是无界区域，定义加权 Lebesgue 平方可积函数空间 $L^{2,s}(\Omega)$ 如下：
+\ben
+L^{2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \}
+\een
+且相应的范数为：
+\ben
+\| v \|_{ L^{2,s}(\Om)} = (\int_{\Om}(1+|x|^2)^{s}|v|^2 dx )^{1/2}.
+\een
+于是， 我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om),s \in \R$ 为
+\ben
+H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om)   \}
+\een 
+且其相应的范数为
+\ben
+\| v \|_{ H^{1,s}(\Om)} = (\| v \|^2_{ L^{2,s} (\Om} + \| \nabla v \|^2_{ L^{2,s}(\Om)})^{1/2}
+\een,  
+
+
+在全文中，针对 Sobolev 空间 $X$, 为简便期间我们把向量值空间 $X^2$ 或是张量值空间 $X^{2\times 2}$ 仍然记作 $X$, 而且 $X, X^2, X^{2\times 2}$ 的范数统一表示成 $\|\cdot\|_X$。
+
+\begin{definition}[Cauchy 主值]\label{def:pv}
+	假设 $c\in [a,b]$ 是函数 $f(x)$ 的奇点, 且对于任意 $\ep>0$, $f(x)$ 在区间 $(a,c-\ep)$ 或 $(c+\ep,b)$ 上可积。 若如下极限存在且有限，
+	\ben
+	\lim_{\ep\to 0^+}\int_{a}^{c-\ep}f(x)dx+\lim_{\ep\to 0^+}\int_{c+\ep}^{b}f(x)dx
+	\een
+	则称该极限为 $\int_{a}^{b}f(x)dx$ 的 Cauchy 主值。
+\end{definition}
+
+\section{基本定理}
+\begin{lem}[H\"{o}lder 不等式]
+	假设 $n$ 为正整数， 且 $p,q\in(1,+\infty)$ 满足 $\frac{1}{p}+\frac{1}{q}$。 于是对于 $f\in L^p(\R^n)$ 和 $g\in L^q(\R^n)$ 成立如下不等式：
+	\ben
+	\|f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R^n)}
+	\een
+\end{lem}
+\begin{lem}[Parseval 等式]
+  假设 $n$ 为正整数，对任意 $f, g \in L^2(\R^n)$, 定义 Fourier 变换 $\hat f(\xi)$ 为如下范数 $\|\cdot\|_{L^2_{\R^n}}$的极限：
+  \ben
+  \hat f(\xi)=\lim_{R\to\infty}\int_{\|x\|\leq R}f(x)\ \ e^{-\i x\cdot \xi} dx.
+  \een
+  于是成立等式,
+  \ben
+  \int_{\R^n}f(x)\cdot \overline{g(x)}dx=
+  \frac{1}{(2\pi)^n}\int_{\R^n}\hat f(\xi)\cdot \overline{\hat g(\xi)}d\xi.
+  \een
+  这里 $\overline{g(x)}$ 表示函数 $g(x)$ 的复共轭。
+\end{lem}
+
+\begin{lem}[Betti 公式]
+	假设 $D$ 为有界 Lipschitz 区域且其单位外法向为 $\nu$，对于 $u\in H^1(D)^2$ 和 $v\in H^2(D)^2$, 成立
+	\ben
+	\int_D u\cdot \Delta_e v dx =\int_{\pa D} u\cdot \sigma(u)\nu ds(x) -\int_D \ \lambda \ (\nabla\cdot u)(\nabla\cdot v)+2\mu \ \ep(u):\ep(v) dx
+	\een
+	这里关于 $A=(a_{ij})$, $B=(b_{ij})$ , $i,j=1,2$, 有 $A:B=\sum_{i,j=1}^{2}a_{ij}b_{ij}$。特别地， 如果进一步有 $u\in H^2(D)^2$， 则成立：
+	\be\label{betti}
+	\int_D u\cdot \Delta_e v-\Delta_e u \cdot v dx =\int_{\pa D} u\cdot \sigma(v)\nu -\sigma(u)\nu\cdot vds(x)
+	\ee
+\end{lem}
