@@ -73,7 +73,7 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{figure_seismic}{{1.1}{7}{地震波勘探模型\relax }{figure.caption.7}{}}
 \citation{claerbout1972downward,gazdag1978wave}
-\citation{zhanggq1993,Zhang2007}
+\citation{zhanggq1993,Zhang2007,zhang2018itoin}
 \citation{whitmore1983iterative}
 \citation{baysal1983reverse}
 \citation{mcmechan1983migration}
@@ -87,11 +87,11 @@
 \citation{dellinger1990wave}
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}逆时偏移方法简介}{8}{section.1.4}}
 \citation{beylkin1984inversion,beylkin1985imaging,beylkin1990linearized}
-\citation{chen2013reverse_acou,chen2013reverse_elec}
+\citation{chen2013reverse_acou,chen2013reverse_elec,thesis_guanghui}
 \citation{chen2015reverse_planar}
 \citation{RTMhalf_aco}
-\citation{chen2017phaseless,chen2016direct,chen2017direct}
-\@writefile{toc}{\contentsline {section}{\numberline {1.5}本文主要工作}{9}{section.1.5}}
+\citation{chen2017phaseless,chen2016direct,chen2017direct,thesis_shaofeng}
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}本文内容安排}{9}{section.1.5}}
 \citation{adams2003sobolev}
 \citation{RTMhalf_aco}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第2章\hspace  {.3em}}基础知识}{11}{chapter.2}}
@@ -152,6 +152,7 @@
 \newlabel{d2}{{3.32}{24}{Neumann Green 函数}{equation.3.1.31}{}}
 \newlabel{c8}{{3.33}{24}{Neumann Green 函数}{equation.3.1.33}{}}
 \newlabel{lem:2.3}{{3.1.6}{24}{Neumann Green 函数}{lem.3.1.6}{}}
+\newlabel{NGT3}{{3.34}{25}{Neumann Green 函数}{equation.3.1.34}{}}
 \newlabel{h3}{{3.35}{25}{Neumann Green 函数}{equation.3.1.34}{}}
 \newlabel{h2}{{3.35}{25}{Neumann Green 函数}{equation.3.1.35}{}}
 \newlabel{h1}{{3.36}{25}{Neumann Green 函数}{equation.3.1.36}{}}
@@ -219,6 +220,7 @@
 \newlabel{f3}{{3.76}{41}{正散射问题的适定性}{equation.3.2.76}{}}
 \newlabel{f4}{{3.77}{42}{正散射问题的适定性}{equation.3.2.77}{}}
 \newlabel{f6}{{3.79}{42}{正散射问题的适定性}{equation.3.2.78}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}本章小结}{43}{section.3.3}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {.3em}}半空间反散射问题的逆时偏移算法}{45}{chapter.4}}
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}
@@ -246,19 +248,19 @@
 \newlabel{k4}{{4.12}{51}{点扩散函数}{equation.4.2.12}{}}
 \newlabel{k5}{{4.13}{52}{点扩散函数}{equation.4.2.13}{}}
 \newlabel{J_F_diff}{{4.2.1}{52}{点扩散函数}{thm.4.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces $-Im(J_d(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $, $d=100$\relax }}{53}{figure.caption.11}}
-\newlabel{figure_green}{{4.2}{53}{$-Im(J_d(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $, $d=100$\relax }{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces $Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $\relax }}{54}{figure.caption.12}}
-\newlabel{figure_psf}{{4.3}{54}{$Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $\relax }{figure.caption.12}{}}
-\newlabel{thm:3.2}{{4.2.2}{54}{点扩散函数}{thm.4.2.2}{}}
-\newlabel{d6}{{4.14}{54}{点扩散函数}{equation.4.2.14}{}}
-\newlabel{d7}{{4.15}{54}{点扩散函数}{equation.4.2.15}{}}
-\newlabel{d8}{{4.16}{55}{点扩散函数}{equation.4.2.16}{}}
+\newlabel{thm:3.2}{{4.2.2}{53}{点扩散函数}{thm.4.2.2}{}}
+\newlabel{d6}{{4.14}{53}{点扩散函数}{equation.4.2.14}{}}
+\newlabel{d7}{{4.15}{53}{点扩散函数}{equation.4.2.15}{}}
+\newlabel{d8}{{4.16}{54}{点扩散函数}{equation.4.2.16}{}}
 \citation{RTMhalf_aco}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces $Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $， ，其中 $\mathrm  {Im}\tmspace  +\thinmuskip {.1667em}[\mathbb  {G}(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图\relax }}{55}{figure.caption.11}}
+\newlabel{figure_psf}{{4.2}{55}{$Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $， ，其中 $\Im [\G (z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图\relax }{figure.caption.11}{}}
+\newlabel{lem:4.1}{{4.2.6}{55}{点扩散函数}{lem.4.2.6}{}}
 \citation{RTMhalf_aco}
 \citation{zhang2009,Zhang2007}
 \citation{RTMhalf_aco}
-\newlabel{lem:4.1}{{4.2.6}{56}{点扩散函数}{lem.4.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces $-Im(\mathbb  {J}_d(z,y))$, $y=(0,8)^T$, $\omega =2\pi $， $d=100$， $-\mathrm  {Im}\tmspace  +\thinmuskip {.1667em}[\mathbb  {J}_d(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图 \relax }}{56}{figure.caption.12}}
+\newlabel{figure_green}{{4.3}{56}{$-Im(\J _d(z,y))$, $y=(0,8)^T$, $\omega =2\pi $， $d=100$， $-\Im [\J _d(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图 \relax }{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}逆时偏移算法}{56}{section.4.3}}
 \newlabel{alg_rtm}{{4.3.1}{57}{逆时偏移算法}{alg.4.3.1}{}}
 \newlabel{cor1}{{4.17}{57}{逆时偏移算法}{equation.4.3.17}{}}
@@ -334,12 +336,13 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {附录 A\hspace  {.3em}}其它成像函数测试}{83}{appendix.A}}
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {附录 B\hspace  {.3em}}RTM for Rough Surface}{85}{appendix.B}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {附录 B\hspace  {.3em}}RTM 应用于粗糙表面散射问题的成像}{85}{appendix.B}}
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {附录 C\hspace  {.3em}}驻相定理拓展}{87}{appendix.C}}
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}
+\newlabel{appendix_station}{{C}{87}{驻相定理拓展}{appendix.C}{}}
 \bibdata{Biblio/ref}
 \bibcite{landau}{{1}{1986}{{Landar\ et~al.}}{{Landar and Lifshitz}}}
 \bibcite{bonnet2005inverse}{{2}{2005}{{Bonnet\ et~al.}}{{Bonnet and Constantinescu}}}
@@ -386,48 +389,51 @@
 \bibcite{gazdag1978wave}{{42}{1978}{{Gazdag}}{{}}}
 \bibcite{zhanggq1993}{{43}{1993}{{张关泉}}{{}}}
 \bibcite{Zhang2007}{{44}{2007}{{Zhang\ et~al.}}{{Zhang, Xu, Bleistein, and Zhang}}}
-\bibcite{whitmore1983iterative}{{45}{1983}{{Whitmore}}{{}}}
-\bibcite{baysal1983reverse}{{46}{1983}{{Baysal\ et~al.}}{{Baysal, Kosloff, and Sherwood}}}
-\bibcite{mcmechan1983migration}{{47}{1983}{{McMechan}}{{}}}
-\bibcite{zhang2009}{{48}{2009}{{Zhang\ et~al.}}{{Zhang and Sun}}}
-\bibcite{Zhang08}{{49}{2008}{{Zhang\ et~al.}}{{Zhang and Sun}}}
-\bibcite{bleistein2013mathematics}{{50}{2013}{{Bleistein\ et~al.}}{{Bleistein, Cohen, John~Jr, et~al.}}}
-\bibcite{claerbout1985imaging}{{51}{1985}{{Claerbout}}{{}}}
-\bibcite{berkhout2012seismic}{{52}{2012}{{Berkhout}}{{}}}
-\bibcite{chang1986reverse}{{53}{1986}{{Chang\ et~al.}}{{Chang and McMechan}}}
-\bibcite{hokstad1998elastic}{{54}{1998}{{Hokstad\ et~al.}}{{Hokstad, Mittet, and Landr{\o }}}}
-\bibcite{sun2001scalar}{{55}{2001}{{Sun\ et~al.}}{{Sun and McMechan}}}
-\bibcite{denli2008elastic}{{56}{2008}{{Denli\ et~al.}}{{Denli and Huang}}}
-\bibcite{chung2012implementation}{{57}{2012}{{Chung\ et~al.}}{{Chung, Pyun, Bae, Shin, and Marfurt}}}
-\bibcite{etgen1988prestacked}{{58}{1988}{{Etgen}}{{}}}
-\bibcite{zhe1997prestack}{{59}{1997}{{Zhe\ et~al.}}{{Zhe and Greenhalgh}}}
-\bibcite{dellinger1990wave}{{60}{1990}{{Dellinger\ et~al.}}{{Dellinger and Etgen}}}
-\bibcite{beylkin1984inversion}{{61}{1984}{{Beylkin}}{{}}}
-\bibcite{beylkin1985imaging}{{62}{1985}{{Beylkin}}{{}}}
-\bibcite{beylkin1990linearized}{{63}{1990}{{Beylkin\ et~al.}}{{Beylkin and Burridge}}}
-\bibcite{chen2013reverse_acou}{{64}{2013{}}{{Chen\ et~al.}}{{Chen, Chen, and Huang}}}
-\bibcite{chen2013reverse_elec}{{65}{2013{}}{{Chen\ et~al.}}{{Chen, Chen, and Huang}}}
-\bibcite{chen2015reverse_planar}{{66}{2015{}}{{Chen\ et~al.}}{{Chen and Huang}}}
-\bibcite{RTMhalf_aco}{{67}{2015{}}{{Chen\ et~al.}}{{Chen and Huang}}}
-\bibcite{chen2017phaseless}{{68}{2017{}}{{Chen\ et~al.}}{{Chen and Huang}}}
-\bibcite{chen2016direct}{{69}{2016{}}{{Chen\ et~al.}}{{Chen and Huang}}}
-\bibcite{chen2017direct}{{70}{2017{}}{{Chen\ et~al.}}{{Chen, Fang, and Huang}}}
-\bibcite{adams2003sobolev}{{71}{2003}{{Adams\ et~al.}}{{Adams and Fournier}}}
-\bibcite{watson1995treatise}{{72}{1995}{{Watson}}{{}}}
-\bibcite{colton2013integral}{{73}{2013}{{Colton\ et~al.}}{{Colton and Kress}}}
-\bibcite{kress1989linear}{{74}{1989}{{Kress\ et~al.}}{{Kress, Maz'ya, and Kozlov}}}
-\bibcite{agmon1975spectral}{{75}{1975}{{Agmon}}{{}}}
-\bibcite{achenbach1980}{{76}{1980}{{Achenbach}}{{}}}
-\bibcite{Harris2001Linear}{{77}{2001}{{Harris}}{{}}}
-\bibcite{Ahlfors1979Complex}{{78}{1979}{{Ahlfors}}{{}}}
-\bibcite{Kuroda}{{79}{2003}{{Kuroda}}{{}}}
-\bibcite{aki2002quantitative}{{80}{2002}{{Aki\ et~al.}}{{Aki and Richards}}}
-\bibcite{grafakos}{{81}{2004}{{Grafakos}}{{}}}
-\bibcite{arens1999}{{82}{1999}{{Arens}}{{}}}
-\bibcite{sini2004}{{83}{2004}{{Sini}}{{}}}
-\bibcite{Morassi2001STRONG}{{84}{2001}{{Morassi}}{{}}}
-\bibcite{melrose1985near}{{85}{1985}{{Melrose\ et~al.}}{{Melrose and Taylor}}}
-\bibcite{hor}{{86}{1983}{{Hormander}}{{}}}
+\bibcite{zhang2018itoin}{{45}{2018}{{张宇}}{{}}}
+\bibcite{whitmore1983iterative}{{46}{1983}{{Whitmore}}{{}}}
+\bibcite{baysal1983reverse}{{47}{1983}{{Baysal\ et~al.}}{{Baysal, Kosloff, and Sherwood}}}
+\bibcite{mcmechan1983migration}{{48}{1983}{{McMechan}}{{}}}
+\bibcite{zhang2009}{{49}{2009}{{Zhang\ et~al.}}{{Zhang and Sun}}}
+\bibcite{Zhang08}{{50}{2008}{{Zhang\ et~al.}}{{Zhang and Sun}}}
+\bibcite{bleistein2013mathematics}{{51}{2013}{{Bleistein\ et~al.}}{{Bleistein, Cohen, John~Jr, et~al.}}}
+\bibcite{claerbout1985imaging}{{52}{1985}{{Claerbout}}{{}}}
+\bibcite{berkhout2012seismic}{{53}{2012}{{Berkhout}}{{}}}
+\bibcite{chang1986reverse}{{54}{1986}{{Chang\ et~al.}}{{Chang and McMechan}}}
+\bibcite{hokstad1998elastic}{{55}{1998}{{Hokstad\ et~al.}}{{Hokstad, Mittet, and Landr{\o }}}}
+\bibcite{sun2001scalar}{{56}{2001}{{Sun\ et~al.}}{{Sun and McMechan}}}
+\bibcite{denli2008elastic}{{57}{2008}{{Denli\ et~al.}}{{Denli and Huang}}}
+\bibcite{chung2012implementation}{{58}{2012}{{Chung\ et~al.}}{{Chung, Pyun, Bae, Shin, and Marfurt}}}
+\bibcite{etgen1988prestacked}{{59}{1988}{{Etgen}}{{}}}
+\bibcite{zhe1997prestack}{{60}{1997}{{Zhe\ et~al.}}{{Zhe and Greenhalgh}}}
+\bibcite{dellinger1990wave}{{61}{1990}{{Dellinger\ et~al.}}{{Dellinger and Etgen}}}
+\bibcite{beylkin1984inversion}{{62}{1984}{{Beylkin}}{{}}}
+\bibcite{beylkin1985imaging}{{63}{1985}{{Beylkin}}{{}}}
+\bibcite{beylkin1990linearized}{{64}{1990}{{Beylkin\ et~al.}}{{Beylkin and Burridge}}}
+\bibcite{chen2013reverse_acou}{{65}{2013{}}{{Chen\ et~al.}}{{Chen, Chen, and Huang}}}
+\bibcite{chen2013reverse_elec}{{66}{2013{}}{{Chen\ et~al.}}{{Chen, Chen, and Huang}}}
+\bibcite{thesis_guanghui}{{67}{2014}{{黄光辉}}{{}}}
+\bibcite{chen2015reverse_planar}{{68}{2015{}}{{Chen\ et~al.}}{{Chen and Huang}}}
+\bibcite{RTMhalf_aco}{{69}{2015{}}{{Chen\ et~al.}}{{Chen and Huang}}}
+\bibcite{chen2017phaseless}{{70}{2017{}}{{Chen\ et~al.}}{{Chen and Huang}}}
+\bibcite{chen2016direct}{{71}{2016{}}{{Chen\ et~al.}}{{Chen and Huang}}}
+\bibcite{chen2017direct}{{72}{2017{}}{{Chen\ et~al.}}{{Chen, Fang, and Huang}}}
+\bibcite{thesis_shaofeng}{{73}{2017}{{方少峰}}{{}}}
+\bibcite{adams2003sobolev}{{74}{2003}{{Adams\ et~al.}}{{Adams and Fournier}}}
+\bibcite{watson1995treatise}{{75}{1995}{{Watson}}{{}}}
+\bibcite{colton2013integral}{{76}{2013}{{Colton\ et~al.}}{{Colton and Kress}}}
+\bibcite{kress1989linear}{{77}{1989}{{Kress\ et~al.}}{{Kress, Maz'ya, and Kozlov}}}
+\bibcite{agmon1975spectral}{{78}{1975}{{Agmon}}{{}}}
+\bibcite{achenbach1980}{{79}{1980}{{Achenbach}}{{}}}
+\bibcite{Harris2001Linear}{{80}{2001}{{Harris}}{{}}}
+\bibcite{Ahlfors1979Complex}{{81}{1979}{{Ahlfors}}{{}}}
+\bibcite{Kuroda}{{82}{2003}{{Kuroda}}{{}}}
+\bibcite{aki2002quantitative}{{83}{2002}{{Aki\ et~al.}}{{Aki and Richards}}}
+\bibcite{grafakos}{{84}{2004}{{Grafakos}}{{}}}
+\bibcite{arens1999}{{85}{1999}{{Arens}}{{}}}
+\bibcite{sini2004}{{86}{2004}{{Sini}}{{}}}
+\bibcite{Morassi2001STRONG}{{87}{2001}{{Morassi}}{{}}}
+\bibcite{melrose1985near}{{88}{1985}{{Melrose\ et~al.}}{{Melrose and Taylor}}}
+\bibcite{hor}{{89}{1983}{{Hormander}}{{}}}
 \@writefile{toc}{\contentsline {chapter}{作者简历}{95}{appendix*.26}}
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}

@@ -4,44 +4,44 @@ The top-level auxiliary file: Thesis_shiqi.aux
 The style file: Biblio/gbt7714-unsrt.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: Biblio/ref.bib
-You've used 86 entries,
+You've used 89 entries,
             3798 wiz_defined-function locations,
-            1288 strings with 18270 characters,
-and the built_in function-call counts, 378865 in all, are:
-= -- 4728
-> -- 43871
-< -- 57960
-+ -- 15851
-- -- 463
-* -- 2700
-:= -- 52472
-add.period$ -- 258
-call.type$ -- 86
-change.case$ -- 171
-chr.to.int$ -- 14327
-cite$ -- 86
-duplicate$ -- 1738
-empty$ -- 4292
-format.name$ -- 1027
-if$ -- 98032
+            1300 strings with 18515 characters,
+and the built_in function-call counts, 382471 in all, are:
+= -- 4867
+> -- 44063
+< -- 58403
++ -- 16060
+- -- 474
+* -- 2751
+:= -- 53069
+add.period$ -- 267
+call.type$ -- 89
+change.case$ -- 174
+chr.to.int$ -- 14490
+cite$ -- 89
+duplicate$ -- 1798
+empty$ -- 4442
+format.name$ -- 1045
+if$ -- 98946
 int.to.chr$ -- 8
-int.to.str$ -- 87
+int.to.str$ -- 90
 missing$ -- 0
-newline$ -- 439
-num.names$ -- 258
-pop$ -- 21612
+newline$ -- 454
+num.names$ -- 267
+pop$ -- 21648
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 89
 quote$ -- 0
-skip$ -- 37975
+skip$ -- 38226
 stack$ -- 0
-substring$ -- 16561
-swap$ -- 197
-text.length$ -- 634
+substring$ -- 16772
+swap$ -- 200
+text.length$ -- 651
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 728
+type$ -- 754
 warning$ -- 0
-while$ -- 915
+while$ -- 940
 width$ -- 0
-write$ -- 1302
+write$ -- 1344

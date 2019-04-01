@@ -6,8 +6,8 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 积分路径 $L$ 和 $L^\varepsilon _{-\phi }$\relax }}{26}{figure.caption.9}
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces 半空间弹性波障碍物散射模型\relax }}{45}{figure.caption.10}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces $-Im(J_d(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $, $d=100$\relax }}{53}{figure.caption.11}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces $Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $\relax }}{54}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces $Im(G(z,y))$ for $y=(0,8)^T$, $\omega =2\pi $， ，其中 $\mathrm {Im}\tmspace +\thinmuskip {.1667em}[\mathbb {G}(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图\relax }}{55}{figure.caption.11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces $-Im(\mathbb {J}_d(z,y))$, $y=(0,8)^T$, $\omega =2\pi $， $d=100$， $-\mathrm {Im}\tmspace +\thinmuskip {.1667em}[\mathbb {J}_d(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图 \relax }}{56}{figure.caption.12}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces 散射系数实验中的障碍物形状：第一个是圆，第二个是梨形\relax }}{69}{figure.caption.13}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces 圆形的$\mathbf {R}_p^1$ 和 $\mathaccentV {hat}85E{\mathbf {R}}_p^1$ .\relax }}{69}{figure.caption.14}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces 圆形的 $\mathbf {R}_s^2$ 和 $\mathaccentV {hat}85E{\mathbf {R}}_s^2$ \relax }}{70}{figure.caption.15}
