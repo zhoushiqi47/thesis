@@ -11,17 +11,17 @@
 %---------------------------------------------------------------------------%
 %->> Document class declaration
 %---------------------------------------------------------------------------%
-\documentclass[doublesided]{Style/ucasthesis}%
+\documentclass{Style/ucasproposal}%
 %- Multiple optional arguments:
 %- [<singlesided|doublesided|printcopy>]% set one or two sided eprint or print
+%- [fontset=<adobe|...>]% specify font set to replace automatic detection
+%- [plain]% thesis writing of international students
 %- [draftversion]% show draft version information
-%- [fontset=<fandol|...>]% specify font set to replace automatic detection
-%- [scheme=plain]% thesis writing of international students
-%- [standard options for ctex book class: draft|paper size|font size|...]%
+%- [standard options for ctex article class: draft|paper size|font size|...]%
 %---------------------------------------------------------------------------%
 %->> Document settings
 %---------------------------------------------------------------------------%
-\usepackage[numbers,myhdr,list]{Style/artratex}% document settings
+\usepackage[numbers]{Style/artratex}% document settings
 %- usage: \usepackage[option1,option2,...,optionN]{artratex}
 %- Multiple optional arguments:
 %- [bibtex|biber]% set bibliography processor and package
@@ -55,10 +55,9 @@
 \newtheorem{lem}{引理}[section]
 \newtheorem{thm}{定理}[section]
 \newtheorem{assumption}{假设}[section]
-\newtheorem{remark}{注}[section]
-\newtheorem{definition}{定义}[section]
+
+
 \newtheorem{question}{问题}[section]
-\newtheorem{example}{\bf 算例}[section]
 
 \renewcommand{\i}{\mathbf{i}}
 \renewcommand{\v}{\mathbf{v}}
@@ -176,9 +175,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\be}{\begin{eqnarray}}
-\newcommand{\ee}{\end{eqnarray}}
+	\newcommand{\ee}{\end{eqnarray}}
 \newcommand{\ben}{\begin{eqnarray*}}
-\newcommand{\een}{\end{eqnarray*}}
+	\newcommand{\een}{\end{eqnarray*}}
 \newcommand{\nn}{\nonumber}
 
 
@@ -186,37 +185,18 @@
 %-
 %-> Frontmatter: title page, abstract, content list, symbol list, preface
 %-
-\frontmatter% initialize the environment
+\pagenumbering{roman}% page numbers with roman style
 \input{Tex/Frontpages}% title page, abstract, dedication
-{% content list region
-\linespread{1.2}% local line space
-%\intotoc{\contentsname}% add link to contents table and bookmark
-\tableofcontents% contents catalog
-%\intotoc{\listfigurename}% add link to contents table and bookmark
-\listoffigures% figures catalog
-%\intotoc{\listtablename}% add link to contents table and bookmark
-%\listoftables% tables catalog
-}
-\input{Tex/Prematter}% list of symbols, preface content
 %-
 %-> Mainmatter
 %-
-\mainmatter% initialize the environment
+\clearpage
+\pagenumbering{arabic}% restart page numbers with arabic style
 \input{Tex/Mainmatter}% main content
-%-
-%-> Appendix
-%-
-\cleardoublepage%
-\appendix% initialize the environment
-\input{Tex/Appendix}% appendix content
 %-
 %-> Backmatter: bibliography, glossary, index
 %-
-\backmatter% initialize the environment
-\intotoc{\bibname}% add link to contents table and bookmark
 \bibliography{Biblio/ref}% bibliography
-\bibstyle{alpha}
-\input{Tex/Backmatter}% other information
 \end{document}
 %---------------------------------------------------------------------------%
 
