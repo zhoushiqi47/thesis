@@ -272,22 +272,13 @@ f(t)=k_s\frac{\Tp(k_st)\overline{\Ns(k_st)}}{\overline{\de(k_st)}},\ \ \ \lam=k_
 \een
 而式子 ${\rm II}_2$ 中的第二项也可以被类似估计。 且 $|\na_y(\J(z,y)-\F(z,y))|$ 的估计也可以被类似证明， 这里不再赘述。 引理得证。
 \finproof
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{./Img/graphic/psf_om_2_lm_5_mu_25_im.eps}	
-	\caption{$-Im(J_d(z,y))$ for $y=(0,8)^T$, $\omega=2\pi$, $d=100$}\label{figure_green}
-\end{figure}
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{./Img/graphic/green_om_2_lm_5_mu_25_im.eps}	
-	\caption{$Im(G(z,y))$ for $y=(0,8)^T$, $\omega=2\pi$}\label{figure_psf}
-\end{figure}
 
 下面的引理告诉我们，点扩散函数 $\F(z,y)$ 的虚部与弹性波基本解 $\Im\G(z,y)$ 的虚部有相似的函数特性。于是， 利用定理 \ref{J_F_diff} 和引理 \ref{error_jd}, 当 $d\gg h$ 和 $k_s h\gg 1$, 我们可以认为 $\J_d(z,y)$ 的虚部也与弹性波基本解 $\Im\G(z,y)$ 的虚部有相似的函数特性， 见图 \ref{figure_psf} 和 图\ref{figure_green} 所展示。
 
 \begin{remark}
 	如图\ref{figure_psf} 和 图\ref{figure_green}中， 每幅图中4副子图， 其中子图的位置对应相应矩阵该位置的函数。其中， 每幅图的采样区域都为 $[-2,2]\times[8,12]$, 角频率 $\om=2\pi$, {Lam\'{e}} 常数 $\lambda=0.5$, $\mu=0.25$。 特别地， 每幅子图中， 颜色越深代表该处的值越大， 因此我们可以看到图\ref{figure_psf} 和 图\ref{figure_green}中对角线上的子图， 他们颜色的最深处正式图的中心位置， 即代表峰值在 $z=y$ 处。
 \end{remark}
+
 \begin{thm} \label{thm:3.2}
 	对于任意 $z,y\in \R_+^2$, $\F(z,y)^T=\F(z,y)$。 当 $z=y$ 时，  $\Im [\F(z,y)]_{12} = \Im [\F(z,y)]_{21} =0$ 以及
 	\be\label{d6}
@@ -351,7 +342,19 @@ f(t)=k_s\frac{\Tp(k_st)\overline{\Ns(k_st)}}{\overline{\de(k_st)}},\ \ \ \lam=k_
 而当 $k_s|z-y|< 1$ 时，显然有 $|{\rm III}_1|\le C\mu^{-1}\le C\mu^{-1}(k_s|z-y|)^{-1}$。 而针对 ${\rm III}_2+{\rm III}_3$ 的估计可以类似地使用 Van der Corput 引理 \ref{van} 来证明。 引理得证。
 \finproof
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./Img/graphic/green_om_2_lm_5_mu_25_im.eps}	
+	\caption{$Im(G(z,y))$ for $y=(0,8)^T$, $\omega=2\pi$， ，其中 $\Im [\G(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图}\label{figure_psf}
+\end{figure}
+
 结合引理 \ref{error_jd}， 定理\ref{J_F_diff}， 定理\ref{thm:3.2} 及图\ref{figure_psf}, 我们发现点扩散函数 $J_d(z,y)$ 确实可以把位于 $y$ 的点源分辨出来， 即在 $z=y$ 处达到峰值， 在 $z$ 远离 $y$ 其值渐渐衰减。如文献 \cite{RTMhalf_aco} 中针对声波点扩散函数的表述， 我们也可以认为弹性波点扩展函数是对寻找弹性点源分辨率的度量函数。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{./Img/graphic/psf_om_2_lm_5_mu_25_im.eps}	
+	\caption{$-Im(\J_d(z,y))$, $y=(0,8)^T$, $\omega=2\pi$， $d=100$， $-\Im [\J_d(z,y)]_{ij}$ 对应于上面第$(i,j)$幅子图 }\label{figure_green}
+\end{figure}
 
 为便于后文分析， 我们介绍如下在范数意义下的估计式。
 \begin{lem}\label{lem:4.1}

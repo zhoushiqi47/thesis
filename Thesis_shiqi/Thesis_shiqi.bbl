@@ -1,4 +1,4 @@
-\begin{thebibliography}{86}
+\begin{thebibliography}{89}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -274,6 +274,12 @@ Zhang~Y, Xu~S, Bleistein~N, et~al.
   wave-equation migrations\allowbreak[J].
 \newblock Geophysics, 2007, 72\penalty0 (1):\penalty0 S49-S58.
 
+\bibitem[张宇(2018)]{zhang2018itoin}
+张宇.
+\newblock 从成像到反演: 叠前深度偏移的理论,
+  实践与发展\allowbreak[J].
+\newblock 石油物探, 2018, 57\penalty0 (1):\penalty0 1-23.
+
 \bibitem[Whitmore(1983)]{whitmore1983iterative}
 Whitmore~N~D.
 \newblock Iterative depth migration by backward time
@@ -411,6 +417,11 @@ Chen~J, Chen~Z, Huang~G.
   waves\allowbreak[J].
 \newblock Inverse Problems, 2013, 29\penalty0 (8):\penalty0 085006.
 
+\bibitem[黄光辉(2014)]{thesis_guanghui}
+黄光辉.
+\newblock 逆散射问题的逆时偏移方法\allowbreak[D].
+\newblock 中国科学院大学, 2014.
+
 \bibitem[Chen\ et~al.(2015{\natexlab{a}})Chen and
   Huang]{chen2015reverse_planar}
 Chen~Z, Huang~G.
@@ -443,6 +454,11 @@ Chen~Z, Fang~S, Huang~G.
 \newblock A direct imaging method for the half-space inverse scattering problem
   with phaseless data\allowbreak[J].
 \newblock Inverse Probl. Imaging, 2017, 11:\penalty0 901-916.
+
+\bibitem[方少峰(2017)]{thesis_shaofeng}
+方少峰.
+\newblock 地球物理反问题的逆时偏移算法\allowbreak[D].
+\newblock 中国科学院大学, 2017.
 
 \bibitem[Adams\ et~al.(2003)Adams and Fournier]{adams2003sobolev}
 Adams~R~A, Fournier~J~J.

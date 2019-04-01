@@ -150,7 +150,7 @@ k_s=\frac{\om}{\sqrt{\mu}}=\frac{\om}{c_s}, \ \ \ \ \  k_p=\frac{\om}{\sqrt{\lam
 
 \section{逆时偏移方法简介}
 
-逆时偏移 (Reverse Time Migration) 是源于勘探地球物理领域的一种叠前深度偏移方法。 在逆时偏移流行之前， 单成波方程偏移法\cite{claerbout1972downward,gazdag1978wave} 一直是偏移研究的主要课题。但是， 为了将波动方程分解成单程的上行波方程和下行波方程，需要引入平方根算子\cite{zhanggq1993,Zhang2007}。 但是， 平方根算子是一个拟微分算子，在数值计算时， 需要用一系列的积分、微分算子来逼近，这给单程波方程的计算带来非常大的困难。于是，基于全波方程的逆时偏移法在 1983年被 Whitmore \cite{whitmore1983iterative}, Baysal \cite{baysal1983reverse} 和 Mcmechan  \cite{mcmechan1983migration} 先后提出。 早期， 由于计算资源的匮乏， 工程师们把接收到的弹性波数据利用声波方程来进行逆时偏移 \cite{zhang2009,Zhang08,bleistein2013mathematics,claerbout1985imaging,berkhout2012seismic}，但是由于弹性波是包含两种不同波数的 s 波和 p 波的耦合波， 两种波携带着不同的位移信息\cite{yan2008isotropic}。 因此， 发展利用弹性波全波方程的逆时偏移方法是必然的。Chang 和 McMechan \cite{chang1986reverse} 利用弹性波方程将接受到的弹性波数据时逆地外推到地表下， 然后使用激励时间成像条件 (Excitation time)， 而 Hokstad\cite{hokstad1998elastic} 利用 {Lam\'{e}} 势方法作为成像条件。 总之， 这两种成像条件都是互相关成像条件的特殊情形\cite{yan2008isotropic}。此外， 由于弹性波包含 s 波和 p 波，地球物理学家发展出了两种基于 Helmholz 分解的逆时偏移算法 \cite{yan2008isotropic,sun2001scalar,denli2008elastic,chung2012implementation}。 
+逆时偏移 (Reverse Time Migration) 是源于勘探地球物理领域的一种叠前深度偏移方法。 在逆时偏移流行之前， 单成波方程偏移法\cite{claerbout1972downward,gazdag1978wave} 一直是偏移研究的主要课题。但是， 为了将波动方程分解成单程的上行波方程和下行波方程，需要引入平方根算子\cite{zhanggq1993,Zhang2007,zhang2018itoin}。 但是， 平方根算子是一个拟微分算子，在数值计算时， 需要用一系列的积分、微分算子来逼近，这给单程波方程的计算带来非常大的困难。于是，基于全波方程的逆时偏移法在 1983年被 Whitmore \cite{whitmore1983iterative}, Baysal \cite{baysal1983reverse} 和 Mcmechan  \cite{mcmechan1983migration} 先后提出。 早期， 由于计算资源的匮乏， 工程师们把接收到的弹性波数据利用声波方程来进行逆时偏移 \cite{zhang2009,Zhang08,bleistein2013mathematics,claerbout1985imaging,berkhout2012seismic}，但是由于弹性波是包含两种不同波数的 s 波和 p 波的耦合波， 两种波携带着不同的位移信息\cite{yan2008isotropic}。 因此， 发展利用弹性波全波方程的逆时偏移方法是必然的。Chang 和 McMechan \cite{chang1986reverse} 利用弹性波方程将接受到的弹性波数据时逆地外推到地表下， 然后使用激励时间成像条件 (Excitation time)， 而 Hokstad\cite{hokstad1998elastic} 利用 {Lam\'{e}} 势方法作为成像条件。 总之， 这两种成像条件都是互相关成像条件的特殊情形\cite{yan2008isotropic}。此外， 由于弹性波包含 s 波和 p 波，地球物理学家发展出了两种基于 Helmholz 分解的逆时偏移算法 \cite{yan2008isotropic,sun2001scalar,denli2008elastic,chung2012implementation}。 
 
 第一种方法是将接收到的弹性波数据，反传到接受面附近的浅层区域， 利用 Helmholtz 分解将耦合波场分解成 s 波向量势和 p 波标量势 \cite{etgen1988prestacked,zhe1997prestack}。随后， 利用声波方程及相应的 s 波波数与 p 波波数将分解后的波正传回接受面。随后利用传统的声波逆时偏移算法， 利用分解完的数据进行成像。
 
@@ -165,11 +165,22 @@ k_s=\frac{\om}{\sqrt{\mu}}=\frac{\om}{c_s}, \ \ \ \ \  k_p=\frac{\om}{\sqrt{\lam
 
 
 对于逆时偏移方法的理论分析， 最早是由 Beylkin \cite{beylkin1984inversion,beylkin1985imaging,beylkin1990linearized} 基于广义 Radon 变换, 采用高
-频渐近假设或者几何光学近似给出的渐近分析。 但是， 在实际的工程情况下， 这些假设的条件一般都不能满足。近几年来， Chen 等\cite{chen2013reverse_acou,chen2013reverse_elec} 针对全空间中声波和电磁波反障碍物散射问题， 研究了相应的单频逆时偏移方法来重构障碍物。 他们基于  Helmholtz-Kirchhoff 等式， 在不需要高频假设或几何光学近似的前提下，对算法的分辨率做出来严格分析， 并证明了该成像函数恒为正函数， 从而保证了改数值方法的稳定性。在文献 \cite{chen2015reverse_planar} 中， Chen 等针对平行平板声波波导反散射问题，提出了基于逆时偏移算法的直接成像法。改文章中， 作者提出了 广义的 Helmholtz-Kirchhoff 等式，并由此给出了成像分辨率的理论结果。进一步， 文献\cite{RTMhalf_aco}中作者考虑声波半空间反散射问题的逆时偏移方法，并提出了全新的点扩散函数， 从而给出了分辨率的成像结果。 特别地， 该文章给了孔径选取的标准， 以，及说明了半空间情形下只能对障碍物面向接收面的那部分进行成像， 给本文做了很好的铺垫。
+频渐近假设或者几何光学近似给出的渐近分析。 但是， 在实际的工程情况下， 这些假设的条件一般都不能满足。近几年来， Chen 等\cite{chen2013reverse_acou,chen2013reverse_elec,thesis_guanghui} 针对全空间中声波和电磁波反障碍物散射问题， 研究了相应的单频逆时偏移方法来重构障碍物。 他们基于  Helmholtz-Kirchhoff 等式， 在不需要高频假设或几何光学近似的前提下，对算法的分辨率做出来严格分析， 并证明了该成像函数恒为正函数， 从而保证了改数值方法的稳定性。在文献 \cite{chen2015reverse_planar} 中， Chen 等针对平行平板声波波导反散射问题，提出了基于逆时偏移算法的直接成像法。改文章中， 作者提出了 广义的 Helmholtz-Kirchhoff 等式，并由此给出了成像分辨率的理论结果。进一步， 文献\cite{RTMhalf_aco}中作者考虑声波半空间反散射问题的逆时偏移方法，并提出了全新的点扩散函数， 从而给出了分辨率的理论分析。 特别地， 该文章给了孔径选取的标准， 以，及说明了半空间情形下只能对障碍物面向接收面的那部分进行成像， 给本文做了很好的铺垫。
 
-由于在实际的工程应用中， 获取观测数据的强度或振幅 (无相位数据) 比获取该观测数据的相位信息要容易很多。由此， Chen等 \cite{chen2017phaseless,chen2016direct,chen2017direct} 基于逆时偏移算法，针对全空间声波，电磁波以及半空间声波反散射问题， 提出了无相位成像算法。 此外， 当障碍物远离发射面和接收面时， 证明了该无相位成像算法与原本的逆时偏移成像方法近似等价。
-
-
+由于在实际的工程应用中， 获取观测数据的强度或振幅 (无相位数据) 比获取该观测数据的相位信息要容易很多。由此， Chen等 \cite{chen2017phaseless,chen2016direct,chen2017direct,thesis_shaofeng} 基于逆时偏移算法，针对全空间声波，电磁波以及半空间声波反散射问题， 提出了无相位成像算法。 此外， 当障碍物远离发射面和接收面时， 证明了该无相位成像算法与原本的逆时偏移成像方法近似等价。
 
 
-\section{本文主要工作}
+
+
+\section{本文内容安排}
+
+本论文安排如下：
+
+第二章中我们将介绍一些后文会涉及的函数空间，并且叙述后文会用到的经典的数学定理。
+
+第三章中我们利用 Fourier 变换推导出 Neumann Green 函数和 Dirichlet Green 函数， 并且研究 Green 函数的相关性质。 而后，通过极限吸收原理研究半空间弹性波散射问题解的适定性。
+
+第四章中我们首先介绍针对点源成像的点扩散函数， 然后提出重构半空间扩展障碍物的基于弹性波逆时偏移方法的直接成像法。 最后利用点扩散函数和散射系数逼近给出了该障碍物重构算法的分辨率分析。
+
+第五章中我们针对本论文中的研究作一些总结， 并且叙述相关可待研究的问题。
+

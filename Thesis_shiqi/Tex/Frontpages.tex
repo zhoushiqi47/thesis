@@ -44,13 +44,37 @@
 \setcounter{page}{1}% 开始页码
 \pagenumbering{Roman}% 页码符号
 
+本文主要研究了半空间时谐弹性波反散射问题的逆时偏移算法及其数学理论分析。近几十年在， 该问题在多种学科领域内受到广泛关注， 其中包括无损探测领域、医学领域以及特别是地震波勘探领域。 一方面，传统的地震波数据处理都是基于声波方程的，而弹性介质中允许存在横波和纵波。此外，半空间自由边界条件的存在导致出现了只沿着半空间表面传播的 Rayleigh 表面波。另一方面，从反问题的角度看， 散射问题的逆算子具有高度的不适定性及非线性性。因此，上述所有的困难都给本文的研究带来挑战。 本文的研究涉及以下两大方面：
 
+\begin{itemize}
+	\item  利用关于变量 $x_1$ 的 Fourier 变换得到新的易于渐进分析的 Neumann Green 函数的表达式。通过推广传统的用于分析振荡积分的 Van der Corput 引理， 我们推导出在特定区域的 Green 函数的渐进行为。针对半空间弹性波正散射问题， 我们利用经典的极限吸收原理来定义所谓的散射解，并且利用理论证明了解的适定性。 当嵌入在半空间中的障碍物远离半空间表面边界时，我们描述了半空间散射问题与相应的全空间散射问题两者之间散射解的差距。
+	
+	\item 针对半空间扩展障碍物重构问题， 我们仅仅利用半空间表面上有限孔径内接受到的单频弹性波数据提出了基于逆时偏移方法的直接成像法。我们根据半空间表面上接受数据的孔径大小与嵌入在半空间的障碍物的深度证明了该障碍物重构算法的分辨率。利用点扩散函数的性质来研究分辨率分析，并说明了互相关成像函数的虚部总是在障碍物的上边界上达到峰值。我们用大量的数值实验印证了该直接成像法的有效性和鲁棒性。
+\end{itemize}
 
 \keywords{半空间，弹性波方程，反散射问题，逆时偏移算法}% 中文关键词
 %-
 %-> 英文摘要
 %-
 \chapter*{Abstract}\chaptermark{Abstract}% 摘要标题
+
+In this thesis, we focus on developing reverse time migration method for time harmonic elastic wave inverse scattering problems in the half space and establishing the related mathematical theory. In recent decades, this problems have considerable interests in diverse application fields including non-destructive testing, medical imaging, and especially seimic exploration.
+Seimic processing
+ usually is based on acoustic equations, but elastic materials allow for both compressional and shear propagation. Moreover, the free boundary condition induces the propagation of a Rayleigh surface wvae guided by the unbounded flat surface of the half space. From the perspectiv of inverse problems, the inverse opertor of the scattering problems is improperly posed and inherently nonlinear. Therefore, the challenges of this thesis includes all the above difficulties. The thsis consists of the following issues:
+\begin{itemize}
+	\item Using Fourier transform with respect to the horizontal variable $x_1$, we drive a new expression for the Neumann Green Tensor. Based on the extention of the classic Van der Corput lemma, we show the asymptotic behavior of Green Tensor in a specific area. For the direct elastic scattering problems in the half space, we take the method of limiting absorption priciple to define  sacttering soltion and obtain its well-posedness. Besides, we discribe the difference between the half-space scattering solution and the full space scattering solution is small when the scatter is far away from the boudary of the half space.
+	
+	
+	\item We propose a direct imaging method based on the reverse time migration to reconstruct extended
+	obstacles in the half space with finite aperture elastic scattering data at a fixed
+	frequency. We prove the resolution of the reconstruction method in terms of the
+	aperture and the depth of the obstacle embedded in the half space. The resolution
+	analysis is studied by virtue of the point spread function and implies that the imaginary 
+	part of the cross-correlation imaging function
+	always peaks on the upper boundary of the obstacle. Numerical examples
+	are included to illustrate the effectiveness of the method. 
+\end{itemize}
+	
 
 
 \englishkeywords{half space, elastic equations, inverse scattering problems, reverse time migration}% 英文关键词
