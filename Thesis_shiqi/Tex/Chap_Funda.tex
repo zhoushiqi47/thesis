@@ -72,7 +72,7 @@ H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om)   \
 	\een
 \end{lem}
 \begin{lem}[Parseval 等式]
-  假设 $n$ 为正整数，对任意 $f, g \in L^2(\R^n)$, 定义 Fourier 变换 $\hat f(\xi)$ 为如下范数 $\|\cdot\|_{L^2_{\R^n}}$的极限：
+  假设 $n$ 为正整数，对任意 $f, g \in L^2(\R^n)$, 定义 Fourier 变换 $\hat f(\xi)$ 为如下范数意义下 $\|\cdot\|_{L^2_{\R^n}}$的极限：
   \ben
   \hat f(\xi)=\lim_{R\to\infty}\int_{\|x\|\leq R}f(x)\ \ e^{-\i x\cdot \xi} dx.
   \een
@@ -85,11 +85,11 @@ H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om)   \
 \end{lem}
 
 \begin{lem}[Betti 公式]
-	假设 $D$ 为有界 Lipschitz 区域且其单位外法向为 $\nu$，对于 $u\in H^1(D)^2$ 和 $v\in H^2(D)^2$, 成立
+	假设 $D$ 为有界 Lipschitz 区域且其单位外法向为 $\nu$，对于 $u\in H^1(D)^2$ 和 $\Delta_e v\in L^2(D)^2$, 成立
 	\ben
 	\int_D u\cdot \Delta_e v dx =\int_{\pa D} u\cdot \sigma(u)\nu ds(x) -\int_D \ \lambda \ (\nabla\cdot u)(\nabla\cdot v)+2\mu \ \ep(u):\ep(v) dx
 	\een
-	这里关于 $A=(a_{ij})$, $B=(b_{ij})$ , $i,j=1,2$, 有 $A:B=\sum_{i,j=1}^{2}a_{ij}b_{ij}$。特别地， 如果进一步有 $u\in H^2(D)^2$， 则成立：
+	这里关于 $A=(a_{ij})$, $B=(b_{ij})$ , $i,j=1,2$, 有 $A:B=\sum_{i,j=1}^{2}a_{ij}b_{ij}$。特别地， 如果进一步有 $\Delta_e u\in L^2(D)^2$， 则成立：
 	\be\label{betti}
 	\int_D u\cdot \Delta_e v-\Delta_e u \cdot v dx =\int_{\pa D} u\cdot \sigma(v)\nu -\sigma(u)\nu\cdot vds(x)
 	\ee

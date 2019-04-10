@@ -1,13 +1,14 @@
 \chapter{半空间弹性波散射问题}\label{chap:Elastic}
 正散射问题的研究一般包括 Green 函数的推导及其性质研究和散射解的适定性。 一般 Green 函数的推导都是通过对偏微分方程其中一个变量作 Fourier 变换后，得到常微分方程组， 然后结合基本解得出。 特别的， 二维弹性波方程的基本解 $\G(x,y)$ \cite{ku63} 为：
 \be\label{Green}
-\G(x,y)=\frac{1}{\mu}g_{k_s}(x,y)  \I+\frac{1}{\om^2}\nabla\nabla(g_{k_s}(x,y)-g_{k_p}(x,y))
+\G(x,y)&=&(\frac{1}{\mu}g_{k_s}(x,y)  \I+\frac{1}{\om^2}\nabla\nabla g_{k_s}(x,y))-\frac{1}{\om^2}\nabla\nabla g_{k_p}(x,y)\\
+&:=&\G_s(x,y)+\G_p(x,y)
 \ee
 这里
 \ben
 g_{k}=\frac{\i}{4}\mathit{H}_0^{(1)}(k|x-y|)
 \een
-是波数为 $k$ 的 Helmholtz 方程的基本解 \cite{colton-kress}， 这里 $\mathit{H}_0^{(1)}(t)$ 是零阶第一类 Hankel 函数 \cite{watson1995treatise}。 关于散射问题的适定性研究， 一般都是通过研究 Green 函数在无穷远处的渐近性质，然后据此推出辐射条件来保证方程的唯一性。 而存在性和稳定性一般是用变分方法或是边界积分法， 然后通过经典的 Riesz–Fredholm 理论 \cite{colton2013integral,kress1989linear} 结合唯一性得到。 但是，由于横波和纵波在半空间表面初的耦合以及表面波的存在， 很难得出一个既保证唯一性又保证存在性的辐射条件。 因此，本文中我们不在依赖辐射条件，将利用极限吸收原理 \cite{agmon1975spectral,Yves1988} 来得出方程的适定性。在本章最后， 我们还将展示， 当障碍物远离半空间表面时， 其相应的散射解和在全空间情形下的散射解之间的差距。
+是波数为 $k$ 的 Helmholtz 方程的基本解 \cite{colton-kress}， 且 $\mathit{H}_0^{(1)}(t)$ 是零阶第一类 Hankel 函数 \cite{watson1995treatise}。 关于散射问题的适定性研究， 一般都是通过研究 Green 函数在无穷远处的渐近性质，然后据此推出辐射条件来保证方程的唯一性。 而存在性和稳定性一般是用变分方法或是边界积分法， 然后通过经典的 Riesz–Fredholm 理论 \cite{colton2013integral,kress1989linear} 结合唯一性得到。 但是，由于横波和纵波在半空间表面初的耦合以及表面波的存在， 很难得出一个既保证唯一性又保证存在性的辐射条件。 因此，本文中我们不在依赖辐射条件，将利用极限吸收原理 \cite{agmon1975spectral,Yves1988} 来得出方程的适定性。在本章最后， 我们还将展示， 当障碍物远离半空间表面时， 其相应的散射解和在全空间情形下的散射解之间的关系。
 
 \section{半空间弹性波 Green 函数}\label{Green Tensor}
 由于本文研究的正散射问题中， 弹性波需要在半空间表面 $\Ga_0$ 上满足 Neumann 边界条件 (\ref{eq2}), 所以我们先来研究满足 Neumann 边界条件的半空间 Green 函数。 之后， 由于逆时偏移算法中需要计算反传波， 因此我们还需要推导 满足 Dirichlet 边界条件的半空间 Green 函数及其 $e_2$ 方向的应力张量。
@@ -17,7 +18,7 @@ g_{k}=\frac{\i}{4}\mathit{H}_0^{(1)}(k|x-y|)
 & & \Delta_e [\N(x;y)q] + \omega^2 [\N(x,y)q] = -\mathbf{\delta}_y(x) q \ \ \mbox{in }\R^2_+ , \label{eq_n1} \\
 & & \sigma(\N(x,y)q)e_2 = 0 \ \ \mbox{on } \Gamma_0, \label{eq_n2}
 \ee
-其中(\ref{eq_n2})代表该green函数满足半空间自由边界条件，${\delta}_y(x)$代表位于点y的Dirac源。 由于半空间的特性，我们将利用对$x_1$变量作Fourier变换的方式来推导Green函数，令
+其中(\ref{eq_n2})代表该 reen函数满足半空间自由边界条件，${\delta}_y(x)$代表位于点y的Dirac源。 由于半空间的特性，我们将利用对$x_1$变量作Fourier变换的方式来推导Green函数，令
 \be\label{a1}
 \hat \N(\xi,x_2;y_2)= \int_\R\N(x_1,x_2;y) e^{-\i (x_1-y_1)\xi} dx_1,\ \ \forall \xi\in\C,
 \ee
@@ -36,7 +37,7 @@ $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 \end{array} \right) e^{\i\mu_p|x_2-y_2|}.\label{G2}
 \ee
 这里$\mu_\alpha=(k_\alpha^2-\xi^2)^{1/2}$且有$\alpha=s,p$, $k_p=\omega/\sqrt{\lam+2\mu}, k_s=\omega/\sqrt{\mu}$为p波和s波的波数。
-为了利用基本解$\G(x,y)$的特性，我们令：
+为了利用基本解$\G(x,y)$的在 $x=y$ 处的奇性，我们令：
 \ben
 \N_c(x,y)=\N(x,y)-(\G(x,y)-\G(x,y'))
 \een
@@ -58,7 +59,7 @@ $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
  \mu \frac{d^2(e_1^T\hat \N_c q)}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d(e_2^T\hat \N_c q)}{dx_2}+(\omega^2-(\lambda+2\mu)\xi^2)(e_1^T\hat \N_c q) = 0 \label{eq_n5}\\
  (\lambda+2 \mu)\frac{d^2(e_2^T\hat \N_c q)}{dx_2^2}+\i(\lambda+\mu)\xi\frac{d(e_1^T\hat \N_c q)}{dx_2}+(\omega^2-\mu \xi^2)(e_2^T\hat \N_c q) = 0 \label{eq_n6}
 \ee
- 由于我们需要$\N(x,y)$为外行波解，因此方程 (\ref{eq_n5})的解为如下两个向量：
+ 由于我们可以$\N(x,y)$为外行波，因此方程 (\ref{eq_n5})的解可以表示成如下两个向量：
 \ben
  \left[ \begin{array}{cc} \i\mu_s \\ -\i\xi \end{array} \right]e^{\i\mu_s x_2} \ , \ \ \ \ \ \left[ \begin{array}{cc} \i\xi \\ \i\mu_p \end{array} \right]e^{\i\mu_p x_2}
 \een
@@ -93,6 +94,7 @@ $\hat{\G}(\xi,x_2;y_2)=\hat{\G}_s(\xi,x_2;y_2)+\hat{\G}_p(\xi,x_2;y_2)$及
 	4\xi^3\mu_s\mu_p  & \varphi^2\mu_p
 \end{array} \right).
 \een
+
 按照惯例，原本我们只要对$\hat{\N}(\xi,x_2;y_2)$进行Fourier逆变换就可以得到所需要的Neumann Green函数. 然而，如下面的引理所述， 函数$\delta(\xi)$在实轴上存在零点\cite{achenbach1980, Harris2001Linear}，此时我们并不可以对其直接进行Fourier逆变换.
 \begin{lem} \label{rayleigh}
 	 Rayleigh方程 $\delta(\xi) = 0$在复平面$\C$中有且仅有两个根且记为 $\pm k_R$, 其中$k_R$满足$k_R>k_s$。
@@ -152,7 +154,7 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 下面的两个引理告
 	\be
 	z^{1/2}=(1+\i\varepsilon)(\frac{z}{{1+\i\varepsilon}^2})^{1/2}
 	\ee
-	当且仅当  $2\psi\leq\phi<2\pi$
+	成立当且仅当  $2\psi\leq\phi<2\pi$
 \end{lem}
 \debproof
 令 
@@ -196,7 +198,7 @@ z^{1/2}&=&\sqrt{R}e^{\i\phi/2}
  \een
   令 
   \ben
-  \xi=\xi_1+\i\xi_2,\xi_1,\xi_2\in\R, \ \ \  (1+\i\varepsilon)=r e^{\i\psi}.
+& &  \xi=\xi_1+\i\xi_2,\xi_1,\xi_2\in\R, \ \ \  \\ & &(1+\i\varepsilon)=r e^{\i\psi}.
   \een
   通过简单的计算， 我们有
 \be
@@ -277,8 +279,7 @@ z^{1/2}&=&\sqrt{R}e^{\i\phi/2}
 & &\lim_{\ep\to 0^+}\int_{\pm k_R-d}^{\pm k_R+d}\hat \N_{\om(1+\i\ep)}(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
 &=& \lim_{\ep\to 0^+}\int_{\pm k_R-d}^{\pm k_R+d}\frac{\hat \N(\xi,x_2;y_2)(\xi-k_R)}{\xi\mp k_R(1+\i\ep)} e^{\i(x_1-y_1)\xi} d\xi
 \ee
-
-然后利用引理 \ref{cauchy_pv} ， 表达式 (\ref{NGT1}) 及上面的等式, 可以得到如下 Neumann Green 函数的表达式：
+现在利用引理 \ref{cauchy_pv} ， 表达式 (\ref{NGT1}) 及上面的等式, 我们就可以得到如下 Neumann Green 函数的表达式：
 \be\label{NGT2}
 \N(x,y)&=&\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,x_2;y_2) e^{\i(x_1-y_1)\xi} d\xi\\
 & &-\frac{1}{2\omega^2}
@@ -287,16 +288,16 @@ z^{1/2}&=&\sqrt{R}e^{\i\phi/2}
 这里 $[f(\xi)]^b_a:=f(b)-f(a)$ 。
 
 \begin{remark}
-	值得注意的是， 由于 $\hat\N(\xi,x_2;y_2)$ 在实轴上存在极点及研究目的的区别, 导致最终$\N(x,y)$可以存在多种等价的表达形式。 例如， 在文献 \cite{nedelec2011} 中 Duran 等人是利用 Cauchy 积分定理以及留数定理将积分路径从实轴变换到双曲线上， 从而避开被积函数的极点。 可以证明的是， 本文中推导出的 Green 函数与文献 \cite{nedelec2011} 中的是一致的。 
+	值得注意的是， 由于 $\hat\N(\xi,x_2;y_2)$ 在实轴上存在极点，以及不同的研究目的, 导致最终$\N(x,y)$可以存在多种等价的表达形式。 例如， 在文献 \cite{nedelec2011} 中 Duran 等人是利用 Cauchy 积分定理以及留数定理将积分路径从实轴变换到双曲线上， 从而避开被积函数的极点。 可以证明的是， 本文中推导出的 Green 函数与文献 \cite{nedelec2011} 中的是一致的。 
 \end{remark}
 \begin{remark}
 从 Neumann Green 函数的表达式 (\ref{NGT2})中， 我们发现在第二项中， $\mu_{\al}(\pm k_R)=\i\sqrt{k_R^2-k_\al^2}$， 易知当 $x_2$ 增大时， 第二项的值是指数衰减的。所以，式 (\ref{NGT2}) 中第二项对应的波只在 $\Ga_0$ 附近以波数 $k_R$ 传播，当远离 $\Ga_0$时非常微弱， 且称为表面波 (Rayleigh 波) \cite{aki2002quantitative}。
 \end{remark}
 
-为了后文分析的便利， 我们给出以下引理， 叙述若干关于 Rayleigh 函数 $\delta(\xi)$ 的性质。
+为了后文分析的便利， 我们在以下引理中叙述若干关于 Rayleigh 函数 $\delta(\xi)$ 的性质。
 
 \begin{lem}\label{delta}
-	令 $d_R=(k_R-k_s)/2$，其中 $k_R$ 为Rayleigh 表面波的波数。我们与如下结论： \\
+	令 $d_R=(k_R-k_s)/2$，其中 $k_R$ 为Rayleigh 表面波的波数。Rayleigh 函数 $\delta(\xi)$ 有如下性质： \\
 	\rm{1}.对于任意 $|\xi|\le k_s+ d_R$， 存在只与 $\kappa$ 有关的常数 $C_1,C_2,C_3$，我们有
 	 \ben
 	 & & C_1k_s^4\le |\delta(\xi)|\le C_2k_s^4 \\
@@ -336,9 +337,9 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \be\label{symm}
 \N(x,y)=\N(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+
 \ee
-对于 $x_s\in\Ga_0$ 的情况， 我们定义这种 Green 函数 $\N(x,x_s),x\in\R^2_+$ 为 $\N(x,y)$ 在 $y\in\R^2_+,  \  y\to x_s$ 时的极限。
-由于半空间反散射问题中的点源一般都位于界面上， 所以接下去我们重点研究 $x\in\Ga_0 ,  \ y\in\R^2_+$ 时的 Neumann Green 函数 $\N(x,y)$ 。
-通过 (\ref{G1}) , (\ref{G2}) , (\ref{NGT})， 简单的计算可以简化 $\N(x,y)$ ：
+对于 $x_s\in\Ga_0$ 的情况， 我们定义此时的 Neumann Green 函数 $\N(x,x_s),x\in\R^2_+$ 为 $\N(x,y)$ 在 $y\in\R^2_+,  \  y\to x_s$ 时的极限。
+由于半空间反散射问题中的点源一般都位于界面上， 所以接下去我们重点研究当 $x\in\Ga_0 ,  \ y\in\R^2_+$ 情形下的 Neumann Green 函数 $\N(x,y)$ 。
+通过 (\ref{G1}) , (\ref{G2}) , (\ref{NGT})， 可以将 $\N(x,y)$ 简化为：
 \be
 \hat
 \N(\xi,0;y_2)&=&\frac{\i}{\mu\delta(\xi)} \Bigg[ \Bigg(
@@ -361,7 +362,7 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \left[\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i\mu_\al y_2+\i(x_1-y_1)\xi)}\right]^{k_R}_{-k_R}.
 \ee
 
-为了便于研究 Neumann Green 函数在边界 $\Ga_0$上水平方向的渐近行为， 我们下面引理中更为有用的表达形式。
+为了便于研究 Neumann Green 函数在边界 $\Ga_0$上水平方向的渐近行为， 我们在下面引理中给出其更有便于分析的表达形式。
 
 
 \begin{lem}\label{lem:2.3} 令 $x\in\Ga_0 \ , y\in \R^2_+$ 以及 $\phi\in (-\pi/2,\pi/2)$ 且存在如下表达 $y_2=|x-y|\cos\phi \ ,
@@ -372,7 +373,7 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 	& & \pm\i
 	\left[\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i\mu_\al y_2+\i(x_1-y_1)\xi}\right]_{\xi=\pm k_R},\label{h3}
 	\ee
-	其中 $\lam=k_s|x-y|$, $L$ 为复平面中的积分路径即 从 $-\pi/2+\i\infty$ to $-\pi/2$, $-\pi/2$ 到 $\pi/2$, 接着从 $\pi/2$ 到 $\pi/2-\i\infty$  ( 见图例 \ref{figure_trans}), 这里符号 $\pm$ 取决于 ${\rm sgn}(x_1-y_1)=\pm 1$, 且定义表达式：
+	其中 $\lam=k_s|x-y|$, $L$ 为复平面中的积分路径即 从 $-\pi/2+\i\infty$ to $-\pi/2$, $-\pi/2$ 到 $\pi/2$, 接着从 $\pi/2$ 到 $\pi/2-\i\infty$ 的折线 ( 如图 \ref{figure_trans} 所示), 这里符号 $\pm$ 取决于 ${\rm sgn}(x_1-y_1)=\pm 1$, 且定义表达式：
 	\be\label{h2}
 	\mathbb{N}_{0}(t)=\sum_{\al=p,s}k_s\,\frac{\Na(k_s\sin(t+\phi))}{\de(k_s(\sin(t+\phi))}.
 	\ee
@@ -438,7 +439,7 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
  	\een
  \end{lem}
 
-在文献\cite{RTMhalf_aco}中，Chen 等对半空间逆时偏移算法的研究时，引理 \ref{van} 起到了关键的作用。该引理相对于驻相定理的优势在于，对于振幅函数 $f(t)$ 的光滑性要求更低，且对于 $\lambda$ 阶数的刻画具有一致性。然而， 当振幅函数具有弱奇异点时，直接使用引理 \ref{van} 就行不通了。 幸运的是，经过研究我们发现 当振幅函数存在弱奇异点， 且其与相位函数 $\phi(t)$ 的驻相点的距离存在正下界时， Van der corput 引理仍然成立，如下述引理刻画。
+在文献\cite{RTMhalf_aco}中，Chen 等对半空间逆时偏移算法的研究时，引理 \ref{van} 起到了关键的作用。该引理相对于驻相定理的优势在于，对于振幅函数 $f(t)$ 的光滑性要求更低，且对于 $\lambda$ 阶数的刻画具有一致性。然而， 当振幅函数具有弱奇异点时，直接使用引理 \ref{van} 就行不通了。 幸运的是，经过研究，我们发现 当振幅函数存在弱奇异点， 且其与相位函数 $\phi(t)$ 的驻相点的距离存在正下界时， Van der corput 引理仍然成立，如下述引理刻画。
 
 
 \begin{lem}\label{lem:2.5}
@@ -603,7 +604,7 @@ g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\
   这里使用了条件 $k_sy_2\ge 1$ 。 引理得证。
 \finproof
 
-从以上定理可以得知， $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数被两项控制， 其中第一项随着 $x_1$ 变大，以 3/2 阶衰减， 而第二项关于 $x_1$ 是常数， 但关于 $y_2$ 指数衰减。值得注意的是， 弹性波基本解在横向关于 $x_1$ 是以 1/2 阶衰减的。除了存在表面波， 该横向衰减性质也是弹性波 Neumann Green 函数与 声波 Neumann Green 函数大大不同的地方。
+从以上定理可以得知， $x\in\Gamma_0$, $y\in\R_+^2$ 时， Neumann Green 函数被两项控制， 其中第一项随着 $x_1$ 变大，以 3/2 阶衰减， 而第二项关于 $x_1$ 是常数， 但关于 $y_2$ 指数衰减。值得注意的是， 弹性波基本解在横向关于 $x_1$ 是以 1/2 阶衰减的。除了存在表面波， 该横向衰减性质也是弹性波 Neumann Green 函数与 声波 Neumann Green 函数本质不同的地方。
 
 
 
@@ -684,7 +685,7 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 &:=&\Tp(\xi)e^{\i\mu_p y_2}+\Ts(\xi)e^{\i\mu_s y_2}.\label{d1}
 \ee
 
-下面的定理与定理 \ref{es_NGT} 相似， 其阐述了 $\D(x,y)$ 在 $\Ga_0$ 上的应力张量 $\T(x,y)$ 关于变量 $x_1$ 的衰减行为。 观察式子 \ref{DGT2}， 我们发现它与式子相比 \ref{c8} 其形式更为简洁。于是， 我们用类似于估计 $\N(x,y)$ 的方法， 即通过变量替换， 然后利用引理 \ref{lem:2.5} 及引理 \ref{lem:2.7}, 我们可以证明如下定理， 这里我们省略细节。
+下面的定理与定理 \ref{es_NGT} 相似， 其阐述了 $\D(x,y)$ 在 $\Ga_0$ 上的应力张量 $\T(x,y)$ 关于变量 $x_1$ 的衰减行为。 观察式子 (\ref{DGT2})， 我们发现它与式子相比 \ref{c8} 其形式更为简洁。于是， 我们用类似于估计 $\N(x,y)$ 的方法， 即通过变量替换， 然后利用引理 \ref{lem:2.5} 及引理 \ref{lem:2.7}, 我们可以证明如下定理， 这里我们省略细节。
 
 \begin{thm}\label{es_DGT}
 	令 $x\in\Gamma_0$, $y\in\R_+^2$ 满足 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 和 $k_s y_2\ge 1$ 。 存在只与 $\kappa$ 有关的常数 $C$ 成立如下估计
@@ -692,11 +693,13 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 	|\T_D(x,y)|+k_s^{-1}|\na_y\T_D(x,y)|\leq C\frac{k_s^2 y_2}{(k_s|x-y|)^{3/2}}.
 	\een
 \end{thm}
-观察定理 \ref{es_DGT}, 我们发现 $\T_D(x,y)$ 及其导数在 $x_2$ 增大时，其值是关于 $x_2$ 3/2 阶衰减的， 这与声波 Dirichlet Green 函数的 $e_2$ 方向导数表现一致 \cite{RTMhalf_aco} 。特别地， 相比于其它文献的该函数的估计 \cite[Lemma 2.2]{arens1999}， 我们给出了更准确关于常数的刻画， 即分子中的 $y_2$。 而且在 $\N(x,y )$这种依赖于 $y_2$ 的估计表示， 这对对我们后面的算法分析是非常关键的。
+
+\bigskip
+观察定理 \ref{es_DGT}, 我们发现 $\T_D(x,y)$ 及其导数在 $x_1$ 增大时，其值关于 $x_1$ 是 3/2 阶衰减的， 这与声波 Dirichlet Green 函数的 $e_2$ 方向导数表现一致 \cite{RTMhalf_aco} 。特别地， 相比于文献\cite[Lemma 2.2]{arens1999}中对于该函数的估计，关于常数我们给出了更为准确的刻画， 即分子中的 $y_2$。 而且在 $\N(x,y )$ 中这种依赖于 $y_2$ 的表示估计， 对我们后面的算法分析是非常关键的。
 \begin{remark}
-在这一节， 我们注意到，在对 $\N(x,y)$ 或是 $\T_D(x,y$ 的估计时， 我们都要求满足条件 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 的前提， 这里作出说明。 第一，经过分析此条件是必要的， 该条件是为了保证振幅函数的弱奇异点与相位函数的稳像点不在同一点。 若我们去除此条件， 我们只能得到更弱的阶数估计。 第二， 在后文分析中， 当需要用到 $\N(x,y)$ 或是 $\T_D(x,y$ 的衰减性质时， 该条件都可以满足。 如果读者关心在去除条件 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 后， 关于 $\N(x,y)$ 或是 $\T_D(x,y$ 的估计， 可见附录 \ref{appendix_station}。
+在这一节中， 我们注意到，在对 $\N(x,y)$ 或是 $\T_D(x,y)$ 的估计讨论时， 前提都需要满足条件 $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ 。 这里我们作出说明： 第一，经过分析此条件是必要的， 该条件是为了保证振幅函数的弱奇异点与相位函数的稳相点不在同一点。 若我们去除此条件， 我们只能得到更弱的一致估计； 第二， 在后文分析中， 当需要用到 $\N(x,y)$ 或是 $\T_D(x,y$ 的衰减性质时， 该假设条件都可以被满足。 
 \end{remark}
-\section{正散射问题的适定性}
+\section{正散射问题解的适定性}
 
 现在，我们将利用经典的极限吸收原理 (见文献 \cite{leis, wilcox1975, Yves1988}) 来定义半空间正散射问题的散射解。假设 $D$ 为有界 Lipschitz 区域。 对于 $g\in H^{1/2}(\Ga_D)$，令 $\ep>0$ 以及 $u_\ep$ 满足如下方程
 \be
@@ -704,15 +707,15 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致。 于是有：
 & &u_\ep= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \\
 & &\sigma(u_\ep)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
 \ee
- 由于上述方程中 $(1+\i\ep)$ 的存在， 将方程转化为变分形式后， 易得相应双线性算子是有界且椭圆的， 于是由 Lax-Milgram 立得， 方程
- (\ref{pp3})-(\ref{pp4}) 在空间 $ H^1(\R^2_+\bks\bar D)$ 中存在唯一解 $u_\ep$ 。显然， 当 $s>1/2$ 时，有 $u^\ep
+ 由于上述方程中 $(1+\i\ep)$ 的存在， 将方程转化为变分形式后， 易得相应的双线性算子是有界且椭圆的， 于是由 Lax-Milgram 定理， 可以推出方程
+ (\ref{pp3})-(\ref{pp4}) 在空间 $ H^1(\R^2_+\bks\bar D)$ 中存在唯一解 $u_\ep$ 。显然， 当 $s>1/2$ 时，成立 $u^\ep
  \in H^{1,-s}(\R^2_+\bks\bar D)$。
  
-为了后文表述方便， 我么引入如下双线性形式 $\GG(\cdot,\cdot)$: 对于任意 $u,v\in H^1(\R^2\bks\bar D)$ 且满足 $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$, 令
+为了后文表述方便， 我么引入如下双线性形式 $\GG(\cdot,\cdot)$:  即对于任意 $u,v\in H^1(\R^2\bks\bar D)$ 且满足 $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$, 令
 \be\label{g1}
 \GG(u,v)=\int_{\Ga_D} [u(x)\cdot \sigma(v(x))\nu- \sigma(u(x))\nu\cdot v(x)]ds(x).
 \ee 
-于是， 由于 $\N_{\om(1+\i\ep)}(x,y)$ 在无穷远处指数衰减，以及 $u^\ep(x)\in H^1(\R^2_+\bks\bar D)$, 利用 Betti 公式 (\ref{betti}) 易得 $u^\ep$ 的 Green 积分表达式，对于任意 $q\in\R^2$ 有
+于是， 由于 $\N_{\om(1+\i\ep)}(x,y)$ 在无穷远处指数衰减，以及 $u^\ep(x)\in H^1(\R^2_+\bks\bar D)$, 利用 Betti 公式 (\ref{betti}) 易得 $u^\ep$ 的 Green 积分表达式，即对于任意 $q\in\R^2$ 有：
 \be\label{gg2}
 u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D.
 \ee
@@ -723,11 +726,11 @@ u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\
 & &u= g \ \ \mbox{\rm on }   \ \ \ \ \ \Ga_D, \ \ \ \ \\
 & &\sigma(u)e_2=0 \ \ \ \ \ \ \mbox{\rm on } \Ga_0,  \label{pp2}
 \ee
-并且我们由此定义 $u$ 为方程(\ref{pp1})-(\ref{pp2})的散射解。
+由此我们定义 $u$ 为方程(\ref{pp1})-(\ref{pp2})的散射解。
 下面， 我们将说明 $u^\ep$ 在空间 $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中，当 $\ep\to 0^+$时，一定存在极限。首先，
 定义微分算子 $-\De_e$ 的定义域为：
 \ben
-\mathcal{D,\R^2_+\bks\bar D}(\De_e)&=&\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), \\
+\mathcal{D}(\De_e,\R^2_+\bks\bar D)&=&\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), \\
 & &v=0\ \ \mbox{on }\Ga_D, \ \  \sigma(v)e_2=0\ \ \mbox{on }\Ga_0\}
 \een
  对文献 \cite{Yves1988}中的结果作适当的拓展， 我们可以得到如下结论：
@@ -743,7 +746,7 @@ u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\
    \ben
    \mathcal D'(\De_e,\Om)=\{v\in H^1(\Om), \ \De_e v\in L^2(\Om), \ \ \sigma(v)\nu=0\ \mbox{on }\Gamma_\Om \}.
    \een
-   这里 $\Om\subset\R^2_+$ 是半空间 $\R^2_+$ 的局部扰动， $\Gamma_\Om$ 表示 $\Om$ 的边界， 且对于足够大的$R>0$, 满足
+   这里 $\Om\subset\R^2_+$ 是半空间 $\R^2_+$ 在边界 $\Ga_0$ 上局部扰动后的无界区域， $\Gamma_\Om$ 表示 $\Om$ 的边界， 且对于足够大的$R>0$, 满足
    \ben
    \{x\in\Om: \ \|x\|> R\}=\{x\in\R^2_+: \ \|x\|> R\}.
    \een
@@ -753,8 +756,8 @@ $-\De_e$ 在定义域 $\mathcal D(\De_e,\R^2_+\bks\bar D)$ 也不存在正特征
 \begin{lem}\label{2.1}\label{absence1}
 	假设 $\om\in \R$ 以及 $u\in \mathcal{D}(\De_e,\R^2_+\bks\bar D)$ 满足如下方程： 
 	\be\label{elastic_eq}
-& &	\Delta_e u + \rho\omega^2 u=  \ \ \ \ \mbox{in } \ \ \ \R_+^2\bks \bar{D}\\ \label{elastic_bd}
-& &	u=0 \ \ \mbox{on} \  \ \  \ \ \  \Ga_D , \ \ \\
+& &	\Delta_e u + \omega^2 u=  \ \ \ \ \mbox{in } \ \ \ \R_+^2\bks \bar{D}\\ \label{elastic_bd}
+& &	u=0 \ \ \ \ \ \ \ \mbox{on} \  \ \  \ \ \  \Ga_D , \ \ \\
 & & \sigma(u)\cdot e_2=0 \ \ \ \ \ \mbox{on} \ \ \  \ \ \ \Ga_0,
 	\ee
 	于是我们断言有 $u=0$。
@@ -841,7 +844,7 @@ q_1=\i \hat{f}_1 , \ \ \ \  q_2=\hat{f}_2,  \ \ \ \  \q=(q_1,q_2)^T
 \end{array}\right)
 \een
 \\
-下面， 我们将 $\w(\xi,x_2)$ 在区间 $(h,\infty)$ 上延拓为零。 易得 $\w(\xi,x_2)$ 在 $\R_+$ 满足方程组 (\ref{eq3})。
+下面， 我们将 $\w(\xi,x_2)$ 在区间 $(h,\infty)$ 上延拓为零。 易得 $\w(\xi,x_2)$ 在关于 $x_2\in\R_+$ 满足方程组 (\ref{eq3})。
 因此，由 $\mu_p(\xi)$ 和 $\mu_s(\xi)$ 的性质及引理 \ref{rayleigh}， 易得 对于任意 $t\geq0$ 有 
 $\Phi(\xi,t)$ 及 $\Phi(\xi,t)^{-1}$ 关于 $\xi$ 在 $\R\bks\{\pm k_p,\pm k_s,\pm k_R\}$ 中实解析， 即在 $\R\bks\{\pm k_p,\pm k_s,\pm k_R \}$ 中任一点的某个小领域内函数都存在 Taylor 级数展开。 又因为 $f(x)$ 存在紧支集, 我们可以推出关于几乎所有的 $\xi\in \R$,  $\w(\xi,x_2), \ x_2\geq 0$ 实解析。同理 $(\A_1 \frac{d}{dx_2} +\A_2\xi) \w$ 也具有该性质。
 
@@ -852,7 +855,7 @@ $\Phi(\xi,t)$ 及 $\Phi(\xi,t)^{-1}$ 关于 $\xi$ 在 $\R\bks\{\pm k_p,\pm k_s,\
 & &[\A_1 \frac{d^2}{dx_2^2} +(\A_2-(\A_2)^T)\xi\frac{d}{dx_2}-\A_3\xi^2+\omega^2]\UU=0 \ \ \ \mbox{in} \ \ \  x_2\in\R_+ \\
 & &(\A_1 \frac{d}{dx_2} +\A_2\xi)  \UU =(\A_1 \frac{d}{dx_2} +\A_2\xi)    \w \ \ \ \ \ \ \ \mbox{on} \ \ x_2=0 \label{bd2}
 \ee
-又因为上述方程组的系数相对于变量 $x_2$ 是常数，于是可以得到 $\UU(\xi,x_2)$ 有如下形式，
+又因为上述方程组的系数相对于变量 $x_2$ 是常数，于是可以得到 $\UU(\xi,x_2)$ 有如下表达形式，
 \ben\hspace{-2.5cm}
 \UU(\xi,x_2)&=&c_1(\xi)\left(\begin{array}{l}
 	-\mu_s \\
@@ -879,7 +882,7 @@ $\Phi(\xi,t)$ 及 $\Phi(\xi,t)^{-1}$ 关于 $\xi$ 在 $\R\bks\{\pm k_p,\pm k_s,\
 \be\label{bd_1}
 (\A_1 \frac{d}{dx_2} +\A_2\xi)  \UU =0  \ \ \ \ \ \mbox{on} \ \ \ x_2=0
 \ee
-进一步， 当 $\xi^2>k^2_p$, $\UU\in L^2_{x_2}(\R_+)$ 存在如下形式，
+进一步， 当 $\xi^2>k^2_p$， $\UU\in L^2_{x_2}(\R_+)$ 存在如下形式，
 \ben
 \UU(\xi,x_2) = \left\{
 \begin{array}{l}
@@ -939,14 +942,13 @@ $\Phi(\xi,t)$ 及 $\Phi(\xi,t)^{-1}$ 关于 $\xi$ 在 $\R\bks\{\pm k_p,\pm k_s,\
 \ben
 f=\sigma(u)\na\chi+(\lambda+\mu)(\na^2 \chi u+ \na u \na\chi)+\mu\Delta\chi u +\mu\div u\na\chi,
 \een
- 这里 $\na^2 \chi$ 是 $\chi$ Hessian 矩阵。 显然成立 $q\in L^2(\R^2_+)$ 且存在紧支集。 因此， 利用引理 \ref{absence2}, 可以得到存在足够大的 $h>0$, 当 $x\in \R\times(h,+\infty)$ 时， $u=v=0$。 最后，利用弹性波方程的唯一延拓性原理 \cite{Morassi2001STRONG}，
+ 这里 $\na^2 \chi$ 是 $\chi$ Hessian 矩阵。 显然成立 $f\in L^2(\R^2_+)$ 且存在紧支集。 因此， 利用引理 \ref{absence2}, 可以得到存在足够大的 $h>0$, 当 $x\in \R\times(h,+\infty)$ 时， $u=v=0$。 最后，利用弹性波方程的唯一延拓性原理 \cite{Morassi2001STRONG}，
 立得在 $\R^2_+$ 中， u=0 。 引理得证。
 \finproof
 
 利用相似的理论推导， 上述结果可以推广到可穿透障碍物情形，即有如下定理，
 \begin{lem}
 	假设 $\om\in \R$ 以及 $u\in \mathcal{D}(\De_e,\R^2_+)$ 满足如下方程： 
-
 	\ben
 	\De_e \u + \om^2 (1+n(x)) \u =0
 	\een
@@ -955,7 +957,7 @@ f=\sigma(u)\na\chi+(\lambda+\mu)(\na^2 \chi u+ \na u \na\chi)+\mu\Delta\chi u +\
 \end{lem}
 
 
-于是， 利用引理 \ref{lap1} 和引理 \ref{absence1}， 易得如下半空间弹性波问题散射解的适定性。
+现在， 我们利用引理 \ref{lap1} 和引理 \ref{absence1}， 易得如下半空间弹性波问题散射解的适定性。
 \begin{thm} \label{thm:4.1}\label{lap2}
 	对于任意 $g \in H^{1/2}(\Ga_D)$， 半空间散射问题 (\ref{pp1})-(\ref{pp2})
 	存在唯一的散射解 $u\in H^{1}_{\rm loc}(\R^2_+ \backslash \bar D)$。此外， 对于任意有界区域 $\mathcal O\subset \R^2_+\bks\bar D$ 存在常数 $C>0$ 成立如下估计:
@@ -964,7 +966,7 @@ f=\sigma(u)\na\chi+(\lambda+\mu)(\na^2 \chi u+ \na u \na\chi)+\mu\Delta\chi u +\
 	\een
 \end{thm}
 
-关于半空间散射问题在其它边界条件的情形或是对于可穿透障碍的情形， 以上论证都可以类似的推广到相应情形。利用 $u^\ep$ 的 Green 表示公式 (\ref{gg2}), 令 $\ep\to 0$, 可以得到关于半空间弹性波问题散射解 $u$ Green 表示公式: 
+关于半空间散射问题在其它边界条件的情形或是对于可穿透障碍的情形， 以上论证都可以类似的推广到相应情形。利用 $u^\ep$ 的 Green 表示公式 (\ref{gg2}), 令 $\ep\to 0$, 可以得到关于半空间弹性波问题散射解 $u$ 的 Green 表示公式: 
 \be\label{g2}
 u(y)\cdot q=\GG(u(\cdot),\N(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D,\ \ \forall q\in\R^2.
 \ee
@@ -1106,4 +1108,4 @@ w(y)\cdot e_j&=&\GG(u_2(\cdot),\left[\int_{\Ga_0}\sum^2_{i=1}[\T(\cdot,x)^Te_i]\
 
 \section{本章小结}
 
-本章通过严格数学推到给出了新的 Neumann Green 函数 $\N(x,y)$ 的表达式 (\ref{NGT1}), 进一步为了分析其衰减性质给出了表达式 (\ref{NGT3})。 同样的论证手段可以用于 Dirichlet Green 函数 $\D(x,y)$及其应力张量 $\T_D(z,y)$。利用 Van der Corput 的推广， 我们给出了上述 Green 函数的在特定区域的衰减性质， 从而保证了后文点扩散函数存在的意义。 最后，通过经典的极限吸收远离证明了半空间弹性波散射问题的适定性。
+本章通过严格的数学推导给出了新的 Neumann Green 函数 $\N(x,y)$ 的表达式 (\ref{NGT1}), 进一步为了分析其衰减性质给出了表达式 (\ref{NGT3})。 同样的论证手段可以用于 Dirichlet Green 函数 $\D(x,y)$及其应力张量 $\T_D(z,y)$。利用 Van der Corput 的推广， 我们给出了上述 Green 函数的在特定区域的衰减性质， 从而保证了后文点扩散函数存在的意义。 最后，通过经典的极限吸收远离证明了半空间弹性波散射问题解的适定性。

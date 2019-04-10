@@ -1,51 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis_middle_report.aux
 The style file: Biblio/gbt7714-unsrt.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: Biblio/ref.bib
-Warning--I didn't find a database entry for "feng2017elasti"
-Warning--I didn't find a database entry for ""
-You've used 42 entries,
+You've used 1 entry,
             4079 wiz_defined-function locations,
-            1104 strings with 12522 characters,
-and the built_in function-call counts, 195319 in all, are:
-= -- 2659
-> -- 22443
-< -- 29723
-+ -- 8127
-- -- 242
-* -- 1415
-:= -- 26887
-add.period$ -- 126
-call.type$ -- 42
-change.case$ -- 162
-chr.to.int$ -- 7414
-cite$ -- 42
-duplicate$ -- 951
-empty$ -- 2227
-format.name$ -- 543
-if$ -- 50636
-int.to.chr$ -- 4
-int.to.str$ -- 43
+            868 strings with 6418 characters,
+and the built_in function-call counts, 5183 in all, are:
+= -- 62
+> -- 599
+< -- 792
++ -- 213
+- -- 5
+* -- 38
+:= -- 735
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 196
+cite$ -- 1
+duplicate$ -- 22
+empty$ -- 51
+format.name$ -- 14
+if$ -- 1329
+int.to.chr$ -- 1
+int.to.str$ -- 2
 missing$ -- 0
-newline$ -- 222
-num.names$ -- 152
-pop$ -- 11108
+newline$ -- 14
+num.names$ -- 3
+pop$ -- 309
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 1
 quote$ -- 0
-skip$ -- 19493
+skip$ -- 508
 stack$ -- 0
-substring$ -- 8538
-swap$ -- 101
-text.length$ -- 339
+substring$ -- 221
+swap$ -- 2
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 506
+type$ -- 13
 warning$ -- 0
-while$ -- 478
+while$ -- 11
 width$ -- 0
-write$ -- 653
-(There were 2 warnings)
+write$ -- 24
