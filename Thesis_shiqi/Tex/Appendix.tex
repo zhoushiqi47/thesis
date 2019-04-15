@@ -1,7 +1,7 @@
 \chapter{关于全空间弹性波无相位数据成像算法的讨论} \label{rtm_phaseless}
-在本章中， 我们基于逆时偏移算法， 针对全空间弹均匀弹性背景介质的障碍物成像问题测试一种新的直接成像法。 该算法仅利用弹性波总场在接受面法向和切向的模作为数据， 不需要障碍物的先验信息。在附录最后， 我用大量数值算例来说明该算法的有效性。
+在本章中， 我们基于逆时偏移算法， 针对全空间弹均匀弹性背景介质的障碍物成像问题测试一种新的直接成像法。 该算法仅利用弹性波总场在接收面法向和切向的模作为数据， 不需要障碍物的先验信息。在附录最后， 我们用大量数值算例来说明该算法的有效性。
 \section{问题介绍}
-假设 $D$ 是 $\R^2$ 中有界 Lipschitz 区域， $\nu_D$ 是其边界 $\Ga_D$ 上的外法线方向。 全空间背景介质与上文中半空间背景介质参数设置相同。假设在 $\pa B_s$ 和 $\pa B_r$ 上分别均匀分布着 $N_s$ 个弹性波发射器和 $N_r$ 个弹性波接收器， 其中 $\pa B_s$ 和 $\pa B_r$ 分别是圆心在原点，半径为 $R_s$ 和 $R_r$ 的圆 $B_s$ 和 $B_r$。定义 $\Om$ 是成像样本区域， 且有 $D\subset\Om\subset B_s, \  B_r$。假设入射场由位于 $\pa B_s$ 的点源 $x_s$ 沿着极化方向 $q$ 激发，记为 $u^i_q(x,x_s)=\G(x,x_s)q$。我们考虑障碍物满足刚体边界条件(Dirichlet 边界条件)，于是， 总场 $u_q(x,x_s)$ 满足以下方程：
+假设 $D$ 是 $\R^2$ 中有界 Lipschitz 区域， $\nu_D$ 是其边界 $\Ga_D$ 上的外法向。 全空间背景介质与上文中半空间背景介质参数设置相同。假设在 $\pa B_s$ 和 $\pa B_r$ 上分别均匀分布着 $N_s$ 个弹性波发射器和 $N_r$ 个弹性波接收器， 其中 $\pa B_s$ 和 $\pa B_r$ 分别是圆心在原点，半径为 $R_s$ 和 $R_r$ 的圆 $B_s$ 和 $B_r$。定义 $\Om$ 是成像样本区域， 且有 $D\subset\Om\subset B_s, \  B_r$。假设入射场由位于 $\pa B_s$ 的点源 $x_s$ 沿着极化方向 $q$ 激发，记为 $u^i_q(x,x_s)=\G(x,x_s)q$。我们考虑障碍物满足刚体边界条件(Dirichlet 边界条件)情形，于是， 总场 $u_q(x,x_s)$ 满足以下方程：
 \be
 & &\Delta_e u_q(x,x_s)+ \omega^2u_q(x,x_s)= -\delta_{x_s}(x)\ \ \ \ \mbox{in }\ \ \ \R^2\bks \bar{D},\\ 
 & &u_q(x,x_s)=0 \ \  \ \ \ \  \ \ \mbox{on} \ \Ga_D,\  \\
@@ -15,14 +15,14 @@
 }(z)=-\om^2\Im\sum_{q=e_1,e_2}\frac{2\pi R_s}{N_s}\frac{2\pi R_r}{N_r}\sum_{s=1}^{N_s}\sum_{r=1}^{N_r}\bigg(c_p\G_p(z,x_rs)q+c_s\G_s(z,x_s)q\bigg)\\
 \cdot\bigg(c_p\G_p(z,x_r)+c_s\G_s(z,x_r)\bigg)\overline{u^s_q(x_r,x_s)}ds(x_r)ds(x_s)
 \een
-特别的， $I_{RTM
-}(z)$ 可以看作采用数值积分对如下连续函数的逼近,
+$I_{RTM
+}(z)$ 可以看做采用数值积分对如下连续函数的逼近,
 \ben
 \hat{I}_{RTM
 }(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(c_p\G_p(z,x_rs)q+c_s\G_s(z,x_s)q\bigg)\\
 \cdot\bigg(c_p\G_p(z,x_r)+c_s\G_s(z,x_r)\bigg)\overline{u^s_q(x_r,x_s)}ds(x_r)ds(x_s)
 \een
-关于向量 $x=(x_1,x_2)^T$， 我们定义相应的径向单位向量 $\hat{x}={x}/{|x|}:=(\hat{x}_1,\hat{x}_2)^T$ 和周向单位向量 $\tilde{x}=(-\hat{x}_2,\hat{x}_1)$。 进一步， 定义二阶张量 $A(x)=\hat{x}\hat{x}^T$ 和 $B(x)=\tilde{x}\tilde{x}^T$。通过观察弹性波 $\G(x,y)$zai在无穷远处的渐进性质， 我们可以将成像函数 $\hat{I}_{RTM
+关于向量 $x=(x_1,x_2)^T$， 我们定义相应的径向单位向量 $\hat{x}={x}/{|x|}:=(\hat{x}_1,\hat{x}_2)^T$ 和周向单位向量 $\tilde{x}=(-\hat{x}_2,\hat{x}_1)$。 进一步， 定义二阶张量 $A(x)=\hat{x}\hat{x}^T$ 和 $B(x)=\tilde{x}\tilde{x}^T$。通过观察弹性波 $\G(x,y)$在无穷远处的渐近性质， 我们可以将成像函数 $\hat{I}_{RTM
 }(z)$ 近似简化成只需要使用声波基本解 $g_k(x,y)$ 的成像函数 $\hat {I}_{RTM}^{lite}(z)$,
 \ben
 \hat {I}_{RTM}^{lite}(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)\\
@@ -51,7 +51,7 @@
 通过简单的计算， 可得
 \ben 
 |A(x-y)-A(x)|\leq C_1/|x|, \ \ |B(x-y)-B(x)|\leq C_2/|x| \\
-|\frac{1}{|x-y|}-\frac{1}{|x|}|\leq C_3/|x|^2 , \ \
+\left|\frac{1}{|x-y|}-\frac{1}{|x|}\right|\leq C_3/|x|^2 , \ \
 ||x-y|-(|x|-\hat{x}\cdot y)|\leq C_4/|x|
 \een
 这里常数 $C_i>0$, i=1,2,3,4 且仅依赖于 $|y|$。 于是， 我们有
@@ -62,7 +62,7 @@
 \een
 其中 $|\gamma_\alpha(x,y)|\leq C(k_\alpha|x|)^{-3/2}$ , $\alpha\in\{p,s\}$且常数 $C>0$ 仅依赖于 $k_\alpha|y|$。将上述估计代入积分式，引理得证。
 \finproof
-通过引理 \ref{kir_eq} 和文献 \cite[定理 3.1]{ela_reverse}中的论证方法， 我们可得
+通过引理 \ref{kir_eq} 和文献 \cite[定理 3.1]{ela_reverse}中的论证方法， 可得
 \ben
 |\hat{I}_{RTM
 }(z)-\hat{I}_{RTM
@@ -70,7 +70,7 @@
 \een
 其中 $\|T\|$ 是散射问题的解算子的范数，常数 $C>0$ 与$D$, $k_p$, $k_s$ 无关。
  
-上述成像算法需要散射场的全部相位信息，下面我们将只根据总场数据的振幅数据来成像。假设我们在接受面 $\pa B_r$ 上只能接受到法向 $\hat x_r$ 上和切向 $\tilde x_r$ 上的数据的模长，我们的直接成像法如下：
+上述成像算法需要散射场的全部相位信息，下面我们将只根据总场数据的振幅数据来成像。假设我们在接收面 $\pa B_r$ 上只能接收到法向 $\hat x_r$ 上和切向 $\tilde x_r$ 上的数据的模长，我们的直接成像法如下：
 \ben
 \hat {I}_{RTM}^{phaseless}(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)\\
 \cdot\bigg(k_pg_p(z,x_r)\hat{x_r}D_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}D_s(x_r,x_s)\bigg)ds(x_r)ds(x_s)
@@ -112,7 +112,7 @@ D_s(x_r,x_s)&=&\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|
 \end{figure}
 
 
-于是将上式代入 ${I}_{RTM}^{phaseless}(z)$, 我们有 
+因此将上式代入 ${I}_{RTM}^{phaseless}(z)$, 我们有 
 \ben
 \hat {I}_{RTM}^{phaseless}(z)&=&{I}_{RTM}^{lite}(z)-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)
 \\ 
@@ -120,6 +120,6 @@ D_s(x_r,x_s)&=&\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|
 \cdot\bigg(k_pg_p(z,x_r)\hat{x_r}\Delta_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}\Delta_s(x_r,x_s)\bigg)ds(x_r)ds(x_s) \\
 &:=&{I}_{RTM}^{phaseless}(z)+R(z)
 \een
-如下图\ref{figure_phaseless}所示， 无相位成像函数是有效的。从理论上， 有兴趣的读者可以参考文献\cite{chen2016direct}来继续研究证明 $|R(z)|$ 与 $R_s, R_r$ 的关系。
+如下图\ref{figure_phaseless}所示， 无相位成像函数是有效的。在理论分析方面， 有兴趣的读者可以参考文献\cite{chen2016direct}来继续研究证明 $|R(z)|$ 与 $R_s, R_r$ 的关系。
 
 
