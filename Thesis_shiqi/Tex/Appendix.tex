@@ -70,7 +70,7 @@ $I_{RTM
 \een
 其中 $\|T\|$ 是散射问题的解算子的范数，常数 $C>0$ 与$D$, $k_p$, $k_s$ 无关。
  
-上述成像算法需要散射场的全部相位信息，下面我们将只根据总场数据的振幅数据来成像。假设我们在接收面 $\pa B_r$ 上只能接收到法向 $\hat x_r$ 上和切向 $\tilde x_r$ 上的数据的模长，我们的直接成像法如下：
+上述成像算法需要散射场的全部相位信息，下面我们将只根据总场数据的振幅数据来成像。假设我们在接收面 $\pa B_r$ 上只能接收到法向 $\hat x_r$ 上和切向 $\tilde x_r$ 上的数据的模长，即 $|\hat{x_r}^Tu_q(x_r,x_s)|$ 和 $|\hat{x_r}^Tu_q(x_r,x_s)|$，于是我们提出针对该接收数据的直接成像法为：
 \ben
 \hat {I}_{RTM}^{phaseless}(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)\\
 \cdot\bigg(k_pg_p(z,x_r)\hat{x_r}D_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}D_s(x_r,x_s)\bigg)ds(x_r)ds(x_s)
@@ -120,6 +120,6 @@ D_s(x_r,x_s)&=&\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|
 \cdot\bigg(k_pg_p(z,x_r)\hat{x_r}\Delta_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}\Delta_s(x_r,x_s)\bigg)ds(x_r)ds(x_s) \\
 &:=&{I}_{RTM}^{phaseless}(z)+R(z)
 \een
-如下图\ref{figure_phaseless}所示， 无相位成像函数是有效的。在理论分析方面， 有兴趣的读者可以参考文献\cite{chen2016direct}来继续研究证明 $|R(z)|$ 与 $R_s, R_r$ 的关系。
+如下图\ref{figure_phaseless}所示， 无相位成像函数是有效的。在理论分析方面， 有兴趣的读者可以参考文献\cite{chen2016direct}来继续研究 $|R(z)|$ 与 $R_s, R_r$ 的关系。
 
 
