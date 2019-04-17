@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  15 APR 2019 10:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1952,7 +1952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--512
  []
 
 
-Overfull \hbox (3.23505pt too wide) in alignment at lines 533--536
+Overfull \hbox (6.64377pt too wide) in alignment at lines 533--536
  [][][] []
  []
 
@@ -1972,27 +1972,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 604--607
  []
 
 [31] [32] [33] [34] [35] [36]
-Overfull \hbox (54.19856pt too wide) in alignment at lines 839--846
+Overfull \hbox (59.61476pt too wide) in alignment at lines 840--847
  [][][] []
  []
 
 [37]
-Overfull \hbox (12.64838pt too wide) in alignment at lines 905--921
+Overfull \hbox (16.0571pt too wide) in alignment at lines 906--922
  [][][] []
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 933--934
+Underfull \hbox (badness 10000) in paragraph at lines 934--935
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 945--949
+Underfull \hbox (badness 10000) in paragraph at lines 946--950
 
  []
 
 [39] [40] [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1109
 
  []
 
@@ -2003,14 +2003,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1105--1108
 File: ./Img/graphic/half_forward.eps Graphic file (type eps)
 <./Img/graphic/half_forward.eps>
 [45] [46] [47]
-Overfull \hbox (1.0825pt too wide) in paragraph at lines 96--99
-\TU/SongtiSCLight(0)/m/n/12.045 上 的 不 等 式 估 计。|  这 就 说 明 了 $\U/ntxsym/m/n/12.04
-5 J\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 z; y\OT1/cmr/m/n/12.045 ) \LMS/n
-txsy/m/n/12.045 ^^@ \U/ntxsym/m/n/12.045 J[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/i
-t/12.045 z; y\OT1/cmr/m/n/12.045 )$ \TU/SongtiSCLight(0)/m/n/12.045 的 误 差 大 小。|
-  同 样 地，|  针 对 $\LMS/ntxsy/m/n/12.045 r[]\OT1/cmr/m/n/12.045 (\U/ntxsym/m/n/12.
-045 J\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 z; y\OT1/cmr/m/n/12.045 ) \LMS
-/ntxsy/m/n/12.045 ^^@
+Overfull \hbox (2.42079pt too wide) in paragraph at lines 96--99
+\TU/SongtiSCLight(0)/m/n/12.045 上 的 不 等 式 估 计\TU/entextsf/m/n/12.045 . \TU/Song
+tiSCLight(0)/m/n/12.045 这 就 说 明 了 $\U/ntxsym/m/n/12.045 J\OT1/cmr/m/n/12.045 (\
+OML/ntxmi/m/it/12.045 z; y\OT1/cmr/m/n/12.045 ) \LMS/ntxsy/m/n/12.045 ^^@ \U/nt
+xsym/m/n/12.045 J[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 z; y\OT1/cmr/m/n
+/12.045 )$ \TU/SongtiSCLight(0)/m/n/12.045 的 误 差 大 小\TU/entextsf/m/n/12.045 . \
+TU/SongtiSCLight(0)/m/n/12.045 同 样 地，|  针 对 $\LMS/ntxsy/m/n/12.045 r[]\OT1/cmr/
+m/n/12.045 (\U/ntxsym/m/n/12.045 J\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 z
+; y\OT1/cmr/m/n/12.045 ) \LMS/ntxsy/m/n/12.045 ^^@
  []
 
 
@@ -2089,6 +2090,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 707--710
  []
 
 [66] [67] [68]
+Missing character: There is no ； in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
+Missing character: There is no ， in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
 File: ./Img/figure_sc_elastic/circle.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/circle.eps>
 File: ./Img/figure_sc_elastic/pear.eps Graphic file (type eps)
@@ -2102,12 +2107,12 @@ File: ./Img/figure_sc_elastic/sc_p1_circle_4.eps Graphic file (type eps)
 File: ./Img/figure_sc_elastic/sc_p1_circle_8.eps Graphic file (type eps)
 <./Img/figure_sc_elastic/sc_p1_circle_8.eps>
 
-Overfull \hbox (21.87456pt too wide) in paragraph at lines 824--833
+Overfull \hbox (20.46529pt too wide) in paragraph at lines 824--833
 []\TU/SongtiSCLight(0)/m/n/12.045 为 了 比 较 不 同 角 频 率 情 况 下，|  散 射 系 数 的 逼 近 情 况，
 |  我 们 分 别 取 $\OML/ntxmi/m/it/12.045 ! \OT1/cmr/m/n/12.045 = \OML/ntxmi/m/it/12
 .045 ^^Y; \OT1/cmr/m/n/12.045 2\OML/ntxmi/m/it/12.045 ^^Y; \OT1/cmr/m/n/12.045 
 4\OML/ntxmi/m/it/12.045 ^^Y; \OT1/cmr/m/n/12.045 8\OML/ntxmi/m/it/12.045 ^^Y$\T
-U/SongtiSCLight(0)/m/n/12.045 。|
+U/entextsf/m/n/12.045 .
  []
 
 File: ./Img/figure_sc_elastic/sc_s2_circle_1.eps Graphic file (type eps)
@@ -2339,7 +2344,7 @@ File: ./Img/graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bias_100.eps Graph
 ic file (type eps)
 <./Img/graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bias_100.eps>
 
-Overfull \hbox (32.42046pt too wide) in alignment at lines 116--122
+Overfull \hbox (19.10641pt too wide) in alignment at lines 116--122
  [][][] []
  []
 
@@ -2380,10 +2385,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 526 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29996 strings out of 492970
- 590248 string characters out of 6133939
- 658683 words of memory out of 5000000
- 33508 multiletter control sequences out of 15000+600000
+ 29965 strings out of 492970
+ 588113 string characters out of 6133939
+ 658647 words of memory out of 5000000
+ 33477 multiletter control sequences out of 15000+600000
  556028 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,20n,94p,10530b,794s stack positions out of 5000i,500n,10000p,200000b,80000s

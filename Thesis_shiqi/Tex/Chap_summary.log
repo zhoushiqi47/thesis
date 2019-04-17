@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  9 APR 2019 09:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,7 +45,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.3 本
-     文受地球物理中的勘探模型启发， 针对半空间弹性波反散射问题研究了逆时偏移算法。 在研究反散射问题前， 我们首先系统地研究了空间弹性波正散射问题...
+     文受地球物理中的勘探模型启发， 针对半空间弹性波反散射问题研究了逆时偏移算法. 在研究反散射问题前， 我们首先系统地研究了半空间弹性波正散射问...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -88,7 +88,7 @@ Missing character: There is no 偏 in font nullfont!
 Missing character: There is no 移 in font nullfont!
 Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
@@ -109,6 +109,7 @@ Missing character: There is no 地 in font nullfont!
 Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
 Missing character: There is no 了 in font nullfont!
+Missing character: There is no 半 in font nullfont!
 Missing character: There is no 空 in font nullfont!
 Missing character: There is no 间 in font nullfont!
 Missing character: There is no 弹 in font nullfont!
@@ -119,7 +120,7 @@ Missing character: There is no 散 in font nullfont!
 Missing character: There is no 射 in font nullfont!
 Missing character: There is no 问 in font nullfont!
 Missing character: There is no 题 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 利 in font nullfont!
 Missing character: There is no 用 in font nullfont!
 Missing character: There is no F in font nullfont!
@@ -132,7 +133,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no 变 in font nullfont!
 Missing character: There is no 换 in font nullfont!
 Missing character: There is no 推 in font nullfont!
-Missing character: There is no 到 in font nullfont!
+Missing character: There is no 导 in font nullfont!
 Missing character: There is no 出 in font nullfont!
 Missing character: There is no 了 in font nullfont!
 Missing character: There is no 两 in font nullfont!
@@ -179,7 +180,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 进 in font nullfont!
 Missing character: There is no 一 in font nullfont!
 Missing character: There is no 步 in font nullfont!
@@ -188,8 +189,8 @@ Missing character: There is no 通 in font nullfont!
 Missing character: There is no 过 in font nullfont!
 Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
-Missing character: There is no 震 in font nullfont!
-Missing character: There is no 动 in font nullfont!
+Missing character: There is no 振 in font nullfont!
+Missing character: There is no 荡 in font nullfont!
 Missing character: There is no 积 in font nullfont!
 Missing character: There is no 分 in font nullfont!
 Missing character: There is no 的 in font nullfont!
@@ -206,7 +207,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 ! Undefined control sequence.
-l.3 ... Green 函数。 进一步， 通过研究震动积分的衰减性质，给了当 $x\in \Ga
+l.3 ... Green 函数. 进一步， 通过研究振荡积分的衰减性质，给了当 $x\in \Ga
                                                   _0, \ y\in \R^2_+$ 时， $\N(...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -215,7 +216,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.3 ...步， 通过研究震动积分的衰减性质，给了当 $x\in \Ga_0, \ y\in \R
+l.3 ...步， 通过研究振荡积分的衰减性质，给了当 $x\in \Ga_0, \ y\in \R
                                                   ^2_+$ 时， $\N(x,y)$ 和 $\T_D...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -241,7 +242,7 @@ Missing character: There is no 和 in font nullfont!
 <recently read> \T 
                    
 l.3 ...in \Ga_0, \ y\in \R^2_+$ 时， $\N(x,y)$ 和 $\T
-                                                  _D(x,y)$ 随着 $x_2$ 增大的衰减估计。...
+                                                  _D(x,y)$ 随着 $x_2$ 增大的衰减估计....
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -257,7 +258,7 @@ Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 该 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
@@ -276,8 +277,8 @@ Missing character: There is no 义 in font nullfont!
 Missing character: There is no 有 in font nullfont!
 Missing character: There is no 意 in font nullfont!
 Missing character: There is no 义 in font nullfont!
-Missing character: There is no 。 in font nullfont!
-Missing character: There is no 而 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 然 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 基 in font nullfont!
@@ -365,20 +366,20 @@ Missing character: There is no 体 in font nullfont!
 Missing character: There is no 面 in font nullfont!
 Missing character: There is no 向 in font nullfont!
 Missing character: There is no 接 in font nullfont!
-Missing character: There is no 受 in font nullfont!
+Missing character: There is no 收 in font nullfont!
 Missing character: There is no 面 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 那 in font nullfont!
 Missing character: There is no 部 in font nullfont!
 Missing character: There is no 分 in font nullfont!
-Missing character: There is no 行 in font nullfont!
-Missing character: There is no 程 in font nullfont!
+Missing character: There is no 形 in font nullfont!
+Missing character: There is no 成 in font nullfont!
 Missing character: There is no 较 in font nullfont!
 Missing character: There is no 大 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 峰 in font nullfont!
 Missing character: There is no 值 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 且 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -394,7 +395,7 @@ Missing character: There is no 要 in font nullfont!
 Missing character: There is no 高 in font nullfont!
 Missing character: There is no 频 in font nullfont!
 Missing character: There is no 渐 in font nullfont!
-Missing character: There is no 进 in font nullfont!
+Missing character: There is no 近 in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 或 in font nullfont!
@@ -405,7 +406,7 @@ Missing character: There is no 学 in font nullfont!
 Missing character: There is no 近 in font nullfont!
 Missing character: There is no 似 in font nullfont!
 Missing character: There is no ， in font nullfont!
-Missing character: There is no 第 in font nullfont!
+Missing character: There is no 对 in font nullfont!
 Missing character: There is no 一 in font nullfont!
 Missing character: There is no 般 in font nullfont!
 Missing character: There is no 的 in font nullfont!
@@ -416,7 +417,7 @@ Missing character: There is no 件 in font nullfont!
 Missing character: There is no 都 in font nullfont!
 Missing character: There is no 成 in font nullfont!
 Missing character: There is no 立 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 最 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -447,7 +448,7 @@ Missing character: There is no 、 in font nullfont!
 Missing character: There is no 稳 in font nullfont!
 Missing character: There is no 定 in font nullfont!
 Missing character: There is no 性 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
 []
@@ -537,13 +538,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.7 1
-     . (关于 Green 函数的研究)
+     . 关于 Green 函数的研究
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no ( in font nullfont!
 Missing character: There is no 关 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no G in font nullfont!
@@ -556,7 +556,6 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
-Missing character: There is no ) in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
 []
@@ -570,7 +569,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.9 由
-     于半空间的Green 函数都是以震荡积分的形式表述，当频率较大时， 我们需要快速算法来计算。 其中，可否将 Green 函数进行渐进级数展开是...
+     于半空间的Green 函数都是以震荡积分的形式表述，当频率较大时， 我们需要快速算法来计算. 其中，可否将 Green 函数进行渐近级数展开是...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -619,7 +618,7 @@ Missing character: There is no 法 in font nullfont!
 Missing character: There is no 来 in font nullfont!
 Missing character: There is no 计 in font nullfont!
 Missing character: There is no 算 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 其 in font nullfont!
 Missing character: There is no 中 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -636,7 +635,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 进 in font nullfont!
 Missing character: There is no 行 in font nullfont!
 Missing character: There is no 渐 in font nullfont!
-Missing character: There is no 进 in font nullfont!
+Missing character: There is no 近 in font nullfont!
 Missing character: There is no 级 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no 展 in font nullfont!
@@ -649,7 +648,7 @@ Missing character: There is no 趣 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 问 in font nullfont!
 Missing character: There is no 题 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 本 in font nullfont!
 Missing character: There is no 文 in font nullfont!
 Missing character: There is no 针 in font nullfont!
@@ -673,7 +672,7 @@ Missing character: There is no 在 in font nullfont!
 ! Undefined control sequence.
 <recently read> \Ga 
                     
-l.9 ...行渐进级数展开是一个有趣的问题。本文针对 Green 函数衰减性的研究局限在 $\Ga
+l.9 ...行渐近级数展开是一个有趣的问题.本文针对 Green 函数衰减性的研究局限在 $\Ga
                                                   _0$ 上，将来如果可以将研究范围延拓到半空间上甚至...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -711,7 +710,7 @@ Missing character: There is no 上 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 将 in font nullfont!
 Missing character: There is no 有 in font nullfont!
-Missing character: There is no 利 in font nullfont!
+Missing character: There is no 助 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 Missing character: There is no 半 in font nullfont!
@@ -733,7 +732,7 @@ Missing character: There is no 法 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
 []
@@ -752,7 +751,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.11  本
-       文中， 我们假设半空间背景介质是均匀各项同性的。 但是实际的地质结构是多层非均匀各向异性的。 针对这种更一般的散射问题，首先需要研究半空间...
+       文中， 我们假设半空间背景介质是均匀各项同性的. 但是实际的地质结构是多层非均匀各向异性的. 针对这种更一般的散射问题，首先需要研究半空间...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -780,7 +779,7 @@ Missing character: There is no 项 in font nullfont!
 Missing character: There is no 同 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 但 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 实 in font nullfont!
@@ -801,7 +800,7 @@ Missing character: There is no 向 in font nullfont!
 Missing character: There is no 异 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 针 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 Missing character: There is no 这 in font nullfont!
@@ -861,7 +860,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 波 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no 等 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
 []
@@ -875,29 +874,29 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.14 2
-      . (关于接受数据不是全波数据的算法)
+      . 关于接收数据不是全波位移数据的算法
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no ( in font nullfont!
 Missing character: There is no 关 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 接 in font nullfont!
-Missing character: There is no 受 in font nullfont!
+Missing character: There is no 收 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no 据 in font nullfont!
 Missing character: There is no 不 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 全 in font nullfont!
 Missing character: There is no 波 in font nullfont!
+Missing character: There is no 位 in font nullfont!
+Missing character: There is no 移 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no 据 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
-Missing character: There is no ) in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
 []
@@ -1029,10 +1028,9 @@ Missing character: There is no 接 in font nullfont!
 Missing character: There is no 成 in font nullfont!
 Missing character: There is no 像 in font nullfont!
 Missing character: There is no 法 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 由 in font nullfont!
 Missing character: There is no 于 in font nullfont!
-Missing character: There is no ， in font nullfont!
 Missing character: There is no 弹 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 波 in font nullfont!
@@ -1059,8 +1057,10 @@ Missing character: There is no 以 in font nullfont!
 Missing character: There is no 当 in font nullfont!
 Missing character: There is no 只 in font nullfont!
 Missing character: There is no 接 in font nullfont!
-Missing character: There is no 受 in font nullfont!
-Missing character: There is no 当 in font nullfont!
+Missing character: There is no 收 in font nullfont!
+Missing character: There is no 到 in font nullfont!
+Missing character: There is no 混 in font nullfont!
+Missing character: There is no 合 in font nullfont!
 Missing character: There is no 波 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 振 in font nullfont!
@@ -1087,23 +1087,39 @@ Missing character: There is no 成 in font nullfont!
 Missing character: There is no 像 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 本 in font nullfont!
 Missing character: There is no 文 in font nullfont!
 Missing character: There is no 附 in font nullfont!
 Missing character: There is no 录 in font nullfont!
+! Undefined control sequence.
+<write> ...rence `rtm_phaseless' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...很难效仿上述文献的算法来构造成像函数.本文附录\ref{rtm_phaseless}
+                                                   中， 我们将不加证明地给出针对全空间弹性波反散射问...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `rtm_phaseless' on page  undefined on input line 16.
+
 Missing character: There is no 中 in font nullfont!
 Missing character: There is no ， in font nullfont!
-Missing character: There is no 作 in font nullfont!
-Missing character: There is no 者 in font nullfont!
+Missing character: There is no 我 in font nullfont!
+Missing character: There is no 们 in font nullfont!
 Missing character: There is no 将 in font nullfont!
 Missing character: There is no 不 in font nullfont!
 Missing character: There is no 加 in font nullfont!
 Missing character: There is no 证 in font nullfont!
 Missing character: There is no 明 in font nullfont!
-Missing character: There is no 的 in font nullfont!
+Missing character: There is no 地 in font nullfont!
 Missing character: There is no 给 in font nullfont!
 Missing character: There is no 出 in font nullfont!
+Missing character: There is no 针 in font nullfont!
+Missing character: There is no 对 in font nullfont!
 Missing character: There is no 全 in font nullfont!
 Missing character: There is no 空 in font nullfont!
 Missing character: There is no 间 in font nullfont!
@@ -1134,7 +1150,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 值 in font nullfont!
 Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
 []
@@ -1156,6 +1172,11 @@ Overfull \hbox (5.43pt too wide) in paragraph at lines 16--17
  []
 
 
+Overfull \hbox (10.86pt too wide) in paragraph at lines 16--17
+[]
+ []
+
+
 ! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1163,7 +1184,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.18 进
-      一步，针对真实的勘探模型， 一般 $e_2$ 方向的位移数据更容易得到， 于是如何只用接受到的数据 $u^s_q(x_r,x_s)\cdot...
+      一步，针对真实的勘探模型， 一般 $e_2$ 方向的位移数据更容易得到， 于是如何只用接收到的数据 $u^s_q(x_r,x_s)\cdot...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1204,7 +1225,7 @@ Missing character: There is no 何 in font nullfont!
 Missing character: There is no 只 in font nullfont!
 Missing character: There is no 用 in font nullfont!
 Missing character: There is no 接 in font nullfont!
-Missing character: There is no 受 in font nullfont!
+Missing character: There is no 收 in font nullfont!
 Missing character: There is no 到 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 数 in font nullfont!
@@ -1227,7 +1248,7 @@ Missing character: There is no 研 in font nullfont!
 Missing character: There is no 究 in font nullfont!
 Missing character: There is no 问 in font nullfont!
 Missing character: There is no 题 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
 []
@@ -1273,13 +1294,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.22 3
-      . (关于分辨率分析更严谨的数学刻画)、
+      . 关于分辨率分析更严谨的数学刻画
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no ( in font nullfont!
 Missing character: There is no 关 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 分 in font nullfont!
@@ -1295,8 +1315,6 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 学 in font nullfont!
 Missing character: There is no 刻 in font nullfont!
 Missing character: There is no 画 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no 、 in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
 []
@@ -1375,7 +1393,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.26 ...\|z-y\| : |[\J(z,y)]_{ii}|=\frac{1}{2}|[\J
-                                                  (z,z)]_{ii}| ,\ i=1,2\}
+                                                  (z,z)]_{ii}| ,\ i=1,2\}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1399,11 +1417,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 14 strings out of 492970
- 265 string characters out of 6133939
+ 15 strings out of 492970
+ 280 string characters out of 6133939
  65642 words of memory out of 5000000
- 4118 multiletter control sequences out of 15000+600000
+ 4119 multiletter control sequences out of 15000+600000
  3656 words of font info for 16 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 19i,2n,26p,470b,97s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,2n,26p,471b,97s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.

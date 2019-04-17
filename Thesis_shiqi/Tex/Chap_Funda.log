@@ -1,0 +1,2695 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 15:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Chap_Funda.tex
+(./Chap_Funda.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {基础知识}\label{chap:fundamental}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{基
+              础知识}\label{chap:fundamental}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 基 in font nullfont!
+Missing character: There is no 础 in font nullfont!
+Missing character: There is no 知 in font nullfont!
+Missing character: There is no 识 in font nullfont!
+! Undefined control sequence.
+l.2 \section
+            {函数空间}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 函 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 我 in font nullfont!
+Missing character: There is no 们 in font nullfont!
+Missing character: There is no 首 in font nullfont!
+Missing character: There is no 先 in font nullfont!
+Missing character: There is no 引 in font nullfont!
+Missing character: There is no 入 in font nullfont!
+Missing character: There is no 后 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 需 in font nullfont!
+Missing character: There is no 要 in font nullfont!
+Missing character: There is no 用 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 记 in font nullfont!
+Missing character: There is no 号 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{adams2003sobolev}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.3 ...文需要用的记号和 Sobolev 空间 \cite{adams2003sobolev}
+                                                  . 令 $D$ 是 $\R^2$ 中的 Lipsch...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `adams2003sobolev' on page  undefined on input line 3.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 令 in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+Missing character: There is no 是 in font nullfont!
+! Undefined control sequence.
+<recently read> \R 
+                   
+l.3 ...lev 空间 \cite{adams2003sobolev}. 令 $D$ 是 $\R
+                                                  ^2$ 中的 Lipschitz 区域， 定义 $\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+! Undefined control sequence.
+<recently read> \Ga 
+                    
+l.3 ...v}. 令 $D$ 是 $\R^2$ 中的 Lipschitz 区域， 定义 $\Ga
+                                                  _D$ 是 $D$ 的边界.然后， 令 $L^2(D...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 边 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 然 in font nullfont!
+Missing character: There is no 后 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 令 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 平 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 积 in font nullfont!
+Missing character: There is no 函 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 构 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 即 in font nullfont!
+! Undefined control sequence.
+l.4 \ben
+        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 L^
+      2(D)=\{u(x):\int_D|u|^2 dx<\infty\}.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.6 \een
+        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 \ben
+        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 该 in font cmr10!
+Missing character: There is no 空 in font cmr10!
+Missing character: There is no 间 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 内 in font cmr10!
+Missing character: There is no 积 in font cmr10!
+Missing character: There is no 和 in font cmr10!
+Missing character: There is no 范 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no 定 in font cmr10!
+Missing character: There is no 义 in font cmr10!
+Missing character: There is no 如 in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no ： in font cmr10!
+Missing character: There is no 关 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 任 in font cmr10!
+Missing character: There is no 意 in font cmr10!
+Missing character: There is no 整 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.11 关于任意整数 $d\geq
+                   0$, 可以定义 Sobolev 空间 $H^d(D)$ 为:
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 以 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.12 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 H^
+       d(D)=\{u(x): \pa^\al u\in L^2(D), \ \ |\al|\leq d\},
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.13 H^d(D)=\{u(x): \pa
+                       ^\al u\in L^2(D), \ \ |\al|\leq d\},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 H^d(D)=\{u(x): \pa^\al
+                            u\in L^2(D), \ \ |\al|\leq d\},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 H^d(D)=\{u(x): \pa^\al u\in L^2(D), \ \ |\al
+                                                 |\leq d\},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.14 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 其 in font cmr10!
+Missing character: There is no 中 in font cmr10!
+! Undefined control sequence.
+l.15 其中 $\al
+            =(\al_1,\al_2)$, $\al_1,\al_2$ 为非负整数.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no = in font nullfont!
+Missing character: There is no ( in font nullfont!
+! Undefined control sequence.
+l.15 其中 $\al=(\al
+                 _1,\al_2)$, $\al_1,\al_2$ 为非负整数.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 其中 $\al=(\al_
+                  1,\al_2)$, $\al_1,\al_2$ 为非负整数.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.15 其中 $\al=(\al_1,\al
+                       _2)$, $\al_1,\al_2$ 为非负整数.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+<recently read> \al 
+                    
+l.15 其中 $\al=(\al_1,\al_2)$, $\al
+                                 _1,\al_2$ 为非负整数.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 其中 $\al=(\al_1,\al_2)$, $\al_1,\al
+                                       _2$ 为非负整数.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 非 in font nullfont!
+Missing character: There is no 负 in font nullfont!
+Missing character: There is no 整 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 当 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no 时 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 我 in font nullfont!
+Missing character: There is no 们 in font nullfont!
+Missing character: There is no 引 in font nullfont!
+Missing character: There is no 入 in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 加 in font nullfont!
+Missing character: There is no 权 in font nullfont!
+Missing character: There is no 范 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.17 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 \|
+       u\|_{H^1({D})}=(\|\na \phi\|_{L^2({D})}^2+d_{D}^{-2}\|\phi\|_{L^2({D}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.18 \|u\|_{H^1({D})}=(\|\na
+                             \phi\|_{L^2({D})}^2+d_{D}^{-2}\|\phi\|_{L^2({D}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 其 in font cmr10!
+Missing character: There is no 中 in font cmr10!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.20 其中 $d_
+           D$ 是有界区域 $D$ 的直径. 进一步， 定义边界上的分数次 Sobolev 空间 $H^{1/2}(\Ga_{D})$ 为：
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 径 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 进 in font nullfont!
+Missing character: There is no 一 in font nullfont!
+Missing character: There is no 步 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 边 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 分 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 次 in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+! Undefined control sequence.
+l.20 ...直径. 进一步， 定义边界上的分数次 Sobolev 空间 $H^{1/2}(\Ga
+                                                  _{D})$ 为：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.21 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.22 H^
+       {1/2}(\Ga_{D})=\{v(x):  \|v\|_{L^2(\Ga_\mathcal{D})}<\infty, \ \ |v|_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.22 H^{1/2}(\Ga
+                _{D})=\{v(x):  \|v\|_{L^2(\Ga_\mathcal{D})}<\infty, \ \ |v|_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 H^{1/2}(\Ga_{D})=\{v(x):  \|v\|_{L^2(\Ga
+                                             _\mathcal{D})}<\infty, \ \ |v|_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 ...mathcal{D})}<\infty, \ \ |v|_{\frac 12,\Ga
+                                                  _\mathcal{D}}<\infty      \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 |v|_{\frac 12,\Ga
+                      _\mathcal{D}}=\left(\int_{\Ga_\mathcal{D}}\int_{\Ga_\m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 ...{\frac 12,\Ga_\mathcal{D}}=\left(\int_{\Ga
+                                                  _\mathcal{D}}\int_{\Ga_\ma...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 ...{D}}=\left(\int_{\Ga_\mathcal{D}}\int_{\Ga
+                                                  _\mathcal{D}}\frac{|v(x)-v...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 其 in font cmr10!
+Missing character: There is no 中 in font cmr10!
+Missing character: There is no 有 in font cmr10!
+Missing character: There is no ： in font cmr10!
+Missing character: There is no 且 in font cmr10!
+Missing character: There is no H in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 且$H^
+         {1/2}(\Ga_{D})$加权范数定义为：
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.28 且$H^{1/2}(\Ga
+                  _{D})$加权范数定义为：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 加 in font nullfont!
+Missing character: There is no 权 in font nullfont!
+Missing character: There is no 范 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.29 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 \|
+       v\|_{H^{1/2}(\Ga_{D})}=(d_{D}^{-1}\|v\|_{L^2(\Ga_{D})}^2+|v|_{\frac 1...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.30 \|v\|_{H^{1/2}(\Ga
+                       _{D})}=(d_{D}^{-1}\|v\|_{L^2(\Ga_{D})}^2+|v|_{\frac 1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...^{1/2}(\Ga_{D})}=(d_{D}^{-1}\|v\|_{L^2(\Ga
+                                                  _{D})}^2+|v|_{\frac 12,\Ga...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...1}\|v\|_{L^2(\Ga_{D})}^2+|v|_{\frac 12,\Ga
+                                                  _{D}}^2)^{1/2}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{RTMhalf_aco}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.32 ...得如下不等式估计 \cite[corollary 3.1]{RTMhalf_aco}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `RTMhalf_aco' on page  undefined on input line 32.
+
+
+! LaTeX Error: Environment lem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \begin{lem}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.34 ^^I对于任意 $
+              \phi\in C^1(\bar{\mathcal{D}})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 是 in font cmr10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no 通 in font cmr10!
+Missing character: There is no 过 in font cmr10!
+Missing character: There is no 尺 in font cmr10!
+Missing character: There is no 度 in font cmr10!
+Missing character: There is no 变 in font cmr10!
+Missing character: There is no 换 in font cmr10!
+Missing character: There is no 技 in font cmr10!
+Missing character: There is no 巧 in font cmr10!
+Missing character: There is no 和 in font cmr10!
+Missing character: There is no 迹 in font cmr10!
+Missing character: There is no 定 in font cmr10!
+Missing character: There is no 理 in font cmr10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no 易 in font cmr10!
+Missing character: There is no 得 in font cmr10!
+Missing character: There is no 如 in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no 不 in font cmr10!
+Missing character: There is no 等 in font cmr10!
+Missing character: There is no 式 in font cmr10!
+Missing character: There is no 估 in font cmr10!
+Missing character: There is no 计 in font cmr10!
+Missing character: There is no 对 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 任 in font cmr10!
+Missing character: There is no 意 in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.34 ^^I对于任意 $\phi
+                  \in C^1(\bar{\mathcal{D}})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 存 in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 无 in font nullfont!
+Missing character: There is no 关 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 常 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 立 in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 等 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.35 ^^I\be
+           \label{q0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 ^^I\|
+          \phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\G...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.36 ^^I\|\phi\|_{H^{1/2}(\Ga
+                             _\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\G...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 ...cal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga
+                                                  _\mathcal{D})}\le C\max_{x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 ...{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na
+                                                  \phi(x)|).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 ^^I\ee
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{lem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \end{lem}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 \end{lem}
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.38 \end{lem}
+              
+Things are pretty mixed up, but I think the worst is over.
+
+Missing character: There is no 由 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 散 in font nullfont!
+Missing character: There is no 射 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 题 in font nullfont!
+Missing character: There is no 都 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 无 in font nullfont!
+Missing character: There is no 穷 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 所 in font nullfont!
+Missing character: There is no 以 in font nullfont!
+Missing character: There is no 我 in font nullfont!
+Missing character: There is no 们 in font nullfont!
+Missing character: There is no 还 in font nullfont!
+Missing character: There is no 需 in font nullfont!
+Missing character: There is no 要 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 无 in font nullfont!
+Missing character: There is no 穷 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 加 in font nullfont!
+Missing character: There is no 权 in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 假 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+! Undefined control sequence.
+<recently read> \Om 
+                    
+l.39 ...域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间. 假设 $\Om
+                                                  $ 是无界区域，定义加权 Lebesgue 平方可积...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 无 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 加 in font nullfont!
+Missing character: There is no 权 in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 平 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 积 in font nullfont!
+Missing character: There is no 函 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.40 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.41 L^
+       {2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.41 L^{2,s}(\Om
+                )=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 L^{2,s}(\Om)=\{v \in L^2_{\rm
+                                   loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 L^{2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om
+                                           ): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om
+                                                  ) \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.44 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 \| v \|_{ L^{2,s}(\Om
+                          )} = \left(\int_{\Om}(1+|x|^2)^{s}|v|^2 dx \right)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 \| v \|_{ L^{2,s}(\Om)} = \left(\int_{\Om
+                                              }(1+|x|^2)^{s}|v|^2 dx \right)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 且 in font cmr10!
+Missing character: There is no 相 in font cmr10!
+Missing character: There is no 应 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 范 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no 为 in font cmr10!
+Missing character: There is no ： in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 是 in font cmr10!
+Missing character: There is no ， in font cmr10!
+Missing character: There is no 我 in font cmr10!
+Missing character: There is no 们 in font cmr10!
+Missing character: There is no 可 in font cmr10!
+Missing character: There is no 以 in font cmr10!
+Missing character: There is no 定 in font cmr10!
+Missing character: There is no 义 in font cmr10!
+Missing character: There is no 加 in font cmr10!
+Missing character: There is no 权 in font cmr10!
+Missing character: There is no 空 in font cmr10!
+Missing character: There is no 间 in font cmr10!
+Missing character: There is no H in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 于是， 我们可以定义加权 Sobolev 空间 $H^
+                                {1,s}(\Om),s \in \R$ 为
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.47 于是， 我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om
+                                         ),s \in \R$ 为
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.47 ...我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om),s \in \R
+                                                  $ 为
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 为 in font nullfont!
+! Undefined control sequence.
+l.48 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.49 H^
+       {1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.49 H^{1,s}(\Om
+                )=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om
+                                             ) , \ \  \nabla v(x)\in L^{2,s}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 ...,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om
+                                                  )   \},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 \ben
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 \| v \|_{ H^{1,s}(\Om
+                          )} = (\| v \|^2_{ L^{2,s} (\Om} + \| \nabla v \|^2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 ... H^{1,s}(\Om)} = (\| v \|^2_{ L^{2,s} (\Om
+                                                  } + \| \nabla v \|^2_{ L^{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.53 ...,s} (\Om} + \| \nabla v \|^2_{ L^{2,s}(\Om
+                                                  )})^{1/2}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54 \een
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.55 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 且 in font cmr10!
+Missing character: There is no 其 in font cmr10!
+Missing character: There is no 相 in font cmr10!
+Missing character: There is no 应 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 范 in font cmr10!
+Missing character: There is no 数 in font cmr10!
+Missing character: There is no 为 in font cmr10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--55
+[][]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 1--55
+[]
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 1--55
+[]$
+ []
+
+
+Overfull \hbox (7.25377pt too wide) in paragraph at lines 1--55
+[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (27.62645pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (31.37639pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (29.77316pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :
+ []
+
+
+Overfull \hbox (50.88455pt too wide) in paragraph at lines 1--55
+[][] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10 d
+x <
+ []
+
+
+Overfull \hbox (28.33333pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 : <
+ []
+
+
+Overfull \hbox (33.70831pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 u; v >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (123.8746pt too wide) in paragraph at lines 1--55
+[][] \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\O
+ML/cmm/m/it/10 dx;    \OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] 
+\OT1/cmr/m/n/10 =\OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (39.01857pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 u; u >[]
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 :$$\OMS/cmsy/m/n/10 ^^U
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (30.12259pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (31.55313pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (41.66791pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :[]\OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (48.18195pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 ;   \OMS/cmsy/m/n/10 jj ^^T
+ []
+
+
+Overfull \hbox (31.95486pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 d\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; $$[];[] \OT1/cmr/m/n/10 
+)$
+ []
+
+
+Overfull \hbox (11.75005pt too wide) in paragraph at lines 1--55
+[]\OML/cmm/m/it/10 ;[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (29.94585pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (50.77148pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (50.51785pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT
+1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (82.94873pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[]\
+OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ; $$[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (36.72603pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (38.15657pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 ([]) =
+ []
+
+
+Overfull \hbox (29.2546pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :
+ []
+
+
+Overfull \hbox (47.99371pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (50.5325pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 1\OML/cmm/m/it/10 ;   \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS
+/cmsy/m/n/10 j[] \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (55.53252pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/
+cmsy/m/n/10 j[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (175.9874pt too wide) in paragraph at lines 1--55
+[][] \OML/cmm/m/it/10 :$$[]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (56.80556pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.17575pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/c
+msy/m/n/10 k[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (129.0185pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[]\OML
+/cmm/m/it/10 :\OT1/cmr/m/n/10 [[]]$$\OML/cmm/m/it/10 ^^^ \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (32.60426pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])[]$
+ []
+
+
+Overfull \hbox (12.45863pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 d[]$
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 C >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (54.65034pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (82.27188pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1
+/cmr/m/n/10 )\OML/cmm/m/it/10 ^^W\OMS/cmsy/m/n/10 k[] ^^T
+ []
+
+
+Overfull \hbox (81.67903pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 C [][]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/
+m/n/10 +
+ []
+
+
+Overfull \hbox (43.81996pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it
+/10 :$
+ []
+
+
+Overfull \hbox (32.44106pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (
+)$
+ []
+
+
+Overfull \hbox (28.96877pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 () =
+ []
+
+
+Overfull \hbox (19.65042pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (30.7293pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 () :
+ []
+
+
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 (1 +
+ []
+
+
+Overfull \hbox (46.65396pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[]\OML
+/cmm/m/it/10 v \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (76.0569pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS
+/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (173.32878pt too wide) in paragraph at lines 1--55
+[][] \OML/cmm/m/it/10 :Sobolev$$[]\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ; s \OMS/c
+msy/m/n/10 2$
+ []
+
+
+Overfull \hbox (28.96877pt too wide) in paragraph at lines 1--55
+[]\OT1/cmr/m/n/10 () =
+ []
+
+
+Overfull \hbox (29.2546pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :
+ []
+
+
+Overfull \hbox (28.14348pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cms
+y/m/n/10 2
+ []
+
+
+Overfull \hbox (66.14008pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ;   \OMS/cmsy/m/n/10 r\O
+ML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/
+m/n/10 2
+ []
+
+
+Overfull \hbox (83.80481pt too wide) in paragraph at lines 1--55
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS
+/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (45.52914pt too wide) in paragraph at lines 1--55
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/
+cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (64.55699pt too wide) in paragraph at lines 1--55
+\OMS/cmsy/m/n/10 kr\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[]\OT1/cmr/m/n/10 )[]\OM
+L/cmm/m/it/10 :$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 在
+      全文中，针对 Sobolev 空间 $X$, 为简便起见我们把向量值空间 $X^2$ 或是张量值空间 $X^{2\times 2}$ 仍然记...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 全 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 针 in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 简 in font nullfont!
+Missing character: There is no 便 in font nullfont!
+Missing character: There is no 起 in font nullfont!
+Missing character: There is no 见 in font nullfont!
+Missing character: There is no 我 in font nullfont!
+Missing character: There is no 们 in font nullfont!
+Missing character: There is no 把 in font nullfont!
+Missing character: There is no 向 in font nullfont!
+Missing character: There is no 量 in font nullfont!
+Missing character: There is no 值 in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 或 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 张 in font nullfont!
+Missing character: There is no 量 in font nullfont!
+Missing character: There is no 值 in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 仍 in font nullfont!
+Missing character: There is no 然 in font nullfont!
+Missing character: There is no 记 in font nullfont!
+Missing character: There is no 作 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 而 in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 范 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 统 in font nullfont!
+Missing character: There is no 一 in font nullfont!
+Missing character: There is no 表 in font nullfont!
+Missing character: There is no 示 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
+[]
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 X$
+ []
+
+
+Overfull \hbox (13.55556pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 X[]$
+ []
+
+
+Overfull \hbox (23.7917pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 X[]$
+ []
+
+
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 X$
+ []
+
+
+Overfull \hbox (54.74995pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 X; X[]; X[]$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 57--58
+\OMS/cmsy/m/n/10 k ^^A
+ []
+
+
+Overfull \hbox (12.60213pt too wide) in paragraph at lines 57--58
+\OMS/cmsy/m/n/10 k[]$ 
+ []
+
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{definition}
+                       [Cauchy 主值]\label{def:pv}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{definition}[
+                        Cauchy 主值]\label{def:pv}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no 主 in font nullfont!
+Missing character: There is no 值 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no 假 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 函 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 奇 in font nullfont!
+Missing character: There is no 点 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 任 in font nullfont!
+Missing character: There is no 意 in font nullfont!
+! Undefined control sequence.
+<recently read> \ep 
+                    
+l.60 ^^I假设 $c\in [a,b]$ 是函数 $f(x)$ 的奇点, 且对于任意 $\ep
+                                                  >0$, $f(x)$ 在区间 $(a,c-\ep)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+! Undefined control sequence.
+l.60 ...$ 的奇点, 且对于任意 $\ep>0$, $f(x)$ 在区间 $(a,c-\ep
+                                                  )$ 或 $(c+\ep,b)$ 上可积. 若如下极...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 或 in font nullfont!
+! Undefined control sequence.
+l.60 ... $\ep>0$, $f(x)$ 在区间 $(a,c-\ep)$ 或 $(c+\ep
+                                                  ,b)$ 上可积. 若如下极限存在且有限，
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 积 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 若 in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 极 in font nullfont!
+Missing character: There is no 限 in font nullfont!
+Missing character: There is no 存 in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no 限 in font nullfont!
+Missing character: There is no ， in font nullfont!
+! Undefined control sequence.
+l.61 ^^I\ben
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 ^^I\lim
+            _{\ep\to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep}^{b}f(x)dx.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.62 ^^I\lim_{\ep
+                 \to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep}^{b}f(x)dx.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 ^^I\lim_{\ep\to 0^+}\int_{a}^{c-\ep
+                                        }f(x)dx+\int_{c+\ep}^{b}f(x)dx.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.62 ...\to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep
+                                                  }^{b}f(x)dx.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.63 ^^I\een
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 则 in font cmr10!
+Missing character: There is no 称 in font cmr10!
+Missing character: There is no 该 in font cmr10!
+Missing character: There is no 极 in font cmr10!
+Missing character: There is no 限 in font cmr10!
+Missing character: There is no 为 in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 ^^I则称该极限为 $\int
+                    _{a}^{b}f(x)dx$ 的 Cauchy 主值.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no 主 in font nullfont!
+Missing character: There is no 值 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \end{definition}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--66
+[]
+ []
+
+
+Overfull \hbox (13.77196pt too wide) in paragraph at lines 59--66
+\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (19.57753pt too wide) in paragraph at lines 59--66
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]$
+ []
+
+
+Overfull \hbox (19.46533pt too wide) in paragraph at lines 59--66
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--66
+\OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--66
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (19.46533pt too wide) in paragraph at lines 59--66
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (29.61346pt too wide) in paragraph at lines 59--66
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; c\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (28.61923pt too wide) in paragraph at lines 59--66
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 +\OML/cmm/m/it/10 ; b\OT1/cm
+r/m/n/10 )$
+ []
+
+
+Overfull \hbox (90.47324pt too wide) in paragraph at lines 59--66
+[][] [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 
+)\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (92.5002pt too wide) in paragraph at lines 59--66
+[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML
+/cmm/m/it/10 dx:$$[][] f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OM
+L/cmm/m/it/10 dx$
+ []
+
+! Undefined control sequence.
+l.67 \section
+             {基本定理}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \section{基
+               本定理}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 基 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 理 in font nullfont!
+
+! LaTeX Error: Environment lem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \begin{lem}
+                [H\"{o}lder 不等式]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no H in font nullfont!
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for +lmr on input line 68.
+LaTeX Font Info:    No file lmr.fd. on input line 68.
+LaTeX Font Info:    Try loading font information for +cmr on input line 68.
+LaTeX Font Info:    No file cmr.fd. on input line 68.
+
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 68.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 68.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.68 \begin{lem}[H\"{o}
+                       lder 不等式]
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 68.
+
+
+LaTeX Font Warning: Font shape `/lmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 68.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 等 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no 假 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 正 in font nullfont!
+Missing character: There is no 整 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 满 in font nullfont!
+Missing character: There is no 足 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 则 in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+! Undefined control sequence.
+l.69 ...rac{1}{p}+\frac{1}{q}=1$， 则对于 $f\in L^p(\R
+                                                  ^n)$ 和 $g\in L^q(\R^n)$ 成立...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 和 in font nullfont!
+! Undefined control sequence.
+l.69 ...q}=1$， 则对于 $f\in L^p(\R^n)$ 和 $g\in L^q(\R
+                                                  ^n)$ 成立如下不等式：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 立 in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 等 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.70 ^^I\ben
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 ^^I\|
+          f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R^n)}.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.71 ^^I\|f\cdot g\|_{L^1(\R
+                            ^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R^n)}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.71 ^^I\|f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R
+                                                 ^n)}\|g\|_{L^q(\R^n)}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.71 ...1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R
+                                                  ^n)}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 ^^I\een
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{lem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \end{lem}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 \end{lem}
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment lem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \begin{lem}
+                [Parseval 等式]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no 等 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no 假 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 正 in font nullfont!
+Missing character: There is no 整 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 任 in font nullfont!
+Missing character: There is no 意 in font nullfont!
+! Undefined control sequence.
+l.75   假设 $n$ 为正整数，对任意 $f, g \in L^2(\R
+                                       ^n)$, 定义 Fourier 变换 $\hat f(\xi)$ 为在范...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no 定 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 变 in font nullfont!
+Missing character: There is no 换 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 范 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+! Undefined control sequence.
+l.75 ...r 变换 $\hat f(\xi)$ 为在范数$\|\cdot\|_{L^2_{\R
+                                                  ^n}}$意义下的极限：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 意 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 极 in font nullfont!
+Missing character: There is no 限 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.76   \ben
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.77   \hat
+            f(\xi)=\lim_{R\to\infty}\int_{\|x\|\leq R}f(x)\ \ e^{-\i x\cdot ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 77.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 77.
+
+! Undefined control sequence.
+l.78   \een
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80   \ben
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81   \int_{\R
+               ^n}f(x)\cdot \overline{g(x)}dx=
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82   \frac{1}{(2\pi)^n}\int_{\R
+                                 ^n}\hat f(\xi)\cdot \overline{\hat g(\xi)}d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83   \een
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no 是 in font cmr10!
+Missing character: There is no 成 in font cmr10!
+Missing character: There is no 立 in font cmr10!
+Missing character: There is no 等 in font cmr10!
+Missing character: There is no 式 in font cmr10!
+Missing character: There is no 这 in font cmr10!
+Missing character: There is no 里 in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.84   这里 $\overline
+                    {g(x)}$ 表示函数 $g(x)$ 的复共轭.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 表 in font nullfont!
+Missing character: There is no 示 in font nullfont!
+Missing character: There is no 函 in font nullfont!
+Missing character: There is no 数 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 复 in font nullfont!
+Missing character: There is no 共 in font nullfont!
+Missing character: There is no 轭 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{lem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{lem}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 67--86
+[]
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 67--86
+\OT1/lmr/m/n/10 ^^?\/cmr/m/n/10 o
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 n$
+ []
+
+
+Overfull \hbox (23.74297pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 p; q \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (35.00005pt too wide) in paragraph at lines 67--86
+\/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \/cmr/m/n/10 +\OMS/cmsy/m/n/10 1\/cmr/m/n/10 
+)$
+ []
+
+
+Overfull \hbox (14.30014pt too wide) in paragraph at lines 67--86
+[] \/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (16.94164pt too wide) in paragraph at lines 67--86
+[] \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 67--86
+\/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (15.41666pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (24.64905pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (14.57286pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 g \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (24.44304pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (13.75006pt too wide) in paragraph at lines 67--86
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 ^^A
+ []
+
+
+Overfull \hbox (41.72699pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[] ^^T
+ []
+
+
+Overfull \hbox (76.33142pt too wide) in paragraph at lines 67--86
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[]k\OML/cmm/m/it/10 g\OMS
+/cmsy/m/n/10 k[]\OML/cmm/m/it/10 :$
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 n$
+ []
+
+
+Overfull \hbox (24.43398pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 f; g \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (24.51283pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (18.58514pt too wide) in paragraph at lines 67--86
+[]\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 67--86
+\OMS/cmsy/m/n/10 k ^^A
+ []
+
+
+Overfull \hbox (16.39015pt too wide) in paragraph at lines 67--86
+\OMS/cmsy/m/n/10 k[]$
+ []
+
+
+Overfull \hbox (29.14066pt too wide) in paragraph at lines 67--86
+[]\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (166.08943pt too wide) in paragraph at lines 67--86
+[][] [][] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )  \OM
+L/cmm/m/it/10 e[]dx:; [][] f\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 ) \OMS
+/cmsy/m/n/10 ^^A
+ []
+
+
+Overfull \hbox (40.09718pt too wide) in paragraph at lines 67--86
+[]\OML/cmm/m/it/10 dx \/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (57.29002pt too wide) in paragraph at lines 67--86
+[] [][] []\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A
+
+ []
+
+
+Overfull \hbox (49.18062pt too wide) in paragraph at lines 67--86
+[]\OML/cmm/m/it/10 d^^X:$$[]$
+ []
+
+
+Overfull \hbox (18.62154pt too wide) in paragraph at lines 67--86
+\OML/cmm/m/it/10 g\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )$
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> \newlabel{chap:fundamental}{{}{\thepage 
+                                                }}
+l.86 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{chap:fundamental}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{q0}{{}{\thepage 
+                                  }}
+l.86 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{q0}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{def:pv}{{}{\thepage 
+                                      }}
+l.86 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{def:pv}{{}{}}
+]
+
+! LaTeX Error: Environment lem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \begin{lem}
+                [Betti 公式]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \begin{lem}[
+                 Betti 公式]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no 公 in font nullfont!
+Missing character: There is no 式 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no 假 in font nullfont!
+Missing character: There is no 设 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no 界 in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no 区 in font nullfont!
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 其 in font nullfont!
+Missing character: There is no 单 in font nullfont!
+Missing character: There is no 位 in font nullfont!
+Missing character: There is no 外 in font nullfont!
+Missing character: There is no 法 in font nullfont!
+Missing character: There is no 向 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 立 in font nullfont!
+! Undefined control sequence.
+l.89 ^^I\ben
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ^^I\int
+            _D u\cdot \Delta_e w dx =\int_{\pa D} u\cdot \sigma(w)\nu ds(x) ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.90 ^^I\int_D u\cdot \Delta_e w dx =\int_{\pa
+                                               D} u\cdot \sigma(w)\nu ds(x) ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 ... (\nabla\cdot u)(\nabla\cdot w)+2\mu \ \ep
+                                                  (u):\ep(w) dx,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 ...a\cdot u)(\nabla\cdot w)+2\mu \ \ep(u):\ep
+                                                  (w) dx,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.91 ^^I\een
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 这 in font cmr10!
+Missing character: There is no 里 in font cmr10!
+Missing character: There is no 关 in font cmr10!
+Missing character: There is no 于 in font cmr10!
+Missing character: There is no A in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no a in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.92 ^^I这里关于 $A=(a_
+                   {ij})$, $B=(b_{ij})$ , $i,j=1,2$, 有 $A:B=\sum_{i,j=1}^{2}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 特 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 地 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 如 in font nullfont!
+Missing character: There is no 果 in font nullfont!
+Missing character: There is no 进 in font nullfont!
+Missing character: There is no 一 in font nullfont!
+Missing character: There is no 步 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 则 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 立 in font nullfont!
+Missing character: There is no ： in font nullfont!
+! Undefined control sequence.
+l.93 ^^I\be
+           \label{betti}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 ^^I\int
+            _D u\cdot \Delta_e w-\Delta_e u \cdot w dx =\int_{\pa D} u\cdot ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.94 ...Delta_e w-\Delta_e u \cdot w dx =\int_{\pa
+                                                   D} u\cdot \sigma(w)\nu -\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.95 ^^I\ee
+           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{lem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \end{lem}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.96 \end{lem}
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> Chap_Funda.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 64 strings out of 492970
+ 1216 string characters out of 6133939
+ 69642 words of memory out of 5000000
+ 4160 multiletter control sequences out of 15000+600000
+ 6599 words of font info for 17 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 19i,4n,24p,196b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on Chap_Funda.pdf (1 page).

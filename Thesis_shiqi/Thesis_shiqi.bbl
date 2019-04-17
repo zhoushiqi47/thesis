@@ -552,11 +552,11 @@ Hormander.
   i,\allowbreak[M].
 \newblock 1983.
 
-\bibitem[CHEN\ et~al.(2015)CHEN and HUANG]{chen2015reverse_elas}
-CHEN~Z, HUANG~G.
+\bibitem[Chen\ et~al.(2015{\natexlab{c}})Chen and Huang]{chen2015reverse_elas}
+Chen~Z, Huang~G.
 \newblock Reverse time migration for extended obstacles: Elastic
   waves\allowbreak[J].
-\newblock SCIENTIA SINICA Mathematica, 2015, 45\penalty0 (8):\penalty0
+\newblock Scientia Sinica Mathematica, 2015, 45\penalty0 (8):\penalty0
   1103-1114.
 
 \end{thebibliography}
