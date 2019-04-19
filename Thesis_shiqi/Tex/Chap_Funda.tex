@@ -31,11 +31,12 @@ H^{1/2}(\Ga_{D})=\{v(x):  \|v\|_{L^2(\Ga_\mathcal{D})}<\infty, \ \ |v|_{\frac 12
 \een
 于是， 通过尺度变换技巧和迹定理，易得如下不等式估计 \cite[corollary 3.1]{RTMhalf_aco}
 \begin{lem}
-	对于任意 $\phi\in C^1(\bar{\mathcal{D}})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如下不等式：
+假设 D 是有界 Lipschitz 区域，	对于任意 $\phi\in C^1(\bar{D})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如下不等式：
 	\be\label{q0}
-	\|\phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_\mathcal{D})}\le C\max_{x\in \bar{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na\phi(x)|).
+	\|\phi\|_{H^{1/2}(\Ga_{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_{D})}\le C\max_{x\in \bar{D}}(|\phi(x)|+d_{D}|\na\phi(x)|).
 	\ee
 \end{lem}
+
 由于散射问题都是定义在无穷区域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间. 假设 $\Om$ 是无界区域，定义加权 Lebesgue 平方可积函数空间 $L^{2,s}(\Omega)$ 如下：
 \ben
 L^{2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},

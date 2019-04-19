@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 15:20
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,8 +700,8 @@ or  <return>  to continue without it.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.34 ^^I对于任意 $
-              \phi\in C^1(\bar{\mathcal{D}})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如...
+l.34 假设 D 是有界 Lipschitz 区域，^^I对于任意 $
+                                    \phi\in C^1(\bar{D})^2$ 存在与 $d_{D}$ 无关的常...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -733,6 +733,14 @@ Missing character: There is no 等 in font cmr10!
 Missing character: There is no 式 in font cmr10!
 Missing character: There is no 估 in font cmr10!
 Missing character: There is no 计 in font cmr10!
+Missing character: There is no 假 in font cmr10!
+Missing character: There is no 设 in font cmr10!
+Missing character: There is no 是 in font cmr10!
+Missing character: There is no 有 in font cmr10!
+Missing character: There is no 界 in font cmr10!
+Missing character: There is no 区 in font cmr10!
+Missing character: There is no 域 in font cmr10!
+Missing character: There is no ， in font cmr10!
 Missing character: There is no 对 in font cmr10!
 Missing character: There is no 于 in font cmr10!
 Missing character: There is no 任 in font cmr10!
@@ -740,8 +748,8 @@ Missing character: There is no 意 in font cmr10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.34 ^^I对于任意 $\phi
-                  \in C^1(\bar{\mathcal{D}})^2$ 存在与 $d_{D}$ 无关的常数 $C>0$ ，成立如...
+l.34 假设 D 是有界 Lipschitz 区域，^^I对于任意 $\phi
+                                        \in C^1(\bar{D})^2$ 存在与 $d_{D}$ 无关的常...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -775,13 +783,13 @@ and I'll forget about whatever was undefined.
 <inserted text> 
                 $
 l.36 ^^I\|
-          \phi\|_{H^{1/2}(\Ga_\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\G...
+          \phi\|_{H^{1/2}(\Ga_{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_{D})}\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
 l.36 ^^I\|\phi\|_{H^{1/2}(\Ga
-                             _\mathcal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\G...
+                             _{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga_{D})}\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -789,8 +797,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.36 ...cal{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga
-                                                  _\mathcal{D})}\le C\max_{x...
+l.36 ...Ga_{D})}+\|\sigma(\phi)\nu\|_{H^{-1/2}(\Ga
+                                                  _{D})}\le C\max_{x\in \bar...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -798,7 +806,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.36 ...{\mathcal{D}}}(|\phi(x)|+d_\mathcal{D}|\na
+l.36 ...e C\max_{x\in \bar{D}}(|\phi(x)|+d_{D}|\na
                                                   \phi(x)|).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -845,6 +853,274 @@ my insertion and my current dilemma will both disappear.
 l.38 \end{lem}
               
 Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--39
+[][]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 1--39
+[]
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 1--39
+[]$
+ []
+
+
+Overfull \hbox (7.25377pt too wide) in paragraph at lines 1--39
+[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (27.62645pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (31.37639pt too wide) in paragraph at lines 1--39
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (29.77316pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :
+ []
+
+
+Overfull \hbox (50.88455pt too wide) in paragraph at lines 1--39
+[][] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10 d
+x <
+ []
+
+
+Overfull \hbox (28.33333pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 : <
+ []
+
+
+Overfull \hbox (33.70831pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 u; v >\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (123.8746pt too wide) in paragraph at lines 1--39
+[][] \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\O
+ML/cmm/m/it/10 dx;    \OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] 
+\OT1/cmr/m/n/10 =\OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (39.01857pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 u; u >[]
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 :$$\OMS/cmsy/m/n/10 ^^U
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--39
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (30.12259pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (31.55313pt too wide) in paragraph at lines 1--39
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (41.66791pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :[]\OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (48.18195pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 ;   \OMS/cmsy/m/n/10 jj ^^T
+ []
+
+
+Overfull \hbox (31.95486pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 d\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; $$[];[] \OT1/cmr/m/n/10 
+)$
+ []
+
+
+Overfull \hbox (11.75005pt too wide) in paragraph at lines 1--39
+[]\OML/cmm/m/it/10 ;[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (29.94585pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (50.77148pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (50.51785pt too wide) in paragraph at lines 1--39
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT
+1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (82.94873pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[]\
+OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ; $$[]$
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (36.72603pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (38.15657pt too wide) in paragraph at lines 1--39
+[]\OT1/cmr/m/n/10 ([]) =
+ []
+
+
+Overfull \hbox (29.2546pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
+/m/n/10 ) :
+ []
+
+
+Overfull \hbox (47.99371pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (50.5325pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 1\OML/cmm/m/it/10 ;   \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS
+/cmsy/m/n/10 j[] \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (55.53252pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/
+cmsy/m/n/10 j[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (175.9874pt too wide) in paragraph at lines 1--39
+[][] \OML/cmm/m/it/10 :$$[]\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (56.80556pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (65.17575pt too wide) in paragraph at lines 1--39
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/c
+msy/m/n/10 k[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (179.78058pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[]\OML
+/cmm/m/it/10 :\OT1/cmr/m/n/10 [[]]\OML/cmm/m/it/10 DLipschitz$$^^^ \OMS/cmsy/m/
+n/10 2
+ []
+
+
+Overfull \hbox (33.1695pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])[]$
+ []
+
+
+Overfull \hbox (12.45863pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 d[]$
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 C >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--39
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (54.78018pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (82.40172pt too wide) in paragraph at lines 1--39
+\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1
+/cmr/m/n/10 )\OML/cmm/m/it/10 ^^W\OMS/cmsy/m/n/10 k[] ^^T
+ []
+
+
+Overfull \hbox (81.99138pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 C [][]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\
+OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/
+m/n/10 +
+ []
+
+
+Overfull \hbox (44.13231pt too wide) in paragraph at lines 1--39
+\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it
+/10 :$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 由
+      于散射问题都是定义在无穷区域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间. 假设 $\Om$ 是无界区域，定义加权 Le...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no 由 in font nullfont!
 Missing character: There is no 于 in font nullfont!
@@ -896,7 +1172,7 @@ Missing character: There is no 设 in font nullfont!
 ! Undefined control sequence.
 <recently read> \Om 
                     
-l.39 ...域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间. 假设 $\Om
+l.40 ...域上的， 所以我们还需要定义无穷区域上的加权 Sobolev 空间. 假设 $\Om
                                                   $ 是无界区域，定义加权 Lebesgue 平方可积...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -934,7 +1210,7 @@ Missing character: There is no 如 in font nullfont!
 Missing character: There is no 下 in font nullfont!
 Missing character: There is no ： in font nullfont!
 ! Undefined control sequence.
-l.40 \ben
+l.41 \ben
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -946,13 +1222,13 @@ Missing character: There is no L in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.41 L^
+l.42 L^
        {2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.41 L^{2,s}(\Om
+l.42 L^{2,s}(\Om
                 )=\{v \in L^2_{\rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -961,7 +1237,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.41 L^{2,s}(\Om)=\{v \in L^2_{\rm
+l.42 L^{2,s}(\Om)=\{v \in L^2_{\rm
                                    loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -970,7 +1246,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.41 L^{2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om
+l.42 L^{2,s}(\Om)=\{v \in L^2_{\rm loc}(\Om
                                            ): (1+|x|^2)^{s/2}v \in L^2(\Om) \},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -979,7 +1255,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.41 ...rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om
+l.42 ...rm loc}(\Om): (1+|x|^2)^{s/2}v \in L^2(\Om
                                                   ) \},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -988,7 +1264,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.42 \een
+l.43 \een
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -997,7 +1273,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.44 \ben
+l.45 \ben
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1006,7 +1282,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.45 \| v \|_{ L^{2,s}(\Om
+l.46 \| v \|_{ L^{2,s}(\Om
                           )} = \left(\int_{\Om}(1+|x|^2)^{s}|v|^2 dx \right)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1015,7 +1291,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.45 \| v \|_{ L^{2,s}(\Om)} = \left(\int_{\Om
+l.46 \| v \|_{ L^{2,s}(\Om)} = \left(\int_{\Om
                                               }(1+|x|^2)^{s}|v|^2 dx \right)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1024,7 +1300,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.46 \een
+l.47 \een
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1057,13 +1333,13 @@ Missing character: There is no H in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.47 于是， 我们可以定义加权 Sobolev 空间 $H^
+l.48 于是， 我们可以定义加权 Sobolev 空间 $H^
                                 {1,s}(\Om),s \in \R$ 为
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.47 于是， 我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om
+l.48 于是， 我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om
                                          ),s \in \R$ 为
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1072,7 +1348,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.47 ...我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om),s \in \R
+l.48 ...我们可以定义加权 Sobolev 空间 $H^{1,s}(\Om),s \in \R
                                                   $ 为
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1082,7 +1358,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 为 in font nullfont!
 ! Undefined control sequence.
-l.48 \ben
+l.49 \ben
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1094,13 +1370,13 @@ Missing character: There is no H in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.49 H^
+l.50 H^
        {1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.49 H^{1,s}(\Om
+l.50 H^{1,s}(\Om
                 )=\{v(x): v(x)\in L^{2,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1109,7 +1385,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om
+l.50 H^{1,s}(\Om)=\{v(x): v(x)\in L^{2,s}(\Om
                                              ) , \ \  \nabla v(x)\in L^{2,s}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1118,7 +1394,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.49 ...,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om
+l.50 ...,s}(\Om) , \ \  \nabla v(x)\in L^{2,s}(\Om
                                                   )   \},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1127,7 +1403,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.50 \een
+l.51 \een
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1136,7 +1412,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.52 \ben
+l.53 \ben
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1145,7 +1421,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.53 \| v \|_{ H^{1,s}(\Om
+l.54 \| v \|_{ H^{1,s}(\Om
                           )} = (\| v \|^2_{ L^{2,s} (\Om} + \| \nabla v \|^2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1154,7 +1430,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.53 ... H^{1,s}(\Om)} = (\| v \|^2_{ L^{2,s} (\Om
+l.54 ... H^{1,s}(\Om)} = (\| v \|^2_{ L^{2,s} (\Om
                                                   } + \| \nabla v \|^2_{ L^{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1163,7 +1439,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.53 ...,s} (\Om} + \| \nabla v \|^2_{ L^{2,s}(\Om
+l.54 ...,s} (\Om} + \| \nabla v \|^2_{ L^{2,s}(\Om
                                                   )})^{1/2}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1172,7 +1448,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.54 \een
+l.55 \een
          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1183,7 +1459,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.55 
+l.56 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1197,341 +1473,92 @@ Missing character: There is no 范 in font cmr10!
 Missing character: There is no 数 in font cmr10!
 Missing character: There is no 为 in font cmr10!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--55
-[][]
- []
-
-
-Overfull \hbox (5.43pt too wide) in paragraph at lines 1--55
+Overfull \hbox (20.0pt too wide) in paragraph at lines 40--56
 []
  []
 
 
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (4.48613pt too wide) in paragraph at lines 1--55
-[]$
- []
-
-
-Overfull \hbox (7.25377pt too wide) in paragraph at lines 1--55
-[]$
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (27.62645pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (31.37639pt too wide) in paragraph at lines 1--55
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
- []
-
-
-Overfull \hbox (29.77316pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
-/m/n/10 ) :
- []
-
-
-Overfull \hbox (50.88455pt too wide) in paragraph at lines 1--55
-[][] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10 d
-x <
- []
-
-
-Overfull \hbox (28.33333pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 : <
- []
-
-
-Overfull \hbox (33.70831pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 u; v >\OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (123.8746pt too wide) in paragraph at lines 1--55
-[][] \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\O
-ML/cmm/m/it/10 dx;    \OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] 
-\OT1/cmr/m/n/10 =\OML/cmm/m/it/10 <
- []
-
-
-Overfull \hbox (39.01857pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 u; u >[]
- []
-
-
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 :$$\OMS/cmsy/m/n/10 ^^U
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--55
-\OT1/cmr/m/n/10 0$
- []
-
-
-Overfull \hbox (30.12259pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (31.55313pt too wide) in paragraph at lines 1--55
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
- []
-
-
-Overfull \hbox (41.66791pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
-/m/n/10 ) :[]\OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (48.18195pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )\OML/cm
-m/m/it/10 ;   \OMS/cmsy/m/n/10 jj ^^T
- []
-
-
-Overfull \hbox (31.95486pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 d\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; $$[];[] \OT1/cmr/m/n/10 
-)$
- []
-
-
-Overfull \hbox (11.75005pt too wide) in paragraph at lines 1--55
-[]\OML/cmm/m/it/10 ;[]$
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (29.94585pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (50.77148pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 u\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (50.51785pt too wide) in paragraph at lines 1--55
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT
-1/cmr/m/n/10 +
- []
-
-
-Overfull \hbox (82.94873pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[]\
-OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ; $$[]$
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (36.72603pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 H[]\OT1/cmr/m/n/10 ([])$
- []
-
-
-Overfull \hbox (38.15657pt too wide) in paragraph at lines 1--55
-[]\OT1/cmr/m/n/10 ([]) =
- []
-
-
-Overfull \hbox (29.2546pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
-/m/n/10 ) :
- []
-
-
-Overfull \hbox (47.99371pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OML/cmm/m/it/10 <
- []
-
-
-Overfull \hbox (50.5325pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 1\OML/cmm/m/it/10 ;   \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS
-/cmsy/m/n/10 j[] \OML/cmm/m/it/10 <
- []
-
-
-Overfull \hbox (55.53252pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 1g\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/
-cmsy/m/n/10 j[] \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (175.9874pt too wide) in paragraph at lines 1--55
-[][] \OML/cmm/m/it/10 :$$[]\OT1/cmr/m/n/10 ([])$
- []
-
-
-Overfull \hbox (56.80556pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (65.17575pt too wide) in paragraph at lines 1--55
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/c
-msy/m/n/10 k[] \OT1/cmr/m/n/10 +
- []
-
-
-Overfull \hbox (129.0185pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[]\OML
-/cmm/m/it/10 :\OT1/cmr/m/n/10 [[]]$$\OML/cmm/m/it/10 ^^^ \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (32.60426pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([])[]$
- []
-
-
-Overfull \hbox (12.45863pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 d[]$
- []
-
-
-Overfull \hbox (18.418pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 C >
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--55
-\OT1/cmr/m/n/10 0$
- []
-
-
-Overfull \hbox (54.65034pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^^\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 +
- []
-
-
-Overfull \hbox (82.27188pt too wide) in paragraph at lines 1--55
-\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1
-/cmr/m/n/10 )\OML/cmm/m/it/10 ^^W\OMS/cmsy/m/n/10 k[] ^^T
- []
-
-
-Overfull \hbox (81.67903pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 C [][]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/
-m/n/10 +
- []
-
-
-Overfull \hbox (43.81996pt too wide) in paragraph at lines 1--55
-\OML/cmm/m/it/10 d[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it
-/10 :$
- []
-
-
-Overfull \hbox (32.44106pt too wide) in paragraph at lines 1--55
+Overfull \hbox (32.44106pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 (
 )$
  []
 
 
-Overfull \hbox (28.96877pt too wide) in paragraph at lines 1--55
+Overfull \hbox (28.96877pt too wide) in paragraph at lines 40--56
 []\OT1/cmr/m/n/10 () =
  []
 
 
-Overfull \hbox (19.65042pt too wide) in paragraph at lines 1--55
+Overfull \hbox (19.65042pt too wide) in paragraph at lines 40--56
 \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (30.7293pt too wide) in paragraph at lines 1--55
+Overfull \hbox (30.7293pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 () :
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 1--55
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 40--56
 \OT1/cmr/m/n/10 (1 +
  []
 
 
-Overfull \hbox (46.65396pt too wide) in paragraph at lines 1--55
+Overfull \hbox (46.65396pt too wide) in paragraph at lines 40--56
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )[]\OML
 /cmm/m/it/10 v \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (76.0569pt too wide) in paragraph at lines 1--55
+Overfull \hbox (76.0569pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS
 /cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (173.32878pt too wide) in paragraph at lines 1--55
+Overfull \hbox (173.32878pt too wide) in paragraph at lines 40--56
 [][] \OML/cmm/m/it/10 :Sobolev$$[]\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ; s \OMS/c
 msy/m/n/10 2$
  []
 
 
-Overfull \hbox (28.96877pt too wide) in paragraph at lines 1--55
+Overfull \hbox (28.96877pt too wide) in paragraph at lines 40--56
 []\OT1/cmr/m/n/10 () =
  []
 
 
-Overfull \hbox (29.2546pt too wide) in paragraph at lines 1--55
+Overfull \hbox (29.2546pt too wide) in paragraph at lines 40--56
 \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr
 /m/n/10 ) :
  []
 
 
-Overfull \hbox (28.14348pt too wide) in paragraph at lines 1--55
+Overfull \hbox (28.14348pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cms
 y/m/n/10 2
  []
 
 
-Overfull \hbox (66.14008pt too wide) in paragraph at lines 1--55
+Overfull \hbox (66.14008pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 ;   \OMS/cmsy/m/n/10 r\O
 ML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/
 m/n/10 2
  []
 
 
-Overfull \hbox (83.80481pt too wide) in paragraph at lines 1--55
+Overfull \hbox (83.80481pt too wide) in paragraph at lines 40--56
 \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 ()\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OMS
 /cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (45.52914pt too wide) in paragraph at lines 1--55
+Overfull \hbox (45.52914pt too wide) in paragraph at lines 40--56
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[] \OT1/
 cmr/m/n/10 +
  []
 
 
-Overfull \hbox (64.55699pt too wide) in paragraph at lines 1--55
+Overfull \hbox (64.55699pt too wide) in paragraph at lines 40--56
 \OMS/cmsy/m/n/10 kr\OML/cmm/m/it/10 v\OMS/cmsy/m/n/10 k[]\OT1/cmr/m/n/10 )[]\OM
 L/cmm/m/it/10 :$ 
  []
@@ -1543,7 +1570,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 在
+l.58 在
       全文中，针对 Sobolev 空间 $X$, 为简便起见我们把向量值空间 $X^2$ 或是张量值空间 $X^{2\times 2}$ 仍然记...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1603,42 +1630,42 @@ Missing character: There is no 示 in font nullfont!
 Missing character: There is no 成 in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
 []
  []
 
 
-Overfull \hbox (9.06943pt too wide) in paragraph at lines 57--58
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 58--59
 \OML/cmm/m/it/10 X$
  []
 
 
-Overfull \hbox (13.55556pt too wide) in paragraph at lines 57--58
+Overfull \hbox (13.55556pt too wide) in paragraph at lines 58--59
 \OML/cmm/m/it/10 X[]$
  []
 
 
-Overfull \hbox (23.7917pt too wide) in paragraph at lines 57--58
+Overfull \hbox (23.7917pt too wide) in paragraph at lines 58--59
 \OML/cmm/m/it/10 X[]$
  []
 
 
-Overfull \hbox (9.06943pt too wide) in paragraph at lines 57--58
+Overfull \hbox (9.06943pt too wide) in paragraph at lines 58--59
 \OML/cmm/m/it/10 X$
  []
 
 
-Overfull \hbox (54.74995pt too wide) in paragraph at lines 57--58
+Overfull \hbox (54.74995pt too wide) in paragraph at lines 58--59
 \OML/cmm/m/it/10 X; X[]; X[]$
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 57--58
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 58--59
 \OMS/cmsy/m/n/10 k ^^A
  []
 
 
-Overfull \hbox (12.60213pt too wide) in paragraph at lines 57--58
+Overfull \hbox (12.60213pt too wide) in paragraph at lines 58--59
 \OMS/cmsy/m/n/10 k[]$ 
  []
 
@@ -1649,7 +1676,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \begin{definition}
+l.60 \begin{definition}
                        [Cauchy 主值]\label{def:pv}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1662,7 +1689,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \begin{definition}[
+l.60 \begin{definition}[
                         Cauchy 主值]\label{def:pv}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1694,7 +1721,7 @@ Missing character: There is no 意 in font nullfont!
 ! Undefined control sequence.
 <recently read> \ep 
                     
-l.60 ^^I假设 $c\in [a,b]$ 是函数 $f(x)$ 的奇点, 且对于任意 $\ep
+l.61 ^^I假设 $c\in [a,b]$ 是函数 $f(x)$ 的奇点, 且对于任意 $\ep
                                                   >0$, $f(x)$ 在区间 $(a,c-\ep)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1707,7 +1734,7 @@ Missing character: There is no 在 in font nullfont!
 Missing character: There is no 区 in font nullfont!
 Missing character: There is no 间 in font nullfont!
 ! Undefined control sequence.
-l.60 ...$ 的奇点, 且对于任意 $\ep>0$, $f(x)$ 在区间 $(a,c-\ep
+l.61 ...$ 的奇点, 且对于任意 $\ep>0$, $f(x)$ 在区间 $(a,c-\ep
                                                   )$ 或 $(c+\ep,b)$ 上可积. 若如下极...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1717,7 +1744,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 或 in font nullfont!
 ! Undefined control sequence.
-l.60 ... $\ep>0$, $f(x)$ 在区间 $(a,c-\ep)$ 或 $(c+\ep
+l.61 ... $\ep>0$, $f(x)$ 在区间 $(a,c-\ep)$ 或 $(c+\ep
                                                   ,b)$ 上可积. 若如下极限存在且有限，
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1741,7 +1768,7 @@ Missing character: There is no 有 in font nullfont!
 Missing character: There is no 限 in font nullfont!
 Missing character: There is no ， in font nullfont!
 ! Undefined control sequence.
-l.61 ^^I\ben
+l.62 ^^I\ben
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1752,13 +1779,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.62 ^^I\lim
+l.63 ^^I\lim
             _{\ep\to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep}^{b}f(x)dx.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.62 ^^I\lim_{\ep
+l.63 ^^I\lim_{\ep
                  \to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep}^{b}f(x)dx.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1767,7 +1794,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.62 ^^I\lim_{\ep\to 0^+}\int_{a}^{c-\ep
+l.63 ^^I\lim_{\ep\to 0^+}\int_{a}^{c-\ep
                                         }f(x)dx+\int_{c+\ep}^{b}f(x)dx.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1776,7 +1803,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.62 ...\to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep
+l.63 ...\to 0^+}\int_{a}^{c-\ep}f(x)dx+\int_{c+\ep
                                                   }^{b}f(x)dx.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1785,7 +1812,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.63 ^^I\een
+l.64 ^^I\een
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1802,7 +1829,7 @@ Missing character: There is no 为 in font cmr10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.64 ^^I则称该极限为 $\int
+l.65 ^^I则称该极限为 $\int
                     _{a}^{b}f(x)dx$ 的 Cauchy 主值.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1824,73 +1851,73 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 \end{definition}
+l.66 \end{definition}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 59--66
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--67
 []
  []
 
 
-Overfull \hbox (13.77196pt too wide) in paragraph at lines 59--66
+Overfull \hbox (13.77196pt too wide) in paragraph at lines 60--67
 \OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (19.57753pt too wide) in paragraph at lines 59--66
+Overfull \hbox (19.57753pt too wide) in paragraph at lines 60--67
 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]$
  []
 
 
-Overfull \hbox (19.46533pt too wide) in paragraph at lines 59--66
+Overfull \hbox (19.46533pt too wide) in paragraph at lines 60--67
 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 59--66
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 60--67
 \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 59--66
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 60--67
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (19.46533pt too wide) in paragraph at lines 59--66
+Overfull \hbox (19.46533pt too wide) in paragraph at lines 60--67
 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (29.61346pt too wide) in paragraph at lines 59--66
+Overfull \hbox (29.61346pt too wide) in paragraph at lines 60--67
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; c\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (28.61923pt too wide) in paragraph at lines 59--66
+Overfull \hbox (28.61923pt too wide) in paragraph at lines 60--67
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 +\OML/cmm/m/it/10 ; b\OT1/cm
 r/m/n/10 )$
  []
 
 
-Overfull \hbox (90.47324pt too wide) in paragraph at lines 59--66
+Overfull \hbox (90.47324pt too wide) in paragraph at lines 60--67
 [][] [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 
 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (92.5002pt too wide) in paragraph at lines 59--66
+Overfull \hbox (92.5002pt too wide) in paragraph at lines 60--67
 [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 dx:$$[][] f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OM
 L/cmm/m/it/10 dx$
  []
 
 ! Undefined control sequence.
-l.67 \section
+l.68 \section
              {基本定理}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1905,7 +1932,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \section{基
+l.68 \section{基
                本定理}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1921,7 +1948,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \begin{lem}
+l.69 \begin{lem}
                 [H\"{o}lder 不等式]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1929,27 +1956,27 @@ or  <return>  to continue without it.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no H in font nullfont!
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 69.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for +lmr on input line 68.
-LaTeX Font Info:    No file lmr.fd. on input line 68.
-LaTeX Font Info:    Try loading font information for +cmr on input line 68.
-LaTeX Font Info:    No file cmr.fd. on input line 68.
+LaTeX Font Info:    Try loading font information for +lmr on input line 69.
+LaTeX Font Info:    No file lmr.fd. on input line 69.
+LaTeX Font Info:    Try loading font information for +cmr on input line 69.
+LaTeX Font Info:    No file cmr.fd. on input line 69.
 
 
 LaTeX Font Warning: Font shape `/lmr/m/n' undefined
-(Font)              using `/cmr/m/n' instead on input line 68.
+(Font)              using `/cmr/m/n' instead on input line 69.
 
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
-(Font)              using `/cmr/m/n' instead on input line 68.
+(Font)              using `/cmr/m/n' instead on input line 69.
 
 ! Corrupted NFSS tables.
 wrong@fontshape ...message {Corrupted NFSS tables}
                                                   error@fontshape else let f...
-l.68 \begin{lem}[H\"{o}
+l.69 \begin{lem}[H\"{o}
                        lder 不等式]
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -1958,11 +1985,11 @@ and deduce the truth by order and method.
 
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 68.
+(Font)              using `OT1/cmr/m/n' instead on input line 69.
 
 
 LaTeX Font Warning: Font shape `/lmr/m/n' undefined
-(Font)              using `/cmr/m/n' instead on input line 68.
+(Font)              using `/cmr/m/n' instead on input line 69.
 
 Missing character: There is no l in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -1987,7 +2014,7 @@ Missing character: There is no 则 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
-l.69 ...rac{1}{p}+\frac{1}{q}=1$， 则对于 $f\in L^p(\R
+l.70 ...rac{1}{p}+\frac{1}{q}=1$， 则对于 $f\in L^p(\R
                                                   ^n)$ 和 $g\in L^q(\R^n)$ 成立...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1997,7 +2024,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 和 in font nullfont!
 ! Undefined control sequence.
-l.69 ...q}=1$， 则对于 $f\in L^p(\R^n)$ 和 $g\in L^q(\R
+l.70 ...q}=1$， 则对于 $f\in L^p(\R^n)$ 和 $g\in L^q(\R
                                                   ^n)$ 成立如下不等式：
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2014,7 +2041,7 @@ Missing character: There is no 等 in font nullfont!
 Missing character: There is no 式 in font nullfont!
 Missing character: There is no ： in font nullfont!
 ! Undefined control sequence.
-l.70 ^^I\ben
+l.71 ^^I\ben
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2025,13 +2052,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 ^^I\|
+l.72 ^^I\|
           f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R^n)}.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.71 ^^I\|f\cdot g\|_{L^1(\R
+l.72 ^^I\|f\cdot g\|_{L^1(\R
                             ^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R^n)}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2040,7 +2067,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.71 ^^I\|f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R
+l.72 ^^I\|f\cdot g\|_{L^1(\R^n)}\leq\|f\|_{L^p(\R
                                                  ^n)}\|g\|_{L^q(\R^n)}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2049,7 +2076,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.71 ...1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R
+l.72 ...1(\R^n)}\leq\|f\|_{L^p(\R^n)}\|g\|_{L^q(\R
                                                   ^n)}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2058,7 +2085,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.72 ^^I\een
+l.73 ^^I\een
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2073,7 +2100,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \end{lem}
+l.74 \end{lem}
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2082,7 +2109,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.73 \end{lem}
+l.74 \end{lem}
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2097,7 +2124,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \begin{lem}
+l.75 \begin{lem}
                 [Parseval 等式]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2126,7 +2153,7 @@ Missing character: There is no 对 in font nullfont!
 Missing character: There is no 任 in font nullfont!
 Missing character: There is no 意 in font nullfont!
 ! Undefined control sequence.
-l.75   假设 $n$ 为正整数，对任意 $f, g \in L^2(\R
+l.76   假设 $n$ 为正整数，对任意 $f, g \in L^2(\R
                                        ^n)$, 定义 Fourier 变换 $\hat f(\xi)$ 为在范...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2151,7 +2178,7 @@ Missing character: There is no 在 in font nullfont!
 Missing character: There is no 范 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 ! Undefined control sequence.
-l.75 ...r 变换 $\hat f(\xi)$ 为在范数$\|\cdot\|_{L^2_{\R
+l.76 ...r 变换 $\hat f(\xi)$ 为在范数$\|\cdot\|_{L^2_{\R
                                                   ^n}}$意义下的极限：
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2167,7 +2194,7 @@ Missing character: There is no 极 in font nullfont!
 Missing character: There is no 限 in font nullfont!
 Missing character: There is no ： in font nullfont!
 ! Undefined control sequence.
-l.76   \ben
+l.77   \ben
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2178,19 +2205,19 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.77   \hat
+l.78   \hat
             f(\xi)=\lim_{R\to\infty}\int_{\|x\|\leq R}f(x)\ \ e^{-\i x\cdot ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \i invalid in math mode on input line 77.
+LaTeX Warning: Command \i invalid in math mode on input line 78.
 
 
-LaTeX Warning: Command \i invalid in math mode on input line 77.
+LaTeX Warning: Command \i invalid in math mode on input line 78.
 
 ! Undefined control sequence.
-l.78   \een
+l.79   \een
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2199,7 +2226,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.80   \ben
+l.81   \ben
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2208,7 +2235,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.81   \int_{\R
+l.82   \int_{\R
                ^n}f(x)\cdot \overline{g(x)}dx=
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2217,7 +2244,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.82   \frac{1}{(2\pi)^n}\int_{\R
+l.83   \frac{1}{(2\pi)^n}\int_{\R
                                  ^n}\hat f(\xi)\cdot \overline{\hat g(\xi)}d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2226,7 +2253,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.83   \een
+l.84   \een
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2245,7 +2272,7 @@ Missing character: There is no 里 in font cmr10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.84   这里 $\overline
+l.85   这里 $\overline
                     {g(x)}$ 表示函数 $g(x)$ 的复共轭.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2266,149 +2293,149 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 \end{lem}
+l.86 \end{lem}
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 67--86
+Overfull \hbox (20.0pt too wide) in paragraph at lines 68--87
 []
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 67--86
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 68--87
 \OT1/lmr/m/n/10 ^^?\/cmr/m/n/10 o
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 67--86
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (23.74297pt too wide) in paragraph at lines 67--86
+Overfull \hbox (23.74297pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 p; q \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (35.00005pt too wide) in paragraph at lines 67--86
+Overfull \hbox (35.00005pt too wide) in paragraph at lines 68--87
 \/cmr/m/n/10 (1\OML/cmm/m/it/10 ; \/cmr/m/n/10 +\OMS/cmsy/m/n/10 1\/cmr/m/n/10 
 )$
  []
 
 
-Overfull \hbox (14.30014pt too wide) in paragraph at lines 67--86
+Overfull \hbox (14.30014pt too wide) in paragraph at lines 68--87
 [] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (16.94164pt too wide) in paragraph at lines 67--86
+Overfull \hbox (16.94164pt too wide) in paragraph at lines 68--87
 [] \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 67--86
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 68--87
 \/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (15.41666pt too wide) in paragraph at lines 67--86
+Overfull \hbox (15.41666pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (24.64905pt too wide) in paragraph at lines 67--86
+Overfull \hbox (24.64905pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (14.57286pt too wide) in paragraph at lines 67--86
+Overfull \hbox (14.57286pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 g \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (24.44304pt too wide) in paragraph at lines 67--86
+Overfull \hbox (24.44304pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (13.75006pt too wide) in paragraph at lines 67--86
+Overfull \hbox (13.75006pt too wide) in paragraph at lines 68--87
 \OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 ^^A
  []
 
 
-Overfull \hbox (41.72699pt too wide) in paragraph at lines 67--86
+Overfull \hbox (41.72699pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 k[] ^^T
  []
 
 
-Overfull \hbox (76.33142pt too wide) in paragraph at lines 67--86
+Overfull \hbox (76.33142pt too wide) in paragraph at lines 68--87
 \OMS/cmsy/m/n/10 k\OML/cmm/m/it/10 f\OMS/cmsy/m/n/10 k[]k\OML/cmm/m/it/10 g\OMS
 /cmsy/m/n/10 k[]\OML/cmm/m/it/10 :$
  []
 
 
-Overfull \hbox (6.00235pt too wide) in paragraph at lines 67--86
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (24.43398pt too wide) in paragraph at lines 67--86
+Overfull \hbox (24.43398pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 f; g \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (24.51283pt too wide) in paragraph at lines 67--86
+Overfull \hbox (24.51283pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 L[]\/cmr/m/n/10 ([])$
  []
 
 
-Overfull \hbox (18.58514pt too wide) in paragraph at lines 67--86
+Overfull \hbox (18.58514pt too wide) in paragraph at lines 68--87
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 67--86
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 68--87
 \OMS/cmsy/m/n/10 k ^^A
  []
 
 
-Overfull \hbox (16.39015pt too wide) in paragraph at lines 67--86
+Overfull \hbox (16.39015pt too wide) in paragraph at lines 68--87
 \OMS/cmsy/m/n/10 k[]$
  []
 
 
-Overfull \hbox (29.14066pt too wide) in paragraph at lines 67--86
+Overfull \hbox (29.14066pt too wide) in paragraph at lines 68--87
 []\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (166.08943pt too wide) in paragraph at lines 67--86
+Overfull \hbox (166.08943pt too wide) in paragraph at lines 68--87
 [][] [][] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )  \OM
 L/cmm/m/it/10 e[]dx:; [][] f\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 ) \OMS
 /cmsy/m/n/10 ^^A
  []
 
 
-Overfull \hbox (40.09718pt too wide) in paragraph at lines 67--86
+Overfull \hbox (40.09718pt too wide) in paragraph at lines 68--87
 []\OML/cmm/m/it/10 dx \/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (57.29002pt too wide) in paragraph at lines 67--86
+Overfull \hbox (57.29002pt too wide) in paragraph at lines 68--87
 [] [][] []\/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A
 
  []
 
 
-Overfull \hbox (49.18062pt too wide) in paragraph at lines 67--86
+Overfull \hbox (49.18062pt too wide) in paragraph at lines 68--87
 []\OML/cmm/m/it/10 d^^X:$$[]$
  []
 
 
-Overfull \hbox (18.62154pt too wide) in paragraph at lines 67--86
+Overfull \hbox (18.62154pt too wide) in paragraph at lines 68--87
 \OML/cmm/m/it/10 g\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )$
  []
 
@@ -2420,7 +2447,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 
+l.87 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2430,7 +2457,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> \newlabel{chap:fundamental}{{}{\thepage 
                                                 }}
-l.86 
+l.87 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2442,7 +2469,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \newlabel{q0}{{}{\thepage 
                                   }}
-l.86 
+l.87 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2454,7 +2481,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \newlabel{def:pv}{{}{\thepage 
                                       }}
-l.86 
+l.87 
      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2471,7 +2498,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \begin{lem}
+l.88 \begin{lem}
                 [Betti 公式]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2484,7 +2511,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 \begin{lem}[
+l.88 \begin{lem}[
                  Betti 公式]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2530,7 +2557,7 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no 成 in font nullfont!
 Missing character: There is no 立 in font nullfont!
 ! Undefined control sequence.
-l.89 ^^I\ben
+l.90 ^^I\ben
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2541,13 +2568,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.90 ^^I\int
+l.91 ^^I\int
             _D u\cdot \Delta_e w dx =\int_{\pa D} u\cdot \sigma(w)\nu ds(x) ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.90 ^^I\int_D u\cdot \Delta_e w dx =\int_{\pa
+l.91 ^^I\int_D u\cdot \Delta_e w dx =\int_{\pa
                                                D} u\cdot \sigma(w)\nu ds(x) ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2556,7 +2583,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.90 ... (\nabla\cdot u)(\nabla\cdot w)+2\mu \ \ep
+l.91 ... (\nabla\cdot u)(\nabla\cdot w)+2\mu \ \ep
                                                   (u):\ep(w) dx,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2565,7 +2592,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.90 ...a\cdot u)(\nabla\cdot w)+2\mu \ \ep(u):\ep
+l.91 ...a\cdot u)(\nabla\cdot w)+2\mu \ \ep(u):\ep
                                                   (w) dx,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2574,7 +2601,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.91 ^^I\een
+l.92 ^^I\een
             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2593,7 +2620,7 @@ Missing character: There is no a in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.92 ^^I这里关于 $A=(a_
+l.93 ^^I这里关于 $A=(a_
                    {ij})$, $B=(b_{ij})$ , $i,j=1,2$, 有 $A:B=\sum_{i,j=1}^{2}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2619,7 +2646,7 @@ Missing character: There is no 成 in font nullfont!
 Missing character: There is no 立 in font nullfont!
 Missing character: There is no ： in font nullfont!
 ! Undefined control sequence.
-l.93 ^^I\be
+l.94 ^^I\be
            \label{betti}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2630,13 +2657,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.94 ^^I\int
+l.95 ^^I\int
             _D u\cdot \Delta_e w-\Delta_e u \cdot w dx =\int_{\pa D} u\cdot ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.94 ...Delta_e w-\Delta_e u \cdot w dx =\int_{\pa
+l.95 ...Delta_e w-\Delta_e u \cdot w dx =\int_{\pa
                                                    D} u\cdot \sigma(w)\nu -\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2645,7 +2672,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.95 ^^I\ee
+l.96 ^^I\ee
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2660,7 +2687,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \end{lem}
+l.97 \end{lem}
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2669,7 +2696,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.96 \end{lem}
+l.97 \end{lem}
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)

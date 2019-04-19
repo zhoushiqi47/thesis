@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  15 APR 2019 10:59
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  17 APR 2019 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -64,7 +64,7 @@ Missing character: There is no 散 in font nullfont!
 Missing character: There is no 射 in font nullfont!
 Missing character: There is no 问 in font nullfont!
 Missing character: There is no 题 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 地 in font nullfont!
 Missing character: There is no 震 in font nullfont!
@@ -108,7 +108,7 @@ Missing character: There is no 实 in font nullfont!
 Missing character: There is no 际 in font nullfont!
 Missing character: There is no 应 in font nullfont!
 Missing character: There is no 用 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 不 in font nullfont!
 Missing character: There is no 同 in font nullfont!
 Missing character: There is no 于 in font nullfont!
@@ -163,7 +163,7 @@ Missing character: There is no 体 in font nullfont!
 Missing character: There is no 波 in font nullfont!
 Missing character: There is no 要 in font nullfont!
 Missing character: There is no 大 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
 []
@@ -177,7 +177,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 我
-     们先针对障碍物为一点源时，提出点扩散函数，并对点扩散函数进行分辨率分析及数值实验。 然后，
+     们先针对障碍物为一点源时，提出点扩散函数，并对点扩散函数进行分辨率分析及数值实验. 然后，
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -222,7 +222,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 值 in font nullfont!
 Missing character: There is no 实 in font nullfont!
 Missing character: There is no 验 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 然 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -258,7 +258,7 @@ Missing character: There is no 偏 in font nullfont!
 Missing character: There is no 移 in font nullfont!
 Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 该 in font nullfont!
 Missing character: There is no 算 in font nullfont!
 Missing character: There is no 法 in font nullfont!
@@ -309,7 +309,7 @@ Missing character: There is no 先 in font nullfont!
 Missing character: There is no 验 in font nullfont!
 Missing character: There is no 信 in font nullfont!
 Missing character: There is no 息 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 由 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -396,7 +396,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 分 in font nullfont!
 Missing character: There is no 辨 in font nullfont!
 Missing character: There is no 率 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 最 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -437,7 +437,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 有 in font nullfont!
 Missing character: There is no 效 in font nullfont!
 Missing character: There is no 性 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.10 \section
              {问题介绍}
@@ -480,7 +480,7 @@ Missing character: There is no 图 in font nullfont!
 <write> ...ference `figure_half' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.11 我们先来介绍半空间弹性波反散射问题的模型设置, 如图 \ref{figure_half}
-                                                 。
+                                                 .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -490,7 +490,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Reference `figure_half' on page  undefined on input line 11.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment figure undefined.
 
@@ -698,7 +698,7 @@ Missing character: There is no 界 in font nullfont!
 <recently read> \Ga 
                     
 l.17 ...嵌入在半空间中的有界 Lipschitz 区域， 其中 $\nu$ 是边界 $\Ga
-                                                  _D$ 的单位外法向。 我们假设入射波是由位于半空间...
+                                                  _D$ 的单位外法向. 我们假设入射波是由位于半空间...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -711,7 +711,7 @@ Missing character: There is no 位 in font nullfont!
 Missing character: There is no 外 in font nullfont!
 Missing character: There is no 法 in font nullfont!
 Missing character: There is no 向 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 假 in font nullfont!
@@ -731,7 +731,7 @@ Missing character: There is no 面 in font nullfont!
 ! Undefined control sequence.
 <recently read> \Ga 
                     
-l.17 ... 是边界 $\Ga_D$ 的单位外法向。 我们假设入射波是由位于半空间表面 $\Ga
+l.17 ... 是边界 $\Ga_D$ 的单位外法向. 我们假设入射波是由位于半空间表面 $\Ga
                                                   _0=\{(x_1,x_2)^T\in\R^2:x_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -768,14 +768,14 @@ Missing character: There is no 向 in font nullfont!
 Missing character: There is no 为 in font nullfont!
 ! Undefined control sequence.
 l.17 ...x_2=0\}$ 上的 $x_s$ 的点源激发，且其激发的极化方向为 $q\in\R
-                                                  ^2$。 假设半空间中的背景介质是弹性介质，且其表面...
+                                                  ^2$. 假设半空间中的背景介质是弹性介质，且其表面...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 半 in font nullfont!
@@ -838,14 +838,14 @@ Missing character: There is no 数 in font nullfont!
 <recently read> \N 
                    
 l.17 ...由边界条件, 于是入射波即为半空间弹性波的 Neumann Green 函数 $\N
-                                                  (x,x_s)$ 。
+                                                  (x,x_s)$ .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 接 in font nullfont!
@@ -908,7 +908,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 散 in font nullfont!
 Missing character: There is no 射 in font nullfont!
 Missing character: There is no 解 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
 l.19 \be
         
@@ -1057,7 +1057,7 @@ Missing character: There is no e in font nullfont!
 <inserted text> 
                 $
 l.25 $e_
-        i$ 是沿着 $x_i$, $i=1,2$ 轴的单位向量。
+        i$ 是沿着 $x_i$, $i=1,2$ 轴的单位向量.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -1071,7 +1071,7 @@ Missing character: There is no 单 in font nullfont!
 Missing character: There is no 位 in font nullfont!
 Missing character: There is no 向 in font nullfont!
 Missing character: There is no 量 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 5--26
 []
@@ -1287,7 +1287,7 @@ Missing character: There is no 决 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 问 in font nullfont!
 Missing character: There is no 题 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.29 \section
              {点扩散函数}
@@ -1347,7 +1347,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ) in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 点 in font nullfont!
 Missing character: There is no 扩 in font nullfont!
 Missing character: There is no 散 in font nullfont!
@@ -1371,7 +1371,7 @@ Missing character: There is no 成 in font nullfont!
 Missing character: There is no 像 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 文 in font nullfont!
 Missing character: There is no 献 in font nullfont!
@@ -1380,7 +1380,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.30 ...是一种针对半空间介质中点源的成像函数。 在文献 \cite{RTMhalf_aco}
+l.30 ...是一种针对半空间介质中点源的成像函数. 在文献 \cite{RTMhalf_aco}
                                                    中， Chen 等提出了半空间声波的点扩散函数， ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1448,7 +1448,7 @@ Missing character: There is no 个 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 矩 in font nullfont!
 Missing character: There is no 阵 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 在 in font nullfont!
@@ -1529,7 +1529,7 @@ Missing character: There is no 称 in font nullfont!
 Missing character: There is no 为 in font nullfont!
 Missing character: There is no 孔 in font nullfont!
 Missing character: There is no 径 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 我 in font nullfont!
@@ -1547,7 +1547,7 @@ Missing character: There is no 数 in font nullfont!
 ! Undefined control sequence.
 <recently read> \J 
                    
-l.31 ...处的点源的数据， 这里 $d>0$ 称为孔径。 于是我们将有限孔径点扩散函数 $\J
+l.31 ...处的点源的数据， 这里 $d>0$ 称为孔径. 于是我们将有限孔径点扩散函数 $\J
                                                   _d(x,y)$, $x,y\in\R^2_+$ 定...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1557,7 +1557,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.31 ...为孔径。 于是我们将有限孔径点扩散函数 $\J_d(x,y)$, $x,y\in\R
+l.31 ...为孔径. 于是我们将有限孔径点扩散函数 $\J_d(x,y)$, $x,y\in\R
                                                   ^2_+$ 定义为将数据 $\N(x,y)\chi_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1630,7 +1630,7 @@ Missing character: There is no 特 in font nullfont!
 Missing character: There is no 征 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 更 in font nullfont!
 Missing character: There is no 准 in font nullfont!
 Missing character: There is no 确 in font nullfont!
@@ -1905,7 +1905,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.40 &
-      =&\int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+      =&\int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2.
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1915,7 +1915,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 l.40 &=&
-        \int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+        \int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2.
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1925,7 +1925,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
 l.40 &=&\int_{\Ga
-                 _0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+                 _0^d}\T_D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1934,7 +1934,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.40 &=&\int_{\Ga_0^d}\T
-                        _D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+                        _D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1943,12 +1943,12 @@ and I'll forget about whatever was undefined.
 
 ! Double subscript.
 l.40 &=&\int_{\Ga_0^d}\T_
-                         D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2,
+                         D(x,z)e_i\cdot\overline{\N(x,y)}e_jds(x),\ \ i,j=1,2.
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Undefined control sequence.
 l.40 ...int_{\Ga_0^d}\T_D(x,z)e_i\cdot\overline{\N
-                                                  (x,y)}e_jds(x),\ \ i,j=1,2,
+                                                  (x,y)}e_jds(x),\ \ i,j=1,2.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2031,6 +2031,9 @@ l.46
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+Missing character: There is no 进 in font cmr10!
+Missing character: There is no 一 in font cmr10!
+Missing character: There is no 步 in font cmr10!
 Missing character: There is no 利 in font cmr10!
 Missing character: There is no 用 in font cmr10!
 Missing character: There is no 矩 in font cmr10!
@@ -2220,9 +2223,9 @@ L/cmm/m/it/10 ;   i; j \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (56.68135pt too wide) in paragraph at lines 27--46
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; [][]\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 z; y\OT1/cmr/m/n/10 ) =
+Overfull \hbox (55.01472pt too wide) in paragraph at lines 27--46
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :[][]\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 z; y\OT1/cmr/m/n/10 ) =
  []
 
 
@@ -2314,7 +2317,7 @@ Missing character: There is no ， in font nullfont!
 <recently read> \J 
                    
 l.47 ...及定理 \ref{es_DGT}不难发现， 当 $d\to\infty$时， $\J
-                                                  _d(z,y)$ 收敛。 因此， 自然地， 我们就可...
+                                                  _d(z,y)$ 收敛. 因此， 自然地， 我们就可...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2323,7 +2326,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 收 in font nullfont!
 Missing character: There is no 敛 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -2352,7 +2355,7 @@ Missing character: There is no 数 in font nullfont!
 ! Undefined control sequence.
 <recently read> \J 
                    
-l.47 ...(z,y)$ 收敛。 因此， 自然地， 我们就可以定义半空间弹性波点扩散函数 $\J
+l.47 ...(z,y)$ 收敛. 因此， 自然地， 我们就可以定义半空间弹性波点扩散函数 $\J
                                                   (x,y)\in \C^{2\times 2}$, ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2641,14 +2644,14 @@ LaTeX Warning: Command \i invalid in math mode on input line 56.
 
 ! Undefined control sequence.
 l.56 ...{\om(1+\i\omega)}(x,z)q)e_2,\forall q\in\R
-                                                  ^2$。
+                                                  ^2$.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 利 in font nullfont!
 Missing character: There is no 用 in font nullfont!
 Missing character: There is no P in font nullfont!
@@ -3238,7 +3241,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.68 在
-      研究半空间弹性波点扩散函数之前， 我们先来说明成像函数的采样区域。 令 $\Omega$ 为成像函数的采样区域， 定义 $h=\dist(\...
+      研究半空间弹性波点扩散函数之前， 我们先来说明成像函数的采样区域. 令 $\Omega$ 为成像函数的采样区域， 定义 $h=\dist(\...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3275,7 +3278,7 @@ Missing character: There is no 采 in font nullfont!
 Missing character: There is no 样 in font nullfont!
 Missing character: There is no 区 in font nullfont!
 Missing character: There is no 域 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 令 in font nullfont!
 Missing character: There is no 为 in font nullfont!
 Missing character: There is no 成 in font nullfont!
@@ -3291,7 +3294,7 @@ Missing character: There is no ， in font nullfont!
 Missing character: There is no 定 in font nullfont!
 Missing character: There is no 义 in font nullfont!
 ! Undefined control sequence.
-l.68 ...数的采样区域。 令 $\Omega$ 为成像函数的采样区域， 定义 $h=\dist
+l.68 ...数的采样区域. 令 $\Omega$ 为成像函数的采样区域， 定义 $h=\dist
                                                   (\Omega,\Gamma_0)$ 是 $\Ome...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3304,7 +3307,7 @@ Missing character: There is no 与 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 距 in font nullfont!
 Missing character: There is no 离 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no 外 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -3370,7 +3373,7 @@ or  <return>  to continue without it.
 <inserted text> 
                 \endgroup 
 l.73 ...表成像函数的采样区域不能太靠近孔径边缘， 第二个条件代表采样区域的尺寸相比于其与 $
-                                                  \Ga_0$的距离不能太大。第二个条件通常是合理的，...
+                                                  \Ga_0$的距离不能太大.第二个条件通常是合理的，...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -3430,7 +3433,7 @@ Missing character: There is no 其 in font cmr10!
 Missing character: There is no 与 in font cmr10!
 ! Undefined control sequence.
 l.73 ...函数的采样区域不能太靠近孔径边缘， 第二个条件代表采样区域的尺寸相比于其与 $\Ga
-                                                  _0$的距离不能太大。第二个条件通常是合理的， 因为...
+                                                  _0$的距离不能太大.第二个条件通常是合理的， 因为...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3441,7 +3444,7 @@ and I'll forget about whatever was undefined.
 <inserted text> 
                 $
 l.73 ...数的采样区域不能太靠近孔径边缘， 第二个条件代表采样区域的尺寸相比于其与 $\Ga_
-                                                  0$的距离不能太大。第二个条件通常是合理的， 因为我...
+                                                  0$的距离不能太大.第二个条件通常是合理的， 因为我...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -3452,7 +3455,7 @@ Missing character: There is no 不 in font nullfont!
 Missing character: There is no 能 in font nullfont!
 Missing character: There is no 太 in font nullfont!
 Missing character: There is no 大 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 第 in font nullfont!
 Missing character: There is no 二 in font nullfont!
 Missing character: There is no 个 in font nullfont!
@@ -3496,7 +3499,7 @@ Missing character: There is no 相 in font nullfont!
 Missing character: There is no 当 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 即 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{remark}.
 
@@ -3689,7 +3692,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.76 ... 在 $d\to\infty$ 的极限， 而且还给出了 $\J_d(z,y) -\J
-                                                  (z,y)$ 关于 $(h/d)$ 的误差估计。
+                                                  (z,y)$ 关于 $(h/d)$ 的误差估计.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3703,7 +3706,7 @@ Missing character: There is no 误 in font nullfont!
 Missing character: There is no 差 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment lem undefined.
 
@@ -3720,7 +3723,7 @@ or  <return>  to continue without it.
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 和 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 对 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 任 in font nullfont!
@@ -3853,11 +3856,11 @@ Missing character: There is no 于 in font cmr10!
 <inserted text> 
                 $
 l.83 ^^I这里常数 $C$ 只依赖于 $\kappa
-                             $ 。
+                             $ .
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{lem}.
 
@@ -4064,7 +4067,7 @@ and I'll forget about whatever was undefined.
 <write> ...rning: Reference `d0' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.97 上面的第二不等式我们使用了 (\ref{d0}
-                            ) 的假定。 类似地， 我们也可以证明在 $(-\infty,-d)$ 上的不等式估计。 这就说...
+                            ) 的假定. 类似地， 我们也可以证明在 $(-\infty,-d)$ 上的不等式估计. 这就说...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4090,7 +4093,6 @@ Missing character: There is no 了 in font cmr10!
 Missing character: There is no 的 in font cmr10!
 Missing character: There is no 假 in font cmr10!
 Missing character: There is no 定 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 类 in font cmr10!
 Missing character: There is no 似 in font cmr10!
 Missing character: There is no 地 in font cmr10!
@@ -4108,8 +4110,8 @@ Missing character: There is no - in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.97 ...用了 (\ref{d0}) 的假定。 类似地， 我们也可以证明在 $(-\infty
-                                                  ,-d)$ 上的不等式估计。 这就说明了 $\J(z...
+l.97 ...用了 (\ref{d0}) 的假定. 类似地， 我们也可以证明在 $(-\infty
+                                                  ,-d)$ 上的不等式估计. 这就说明了 $\J(z...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -4120,7 +4122,7 @@ Missing character: There is no 等 in font nullfont!
 Missing character: There is no 式 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 这 in font nullfont!
 Missing character: There is no 就 in font nullfont!
 Missing character: There is no 说 in font nullfont!
@@ -4129,8 +4131,8 @@ Missing character: There is no 了 in font nullfont!
 ! Undefined control sequence.
 <recently read> \J 
                    
-l.97 ...我们也可以证明在 $(-\infty,-d)$ 上的不等式估计。 这就说明了 $\J
-                                                  (z,y)-\J_d(z,y)$ 的误差大小。 同样...
+l.97 ...我们也可以证明在 $(-\infty,-d)$ 上的不等式估计. 这就说明了 $\J
+                                                  (z,y)-\J_d(z,y)$ 的误差大小. 同样...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4138,8 +4140,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.97 ... $(-\infty,-d)$ 上的不等式估计。 这就说明了 $\J(z,y)-\J
-                                                  _d(z,y)$ 的误差大小。 同样地， 针对 $\...
+l.97 ... $(-\infty,-d)$ 上的不等式估计. 这就说明了 $\J(z,y)-\J
+                                                  _d(z,y)$ 的误差大小. 同样地， 针对 $\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4151,7 +4153,7 @@ Missing character: There is no 误 in font nullfont!
 Missing character: There is no 差 in font nullfont!
 Missing character: There is no 大 in font nullfont!
 Missing character: There is no 小 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 同 in font nullfont!
 Missing character: There is no 样 in font nullfont!
 Missing character: There is no 地 in font nullfont!
@@ -4159,8 +4161,8 @@ Missing character: There is no ， in font nullfont!
 Missing character: There is no 针 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 ! Undefined control sequence.
-l.97 ...,y)-\J_d(z,y)$ 的误差大小。 同样地， 针对 $\nabla_y(\J
-                                                  (z,y)-\J_d(z,y))$ 的估计也可以被证明。
+l.97 ...,y)-\J_d(z,y)$ 的误差大小. 同样地， 针对 $\nabla_y(\J
+                                                  (z,y)-\J_d(z,y))$ 的估计也可以被证明.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4168,8 +4170,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.97 ...(z,y)$ 的误差大小。 同样地， 针对 $\nabla_y(\J(z,y)-\J
-                                                  _d(z,y))$ 的估计也可以被证明。
+l.97 ...(z,y)$ 的误差大小. 同样地， 针对 $\nabla_y(\J(z,y)-\J
+                                                  _d(z,y))$ 的估计也可以被证明.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4185,7 +4187,7 @@ Missing character: There is no 以 in font nullfont!
 Missing character: There is no 被 in font nullfont!
 Missing character: There is no 证 in font nullfont!
 Missing character: There is no 明 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.98 \finproof
               
@@ -4369,9 +4371,9 @@ Overfull \hbox (7.7778pt too wide) in paragraph at lines 76--99
  []
 
 
-Overfull \hbox (180.4927pt too wide) in paragraph at lines 76--99
-[] [] \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 ([])$$\OMS/cmsy/m/n/10 1\OML/cmm/m/it/1
-0 ; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 )$
+Overfull \hbox (183.2705pt too wide) in paragraph at lines 76--99
+[] [] \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 :$$\OMS/cmsy/m/n/1
+0 1\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 )$
  []
 
 
@@ -4585,7 +4587,7 @@ Missing character: There is no 理 in font nullfont!
 <write> ... Reference `error_jd' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.100 ...以只研究 $\J(z,y)$ 的性质， 然后通过引理 \ref{error_jd}
-                                                   得到 $\J_d(z,y)$ 的性质。 由于我们只...
+                                                   得到 $\J_d(z,y)$ 的性质. 由于我们只...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4601,7 +4603,7 @@ Missing character: There is no 到 in font nullfont!
 <recently read> \J 
                    
 l.100 ...J(z,y)$ 的性质， 然后通过引理 \ref{error_jd} 得到 $\J
-                                                  _d(z,y)$ 的性质。 由于我们只关心障碍物远离...
+                                                  _d(z,y)$ 的性质. 由于我们只关心障碍物远离...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4611,7 +4613,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 质 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 由 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 我 in font nullfont!
@@ -4629,7 +4631,7 @@ Missing character: There is no 界 in font nullfont!
 ! Undefined control sequence.
 <recently read> \Ga 
                     
-l.100 ...} 得到 $\J_d(z,y)$ 的性质。 由于我们只关心障碍物远离边界 $\Ga
+l.100 ...} 得到 $\J_d(z,y)$ 的性质. 由于我们只关心障碍物远离边界 $\Ga
                                                   _0$ 时的情况， 即 $k_s h \gg 1$ ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4699,7 +4701,7 @@ Missing character: There is no 是 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 下 in font nullfont!
 Missing character: There is no 面 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -4711,7 +4713,7 @@ Missing character: There is no 明 in font nullfont!
 Missing character: There is no 当 in font nullfont!
 ! Undefined control sequence.
 l.101 下面， 我们将说明当 $z,y\in\Om
-                           $时， $\F(z,y)$ 是 $\J_d(z,y)$ 的 $\F(z,y)$ 主项。 而且当 $...
+                           $时， $\F(z,y)$ 是 $\J_d(z,y)$ 的 $\F(z,y)$ 主项. 而且当 $...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4724,7 +4726,7 @@ Missing character: There is no ， in font nullfont!
 <recently read> \F 
                    
 l.101 下面， 我们将说明当 $z,y\in\Om$时， $\F
-                                  (z,y)$ 是 $\J_d(z,y)$ 的 $\F(z,y)$ 主项。 而且当 $...
+                                  (z,y)$ 是 $\J_d(z,y)$ 的 $\F(z,y)$ 主项. 而且当 $...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4736,7 +4738,7 @@ Missing character: There is no 是 in font nullfont!
 <recently read> \J 
                    
 l.101 下面， 我们将说明当 $z,y\in\Om$时， $\F(z,y)$ 是 $\J
-                                              _d(z,y)$ 的 $\F(z,y)$ 主项。 而且当 $...
+                                              _d(z,y)$ 的 $\F(z,y)$ 主项. 而且当 $...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4748,7 +4750,7 @@ Missing character: There is no 的 in font nullfont!
 <recently read> \F 
                    
 l.101 ...,y\in\Om$时， $\F(z,y)$ 是 $\J_d(z,y)$ 的 $\F
-                                                  (z,y)$ 主项。 而且当 $|z-y|\to\i...
+                                                  (z,y)$ 主项. 而且当 $|z-y|\to\i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4757,7 +4759,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 主 in font nullfont!
 Missing character: There is no 项 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 且 in font nullfont!
 Missing character: There is no 当 in font nullfont!
@@ -4766,8 +4768,8 @@ Missing character: There is no ， in font nullfont!
 ! Undefined control sequence.
 <recently read> \F 
                    
-l.101 ...$\F(z,y)$ 主项。 而且当 $|z-y|\to\infty$ 时， $\F
-                                                  (z,y)$ 是衰减的。 特别地， 对于 $\F(z...
+l.101 ...$\F(z,y)$ 主项. 而且当 $|z-y|\to\infty$ 时， $\F
+                                                  (z,y)$ 是衰减的. 特别地， 对于 $\F(z...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4778,7 +4780,7 @@ Missing character: There is no 是 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 特 in font nullfont!
 Missing character: There is no 别 in font nullfont!
 Missing character: There is no 地 in font nullfont!
@@ -4788,7 +4790,7 @@ Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
 <recently read> \F 
                    
-l.101 ...\to\infty$ 时， $\F(z,y)$ 是衰减的。 特别地， 对于 $\F
+l.101 ...\to\infty$ 时， $\F(z,y)$ 是衰减的. 特别地， 对于 $\F
                                                   (z,y)$ 的虚部 $|\Im\F_{ii}(z,...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4800,7 +4802,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 虚 in font nullfont!
 Missing character: There is no 部 in font nullfont!
 ! Undefined control sequence.
-l.101 ...z,y)$ 是衰减的。 特别地， 对于 $\F(z,y)$ 的虚部 $|\Im\F
+l.101 ...z,y)$ 是衰减的. 特别地， 对于 $\F(z,y)$ 的虚部 $|\Im\F
                                                   _{ii}(z,y)|, i=1,2$， 其在 $z...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4816,7 +4818,7 @@ Missing character: There is no 存 in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 峰 in font nullfont!
 Missing character: There is no 值 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 100--102
 []
@@ -4941,7 +4943,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.103 下
-       面我们将用几个引理来说明 $\J_d(z,y)-\F(z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计。 如下引理将说明式 (...
+       面我们将用几个引理来说明 $\J_d(z,y)-\F(z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计. 如下引理将说明式 (...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4963,7 +4965,7 @@ Missing character: There is no 明 in font nullfont!
 <recently read> \J 
                    
 l.103 下面我们将用几个引理来说明 $\J
-                       _d(z,y)-\F(z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计。 如下引理将说明式 (...
+                       _d(z,y)-\F(z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计. 如下引理将说明式 (...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4972,7 +4974,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.103 下面我们将用几个引理来说明 $\J_d(z,y)-\F
-                                 (z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计。 如下引理将说明式 (...
+                                 (z,y)$ 关于 $k_s h$ 及 $h/d$ 的误差估计. 如下引理将说明式 (...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4987,7 +4989,7 @@ Missing character: There is no 误 in font nullfont!
 Missing character: There is no 差 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 如 in font nullfont!
 Missing character: There is no 下 in font nullfont!
 Missing character: There is no 引 in font nullfont!
@@ -5000,8 +5002,8 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rning: Reference `d3' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.103 ...$k_s h$ 及 $h/d$ 的误差估计。 如下引理将说明式 (\ref{d3}
-                                                  ) 中的第二项是随着 $k_s h$ 变大而指数衰减的。
+l.103 ...$k_s h$ 及 $h/d$ 的误差估计. 如下引理将说明式 (\ref{d3}
+                                                  ) 中的第二项是随着 $k_s h$ 变大而指数衰减的.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5028,7 +5030,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 103--104
 []
@@ -5288,14 +5290,14 @@ and I'll forget about whatever was undefined.
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
 l.112 ...Ta(\pm k_R)|\le Ck_R^2/k_s^2\le C$, $|\Na
-                                                  (\pm k_R)|\le Ck_R^3$ 。利用引...
+                                                  (\pm k_R)|\le Ck_R^3$ .利用引...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 利 in font nullfont!
 Missing character: There is no 用 in font nullfont!
 Missing character: There is no 引 in font nullfont!
@@ -5303,8 +5305,8 @@ Missing character: There is no 理 in font nullfont!
 ! Undefined control sequence.
 <write> ...ng: Reference `delta' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.112 ...Na(\pm k_R)|\le Ck_R^3$ 。利用引理 \ref{delta}
-                                                  ， 该引理得证。
+l.112 ...Na(\pm k_R)|\le Ck_R^3$ .利用引理 \ref{delta}
+                                                  ， 该引理得证.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5320,7 +5322,7 @@ Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
 Missing character: There is no 得 in font nullfont!
 Missing character: There is no 证 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.113 \finproof
                
@@ -5433,7 +5435,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.116 ^^I假
-          设 $g(t)\in C^1(\R)\cap L^1(\R)$ 。存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
+          设 $g(t)\in C^1(\R)\cap L^1(\R)$ .存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5442,7 +5444,7 @@ Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 ! Undefined control sequence.
 l.116 ^^I假设 $g(t)\in C^1(\R
-                           )\cap L^1(\R)$ 。存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
+                           )\cap L^1(\R)$ .存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5451,14 +5453,14 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.116 ^^I假设 $g(t)\in C^1(\R)\cap L^1(\R
-                                       )$ 。存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
+                                       )$ .存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 存 in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 只 in font nullfont!
@@ -5474,7 +5476,7 @@ Missing character: There is no 于 in font nullfont!
 Missing character: There is no 任 in font nullfont!
 Missing character: There is no 意 in font nullfont!
 ! Undefined control sequence.
-l.116 ... 。存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y\in\Om
+l.116 ... .存在只与 $\kappa$ 有关的常数 $C$，对于任意 $z,y\in\Om
                                                   $ 成立
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5568,11 +5570,11 @@ Missing character: There is no d in font nullfont!
 <inserted text> 
                 $
 l.122 ^^I这里 $d_
-               R =(k_R-k_s)/2$。
+               R =(k_R-k_s)/2$，
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no ， in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{lem}.
 
@@ -5621,14 +5623,14 @@ Missing character: There is no 明 in font nullfont!
 Missing character: There is no 该 in font nullfont!
 Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 如 in font nullfont!
 Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
 ! Undefined control sequence.
 <write> ...ng: Reference `delta' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.125 ...(k_s,\infty)$ 上的积分来证明该引理。 如引理 \ref{delta}
+l.125 ...(k_s,\infty)$ 上的积分来证明该引理. 如引理 \ref{delta}
                                                    中一样， 我们有如下表示 $\de(\xi)=(\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5653,7 +5655,7 @@ Missing character: There is no 示 in font nullfont!
 ! Undefined control sequence.
 <recently read> \de 
                     
-l.125 ...来证明该引理。 如引理 \ref{delta} 中一样， 我们有如下表示 $\de
+l.125 ...来证明该引理. 如引理 \ref{delta} 中一样， 我们有如下表示 $\de
                                                   (\xi)=(\xi^2-k_R^2)\de_1(\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5680,14 +5682,14 @@ Missing character: There is no ， in font nullfont!
 <recently read> \de 
                     
 l.125 ...k_R^2)\de_1(\xi)$ ， 其中当 $\xi>k_s$ 时， $\de
-                                                  _1(\xi)\not=0$ 。 利用 Cauchy...
+                                                  _1(\xi)\not=0$ . 利用 Cauchy...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 利 in font nullfont!
 Missing character: There is no 用 in font nullfont!
 Missing character: There is no C in font nullfont!
@@ -5706,8 +5708,8 @@ Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 有 in font nullfont!
 ! Undefined control sequence.
-l.126 \be
-         \label{l4}
+l.126 \ben
+          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5812,8 +5814,8 @@ l.129 ...}-g(k_R)(2k_R\de_1(k_R))^{-1}}{(\xi-k_R)}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Undefined control sequence.
-l.130 \ee
-         
+l.130 \een
+          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6070,7 +6072,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.142 &
-       \leq&Ck_s^{-3}\max_{\xi\in(k_R-d_R,k_R+d_R)}(|g(\xi)|+k_s|g'(\xi)|)
+       \leq&Ck_s^{-3}\max_{\xi\in(k_R-d_R,k_R+d_R)}(|g(\xi)|+k_s|g'(\xi)|).
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -6080,7 +6082,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 l.142 &\leq&
-            Ck_s^{-3}\max_{\xi\in(k_R-d_R,k_R+d_R)}(|g(\xi)|+k_s|g'(\xi)|)
+            Ck_s^{-3}\max_{\xi\in(k_R-d_R,k_R+d_R)}(|g(\xi)|+k_s|g'(\xi)|).
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -6118,7 +6120,6 @@ Missing character: There is no 引 in font cmr10!
 Missing character: There is no 理 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 证 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 116--146
 []
@@ -6318,9 +6319,10 @@ mr/m/n/10 +
  []
 
 
-Overfull \hbox (39.47174pt too wide) in paragraph at lines 116--146
+Overfull \hbox (45.02731pt too wide) in paragraph at lines 116--146
 \OML/cmm/m/it/10 k[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )$ 
+/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/
+it/10 ::$ 
  []
 
 
@@ -6331,7 +6333,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.147 下
-       面的引理说明了 $\J(z,y)$ 中在区间 $|\xi|>k_s$ 上相应的积分是随 $k_s h$ 增大而衰减的。
+       面的引理说明了 $\J(z,y)$ 中在区间 $|\xi|>k_s$ 上相应的积分是随 $k_s h$ 增大而衰减的.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6347,7 +6349,7 @@ Missing character: There is no 了 in font nullfont!
 <recently read> \J 
                    
 l.147 下面的引理说明了 $\J
-                  (z,y)$ 中在区间 $|\xi|>k_s$ 上相应的积分是随 $k_s h$ 增大而衰减的。
+                  (z,y)$ 中在区间 $|\xi|>k_s$ 上相应的积分是随 $k_s h$ 增大而衰减的.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6372,7 +6374,7 @@ Missing character: There is no 而 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment lem undefined.
 
@@ -6584,7 +6586,7 @@ LaTeX Warning: Command \i invalid in math mode on input line 155.
 
 LaTeX Warning: Command \i invalid in math mode on input line 155.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 利 in font nullfont!
@@ -6594,7 +6596,7 @@ Missing character: There is no 理 in font nullfont!
 ! Undefined control sequence.
 <write> ...: Reference `lem:3.3' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.155 ..._2)+\i(y_1-z_1)\xi}$。于是利用引理 \ref{lem:3.3}
+l.155 ..._2)+\i(y_1-z_1)\xi}$.于是利用引理 \ref{lem:3.3}
                                                   ，我们可以得到：
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6784,7 +6786,7 @@ Missing character: There is no 只 in font nullfont!
 Missing character: There is no 依 in font nullfont!
 Missing character: There is no 赖 in font nullfont!
 Missing character: There is no 于 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 又 in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 为 in font nullfont!
@@ -6812,12 +6814,12 @@ Missing character: There is no 以 in font nullfont!
 Missing character: There is no 被 in font nullfont!
 Missing character: There is no 控 in font nullfont!
 Missing character: There is no 制 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
 Missing character: There is no 得 in font nullfont!
 Missing character: There is no 证 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.164 \finproof
                
@@ -7026,7 +7028,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.166 进
-       一步，下面的引理将有助于我们分析 $\J(z,y)$ 中在区间 $(-k_p,k_p)$ 上 ， 当 $\al\neq\beta$时的积分。
+       一步，下面的引理将有助于我们分析 $\J(z,y)$ 中在区间 $(-k_p,k_p)$ 上 ， 当 $\al\neq\beta$时的积分.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7051,7 +7053,7 @@ Missing character: There is no 析 in font nullfont!
 <recently read> \J 
                    
 l.166 进一步，下面的引理将有助于我们分析 $\J
-                           (z,y)$ 中在区间 $(-k_p,k_p)$ 上 ， 当 $\al\neq\beta$时的积分。
+                           (z,y)$ 中在区间 $(-k_p,k_p)$ 上 ， 当 $\al\neq\beta$时的积分.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7069,7 +7071,7 @@ Missing character: There is no 当 in font nullfont!
 <recently read> \al 
                     
 l.166 ...分析 $\J(z,y)$ 中在区间 $(-k_p,k_p)$ 上 ， 当 $\al
-                                                  \neq\beta$时的积分。
+                                                  \neq\beta$时的积分.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7080,7 +7082,7 @@ Missing character: There is no 时 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 积 in font nullfont!
 Missing character: There is no 分 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment lem undefined.
 
@@ -7100,14 +7102,14 @@ Missing character: There is no 这 in font nullfont!
 Missing character: There is no 里 in font nullfont!
 ! Undefined control sequence.
 l.168 ...kappa\in (0,1), \tau\ge\tau_0>0, \nu\in\R
-                                                  $。假设 $f\in C[0,\kappa]$ 且其...
+                                                  $.假设 $f\in C[0,\kappa]$ 且其...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 且 in font nullfont!
@@ -7338,7 +7340,7 @@ Missing character: There is no 证 in font nullfont!
 Missing character: There is no 明 in font nullfont!
 Missing character: There is no 细 in font nullfont!
 Missing character: There is no 节 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 通 in font nullfont!
 Missing character: There is no 过 in font nullfont!
 Missing character: There is no 简 in font nullfont!
@@ -7447,7 +7449,7 @@ Missing character: There is no ， in font cmr10!
 <inserted text> 
                 $
 l.182 显然有， $\psi
-                _m(t),m\ge 2$ 在区间 $(0,\kappa)$ 中是单调递增函数。
+                _m(t),m\ge 2$ 在区间 $(0,\kappa)$ 中是单调递增函数.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -7462,7 +7464,7 @@ Missing character: There is no 递 in font nullfont!
 Missing character: There is no 增 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 166--183
 []
@@ -7702,7 +7704,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.184 首
-       先我们考虑当 $\tau\ge \kappa^2$ 时的情况。 这就意味着 $\tau\kappa^{-3}\ge\kappa^{-1}$...
+       先我们考虑当 $\tau\ge \kappa^2$ 时的情况. 这就意味着 $\tau\kappa^{-3}\ge\kappa^{-1}$...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7718,7 +7720,7 @@ Missing character: There is no 时 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 情 in font nullfont!
 Missing character: There is no 况 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 这 in font nullfont!
 Missing character: There is no 就 in font nullfont!
 Missing character: There is no 意 in font nullfont!
@@ -7882,7 +7884,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.193 接
-       下去，我们考虑当 $\tau<\kappa^2$ 时的情况。 令 $\phi''(t)=0$， 可以得到
+       下去，我们考虑当 $\tau<\kappa^2$ 时的情况. 令 $\phi''(t)=0$， 可以得到
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7899,7 +7901,7 @@ Missing character: There is no 时 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 情 in font nullfont!
 Missing character: There is no 况 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 令 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 可 in font nullfont!
@@ -7919,7 +7921,7 @@ and I'll forget about whatever was undefined.
 <inserted text> 
                 $
 l.195 \tau
-          \kappa^{-1}(1-(t/\kappa)^2)^{-3/2}=(1-t^2)^{-3/2}
+          \kappa^{-1}(1-(t/\kappa)^2)^{-3/2}=(1-t^2)^{-3/2}.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -7973,7 +7975,7 @@ Missing character: There is no t in font nullfont!
 <inserted text> 
                 $
 l.199 t_
-        2^2=\kappa^2-\frac{1-\kappa^2}{(\tau\kappa^2)^{-2/3}-1},
+        2^2=\kappa^2-\frac{1-\kappa^2}{(\tau\kappa^2)^{-2/3}-1}.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -8011,7 +8013,7 @@ Missing character: There is no 在 in font nullfont!
 Missing character: There is no 上 in font nullfont!
 Missing character: There is no 成 in font nullfont!
 Missing character: There is no 立 in font nullfont!
-Missing character: There is no ； in font nullfont!
+Missing character: There is no ; in font nullfont!
 Missing character: There is no 或 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 当 in font nullfont!
@@ -8067,7 +8069,7 @@ Missing character: There is no 当 in font cmr10!
 <inserted text> 
                 $
 l.205 于是当 $\kappa
-                 ^3\le\tau<\kappa^2$ 时， $\phi''(t)$在区间 $(0,\kappa)$ 为单调递增函数。...
+                 ^3\le\tau<\kappa^2$ 时， $\phi''(t)$在区间 $(0,\kappa)$ 为单调递增函数....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -8083,7 +8085,7 @@ Missing character: There is no 递 in font nullfont!
 Missing character: There is no 增 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no 对 in font nullfont!
@@ -8095,7 +8097,7 @@ Missing character: There is no 的 in font nullfont!
 ! Undefined control sequence.
 <recently read> \de 
                     
-l.205 ...)$在区间 $(0,\kappa)$ 为单调递增函数。 因此对于充分小的 $\de
+l.205 ...)$在区间 $(0,\kappa)$ 为单调递增函数. 因此对于充分小的 $\de
                                                   >0$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8177,7 +8179,7 @@ Missing character: There is no 当 in font cmr10!
 <inserted text> 
                 $
 l.209 另一方面， 当$\tau
-                  <\kappa^3$ 时， 可以得到 $t_3<t_2$。而且当 $t\ge t_3$ 时有 $\phi'''(t)...
+                  <\kappa^3$ 时， 可以得到 $t_3<t_2$.而且当 $t\ge t_3$ 时有 $\phi'''(t)...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -8187,7 +8189,7 @@ Missing character: There is no 可 in font nullfont!
 Missing character: There is no 以 in font nullfont!
 Missing character: There is no 得 in font nullfont!
 Missing character: There is no 到 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 且 in font nullfont!
 Missing character: There is no 当 in font nullfont!
@@ -8198,7 +8200,7 @@ Missing character: There is no 及 in font nullfont!
 Missing character: There is no 当 in font nullfont!
 Missing character: There is no 时 in font nullfont!
 Missing character: There is no 有 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no 在 in font nullfont!
@@ -8216,13 +8218,13 @@ Missing character: There is no 单 in font nullfont!
 Missing character: There is no 调 in font nullfont!
 Missing character: There is no 递 in font nullfont!
 Missing character: There is no 减 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
-l.209 ..._3)$ 上单调递减。 于是对于 $\forall t\in (0,t_2-\de
+l.209 ..._3)$ 上单调递减. 于是对于 $\forall t\in (0,t_2-\de
                                                   )\cup(t_2+\de,\kappa)$, 我们有
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8337,9 +8339,9 @@ Overfull \hbox (16.66672pt too wide) in paragraph at lines 193--213
  []
 
 
-Overfull \hbox (53.26402pt too wide) in paragraph at lines 193--213
-\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )[]$$\OML/cmm/m/it/10 ^^^[]\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$
+Overfull \hbox (56.04181pt too wide) in paragraph at lines 193--213
+\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :$$^^^[]\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$
  []
 
 
@@ -8368,9 +8370,9 @@ Overfull \hbox (18.02551pt too wide) in paragraph at lines 193--213
  []
 
 
-Overfull \hbox (77.57898pt too wide) in paragraph at lines 193--213
-[]\OML/cmm/m/it/10 ; $$^^^[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 
-)$
+Overfull \hbox (75.91235pt too wide) in paragraph at lines 193--213
+[]\OML/cmm/m/it/10 :$$^^^[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )
+$
  []
 
 
@@ -8614,7 +8616,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.214 为
-       了估计 $|\phi''(t_2\pm\de)|$ 的正下界， 我们观察到 $\tau\kappa^2<\kappa^4$。 因此， 我们得到
+       了估计 $|\phi''(t_2\pm\de)|$ 的正下界， 我们观察到 $\tau\kappa^2<\kappa^4$. 因此， 我们得到
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -8624,7 +8626,7 @@ Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
 ! Undefined control sequence.
 l.214 为了估计 $|\phi''(t_2\pm\de
-                             )|$ 的正下界， 我们观察到 $\tau\kappa^2<\kappa^4$。 因此， 我们得到
+                             )|$ 的正下界， 我们观察到 $\tau\kappa^2<\kappa^4$. 因此， 我们得到
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8641,7 +8643,7 @@ Missing character: There is no 们 in font nullfont!
 Missing character: There is no 观 in font nullfont!
 Missing character: There is no 察 in font nullfont!
 Missing character: There is no 到 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -8685,7 +8687,7 @@ Missing character: There is no | in font nullfont!
 <inserted text> 
                 $
 l.218 于是即得 $|\phi
-                 '''(t_2)|\ge c_0\tau\ge c_0\tau_0$， 其中常数 $c_0$ 仅依赖于 $\kappa$。
+                 '''(t_2)|\ge c_0\tau\ge c_0\tau_0$， 其中常数 $c_0$ 仅依赖于 $\kappa$.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -8698,7 +8700,7 @@ Missing character: There is no 仅 in font nullfont!
 Missing character: There is no 依 in font nullfont!
 Missing character: There is no 赖 in font nullfont!
 Missing character: There is no 于 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no 外 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -8764,7 +8766,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.221 ...,t_2+\de]} |\phi''''(t)||t-t_2|\le c_1\de
-                                                  
+                                                  ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -8789,7 +8791,7 @@ Missing character: There is no c in font nullfont!
 <inserted text> 
                 $
 l.223 其中常数 $c_
-              1$ 仅依赖于 $\kappa$。于是，如果取 $\de\le c_0\tau_0/(2C_1)$，对于$t\in[t_2-...
+              1$ 仅依赖于 $\kappa$.于是，如果取 $\de\le c_0\tau_0/(2C_1)$，对于$t\in[t_2-...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -8797,7 +8799,7 @@ Missing character: There is no 仅 in font nullfont!
 Missing character: There is no 依 in font nullfont!
 Missing character: There is no 赖 in font nullfont!
 Missing character: There is no 于 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -8807,7 +8809,7 @@ Missing character: There is no 取 in font nullfont!
 ! Undefined control sequence.
 <recently read> \de 
                     
-l.223 其中常数 $c_1$ 仅依赖于 $\kappa$。于是，如果取 $\de
+l.223 其中常数 $c_1$ 仅依赖于 $\kappa$.于是，如果取 $\de
                                           \le c_0\tau_0/(2C_1)$，对于$t\in[t_2-...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8839,7 +8841,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no , in font nullfont!
 Missing character: There is no 就 in font nullfont!
 Missing character: There is no 有 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 214--224
 []
@@ -8943,8 +8945,8 @@ Overfull \hbox (21.43054pt too wide) in paragraph at lines 214--224
  []
 
 
-Overfull \hbox (13.29982pt too wide) in paragraph at lines 214--224
-\OML/cmm/m/it/10 c[]$$[]$
+Overfull \hbox (17.74423pt too wide) in paragraph at lines 214--224
+\OML/cmm/m/it/10 c[]; $$[]$
  []
 
 
@@ -8988,7 +8990,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.225 利
-       用中值定理，我们可以得到 $|\phi''(t_2\pm\de)|\ge (c_0\tau_0/2)\de$。 观察到 $|\phi''(...
+       用中值定理，我们可以得到 $|\phi''(t_2\pm\de)|\ge (c_0\tau_0/2)\de$. 观察到 $|\phi''(...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9008,7 +9010,7 @@ Missing character: There is no 得 in font nullfont!
 Missing character: There is no 到 in font nullfont!
 ! Undefined control sequence.
 l.225 利用中值定理，我们可以得到 $|\phi''(t_2\pm\de
-                                      )|\ge (c_0\tau_0/2)\de$。 观察到 $|\phi''(...
+                                      )|\ge (c_0\tau_0/2)\de$. 观察到 $|\phi''(...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9017,14 +9019,14 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.225 ... $|\phi''(t_2\pm\de)|\ge (c_0\tau_0/2)\de
-                                                  $。 观察到 $|\phi''(0)|=1-\tau...
+                                                  $. 观察到 $|\phi''(0)|=1-\tau...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 观 in font nullfont!
 Missing character: There is no 察 in font nullfont!
 Missing character: There is no 到 in font nullfont!
@@ -9464,7 +9466,7 @@ Missing character: There is no 有 in font cmr10!
 Missing character: There is no | in font nullfont!
 ! Undefined control sequence.
 l.239 显然有 $|{\rm
-                 II}_2|\le 2\de\max_{t\in (0,\kappa)}|f(t)|$。我们取 $\de=\lam^{...
+                 II}_2|\le 2\de\max_{t\in (0,\kappa)}|f(t)|$.我们取 $\de=\lam^{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9477,27 +9479,27 @@ Missing character: There is no I in font nullfont!
 <inserted text> 
                 $
 l.239 显然有 $|{\rm II}_
-                     2|\le 2\de\max_{t\in (0,\kappa)}|f(t)|$。我们取 $\de=\lam^{...
+                     2|\le 2\de\max_{t\in (0,\kappa)}|f(t)|$.我们取 $\de=\lam^{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
 l.239 显然有 $|{\rm II}_2|\le 2\de
-                               \max_{t\in (0,\kappa)}|f(t)|$。我们取 $\de=\lam^{...
+                               \max_{t\in (0,\kappa)}|f(t)|$.我们取 $\de=\lam^{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 取 in font nullfont!
 ! Undefined control sequence.
 <recently read> \de 
                     
-l.239 ...\de\max_{t\in (0,\kappa)}|f(t)|$。我们取 $\de
+l.239 ...\de\max_{t\in (0,\kappa)}|f(t)|$.我们取 $\de
                                                   =\lam^{-1/3}$， 就可以得到
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9506,7 +9508,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.239 ...ax_{t\in (0,\kappa)}|f(t)|$。我们取 $\de=\lam
+l.239 ...ax_{t\in (0,\kappa)}|f(t)|$.我们取 $\de=\lam
                                                   ^{-1/3}$， 就可以得到
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9574,7 +9576,7 @@ and I'll forget about whatever was undefined.
 <write> ...rning: Reference `k2' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.243 联合 (\ref{k2}
-                  )， 引理得证。
+                  )， 引理得证.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9608,7 +9610,6 @@ Missing character: There is no 引 in font cmr10!
 Missing character: There is no 理 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 证 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 225--245
 []
@@ -9763,8 +9764,8 @@ Overfull \hbox (78.41374pt too wide) in paragraph at lines 225--245
  []
 
 
-Overfull \hbox (152.26198pt too wide) in paragraph at lines 225--245
-\OML/cmm/m/it/10 C[] [] :\OT1/cmr/m/n/10 ([])$ 
+Overfull \hbox (155.03976pt too wide) in paragraph at lines 225--245
+\OML/cmm/m/it/10 C[] [] :\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 :$ 
  []
 
 
@@ -9775,7 +9776,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.246 现
-       在， 我们给出的本节的核心定理， 它给出了点扩散函数 $\J(z,y)$ 与其主项 $\F(z,y)$ 之间关于 $k_s h$ 的误差估计。
+       在， 我们给出的本节的核心定理， 它给出了点扩散函数 $\J(z,y)$ 与其主项 $\F(z,y)$ 之间关于 $k_s h$ 的误差估计.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -9808,7 +9809,7 @@ Missing character: There is no 数 in font nullfont!
 <recently read> \J 
                    
 l.246 现在， 我们给出的本节的核心定理， 它给出了点扩散函数 $\J
-                                     (z,y)$ 与其主项 $\F(z,y)$ 之间关于 $k_s h$ 的误差估计。
+                                     (z,y)$ 与其主项 $\F(z,y)$ 之间关于 $k_s h$ 的误差估计.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9823,7 +9824,7 @@ Missing character: There is no 项 in font nullfont!
 <recently read> \F 
                    
 l.246 ...们给出的本节的核心定理， 它给出了点扩散函数 $\J(z,y)$ 与其主项 $\F
-                                                  (z,y)$ 之间关于 $k_s h$ 的误差估计。
+                                                  (z,y)$ 之间关于 $k_s h$ 的误差估计.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -9839,7 +9840,7 @@ Missing character: There is no 误 in font nullfont!
 Missing character: There is no 差 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment thm undefined.
 
@@ -10526,7 +10527,7 @@ Missing character: There is no k in font nullfont!
 <inserted text> 
                 $
 l.262 当 $k_
-           p<|\xi|<k_s$ 时， 由引理 \ref{delta} 得，  $|\de(\xi)|\ge Ck_s^4$ 。 于是， ...
+           p<|\xi|<k_s$ 时， 由引理 \ref{delta} 得，  $|\de(\xi)|\ge Ck_s^4$ . 于是， ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -10539,7 +10540,7 @@ Missing character: There is no 理 in font nullfont!
 <write> ...ng: Reference `delta' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.262 当 $k_p<|\xi|<k_s$ 时， 由引理 \ref{delta}
-                                           得，  $|\de(\xi)|\ge Ck_s^4$ 。 于是， ...
+                                           得，  $|\de(\xi)|\ge Ck_s^4$ . 于是， ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10553,14 +10554,14 @@ Missing character: There is no 得 in font nullfont!
 Missing character: There is no ， in font nullfont!
 ! Undefined control sequence.
 l.262 ...p<|\xi|<k_s$ 时， 由引理 \ref{delta} 得，  $|\de
-                                                  (\xi)|\ge Ck_s^4$ 。 于是， 对于...
+                                                  (\xi)|\ge Ck_s^4$ . 于是， 对于...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -10569,7 +10570,7 @@ Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
 <recently read> \al 
                     
-l.262 ... 得，  $|\de(\xi)|\ge Ck_s^4$ 。 于是， 对于 $\al
+l.262 ... 得，  $|\de(\xi)|\ge Ck_s^4$ . 于是， 对于 $\al
                                                   ,\beta=p,s$， 我们有 $|\Ta(\xi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10582,7 +10583,7 @@ Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 有 in font nullfont!
 ! Undefined control sequence.
-l.262 ..._s^4$ 。 于是， 对于 $\al,\beta=p,s$， 我们有 $|\Ta
+l.262 ..._s^4$ . 于是， 对于 $\al,\beta=p,s$， 我们有 $|\Ta
                                                   (\xi)|\le C, |\Nb(\xi)|\le...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10592,14 +10593,14 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.262 ...al,\beta=p,s$， 我们有 $|\Ta(\xi)|\le C, |\Nb
-                                                  (\xi)|\le C\mu^{-1}k_s^2$。...
+                                                  (\xi)|\le C\mu^{-1}k_s^2$....
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no 我 in font nullfont!
@@ -10611,7 +10612,7 @@ Missing character: There is no 到 in font nullfont!
 Missing character: There is no 关 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
-l.262 ...xi)|\le C\mu^{-1}k_s^2$。 因此我们可以得到关于 ${\rm
+l.262 ...xi)|\le C\mu^{-1}k_s^2$. 因此我们可以得到关于 ${\rm
                                                    II_1}$ 的估计：
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10677,7 +10678,7 @@ Missing character: There is no 式 in font cmr10!
 Missing character: There is no 子 in font cmr10!
 ! Undefined control sequence.
 l.266 而对于式子 ${\rm
-                  II}_2$ 我们将会使用引理 \ref{cross_term}。 通过简单的变量替换 $\xi=k_s t$, 我...
+                  II}_2$ 我们将会使用引理 \ref{cross_term}. 通过简单的变量替换 $\xi=k_s t$, 我...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10690,7 +10691,7 @@ Missing character: There is no I in font nullfont!
 <inserted text> 
                 $
 l.266 而对于式子 ${\rm II}_
-                      2$ 我们将会使用引理 \ref{cross_term}。 通过简单的变量替换 $\xi=k_s t$, 我...
+                      2$ 我们将会使用引理 \ref{cross_term}. 通过简单的变量替换 $\xi=k_s t$, 我...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -10706,7 +10707,7 @@ Missing character: There is no 理 in font nullfont!
 <write> ...eference `cross_term' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.266 而对于式子 ${\rm II}_2$ 我们将会使用引理 \ref{cross_term}
-                                                  。 通过简单的变量替换 $\xi=k_s t$, 我...
+                                                  . 通过简单的变量替换 $\xi=k_s t$, 我...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10716,7 +10717,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Reference `cross_term' on page  undefined on input line 266.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 通 in font nullfont!
 Missing character: There is no 过 in font nullfont!
 Missing character: There is no 简 in font nullfont!
@@ -10734,7 +10735,7 @@ Missing character: There is no 以 in font nullfont!
 Missing character: There is no 把 in font nullfont!
 Missing character: There is no 式 in font nullfont!
 ! Undefined control sequence.
-l.266 ...erm}。 通过简单的变量替换 $\xi=k_s t$, 我们可以把式 ${\rm
+l.266 ...erm}. 通过简单的变量替换 $\xi=k_s t$, 我们可以把式 ${\rm
                                                    II}_2$ 中的第一项转化成引理 \ref{cr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10966,7 +10967,7 @@ Missing character: There is no 式 in font cmr10!
 Missing character: There is no 子 in font cmr10!
 ! Undefined control sequence.
 l.274 而式子 ${\rm
-                II}_2$ 中的第二项也可以被类似估计。 关于 $|\na_y(\J(z,y)-\F(z,y))|$ 的估计也可以被类...
+                II}_2$ 中的第二项也可以被类似估计. 关于 $|\na_y(\J(z,y)-\F(z,y))|$ 的估计也可以被类...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -10979,7 +10980,7 @@ Missing character: There is no I in font nullfont!
 <inserted text> 
                 $
 l.274 而式子 ${\rm II}_
-                    2$ 中的第二项也可以被类似估计。 关于 $|\na_y(\J(z,y)-\F(z,y))|$ 的估计也可以被类...
+                    2$ 中的第二项也可以被类似估计. 关于 $|\na_y(\J(z,y)-\F(z,y))|$ 的估计也可以被类...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -10996,11 +10997,11 @@ Missing character: There is no 类 in font nullfont!
 Missing character: There is no 似 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 关 in font nullfont!
 Missing character: There is no 于 in font nullfont!
 ! Undefined control sequence.
-l.274 而式子 ${\rm II}_2$ 中的第二项也可以被类似估计。 关于 $|\na
+l.274 而式子 ${\rm II}_2$ 中的第二项也可以被类似估计. 关于 $|\na
                                               _y(\J(z,y)-\F(z,y))|$ 的估计也可以被类...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11009,7 +11010,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.274 ...${\rm II}_2$ 中的第二项也可以被类似估计。 关于 $|\na_y(\J
+l.274 ...${\rm II}_2$ 中的第二项也可以被类似估计. 关于 $|\na_y(\J
                                                   (z,y)-\F(z,y))|$ 的估计也可以被类似...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11018,7 +11019,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.274 ...}_2$ 中的第二项也可以被类似估计。 关于 $|\na_y(\J(z,y)-\F
+l.274 ...}_2$ 中的第二项也可以被类似估计. 关于 $|\na_y(\J(z,y)-\F
                                                   (z,y))|$ 的估计也可以被类似证明， 这里不再...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11044,12 +11045,12 @@ Missing character: There is no 不 in font nullfont!
 Missing character: There is no 再 in font nullfont!
 Missing character: There is no 赘 in font nullfont!
 Missing character: There is no 述 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
 Missing character: There is no 得 in font nullfont!
 Missing character: There is no 证 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.275 \finproof
                
@@ -11234,7 +11235,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.277 由
-       于$\F(z,y)$ 是 $\J(z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质。 我们首先证明了点扩散函数的主项 $\...
+       于$\F(z,y)$ 是 $\J(z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质. 我们首先证明了点扩散函数的主项 $\...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -11245,7 +11246,7 @@ Missing character: There is no 于 in font nullfont!
 <recently read> \F 
                    
 l.277 由于$\F
-           (z,y)$ 是 $\J(z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质。 我们首先证明了点扩散函数的主项 $\...
+           (z,y)$ 是 $\J(z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质. 我们首先证明了点扩散函数的主项 $\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11257,7 +11258,7 @@ Missing character: There is no 是 in font nullfont!
 <recently read> \J 
                    
 l.277 由于$\F(z,y)$ 是 $\J
-                       (z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质。 我们首先证明了点扩散函数的主项 $\...
+                       (z,y)$ 的主项，我们有必要来分析 $\F(z,y)$ 的性质. 我们首先证明了点扩散函数的主项 $\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11280,7 +11281,7 @@ Missing character: There is no 析 in font nullfont!
 <recently read> \F 
                    
 l.277 由于$\F(z,y)$ 是 $\J(z,y)$ 的主项，我们有必要来分析 $\F
-                                              (z,y)$ 的性质。 我们首先证明了点扩散函数的主项 $\...
+                                              (z,y)$ 的性质. 我们首先证明了点扩散函数的主项 $\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11290,7 +11291,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 质 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 首 in font nullfont!
@@ -11309,7 +11310,7 @@ Missing character: There is no 项 in font nullfont!
 ! Undefined control sequence.
 <recently read> \F 
                    
-l.277 ...有必要来分析 $\F(z,y)$ 的性质。 我们首先证明了点扩散函数的主项 $\F
+l.277 ...有必要来分析 $\F(z,y)$ 的性质. 我们首先证明了点扩散函数的主项 $\F
                                                   (z,y)$ 的虚部与弹性波基本解 $\Im\G(z...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11329,7 +11330,7 @@ Missing character: There is no 本 in font nullfont!
 Missing character: There is no 解 in font nullfont!
 ! Undefined control sequence.
 l.277 ...首先证明了点扩散函数的主项 $\F(z,y)$ 的虚部与弹性波基本解 $\Im\G
-                                                  (z,y)$ 的虚部有相似的函数特性。然后利用定理 ...
+                                                  (z,y)$ 的虚部有相似的函数特性.然后利用定理 ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11347,7 +11348,7 @@ Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no 特 in font nullfont!
 Missing character: There is no 性 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 然 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no 利 in font nullfont!
@@ -11357,7 +11358,7 @@ Missing character: There is no 理 in font nullfont!
 ! Undefined control sequence.
 <write> ... Reference `J_F_diff' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.277 ...G(z,y)$ 的虚部有相似的函数特性。然后利用定理 \ref{J_F_diff}
+l.277 ...G(z,y)$ 的虚部有相似的函数特性.然后利用定理 \ref{J_F_diff}
                                                    和引理 \ref{error_jd}, 当 $d\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11374,7 +11375,7 @@ Missing character: There is no 理 in font nullfont!
 ! Undefined control sequence.
 <write> ... Reference `error_jd' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.277 ...。然后利用定理 \ref{J_F_diff} 和引理 \ref{error_jd}
+l.277 ....然后利用定理 \ref{J_F_diff} 和引理 \ref{error_jd}
                                                   , 当 $d\gg h$ 和 $k_s h\gg 1...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11445,7 +11446,7 @@ Missing character: There is no 图 in font nullfont!
 <write> ...eference `figure_psf' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.277 ...\G(z,y)$ 的虚部有相似的函数特性， 如图 \ref{figure_psf}
-                                                   和 图\ref{figure_green} 所示。
+                                                   和 图\ref{figure_green} 所示.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11461,7 +11462,7 @@ Missing character: There is no 图 in font nullfont!
 <write> ...erence `figure_green' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.277 ...如图 \ref{figure_psf} 和 图\ref{figure_green}
-                                                   所示。
+                                                   所示.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11473,7 +11474,7 @@ LaTeX Warning: Reference `figure_green' on page  undefined on input line 277.
 
 Missing character: There is no 所 in font nullfont!
 Missing character: There is no 示 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (42.57411pt too wide) in paragraph at lines 277--278
 []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z; y\OT1/cmr/m/n/10 )$
@@ -11639,7 +11640,7 @@ Missing character: There is no 置 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 其 in font nullfont!
 Missing character: There is no 中 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -11705,7 +11706,7 @@ LaTeX Font Warning: Font shape `/lmr/m/n' undefined
 Missing character: There is no 常 in font nullfont!
 Missing character: There is no 数 in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 特 in font nullfont!
 Missing character: There is no 别 in font nullfont!
 Missing character: There is no 地 in font nullfont!
@@ -11802,7 +11803,7 @@ Missing character: There is no 峰 in font nullfont!
 Missing character: There is no 值 in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 处 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 每 in font nullfont!
@@ -11833,7 +11834,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 值 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{remark}.
 
@@ -11931,7 +11932,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.283 下
-       述定理证明了主项 $\F(z,y)$ 确实有如图 \ref{figure_psf} 中的所示的性质。
+       述定理证明了主项 $\F(z,y)$ 确实有如图 \ref{figure_psf} 中的所示的性质.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -11948,7 +11949,7 @@ Missing character: There is no 项 in font nullfont!
 <recently read> \F 
                    
 l.283 下述定理证明了主项 $\F
-                   (z,y)$ 确实有如图 \ref{figure_psf} 中的所示的性质。
+                   (z,y)$ 确实有如图 \ref{figure_psf} 中的所示的性质.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11964,7 +11965,7 @@ Missing character: There is no 图 in font nullfont!
 <write> ...eference `figure_psf' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.283 下述定理证明了主项 $\F(z,y)$ 确实有如图 \ref{figure_psf}
-                                                 中的所示的性质。
+                                                 中的所示的性质.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -11981,7 +11982,7 @@ Missing character: There is no 示 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 性 in font nullfont!
 Missing character: There is no 质 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment thm undefined.
 
@@ -12001,7 +12002,7 @@ Missing character: There is no 任 in font nullfont!
 Missing character: There is no 意 in font nullfont!
 ! Undefined control sequence.
 l.285 ^^I对于任意 $z,y\in \R
-                        _+^2$， $\F(z,y)^T=\F(z,y)$。 当 $z=y$ 时，  $\Im [\F(z,y...
+                        _+^2$， $\F(z,y)^T=\F(z,y)$. 当 $z=y$ 时，  $\Im [\F(z,y...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -12013,7 +12014,7 @@ Missing character: There is no ， in font nullfont!
 <recently read> \F 
                    
 l.285 ^^I对于任意 $z,y\in \R_+^2$， $\F
-                                  (z,y)^T=\F(z,y)$。 当 $z=y$ 时，  $\Im [\F(z,y...
+                                  (z,y)^T=\F(z,y)$. 当 $z=y$ 时，  $\Im [\F(z,y...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -12022,19 +12023,19 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.285 ^^I对于任意 $z,y\in \R_+^2$， $\F(z,y)^T=\F
-                                            (z,y)$。 当 $z=y$ 时，  $\Im [\F(z,y...
+                                            (z,y)$. 当 $z=y$ 时，  $\Im [\F(z,y...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 当 in font nullfont!
 Missing character: There is no 时 in font nullfont!
 Missing character: There is no ， in font nullfont!
 ! Undefined control sequence.
-l.285 ...$\F(z,y)^T=\F(z,y)$。 当 $z=y$ 时，  $\Im [\F
+l.285 ...$\F(z,y)^T=\F(z,y)$. 当 $z=y$ 时，  $\Im [\F
                                                   (z,y)]_{12} = \Im [\F(z,y)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12167,11 +12168,11 @@ Missing character: There is no 于 in font cmr10!
 <inserted text> 
                 $
 l.293 ^^I这里的常数 $C$ 只依赖于 $\kappa
-                               $。
+                               $.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{thm}.
 
@@ -12650,14 +12651,14 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.320 ...以当 $z=y$ 时， $\Im [\F(z,y)]_{12} = \Im [\F
-                                                  (z,y)]_{21} =0$。
+                                                  (z,y)]_{21} =0$.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 297--321
 []
@@ -12726,7 +12727,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.322 现
-       在我们来证明当 $i=j=1$ 时的不等式(\ref{d6}）， 而其他情形可以被类似证明， 这里将省略细节。 观察到， 当 $\xi\i...
+       在我们来证明当 $i=j=1$ 时的不等式(\ref{d6}）， 而其他情形可以被类似证明， 这里将省略细节. 观察到， 当 $\xi\i...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -12749,7 +12750,7 @@ Missing character: There is no ( in font nullfont!
 <write> ...rning: Reference `d6' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.322 现在我们来证明当 $i=j=1$ 时的不等式(\ref{d6}
-                                     ）， 而其他情形可以被类似证明， 这里将省略细节。 观察到， 当 $\xi\i...
+                                     ）， 而其他情形可以被类似证明， 这里将省略细节. 观察到， 当 $\xi\i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -12781,7 +12782,7 @@ Missing character: There is no 省 in font nullfont!
 Missing character: There is no 略 in font nullfont!
 Missing character: There is no 细 in font nullfont!
 Missing character: There is no 节 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 观 in font nullfont!
 Missing character: There is no 察 in font nullfont!
 Missing character: There is no 到 in font nullfont!
@@ -12811,7 +12812,7 @@ Missing character: There is no 得 in font nullfont!
 Missing character: There is no 以 in font nullfont!
 Missing character: There is no 及 in font nullfont!
 Missing character: There is no 及 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no 当 in font nullfont!
@@ -13076,20 +13077,20 @@ Missing character: There is no - in font nullfont!
 <inserted text> 
                 $
 l.334  通过分母有理化， 我们可以得到 $-\Im
-                            ({\rm III}_3)\ge 0$。 因此， 当 $z=y$ 时， 我们有 $-\Im[\F...
+                            ({\rm III}_3)\ge 0$. 因此， 当 $z=y$ 时， 我们有 $-\Im[\F...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
 l.334  通过分母有理化， 我们可以得到 $-\Im({\rm
-                                  III}_3)\ge 0$。 因此， 当 $z=y$ 时， 我们有 $-\Im[\F...
+                                  III}_3)\ge 0$. 因此， 当 $z=y$ 时， 我们有 $-\Im[\F...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 因 in font nullfont!
 Missing character: There is no 此 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -13100,7 +13101,7 @@ Missing character: There is no 我 in font nullfont!
 Missing character: There is no 们 in font nullfont!
 Missing character: There is no 有 in font nullfont!
 ! Undefined control sequence.
-l.334 ...II}_3)\ge 0$。 因此， 当 $z=y$ 时， 我们有 $-\Im[\F
+l.334 ...II}_3)\ge 0$. 因此， 当 $z=y$ 时， 我们有 $-\Im[\F
                                                   (z,y)]_{11}\ge 1/[4(\lam+2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13110,14 +13111,14 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.334 ...$ 时， 我们有 $-\Im[\F(z,y)]_{11}\ge 1/[4(\lam
-                                                  +2\mu)]$ 。
+                                                  +2\mu)]$ .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 322--335
 []
@@ -13328,7 +13329,7 @@ Missing character: There is no 示 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 其 in font nullfont!
 Missing character: There is no 中 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -13343,7 +13344,7 @@ Missing character: There is no 换 in font nullfont!
 Missing character: There is no 代 in font nullfont!
 Missing character: There is no 入 in font nullfont!
 ! Undefined control sequence.
-l.336 ...中 $0\le\phi\le \pi$。 于是， 将此三角变量替换代入 ${\rm
+l.336 ...中 $0\le\phi\le \pi$. 于是， 将此三角变量替换代入 ${\rm
                                                    III}_1$, 我们可以得到
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13461,7 +13462,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 表 in font nullfont!
 Missing character: There is no 达 in font nullfont!
 Missing character: There is no 式 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 且 in font nullfont!
 Missing character: There is no 区 in font nullfont!
@@ -13504,7 +13505,7 @@ Missing character: There is no 间 in font nullfont!
 Missing character: There is no 上 in font nullfont!
 Missing character: There is no 单 in font nullfont!
 Missing character: There is no 调 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 于 in font nullfont!
 Missing character: There is no 是 in font nullfont!
 Missing character: There is no ， in font nullfont!
@@ -13607,12 +13608,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 针 in font nullfont!
 Missing character: There is no 对 in font nullfont!
 ! Undefined control sequence.
-l.344 ...}\le C\mu^{-1}(k_s|z-y|)^{-1}$。 而针对 ${\rm
+l.344 ...}\le C\mu^{-1}(k_s|z-y|)^{-1}$. 而针对 ${\rm
                                                    III}_2+{\rm III}_3$ 的估计可以...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13621,7 +13622,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.344 ...1}(k_s|z-y|)^{-1}$。 而针对 ${\rm III}_2+{\rm
+l.344 ...1}(k_s|z-y|)^{-1}$. 而针对 ${\rm III}_2+{\rm
                                                    III}_3$ 的估计可以类似地使用 Van de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13657,7 +13658,7 @@ Missing character: There is no 理 in font nullfont!
 <write> ...ning: Reference `van' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.344 ...3$ 的估计可以类似地使用 Van der Corput 引理 \ref{van}
-                                                   来证明。 引理得证。
+                                                   来证明. 引理得证.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13670,12 +13671,12 @@ LaTeX Warning: Reference `van' on page  undefined on input line 344.
 Missing character: There is no 来 in font nullfont!
 Missing character: There is no 证 in font nullfont!
 Missing character: There is no 明 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 引 in font nullfont!
 Missing character: There is no 理 in font nullfont!
 Missing character: There is no 得 in font nullfont!
 Missing character: There is no 证 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 l.345 \finproof
                
@@ -14248,7 +14249,7 @@ Missing character: There is no 渐 in font nullfont!
 Missing character: There is no 渐 in font nullfont!
 Missing character: There is no 衰 in font nullfont!
 Missing character: There is no 减 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 如 in font nullfont!
 Missing character: There is no 文 in font nullfont!
 Missing character: There is no 献 in font nullfont!
@@ -14257,7 +14258,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.353 ...z$ 远离 $y$ 时，其值渐渐衰减。如文献 \cite{RTMhalf_aco}
+l.353 ...z$ 远离 $y$ 时，其值渐渐衰减.如文献 \cite{RTMhalf_aco}
                                                    中针对声波点扩散函数的表述， 我们也可以认为弹性波...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14314,7 +14315,7 @@ Missing character: There is no 度 in font nullfont!
 Missing character: There is no 量 in font nullfont!
 Missing character: There is no 函 in font nullfont!
 Missing character: There is no 数 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 353--354
 []
@@ -14622,7 +14623,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.361 为
-       便于后文分析， 我们介绍如下在范数意义下的估计式。
+       便于后文分析， 我们介绍如下在范数意义下的估计式.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -14650,7 +14651,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 估 in font nullfont!
 Missing character: There is no 计 in font nullfont!
 Missing character: There is no 式 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment lem undefined.
 
@@ -15055,7 +15056,7 @@ Missing character: There is no | in font nullfont!
 <inserted text> 
                 $
 l.376 |F(z,y)|\leq
-                   \frac{C}{\mu}
+                   \frac{C}{\mu}.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -15072,7 +15073,7 @@ and I'll forget about whatever was undefined.
 <write> ...rning: Reference `q0' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.378 于是， 上面第一估计式可由不等式 (\ref{q0}
-                                ) 立即得到。 第二估计式可由不等式 (\ref{q0})，引理 \ref{error_...
+                                ) 立即得到. 第二估计式可由不等式 (\ref{q0})，引理 \ref{error_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15085,7 +15086,7 @@ LaTeX Warning: Reference `q0' on page  undefined on input line 378.
 ! Undefined control sequence.
 <write> ...rning: Reference `q0' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.378 ...不等式 (\ref{q0}) 立即得到。 第二估计式可由不等式 (\ref{q0}
+l.378 ...不等式 (\ref{q0}) 立即得到. 第二估计式可由不等式 (\ref{q0}
                                                   )，引理 \ref{error_jd} 和定理 \r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15099,8 +15100,8 @@ LaTeX Warning: Reference `q0' on page  undefined on input line 378.
 ! Undefined control sequence.
 <write> ... Reference `error_jd' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.378 ...。 第二估计式可由不等式 (\ref{q0})，引理 \ref{error_jd}
-                                                   和定理 \ref{J_F_diff} 立即得到。这...
+l.378 .... 第二估计式可由不等式 (\ref{q0})，引理 \ref{error_jd}
+                                                   和定理 \ref{J_F_diff} 立即得到.这...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15114,7 +15115,7 @@ LaTeX Warning: Reference `error_jd' on page  undefined on input line 378.
 <write> ... Reference `J_F_diff' on page \thepage 
                                                   \space undefined\on@line .^^J
 l.378 ...q0})，引理 \ref{error_jd} 和定理 \ref{J_F_diff}
-                                                   立即得到。这里我们将不再赘述细节。 引理得证。
+                                                   立即得到.这里我们将不再赘述细节. 引理得证.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15146,8 +15147,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.381 ...ion, RTM)。 该逆时偏移算法是对文献 \cite{RTMhalf_aco}
-                                                   中半空间声波散射问题的逆时偏移算法的一个推广。 我...
+l.381 ...ion, RTM). 该逆时偏移算法是对文献 \cite{RTMhalf_aco}
+                                                   中半空间声波散射问题的逆时偏移算法的一个推广. 我...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15206,7 +15207,6 @@ Missing character: There is no 立 in font cmr10!
 Missing character: There is no 即 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 到 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 第 in font cmr10!
 Missing character: There is no 二 in font cmr10!
 Missing character: There is no 估 in font cmr10!
@@ -15227,7 +15227,6 @@ Missing character: There is no 立 in font cmr10!
 Missing character: There is no 即 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 到 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 这 in font cmr10!
 Missing character: There is no 里 in font cmr10!
 Missing character: There is no 我 in font cmr10!
@@ -15239,12 +15238,10 @@ Missing character: There is no 赘 in font cmr10!
 Missing character: There is no 述 in font cmr10!
 Missing character: There is no 细 in font cmr10!
 Missing character: There is no 节 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 引 in font cmr10!
 Missing character: There is no 理 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 证 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 逆 in font cmr10!
 Missing character: There is no 时 in font cmr10!
 Missing character: There is no 偏 in font cmr10!
@@ -15277,7 +15274,6 @@ Missing character: There is no 偏 in font cmr10!
 Missing character: There is no 移 in font cmr10!
 Missing character: There is no 算 in font cmr10!
 Missing character: There is no 法 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 该 in font cmr10!
 Missing character: There is no 逆 in font cmr10!
 Missing character: There is no 时 in font cmr10!
@@ -15311,7 +15307,6 @@ Missing character: There is no 一 in font cmr10!
 Missing character: There is no 个 in font cmr10!
 Missing character: There is no 推 in font cmr10!
 Missing character: There is no 广 in font cmr10!
-Missing character: There is no 。 in font cmr10!
 Missing character: There is no 我 in font cmr10!
 Missing character: There is no 们 in font cmr10!
 Missing character: There is no 的 in font cmr10!
@@ -15393,7 +15388,7 @@ Missing character: There is no 半 in font nullfont!
 Missing character: There is no 空 in font nullfont!
 Missing character: There is no 间 in font nullfont!
 Missing character: There is no 中 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 第 in font nullfont!
 Missing character: There is no 二 in font nullfont!
 Missing character: There is no 步 in font nullfont!
@@ -15419,8 +15414,8 @@ Missing character: There is no 域 in font nullfont!
 ! Undefined control sequence.
 <recently read> \Om 
                     
-l.381 ...化， 然后反传到半空间中。 第二步，将反传后的数据和入射波数据在采样区域 $\Om
-                                                  $ 内进行互相关， 然后关于各个炮点进行叠加。特别地...
+l.381 ...化， 然后反传到半空间中. 第二步，将反传后的数据和入射波数据在采样区域 $\Om
+                                                  $ 内进行互相关， 然后关于各个炮点进行叠加.特别地...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15446,7 +15441,7 @@ Missing character: There is no 进 in font nullfont!
 Missing character: There is no 行 in font nullfont!
 Missing character: There is no 叠 in font nullfont!
 Missing character: There is no 加 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 特 in font nullfont!
 Missing character: There is no 别 in font nullfont!
 Missing character: There is no 地 in font nullfont!
@@ -15460,7 +15455,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.381 ... 然后关于各个炮点进行叠加。特别地，类似文献 \cite{RTMhalf_aco}
+l.381 ... 然后关于各个炮点进行叠加.特别地，类似文献 \cite{RTMhalf_aco}
                                                    ， 这里的入射波是将点源放在 $\Ga_d$ 上，...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15523,7 +15518,7 @@ Missing character: There is no 方 in font nullfont!
 Missing character: There is no 程 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 解 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 而 in font nullfont!
 Missing character: There is no 反 in font nullfont!
 Missing character: There is no 传 in font nullfont!
@@ -15563,7 +15558,7 @@ Missing character: There is no 方 in font nullfont!
 Missing character: There is no 程 in font nullfont!
 Missing character: There is no 的 in font nullfont!
 Missing character: There is no 解 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 374--382
 []
@@ -15585,9 +15580,11 @@ Overfull \hbox (7.7778pt too wide) in paragraph at lines 374--382
  []
 
 
-Overfull \hbox (249.829pt too wide) in paragraph at lines 374--382
-[]\/cmr/m/n/10 ([])([])[][][](\OML/cmm/m/it/10 ReverseTimeMigration; RTM\/cmr/m
-/n/10 )[[]][[]]$$[]$
+Overfull \hbox (269.2735pt too wide) in paragraph at lines 374--382
+[]\OML/cmm/m/it/10 :\/cmr/m/n/10 ([])\OML/cmm/m/it/10 :\/cmr/m/n/10 ([])[][]\OM
+L/cmm/m/it/10 :::[]\/cmr/m/n/10 (\OML/cmm/m/it/10 ReverseTimeMigration; RTM\/cm
+r/m/n/10 )\OML/cmm/m/it/10 :\/cmr/m/n/10 [[]]\OML/cmm/m/it/10 :\/cmr/m/n/10 [[]
+]$$[]$
  []
 
 
@@ -15665,22 +15662,22 @@ Missing character: There is no 器 in font nullfont!
 Missing character: There is no ， in font nullfont!
 Missing character: There is no 位 in font nullfont!
 Missing character: There is no 于 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 障 in font nullfont!
 Missing character: There is no 碍 in font nullfont!
 Missing character: There is no 物 in font nullfont!
 ! Undefined control sequence.
-l.384 ...$x_r, \ r=1,...,N_r$。 假设障碍物 $D\subset \Om
-                                                  $。 假设散射数据 $u_q^s(x_r,x_s)$...
+l.384 ...$x_r, \ r=1,...,N_r$. 假设障碍物 $D\subset \Om
+                                                  $. 假设散射数据 $u_q^s(x_r,x_s)$...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 假 in font nullfont!
 Missing character: There is no 设 in font nullfont!
 Missing character: There is no 散 in font nullfont!
@@ -15708,7 +15705,7 @@ Missing character: There is no 方 in font nullfont!
 Missing character: There is no 向 in font nullfont!
 Missing character: There is no 激 in font nullfont!
 Missing character: There is no 发 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 384--385
 []
@@ -16436,14 +16433,18 @@ l.412
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+Missing character: There is no 从 in font cmr10!
+Missing character: There is no 而 in font cmr10!
 Missing character: There is no 我 in font cmr10!
 Missing character: There is no 们 in font cmr10!
-Missing character: There is no 马 in font cmr10!
-Missing character: There is no 上 in font cmr10!
-Missing character: There is no 可 in font cmr10!
-Missing character: There is no 以 in font cmr10!
 Missing character: There is no 得 in font cmr10!
 Missing character: There is no 到 in font cmr10!
+Missing character: There is no 如 in font cmr10!
+Missing character: There is no 下 in font cmr10!
+Missing character: There is no 成 in font cmr10!
+Missing character: There is no 像 in font cmr10!
+Missing character: There is no 函 in font cmr10!
+Missing character: There is no 数 in font cmr10!
 Missing character: There is no ： in font cmr10!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 397--412
@@ -16493,8 +16494,8 @@ Overfull \hbox (88.18872pt too wide) in paragraph at lines 397--412
  []
 
 
-Overfull \hbox (79.42299pt too wide) in paragraph at lines 397--412
-[]\OML/cmm/m/it/10 ; []I[]\/cmr/m/n/10 (\OML/cmm/m/it/10 z\/cmr/m/n/10 ) =
+Overfull \hbox (77.75636pt too wide) in paragraph at lines 397--412
+[]\OML/cmm/m/it/10 :[]I[]\/cmr/m/n/10 (\OML/cmm/m/it/10 z\/cmr/m/n/10 ) =
  []
 
 
@@ -16510,7 +16511,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.413 上
-       面的成像函数是离散形式的， 可以直接用于数值计算。 为了便于后面的理论分析， 我们令 $N_s,N_r\to\infty$， 于是离散形式...
+       面的成像函数是离散形式的， 可以直接用于数值计算. 为了便于后面的理论分析， 我们令 $N_s,N_r\to\infty$， 于是离散形式...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -16539,7 +16540,7 @@ Missing character: There is no 数 in font nullfont!
 Missing character: There is no 值 in font nullfont!
 Missing character: There is no 计 in font nullfont!
 Missing character: There is no 算 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 为 in font nullfont!
 Missing character: There is no 了 in font nullfont!
 Missing character: There is no 便 in font nullfont!
@@ -16712,7 +16713,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.420 下
-       面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来。 有了前文中对 $\J_d(...
+       面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来. 有了前文中对 $\J_d(...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -16744,7 +16745,7 @@ Missing character: There is no 数 in font nullfont!
 <recently read> \J 
                    
 l.420 下面我们将障碍物的成像函数 $\hat I_d(z)$ 与前文中的点扩散函数 $\J
-                                                _d(z,y)$ 联系起来。 有了前文中对 $\J_d(...
+                                                _d(z,y)$ 联系起来. 有了前文中对 $\J_d(...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -16755,7 +16756,7 @@ Missing character: There is no 联 in font nullfont!
 Missing character: There is no 系 in font nullfont!
 Missing character: There is no 起 in font nullfont!
 Missing character: There is no 来 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 有 in font nullfont!
 Missing character: There is no 了 in font nullfont!
 Missing character: There is no 前 in font nullfont!
@@ -16765,7 +16766,7 @@ Missing character: There is no 对 in font nullfont!
 ! Undefined control sequence.
 <recently read> \J 
                    
-l.420 ...$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来。 有了前文中对 $\J
+l.420 ...$ 与前文中的点扩散函数 $\J_d(z,y)$ 联系起来. 有了前文中对 $\J
                                                   _d(z,y)$ 相关分析结论，我们可以由此来分析半...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16811,7 +16812,7 @@ Missing character: There is no 的 in font nullfont!
 Missing character: There is no 分 in font nullfont!
 Missing character: There is no 辨 in font nullfont!
 Missing character: There is no 率 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 下 in font nullfont!
 Missing character: There is no 面 in font nullfont!
 Missing character: There is no 的 in font nullfont!
@@ -16848,7 +16849,7 @@ Missing character: There is no 非 in font nullfont!
 Missing character: There is no 常 in font nullfont!
 Missing character: There is no 小 in font nullfont!
 Missing character: There is no 的 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 这 in font nullfont!
 Missing character: There is no 种 in font nullfont!
 Missing character: There is no 现 in font nullfont!
@@ -16886,7 +16887,7 @@ Missing character: There is no 会 in font nullfont!
 Missing character: There is no 非 in font nullfont!
 Missing character: There is no 常 in font nullfont!
 Missing character: There is no 浅 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 下 in font nullfont!
 Missing character: There is no 面 in font nullfont!
 Missing character: There is no 的 in font nullfont!
@@ -16922,7 +16923,7 @@ Missing character: There is no 辨 in font nullfont!
 Missing character: There is no 率 in font nullfont!
 Missing character: There is no 分 in font nullfont!
 Missing character: There is no 析 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no 其 in font nullfont!
 Missing character: There is no 它 in font nullfont!
 Missing character: There is no 边 in font nullfont!
@@ -16955,7 +16956,7 @@ Missing character: There is no 列 in font nullfont!
 Missing character: There is no 在 in font nullfont!
 Missing character: There is no 后 in font nullfont!
 Missing character: There is no 文 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: Environment thm undefined.
 
@@ -17153,9 +17154,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no 于 in font cmr10!
-Missing character: There is no 是 in font cmr10!
-Missing character: There is no ， in font cmr10!
+Missing character: There is no 则 in font cmr10!
 Missing character: There is no 成 in font cmr10!
 Missing character: There is no 像 in font cmr10!
 Missing character: There is no 函 in font cmr10!
@@ -17163,8 +17162,8 @@ Missing character: There is no 数 in font cmr10!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.428 ^^I于是， 成像函数 $\hat
-                       {I}_d(z)$ 有如下表达：
+l.428 ^^I则成像函数 $\hat
+                    {I}_d(z)$ 有如下表达：
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -17260,7 +17259,7 @@ Missing character: There is no 于 in font cmr10!
 <inserted text> 
                 $
 l.436 ^^I其中常数 $C$ 仅依赖于 $\kappa
-                              $ 而与 $k_s,k_p, h, d, d_D$ 无关。
+                              $ 而与 $k_s,k_p, h, d, d_D$ 无关.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -17268,7 +17267,7 @@ Missing character: There is no 而 in font nullfont!
 Missing character: There is no 与 in font nullfont!
 Missing character: There is no 无 in font nullfont!
 Missing character: There is no 关 in font nullfont!
-Missing character: There is no 。 in font nullfont!
+Missing character: There is no . in font nullfont!
 
 ! LaTeX Error: \begin{document} ended by \end{thm}.
 
@@ -17518,7 +17517,7 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 <recently read> &
                  
 l.454 &
-       =&\GG(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=1}[\T...
+       =&\GG\Bigg(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -17528,7 +17527,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 l.454 &=&
-         \GG(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=1}[\T...
+         \GG\Bigg(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -17538,7 +17537,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
 l.454 &=&\GG
-            (\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=1}[\T...
+            \Bigg(\overline{u^s_q(\cdot,x_s)},\left[\int_{\Ga_0^d}\sum^2_{i=...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -17886,7 +17885,7 @@ and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
 l.465 &
-       =&\J_d(z,x)^Te_j. v \label{g6}
+       =&\J_d(z,x)^Te_j.  \label{g6}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -17896,7 +17895,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 l.465 &=&
-         \J_d(z,x)^Te_j. v \label{g6}
+         \J_d(z,x)^Te_j.  \label{g6}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -17906,7 +17905,7 @@ might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
 l.465 &=&\J
-           _d(z,x)^Te_j. v \label{g6}
+           _d(z,x)^Te_j.  \label{g6}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -17979,7 +17978,7 @@ l.472 \be
 Here is how much of TeX's memory you used:
  109 strings out of 492970
  1460 string characters out of 6133939
- 110754 words of memory out of 5000000
+ 110746 words of memory out of 5000000
  4205 multiletter control sequences out of 15000+600000
  6599 words of font info for 17 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
