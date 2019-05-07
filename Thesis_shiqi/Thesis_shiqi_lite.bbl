@@ -1,0 +1,562 @@
+\begin{thebibliography}{90}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+\providecommand{\href}[2]{\url{#2}}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
+
+\bibitem[Landar\ et~al.(1986)Landar and Lifshitz]{landau}
+Landar~L~D, Lifshitz~E.
+\newblock Theory of elasticity\allowbreak[M].
+\newblock 1986.
+
+\bibitem[Bonnet\ et~al.(2005)Bonnet and Constantinescu]{bonnet2005inverse}
+Bonnet~M, Constantinescu~A.
+\newblock Inverse problems in elasticity\allowbreak[J].
+\newblock Inverse problems, 2005, 21\penalty0 (2):\penalty0 R1.
+
+\bibitem[Bao\ et~al.(2018{\natexlab{a}})Bao, Hu, Kian, and Yin]{bao2018inverse}
+Bao~G, Hu~G, Kian~Y, et~al.
+\newblock Inverse source problems in elastodynamics\allowbreak[J].
+\newblock Inverse Problems, 2018, 34\penalty0 (4):\penalty0 045009.
+
+\bibitem[Liu\ et~al.(2019)Liu, Zhang, and Zhang]{liu2019near}
+Liu~X, Zhang~B, Zhang~H.
+\newblock Near-field imaging of an unbounded elastic rough surface with a
+  direct imaging method\allowbreak[J].
+\newblock SIAM Journal on Applied Mathematics, 2019, 79\penalty0 (1):\penalty0
+  153-176.
+
+\bibitem[Yan\ et~al.(2008)Yan and Sava]{yan2008isotropic}
+Yan~J, Sava~P.
+\newblock Isotropic angle-domain elastic reverse-time migration\allowbreak[J].
+\newblock Geophysics, 2008, 73\penalty0 (6):\penalty0 S229-S239.
+
+\bibitem[Chang(1987)]{ela_reverse}
+Chang~W~F.
+\newblock Elastic reverse-time migration\allowbreak[J].
+\newblock Geophysical Prospecting, 1987, 37\penalty0 (3):\penalty0 243-256.
+
+\bibitem[Grant\ et~al.(1965)Grant and West]{grant1965interpretation}
+Grant~F~S, West~G~F.
+\newblock Interpretation theory in applied geophysics\allowbreak[J].
+\newblock Geophysical Journal, 1965, 11\penalty0 (5):\penalty0 566-566.
+
+\bibitem[Kupradze(1963)]{ku63}
+Kupradze~V~D.
+\newblock Progress in solid mechanics. 3. dynamical problems in
+  elasticity\allowbreak[M].
+\newblock North-Holland Publishing Company, 1963.
+
+\bibitem[Kupradze\ et~al.(1976)Kupradze, Gegelia, Basheleishvili, and
+  Burchuladze]{kupradze1976three}
+Kupradze~V, Gegelia~T, Basheleishvili~M, et~al.
+\newblock Three-dimensional problems of the mathematical theory of elasticity
+  and thermoelasticity\allowbreak[M].
+\newblock Moscow Nauka, 1976.
+
+\bibitem[Sommerfeld(1912)]{sommerfeld1912greensche}
+Sommerfeld~A.
+\newblock Die greensche funktion der schwingungsgleichung\allowbreak[J].
+\newblock J.-Ber. Deutsch Math.-Verein, 1912, 21:\penalty0 309-353.
+
+\bibitem[Colton\ et~al.(2012)Colton and Kress]{colton-kress}
+Colton~D, Kress~R.
+\newblock Inverse acoustic and electromagnetic scattering theory:
+  volume~93\allowbreak[M].
+\newblock Springer Science and Business Media, 2012.
+
+\bibitem[Chen\ et~al.(2016{\natexlab{a}})Chen, Xiang, and Zhang]{cxz2016}
+Chen~Z, Xiang~X, Zhang~X.
+\newblock Convergence of the pml method for elastic wave scattering
+  problems\allowbreak[J].
+\newblock Mathematics of Computation, 2016, 85\penalty0 (302):\penalty0
+  2687-2714.
+
+\bibitem[Bramble\ et~al.(2008)Bramble and Pasciak]{bramble2008note}
+Bramble~J~H, Pasciak~J~E.
+\newblock A note on the existence and uniqueness of solutions of frequency
+  domain elastic wave problems: A priori estimates in h1\allowbreak[J].
+\newblock Journal of Mathematical Analysis and Applications, 2008, 345\penalty0
+  (1):\penalty0 396-404.
+
+\bibitem[Rellich(1943)]{rellich1943über}
+Rellich~F.
+\newblock Über das asymptotische verhalten der lösungen von $\delta u+\lambda
+  u=0 $ in unendlichen gebieten.\allowbreak[J].
+\newblock Jahresbericht Der Deutschen Mathematiker-vereinigung, 1943,
+  53:\penalty0 57-65.
+
+\bibitem[Chaillat\ et~al.(2014)Chaillat and Bonnet]{chaillat2014new}
+Chaillat~S, Bonnet~M.
+\newblock A new fast multipole formulation for the elastodynamic half-space
+  greenʼs tensor\allowbreak[J].
+\newblock Journal of Computational Physics, 2014, 258:\penalty0 787-808.
+
+\bibitem[N{\'e}d{\'e}lec(2001)]{nedelec2001acoustic}
+N{\'e}d{\'e}lec~J~C.
+\newblock Acoustic and electromagnetic equations: integral representations for
+  harmonic problems: volume 144\allowbreak[M].
+\newblock Springer Science \& Business Media, 2001.
+
+\bibitem[Dur{\'a}n\ et~al.(2011)Dur{\'a}n, Muga, and
+  N{\'e}d{\'e}lec]{nedelec2011}
+Dur{\'a}n~M, Muga~I, N{\'e}d{\'e}lec~J~C.
+\newblock The outgoing time-harmonic elastic wave in a half-plane with free
+  boundary\allowbreak[J].
+\newblock SIAM Journal on Applied Mathematics, 2011, 71\penalty0 (2):\penalty0
+  443-464.
+
+\bibitem[Arens(2001{\natexlab{a}})]{arens2001uniqueness}
+Arens~T.
+\newblock Uniqueness for elastic wave scattering by rough
+  surfaces\allowbreak[J].
+\newblock SIAM Journal on Mathematical Analysis, 2001, 33\penalty0
+  (2):\penalty0 461-476.
+
+\bibitem[Arens(2002)]{arens2002existence}
+Arens~T.
+\newblock Existence of solution in elastic wave scattering by unbounded rough
+  surfaces\allowbreak[J].
+\newblock Mathematical methods in the applied sciences, 2002, 25\penalty0
+  (6):\penalty0 507-528.
+
+\bibitem[Charalambopoulos\ et~al.(2002)Charalambopoulos, Gintides, and
+  Kiriaki]{charalambopoulos2002radiation}
+Charalambopoulos~A, Gintides~D, Kiriaki~K.
+\newblock Radiation conditions for rough surfaces in linear
+  elasticity\allowbreak[J].
+\newblock Quarterly Journal of Mechanics and Applied Mathematics, 2002,
+  55\penalty0 (3):\penalty0 421-441.
+
+\bibitem[Alem\ et~al.(2003)Alem and Chorfi]{alem2003theoreme}
+Alem~L, Chorfi~L.
+\newblock Th{\'e}or{\`e}me d'unicit{\'e} pour un probl{\`e}me d'ondes
+  {\'e}lastiques\allowbreak[J].
+\newblock Comptes Rendus Mathematique, 2003, 336\penalty0 (6):\penalty0
+  525-530.
+
+\bibitem[Madyarov\ et~al.(2006)Madyarov and Guzina]{Guzina2006}
+Madyarov~A~I, Guzina~B~B.
+\newblock A radiation condition for layered elastic media\allowbreak[J].
+\newblock Journal of Elasticity, 2006, 82\penalty0 (1):\penalty0 73-98.
+
+\bibitem[Dermenjian\ et~al.(1988)Dermenjian and Guillot]{Yves1988}
+Dermenjian~Y, Guillot~J~C.
+\newblock Scattering of elastic waves in a perturbed isotropic half space with
+  a free boundary. the limiting absorption principle\allowbreak[J].
+\newblock Mathematical Methods in the Applied Sciences, 1988, 10\penalty0
+  (2):\penalty0 87¨C124.
+
+\bibitem[Wilcox(1975)]{wilcox1975}
+Wilcox~C~H.
+\newblock Scattering theory for the d'alembert equation in exterior
+  domains\allowbreak[D].
+\newblock Springer Berlin Heidelberg, 1975.
+
+\bibitem[Leis(1986)]{leis}
+Leis~R.
+\newblock Initial boundary value problems in mathematical
+  physics\allowbreak[M].
+\newblock J. Wiley, 1986: 354-355.
+
+\bibitem[Hadamard(1923)]{hadamard1923lectures}
+Hadamard~J.
+\newblock Lectures on cauchy's problem in linear partial differential
+  equations: volume~37\allowbreak[M].
+\newblock Yale University Press, 1923.
+
+\bibitem[Li\ et~al.(2016{\natexlab{a}})Li, Wang, Wang, and Zhao]{li2016inverse}
+Li~P, Wang~Y, Wang~Z, et~al.
+\newblock Inverse obstacle scattering for elastic waves\allowbreak[J].
+\newblock Inverse Problems, 2016, 32\penalty0 (11):\penalty0 115018.
+
+\bibitem[Bao\ et~al.(2018{\natexlab{b}})Bao, Hu, Sun, and Yin]{bao2018direct}
+Bao~G, Hu~G, Sun~J, et~al.
+\newblock Direct and inverse elastic scattering from anisotropic
+  media\allowbreak[J].
+\newblock Journal de Math{\'e}matiques Pures et Appliqu{\'e}es, 2018,
+  117:\penalty0 263-301.
+
+\bibitem[Mora(1987)]{mora1987nonlinear}
+Mora~P.
+\newblock Nonlinear two-dimensional elastic inversion of multioffset seismic
+  data\allowbreak[J].
+\newblock Geophysics, 1987, 52\penalty0 (9):\penalty0 1211-1228.
+
+\bibitem[Feng\ et~al.(2017)Feng and Schuster]{feng2017elastic}
+Feng~Z, Schuster~G~T.
+\newblock Elastic least-squares reverse time migration\allowbreak[J].
+\newblock Geophysics, 2017, 82\penalty0 (2):\penalty0 S143-S157.
+
+\bibitem[Elita~Li\ et~al.(2018)Elita~Li, Du, Yang, Cheng, and
+  Fang]{elita2018elastic}
+Elita~Li~Y, Du~Y, Yang~J, et~al.
+\newblock Elastic reverse time migration using acoustic
+  propagators\allowbreak[J].
+\newblock Geophysics, 2018, 83\penalty0 (5):\penalty0 S399-S408.
+
+\bibitem[Arens(2001{\natexlab{b}})]{arens2001linear}
+Arens~T.
+\newblock Linear sampling methods for 2d inverse elastic wave
+  scattering\allowbreak[J].
+\newblock Inverse Problems, 2001, 17\penalty0 (5):\penalty0 1445.
+
+\bibitem[Alves\ et~al.(2002)Alves and Kress]{alves2002far}
+Alves~C~J, Kress~R.
+\newblock On the far-field operator in elastic obstacle
+  scattering\allowbreak[J].
+\newblock IMA Journal of Applied Mathematics, 2002, 67\penalty0 (1):\penalty0
+  1-21.
+
+\bibitem[Charalambopoulos\ et~al.(2006)Charalambopoulos, Kirsch,
+  Anagnostopoulos, Gintides, and Kiriaki]{charalambopoulos2006factorization}
+Charalambopoulos~A, Kirsch~A, Anagnostopoulos~K~A, et~al.
+\newblock The factorization method in inverse elastic scattering from
+  penetrable bodies\allowbreak[J].
+\newblock Inverse Problems, 2006, 23\penalty0 (1):\penalty0 27.
+
+\bibitem[Hu\ et~al.(2012)Hu, Kirsch, and Sini]{hu2012some}
+Hu~G, Kirsch~A, Sini~M.
+\newblock Some inverse problems arising from elastic scattering by rigid
+  obstacles\allowbreak[J].
+\newblock Inverse Problems, 2012, 29\penalty0 (1):\penalty0 015009.
+
+\bibitem[Ji\ et~al.(2018)Ji, Liu, and Xi]{ji2018direct}
+Ji~X, Liu~X, Xi~Y.
+\newblock Direct sampling methods for inverse elastic scattering
+  problems\allowbreak[J].
+\newblock Inverse Problems, 2018, 34\penalty0 (3):\penalty0 035008.
+
+\bibitem[Gintides\ et~al.(2012)Gintides and Sini]{gintides2012identification}
+Gintides~D, Sini~M.
+\newblock Identification of obstacles using only the scattered p-waves or the
+  scattered s-waves\allowbreak[J].
+\newblock Inverse Probl. Imaging, 2012, 6\penalty0 (1):\penalty0 39-55.
+
+\bibitem[Hu\ et~al.(2016)Hu, Kirsch, and Yin]{hu2016factorization}
+Hu~G, Kirsch~A, Yin~T.
+\newblock Factorization method in inverse interaction problems with bi-periodic
+  interfaces between acoustic and elastic waves\allowbreak[J].
+\newblock Inverse Probl. Imaging, 2016, 10\penalty0 (1):\penalty0 103-129.
+
+\bibitem[Li\ et~al.(2016{\natexlab{b}})Li, Wang, and Zhao]{li2016near}
+Li~P, Wang~Y, Zhao~Y.
+\newblock Near-field imaging of biperiodic surfaces for elastic
+  waves\allowbreak[J].
+\newblock Journal of Computational Physics, 2016, 324:\penalty0 1-23.
+
+\bibitem[Hu\ et~al.(2018)Hu, Liu, Zhang, and Zhang]{hu2018direct}
+Hu~G, Liu~X, Zhang~B, et~al.
+\newblock A direct imaging method for inverse elastic scattering by unbounded
+  rigid rough surfaces\allowbreak[J].
+\newblock arXiv preprint arXiv:1804.02342, 2018.
+
+\bibitem[Claerbout\ et~al.(1972)Claerbout and Doherty]{claerbout1972downward}
+Claerbout~J~F, Doherty~S~M.
+\newblock Downward continuation of moveout-corrected seismograms\allowbreak[J].
+\newblock Geophysics, 1972, 37\penalty0 (5):\penalty0 741-768.
+
+\bibitem[Gazdag(1978)]{gazdag1978wave}
+Gazdag~J.
+\newblock Wave equation migration with the phase-shift method\allowbreak[J].
+\newblock Geophysics, 1978, 43\penalty0 (7):\penalty0 1342-1351.
+
+\bibitem[张关泉(1993)]{zhanggq1993}
+张关泉.
+\newblock 波动方程的上行波和下行波的耦合方程组\allowbreak[J].
+\newblock 应用数学学报, 1993, 16\penalty0 (2):\penalty0 251-263.
+
+\bibitem[Zhang\ et~al.(2007)Zhang, Xu, Bleistein, and Zhang]{Zhang2007}
+Zhang~Y, Xu~S, Bleistein~N, et~al.
+\newblock True-amplitude, angle-domain, common-image gathers from one-way
+  wave-equation migrations\allowbreak[J].
+\newblock Geophysics, 2007, 72\penalty0 (1):\penalty0 S49-S58.
+
+\bibitem[张宇(2018)]{zhang2018itoin}
+张宇.
+\newblock 从成像到反演: 叠前深度偏移的理论,
+  实践与发展\allowbreak[J].
+\newblock 石油物探, 2018, 57\penalty0 (1):\penalty0 1-23.
+
+\bibitem[Whitmore(1983)]{whitmore1983iterative}
+Whitmore~N~D.
+\newblock Iterative depth migration by backward time
+  propagation\allowbreak[M]//\allowbreak{}SEG Technical Program Expanded
+  Abstracts 1983.
+\newblock Society of Exploration Geophysicists, 1983: 382-385.
+
+\bibitem[Baysal\ et~al.(1983)Baysal, Kosloff, and Sherwood]{baysal1983reverse}
+Baysal~E, Kosloff~D~D, Sherwood~J~W.
+\newblock Reverse time migration\allowbreak[J].
+\newblock Geophysics, 1983, 48\penalty0 (11):\penalty0 1514-1524.
+
+\bibitem[McMechan(1983)]{mcmechan1983migration}
+McMechan~G~A.
+\newblock Migration by extrapolation of time-dependent boundary
+  values\allowbreak[J].
+\newblock Geophysical Prospecting, 1983, 31\penalty0 (3):\penalty0 413-420.
+
+\bibitem[Zhang\ et~al.(2009)Zhang and Sun]{zhang2009}
+Zhang~Y, Sun~J.
+\newblock Practical issues of reverse time migration: True amplitude gathers,
+  noise removal and harmonic-source
+  encoding\allowbreak[C]//\allowbreak{}Beijing International Geophysical
+  Conference and Exposition 2009: Beijing 2009 International Geophysical
+  Conference and Exposition, Beijing, China, 24--27 April 2009.
+\newblock Society of Exploration Geophysicists, 2009: 204-204.
+
+\bibitem[Zhang\ et~al.(2008)Zhang and Sun]{Zhang08}
+Zhang~Y, Sun~J.
+\newblock Practical issues of reverse time migration: true amplitude gathers,
+  noise removal and harmonic-source encoding\allowbreak[J].
+\newblock Aseg Extended Abstracts, 2008, 2009\penalty0 (3):\penalty0 397-398.
+
+\bibitem[Bleistein\ et~al.(2013)Bleistein, Cohen, John~Jr,
+  et~al.]{bleistein2013mathematics}
+Bleistein~N, Cohen~J~K, John~Jr~W, et~al.
+\newblock Mathematics of multidimensional seismic imaging, migration, and
+  inversion: volume~13\allowbreak[M].
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem[Claerbout(1985)]{claerbout1985imaging}
+Claerbout~J~F.
+\newblock Imaging the earth's interior: volume~1\allowbreak[M].
+\newblock Blackwell scientific publications Oxford, 1985.
+
+\bibitem[Berkhout(2012)]{berkhout2012seismic}
+Berkhout~A~J.
+\newblock Seismic migration: Imaging of acoustic energy by wave field
+  extrapolation: volume~12\allowbreak[M].
+\newblock Elsevier, 2012.
+
+\bibitem[Chang\ et~al.(1986)Chang and McMechan]{chang1986reverse}
+Chang~W~F, McMechan~G~A.
+\newblock Reverse-time migration of offset vertical seismic profiling data
+  using the excitation-time imaging condition\allowbreak[J].
+\newblock Geophysics, 1986, 51\penalty0 (1):\penalty0 67-84.
+
+\bibitem[Hokstad\ et~al.(1998)Hokstad, Mittet, and
+  Landr{\o}]{hokstad1998elastic}
+Hokstad~K, Mittet~R, Landr{\o}~M.
+\newblock Elastic reverse time migration of marine walkaway vertical seismic
+  profiling data\allowbreak[J].
+\newblock Geophysics, 1998, 63\penalty0 (5):\penalty0 1685-1695.
+
+\bibitem[Sun\ et~al.(2001)Sun and McMechan]{sun2001scalar}
+Sun~R, McMechan~G~A.
+\newblock Scalar reverse-time depth migration of prestack elastic seismic
+  data\allowbreak[J].
+\newblock Geophysics, 2001, 66\penalty0 (5):\penalty0 1519-1527.
+
+\bibitem[Denli\ et~al.(2008)Denli and Huang]{denli2008elastic}
+Denli~H, Huang~L.
+\newblock Elastic-wave reverse-time migration with a wavefield-separation
+  imaging condition: 78th annual international meeting, seg, expanded
+  abstracts, 2346--2350\allowbreak[Z].
+\newblock 2008.
+
+\bibitem[Chung\ et~al.(2012)Chung, Pyun, Bae, Shin, and
+  Marfurt]{chung2012implementation}
+Chung~W, Pyun~S, Bae~H~S, et~al.
+\newblock Implementation of elastic reverse-time migration using wavefield
+  separation in the frequency domain\allowbreak[J].
+\newblock Geophysical Journal International, 2012, 189\penalty0 (3):\penalty0
+  1611-1625.
+
+\bibitem[Etgen(1988)]{etgen1988prestacked}
+Etgen~J~T.
+\newblock Prestacked migration of p and
+  sv-waves\allowbreak[M]//\allowbreak{}SEG Technical Program Expanded Abstracts
+  1988.
+\newblock Society of Exploration Geophysicists, 1988: 972-975.
+
+\bibitem[Zhe\ et~al.(1997)Zhe and Greenhalgh]{zhe1997prestack}
+Zhe~J, Greenhalgh~S~A.
+\newblock Prestack multicomponent migration\allowbreak[J].
+\newblock Geophysics, 1997, 62\penalty0 (2):\penalty0 598-613.
+
+\bibitem[Dellinger\ et~al.(1990)Dellinger and Etgen]{dellinger1990wave}
+Dellinger~J, Etgen~J.
+\newblock Wave-field separation in two-dimensional anisotropic
+  media\allowbreak[J].
+\newblock Geophysics, 1990, 55\penalty0 (7):\penalty0 914-919.
+
+\bibitem[Beylkin(1984)]{beylkin1984inversion}
+Beylkin~G.
+\newblock The inversion problem and applications of the generalized radon
+  transform\allowbreak[J].
+\newblock Communications on pure and applied mathematics, 1984, 37\penalty0
+  (5):\penalty0 579-599.
+
+\bibitem[Beylkin(1985)]{beylkin1985imaging}
+Beylkin~G.
+\newblock Imaging of discontinuities in the inverse scattering problem by
+  inversion of a causal generalized radon transform\allowbreak[J].
+\newblock Journal of Mathematical Physics, 1985, 26\penalty0 (1):\penalty0
+  99-108.
+
+\bibitem[Beylkin\ et~al.(1990)Beylkin and Burridge]{beylkin1990linearized}
+Beylkin~G, Burridge~R.
+\newblock Linearized inverse scattering problems in acoustics and
+  elasticity\allowbreak[J].
+\newblock Wave motion, 1990, 12\penalty0 (1):\penalty0 15-52.
+
+\bibitem[Chen\ et~al.(2013{\natexlab{a}})Chen, Chen, and
+  Huang]{chen2013reverse_acou}
+Chen~J, Chen~Z, Huang~G.
+\newblock Reverse time migration for extended obstacles: acoustic
+  waves\allowbreak[J].
+\newblock Inverse Problems, 2013, 29\penalty0 (8):\penalty0 085005.
+
+\bibitem[Chen\ et~al.(2013{\natexlab{b}})Chen, Chen, and
+  Huang]{chen2013reverse_elec}
+Chen~J, Chen~Z, Huang~G.
+\newblock Reverse time migration for extended obstacles: electromagnetic
+  waves\allowbreak[J].
+\newblock Inverse Problems, 2013, 29\penalty0 (8):\penalty0 085006.
+
+\bibitem[黄光辉(2014)]{thesis_guanghui}
+黄光辉.
+\newblock 逆散射问题的逆时偏移方法\allowbreak[D].
+\newblock 中国科学院大学, 2014.
+
+\bibitem[Chen\ et~al.(2015{\natexlab{a}})Chen and
+  Huang]{chen2015reverse_planar}
+Chen~Z, Huang~G.
+\newblock Reverse time migration for reconstructing extended obstacles in
+  planar acoustic waveguides\allowbreak[J].
+\newblock Science China Mathematics, 2015, 58\penalty0 (9):\penalty0 1811-1834.
+
+\bibitem[Chen\ et~al.(2015{\natexlab{b}})Chen and Huang]{RTMhalf_aco}
+Chen~Z, Huang~G.
+\newblock Reverse time migration for reconstructing extended obstacles in the
+  half space\allowbreak[J].
+\newblock Inverse Problems, 2015, 31\penalty0 (5):\penalty0 055007.
+
+\bibitem[Chen\ et~al.(2017{\natexlab{a}})Chen and Huang]{chen2017phaseless}
+Chen~Z, Huang~G.
+\newblock Phaseless imaging by reverse time migration: acoustic
+  waves\allowbreak[J].
+\newblock Numerical Mathematics: Theory, Methods and Applications, 2017,
+  10\penalty0 (1):\penalty0 1-21.
+
+\bibitem[Chen\ et~al.(2016{\natexlab{b}})Chen and Huang]{chen2016direct}
+Chen~Z, Huang~G.
+\newblock A direct imaging method for electromagnetic scattering data without
+  phase information\allowbreak[J].
+\newblock SIAM Journal on Imaging Sciences, 2016, 9\penalty0 (3):\penalty0
+  1273-1297.
+
+\bibitem[Chen\ et~al.(2017{\natexlab{b}})Chen, Fang, and Huang]{chen2017direct}
+Chen~Z, Fang~S, Huang~G.
+\newblock A direct imaging method for the half-space inverse scattering problem
+  with phaseless data\allowbreak[J].
+\newblock Inverse Probl. Imaging, 2017, 11:\penalty0 901-916.
+
+\bibitem[方少峰(2018)]{thesis_shaofeng}
+方少峰.
+\newblock 地球物理反问题的逆时偏移算法\allowbreak[D].
+\newblock 中国科学院大学, 2018.
+
+\bibitem[Adams\ et~al.(2003)Adams and Fournier]{adams2003sobolev}
+Adams~R~A, Fournier~J~J.
+\newblock Sobolev spaces: volume 140\allowbreak[M].
+\newblock Elsevier, 2003.
+
+\bibitem[Watson(1995)]{watson1995treatise}
+Watson~G~N.
+\newblock A treatise on the theory of bessel functions\allowbreak[M].
+\newblock Cambridge university press, 1995.
+
+\bibitem[Colton\ et~al.(2013)Colton and Kress]{colton2013integral}
+Colton~D, Kress~R.
+\newblock Integral equation methods in scattering theory:
+  volume~72\allowbreak[M].
+\newblock SIAM, 2013.
+
+\bibitem[Kress\ et~al.(1989)Kress, Maz'ya, and Kozlov]{kress1989linear}
+Kress~R, Maz'ya~V, Kozlov~V.
+\newblock Linear integral equations: volume~82\allowbreak[M].
+\newblock Springer, 1989.
+
+\bibitem[Agmon(1975)]{agmon1975spectral}
+Agmon~S.
+\newblock Spectral properties of schr{\"o}dinger operators and scattering
+  theory\allowbreak[J].
+\newblock Annali della Scuola Normale Superiore di Pisa-Classe di Scienze,
+  1975, 2\penalty0 (2):\penalty0 151-218.
+
+\bibitem[Achenbach(1980)]{achenbach1980}
+Achenbach~J.
+\newblock Wave propagation in elastic solids\allowbreak[M].
+\newblock North-Holland, 1980: 544.
+
+\bibitem[Harris(2001)]{Harris2001Linear}
+Harris~J.
+\newblock Linear elastic waves\allowbreak[M].
+\newblock Cambridge University Press, 2001: B26.
+
+\bibitem[Ahlfors(1979)]{Ahlfors1979Complex}
+Ahlfors~L~V.
+\newblock Complex analysis: An introduction to the theory of analytic functions
+  of one complex variable\allowbreak[M].
+\newblock McGraw-Hill, 1979: 155-173.
+
+\bibitem[Kuroda(2003)]{Kuroda}
+Kuroda~S~T.
+\newblock An introduction to scattering theory.\allowbreak[M].
+\newblock 2003.
+
+\bibitem[Aki\ et~al.(2002)Aki and Richards]{aki2002quantitative}
+Aki~K, Richards~P~G.
+\newblock Quantitative seismology\allowbreak[M].
+\newblock 2002.
+
+\bibitem[Grafakos(2004)]{grafakos}
+Grafakos~L.
+\newblock Classical and modern fourier analysis\allowbreak[M].
+\newblock Prentice Hall, 2004.
+
+\bibitem[Arens(1999)]{arens1999}
+Arens~T.
+\newblock A new integral equation formulation for the scattering of plane
+  elastic waves by diffraction gratings\allowbreak[J].
+\newblock Journal of Integral Equations and Applications, 1999, 11\penalty0
+  (3):\penalty0 232¨C245.
+
+\bibitem[Sini(2004)]{sini2004}
+Sini~M.
+\newblock Absence of positive eigenvalues for the linearized elasticity
+  system\allowbreak[J].
+\newblock Integral Equations and Operator Theory, 2004, 49\penalty0
+  (2):\penalty0 255-277.
+
+\bibitem[Morassi(2001)]{Morassi2001STRONG}
+Morassi~A.
+\newblock Strong unique continuation for the lamÉ system of
+  elasticity\allowbreak[J].
+\newblock Communications in Partial Differential Equations, 2001, 26\penalty0
+  (9-10):\penalty0 1787-1810.
+
+\bibitem[Melrose\ et~al.(1985)Melrose and Taylor]{melrose1985near}
+Melrose~R~B, Taylor~M~E.
+\newblock Near peak scattering and the corrected kirchhoff approximation for a
+  convex obstacle\allowbreak[J].
+\newblock Advances in Mathematics, 1985, 55\penalty0 (3):\penalty0 242-315.
+
+\bibitem[Hormander(1983)]{hor}
+Hormander.
+\newblock The analysis of linear partial differential operators
+  i,\allowbreak[M].
+\newblock 1983.
+
+\bibitem[Chen\ et~al.(2015{\natexlab{c}})Chen and Huang]{chen2015reverse_elas}
+Chen~Z, Huang~G.
+\newblock Reverse time migration for extended obstacles: Elastic
+  waves\allowbreak[J].
+\newblock Scientia Sinica Mathematica, 2015, 45\penalty0 (8):\penalty0
+  1103-1114.
+
+\end{thebibliography}
