@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  7 MAY 2019 10:14
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  8 MAY 2019 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1932,7 +1932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--336
 Overfull \hbox (14.90923pt too wide) in paragraph at lines 342--345
 []\TU/SongtiSCLight(0)/m/n/12.045 而 对 于 $\OML/ntxmi/m/it/12.045 x[] \LMS/ntxsy/
 m/n/12.045 2 \OT1/cmr/m/n/12.045 ^^@[]$ \TU/SongtiSCLight(0)/m/n/12.045 时 的 情 况
-，|  我 们 定 义 可 以 对 应 的 \TU/entextsf/m/n/12.045 Neumann Green \TU/SongtiSCLight(0
+，|  我 们 可 以 定 义 对 应 的 \TU/entextsf/m/n/12.045 Neumann Green \TU/SongtiSCLight(0
 )/m/n/12.045 函 数 $\U/ntxsym/m/n/12.045 N\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12
 .045 x; x[]\OT1/cmr/m/n/12.045 )\OML/ntxmi/m/it/12.045 ; x \LMS/ntxsy/m/n/12.04
 5 2
@@ -1941,68 +1941,68 @@ m/n/12.045 2 \OT1/cmr/m/n/12.045 ^^@[]$ \TU/SongtiSCLight(0)/m/n/12.045 时 的 
 [24] [25]
 File: ./Img/graphic/transformation4.png Graphic file (type bmp)
 <./Img/graphic/transformation4.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--427
-
- []
-
-[26] [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 436--439
 
  []
 
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
-Overfull \hbox (6.64377pt too wide) in alignment at lines 534--537
- [][][] []
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 537--540
+Overfull \hbox (6.64377pt too wide) in alignment at lines 546--549
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--552
 
  []
 
 [30]
-Overfull \hbox (10.6483pt too wide) in alignment at lines 594--596
+Overfull \hbox (10.6483pt too wide) in alignment at lines 604--606
  [][][] []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 605--608
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
 
  []
 
-[31] [32] [33] [34] [35] [36]
-Overfull \hbox (59.61476pt too wide) in alignment at lines 841--848
- [][][] []
- []
-
-[37]
-Overfull \hbox (16.0571pt too wide) in alignment at lines 907--923
+[32] [33] [34] [35] [36] [37]
+Overfull \hbox (59.61476pt too wide) in alignment at lines 851--858
  [][][] []
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 932--935
+Overfull \hbox (16.0571pt too wide) in alignment at lines 917--933
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--945
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--950
+Underfull \hbox (badness 10000) in paragraph at lines 956--960
 
  []
 
-[39] [40] [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1106--1109
+[39] [40] [41] [42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1119
 
  []
 
-) (./Tex/Chap_RTM.tex [43] [44
-
-]
+) (./Tex/Chap_RTM.tex [44]
 第4章
 File: ./Img/graphic/half_forward.eps Graphic file (type eps)
 <./Img/graphic/half_forward.eps>
-[45] [46] [47]
+[45
+
+] [46] [47]
 Overfull \hbox (2.42079pt too wide) in paragraph at lines 96--99
 \TU/SongtiSCLight(0)/m/n/12.045 上 的 不 等 式 估 计\TU/entextsf/m/n/12.045 . \TU/Song
 tiSCLight(0)/m/n/12.045 这 就 说 明 了 $\U/ntxsym/m/n/12.045 J\OT1/cmr/m/n/12.045 (\
@@ -2146,25 +2146,6 @@ Package hyperref Warning: Suppressing link with empty target on input line 867.
 
 
 [71]
-Overfull \hbox (5.63733pt too wide) in paragraph at lines 887--889
-\TU/SongtiSCLight(0)/m/n/12.045 显 然 有 $\OML/ntxmi/m/it/12.045 f[]\OT1/cmr/m/n/1
-2.045 (\OML/ntxmi/m/it/12.045 s[]\OT1/cmr/m/n/12.045 ) = \LMS/ntxsy/m/n/12.045 
-^^F\OML/ntxmi/m/it/12.045 x[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 s[]\OT
-1/cmr/m/n/12.045 ) \LMS/ntxsy/m/n/12.045 ^^A \OML/ntxmi/m/it/12.045 ^^W\OT1/cmr
-/m/n/12.045 (\OML/ntxmi/m/it/12.045 x\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.04
-5 s[]\OT1/cmr/m/n/12.045 ))\OML/ntxmi/m/it/12.045 ; f[]\OT1/cmr/m/n/12.045 (\OM
-L/ntxmi/m/it/12.045 s[]\OT1/cmr/m/n/12.045 ) = \LMS/ntxsy/m/n/12.045 ^^F\OML/nt
-xmi/m/it/12.045 x[]\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 s[]\OT1/cmr/m/n/
-12.045 ) \LMS/ntxsy/m/n/12.045 ^^A \OML/ntxmi/m/it/12.045 ^^W\OT1/cmr/m/n/12.04
-5 (\OML/ntxmi/m/it/12.045 yx\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 s[]\OT1
-/cmr/m/n/12.045 )) = \LMS/ntxsy/m/n/12.045 ^^F\OML/ntxmi/m/it/12.045 ^^T\OT1/cm
-r/m/n/12.045 (\OML/ntxmi/m/it/12.045 x\OT1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.0
-45 s[]\OT1/cmr/m/n/12.045 ))\LMS/ntxsy/m/n/12.045 j\OML/ntxmi/m/it/12.045 x[]\O
-T1/cmr/m/n/12.045 (\OML/ntxmi/m/it/12.045 s[]\OT1/cmr/m/n/12.045 )\LMS/ntxsy/m/
-n/12.045 j[]$\TU/SongtiSCLight(0)/m/n/12.045 ，|
- []
-
-
 Overfull \hbox (14.96263pt too wide) in alignment at lines 893--899
  [][][] []
  []
