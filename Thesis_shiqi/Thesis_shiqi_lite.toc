@@ -11,8 +11,8 @@
 \contentsline {section}{\numberline {3.1}半空间弹性波 Green 函数}{15}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Neumann Green 函数}{16}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Dirichlet Green 函数}{32}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}正散射问题解的适定性}{34}{section.3.2}
-\contentsline {section}{\numberline {3.3}本章小结}{43}{section.3.3}
+\contentsline {section}{\numberline {3.2}正散射问题解的适定性}{35}{section.3.2}
+\contentsline {section}{\numberline {3.3}本章小结}{44}{section.3.3}
 \contentsline {chapter}{\numberline {第4章\hspace {.3em}}半空间反散射问题的逆时偏移算法}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}问题介绍}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}点扩散函数}{46}{section.4.2}

@@ -339,7 +339,7 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \N(x,y)=\N(y,x)^T \ \ \ \ \ \ \ \forall x,y\in\R^2_+ \ .
 \ee
 
-而对于 $x_s\in\Ga_0$ 时的情况， 我们定义可以对应的 Neumann Green 函数 $\N(x,x_s),x\in\R^2_+$ 为 $\N(x,y)$ 在 $y\in\R^2_+,  \  y\to x_s$ 时的极限. 
+而对于 $x_s\in\Ga_0$ 时的情况， 我们可以定义对应的 Neumann Green 函数 $\N(x,x_s),x\in\R^2_+$ 为 $\N(x,y)$ 在 $y\in\R^2_+,  \  y\to x_s$ 时的极限. 
 由于半空间反散射问题中的点源一般都位于界面上， 所以接下去我们重点研究当 $x\in\Ga_0 ,  \ y\in\R^2_+$ 情形下的 Neumann Green 函数 $\N(x,y)$ . 
 通过 (\ref{G1}) , (\ref{G2}) , (\ref{NGT})， 可以将 $\N(x,y)$ 简化为：
 \be
@@ -370,14 +370,14 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \begin{lem}\label{lem:2.3} 令 $x\in\Ga_0 \ , y\in \R^2_+$ 以及 $\phi\in (-\pi/2,\pi/2)$ 且存在如下表达 $y_2=|x-y|\cos\phi \ ,
 	x_1-y_1=|x-y|\sin\phi$ .  假设 $x_1\not= y_1$, 于是可以得到
 	\be\label{NGT3}
-	\N(x,y)&=&\frac{1}{2\pi}\int_L\mathbb{N}_0(t)\cos(t+\phi)e^{\i\lam\cos t}dt \\
+	\N(x,y)&=&\frac{1}{2\pi}\sum_{\al=p,s}\int_L\mathbb{N}_0^\al(t)\cos(t+\phi)e^{\i\lam_\al\cos t}dt \\
 	\nn
 	& & \pm\i
 	\left[\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i\mu_\al y_2+\i(x_1-y_1)\xi}\right]_{\xi=\pm k_R},\label{h3}
 	\ee
-	其中 $\lam=k_s|x-y|$, $L$ 为复平面中的积分路径即 从 $-\pi/2+\i\infty$ 到 $-\pi/2$, $-\pi/2$ 再到 $\pi/2$, 接着从 $\pi/2$ 到 $\pi/2-\i\infty$ 的折线 ( 如图 \ref{figure_trans} 所示), 这里符号 $\pm$ 取决于 ${\rm sgn}(x_1-y_1)=\pm 1$, 且定义表达式：
+	其中 $\lam_\al=k_\al|x-y|, \ \al=s,p $, $L$ 为复平面中的积分路径即 从 $-\pi/2+\i\infty$ 到 $-\pi/2$, $-\pi/2$ 再到 $\pi/2$, 接着从 $\pi/2$ 到 $\pi/2-\i\infty$ 的折线 ( 如图 \ref{figure_trans} 所示), 这里符号 $\pm$ 取决于 ${\rm sgn}(x_1-y_1)=\pm 1$, 且定义表达式：
 	\be\label{h2}
-	\mathbb{N}_{0}(t)=\sum_{\al=p,s}k_s\,\frac{\Na(k_s\sin(t+\phi))}{\de(k_s(\sin(t+\phi))}.
+	\mathbb{N}_{0}^\al(t)=k_\al\,\frac{\Na(k_\al\sin(t+\phi))}{\de(k_\al(\sin(t+\phi))}, \ \ \ \al=s,p.
 	\ee
 \end{lem}
 
@@ -385,14 +385,14 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 不失一般性， 我们可以假设 $x_1>y_1$， 因此有 ${\rm sgn}(x_1-y_1)=1$.  注意到 $\hat{\N}(\xi,0;y_2)=\sum_{\al=p,s}\frac{\Na(\xi)}{\de(\xi)}e^{\i (y_2\mu_\al+(x_1-y_1)\xi)}$，所以对于 $\al=p,s$, 我们可以做经典的三角变量替换， 即为 $\xi=k_\al\sin t$ .  由于三角函数的周期性， 这里我们规定 $-\pi<\Re t \leq\pi$ 以保证变换的一一对应.  相应地， $\xi$ 在复平面中的积分路径 $\R$ 对应于 $t$ 所在复平面中的积分路径 $L$ .  于是得到如下等式：
 \ben
 & &\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,0;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
-&=&\frac 1{2\pi}\,{\rm p.v.}\int_L\sum_{\al=p,s}k_s\,\frac{\Na(k_s\sin t)}{\de(k_s\sin t)}\cos t\, e^{\i \lam\cos (t-\phi)}dt.
+&=&\frac 1{2\pi}\,{\rm p.v.}\int_L\sum_{\al=p,s}k_\al\,\frac{\Na(k_\al\sin t)}{\de(k_s\sin t)}\cos t\, e^{\i \lam_\al\cos (t-\phi)}dt.
 \een
 令 $L_{-\phi}$ 为 $L$ 平移 $-\phi$ 后的积分路径, 立即得到
 \be\label{h1}
 & &\frac{1}{2\pi}\,{\rm p.v.}\int_{\R}\hat \N(\xi,0;y_2) e^{\i(x_1-y_1)\xi} d\xi \\
-&=&\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i\lam\cos t}dt,
+&=&\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\sum_{\al=p,s}\mathbb{N}_0^\al(t)\cos(t+\phi)e^{\i\lam_\al\cos t}dt,
 \ee
-这里 $\mathbb{N}_0(t)$ 如 (\ref{h1}) 所定义. 
+这里 $\mathbb{N}_0^\al(t)$ 如 (\ref{h1}) 所定义. 
 
 设 $t_R\in L$ 满足等式 $k_R=k_s\sin t_R$， 于是 $k_R$ 即为 $t_R$ 在积分变换 $\xi=k_s\sin t$ 下的像点.  特别地， 由于 $k_R>k_s$, 则存在  $s_R>0$ 使得  $t_R=\pi/2-\i s_R\in L$ .  对于任意$\ep>0$，令 $ L^\ep$ 表示如下积分路径： \ben
 & &-\pi/2+\i\infty\to -\pi/2+\i (s_R+\ep)\cup\pa B^+_\ep(-t_R)\\
@@ -401,11 +401,11 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \to\pi/2\to\pi/2-\i(s_R-\ep)\\
 &\to&\pa B^+_\ep(t_R)\to\pi/2-\i(s_R+\ep)\to\pi/2-\i\infty,
 \een
- 其中 $\pa B^+_\ep(\pm t_R)$ 表示圆心在 $\pm t_R$ 半径为 $\ep$ 的右半圆  (如图 \ref{figure_trans} 所示).  然后， 令 $L^\ep_{-\phi}$ 为 $L^\ep$ 平移 $-\phi$ 后的积分路径.  于是， 利用 Cauchy 主值的定义及留数定理， 我们可以得知
+ 其中 $\pa B^+_\ep(\pm t_R)$ 表示圆心在 $\pm t_R$ 半径为 $\ep$ 的右半圆  (如图 \ref{figure_trans} 所示).  然后， 令 $L^\ep_{-\phi}$ 为 $L^\ep$ 平移 $-\phi$ 后的积分路径.  于是， 利用 Cauchy 主值的定义及留数定理，  , 我们可以得知
 \ben
-& &\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0(t)\cos(t+\phi)\,e^{\i \lam\cos t}dt \\
-&=&\lim_{\ep\to 0^+}\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt\\
-& &+\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0(t)\cos (t+\phi)e^{\i \lam\cos t},t').
+& &\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0^s(t)\cos(t+\phi)\,e^{\i \lam_s\cos t}dt \\
+&=&\lim_{\ep\to 0^+}\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0^s(t)\cos (t+\phi)\,e^{\i \lam_s\cos t}dt\\
+& &+\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0^s(t)\cos (t+\phi)e^{\i \lam_s\cos t},t').
 \een
 \begin{figure}[htbp]
 	\centering
@@ -414,13 +414,25 @@ f'(t)&=&8t-4-4\sqrt{t-1}\sqrt{t-\kappa^2}-2t\sqrt{t-1}/\sqrt{t-\kappa^2}-2t\sqrt
 \end{figure}
 通过简单的计算， 易得相应留数为：
 \ben
-& &\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0(t)\cos (t+\phi)e^{\i \lam\cos t},t')\\
-&=&\frac \i 2\sum_{\xi=\pm k_R}\sum_{\al=p,s}\frac{\Na(\xi)}{\de'(\xi)}e^{\i (y_2\mu_\al+(x_1-y_1)\xi)}.
+& &\frac\i 2\sum_{t'=\pm t_R}{\rm Res}(\mathbb{N}_0^s(t)\cos (t+\phi)e^{\i \lam_s\cos t},t')\\
+&=&\frac \i 2\sum_{\xi=\pm k_R}\frac{\Ns(\xi)}{\de'(\xi)}e^{\i (y_2\mu_s+(x_1-y_1)\xi)}.
 \een
 另一方面，通过 Cauchy 积分定理， 我们得到 
 \ben
-& &\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt \\
-&=&\frac 1{2\pi}\int_{L}\mathbb{N}_0(t)\cos (t+\phi)\,e^{\i \lam\cos t}dt.
+& &\frac 1{2\pi}\int_{L^\ep_{-\phi}}\mathbb{N}_0^s(t)\cos (t+\phi)\,e^{\i \lam_s\cos t}dt \\
+&=&\frac 1{2\pi}\int_{L}\mathbb{N}_0^s(t)\cos (t+\phi)\,e^{\i \lam_s\cos t}dt.
+\een
+于是立即得到
+\ben
+& &\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0^s(t)\cos(t+\phi)\,e^{\i \lam_s\cos t}dt \\
+&=&\frac 1{2\pi}\int_{L}\mathbb{N}_0^s(t)\cos (t+\phi)\,e^{\i \lam_s\cos t}dt\\
+& &+\frac \i 2\sum_{\xi=\pm k_R}\frac{\Ns(\xi)}{\de'(\xi)}e^{\i (y_2\mu_s+(x_1-y_1)\xi)}.
+\een
+同理可得
+\ben
+& &\frac 1{2\pi}\,{\rm p.v.}\int_{L_{-\phi}}\mathbb{N}_0^p(t)\cos(t+\phi)\,e^{\i \lam_p\cos t}dt \\
+&=&\frac 1{2\pi}\int_{L}\mathbb{N}_0^p(t)\cos (t+\phi)\,e^{\i \lam_p\cos t}dt\\
+& &+\frac \i 2\sum_{\xi=\pm k_R}\frac{\Np(\xi)}{\de'(\xi)}e^{\i (y_2\mu_p+(x_1-y_1)\xi)}.
 \een
 最后利用 (\ref{c8}) 和 (\ref{h1}) 引理得证. 
 \finproof
@@ -554,53 +566,51 @@ I&= &\int_{-\pi/2}^{-\pi/2+\i\infty}f(k_s\sin(t+\phi))e^{\i\lam\cos t}dt\\
 
  通过引理 \ref{delta} 中的结论 3 ，我们易得式子 (\ref{h3}) 中的第二项存在上界 $C\mu^{-1}e^{-\sqrt{k_R^2-k_s^2}y_2}$ ， 即该项随着 $y_2$ 增大指数衰减. 
 
-针对式子 (\ref{h3}) 中的第一项，我们将其分成 p 波和 s 波两项：
+针对式子 (\ref{h3}) 中的第一项，存在 p 波和 s 波两项，即
 \ben
-& &\frac 1{2\pi}\int_L\mathbb{N}_0(t)\cos(t+\phi)e^{\i\lam\cos t}dt\\
-&=&
-\frac 1{2\pi}\int_L\sum_{\al=p,s} k_s\frac{\Na(k_s\sin(t+\phi))}{\de(k_s\sin(t+\phi))}\cos(t+\phi)e^{\i\lam\cos t}dt.
+\frac 1{2\pi}\int_L\sum_{\al=p,s} k_\al\frac{\Na(k_\al\sin(t+\phi))}{\de(k_s\sin(t+\phi))}\cos(t+\phi)e^{\i\lam_\al\cos t}dt.
 \een
-由于， p 波和 s 波在表达形式上是相似的， 这里我们只分析含有 $[\Np(k_s\sin(t+\phi))]_{22}=\mu^{-1}(\varphi\mu_p)(k_s\sin(t+\phi))$ 这项， 然后另一项的分析就同理可得.  为了表达简便， 我们有如下定义：
+由于， p 波和 s 波在表达形式上是相似的， 这里我们只分析含有 $[\Ns(k_s\sin(t+\phi))]_{22}=\mu^{-1}(2\xi^2\mu_p)(k_s\sin(t+\phi))$ 这项， 然后另外项的分析就同理可得.  为了表达简便， 我们有如下定义：
 \ben
-g(t)&=&k_s\frac{[\Np(k_s\sin(t+\phi))]_{22}}{\delta(k_s\sin(t+\phi))}\\
-&:=&f(t)(\kappa^2-\sin^2(t+\phi))^{1/2}, \\ f(t)&=&\frac{k_s^2}{\mu}\frac{\varphi(k_s\sin(t+\phi))}{\de(k_s\sin(t+\phi))}.
+g(t)&=&k_s\frac{[\Ns(k_s\sin(t+\phi))]_{22}}{\delta(k_s\sin(t+\phi))}\\
+&:=&f(t)(\kappa^2-\sin^2(t+\phi))^{1/2}, \\ f(t)&=&\frac{k_s^4}{\mu}\frac{(\sin(t+\phi))^2}{\de(k_s\sin(t+\phi))}.
 \een
 于是， 利用分部积分， 可以得到
 \ben
-& &\int_{L}g(t)\cos(t+\phi)e^{\i\lam\cos t}dt\\
-&=&\cos\phi\int_Lg(t)\cos te^{\i\lam\cos t}dt-\sin\phi\int_{L}g(t)\sin te^{\i\lam\cos t}dt\\
-&=&\cos\phi\int_Lg(t)\cos te^{\i\lam\cos t}dt-\frac{\sin\phi}{\i\lam}\int_{L}g'(t)e^{\i\lam\cos t}dt\\
+& &\int_{L}g(t)\cos(t+\phi)e^{\i\lam_s\cos t}dt\\
+&=&\cos\phi\int_Lg(t)\cos te^{\i\lam_s\cos t}dt-\sin\phi\int_{L}g(t)\sin te^{\i\lam_s\cos t}dt\\
+&=&\cos\phi\int_Lg(t)\cos te^{\i\lam_s\cos t}dt-\frac{\sin\phi}{\i\lam}\int_{L}g'(t)e^{\i\lam_s\cos t}dt\\
 &=&{\rm I}_1+{\rm I}_2.
 \een
 通过引理 \ref{delta} 中的结论 1 及引理 \ref{lem:2.5} 中的式 (\ref{c1})， 我们得到
 \ben
-& &\left|\int_{-\frac\pi 2}^{\frac \pi 2}g(t)\cos te^{\i\lam\cos t}dt\right|\\
-&\le& C\lam^{-1/2}\left(|g(0)|+\int^{\frac\pi 2}_{-\frac\pi 2}|(g(t)\cos t)'|dt\right) \\
-&\le& C\mu^{-1}\lam^{-1/2}.
+& &\left|\int_{-\frac\pi 2}^{\frac \pi 2}g(t)\cos te^{\i\lam_s\cos t}dt\right|\\
+&\le& C\lam_s^{-1/2}\left(|g(0)|+\int^{\frac\pi 2}_{-\frac\pi 2}|(g(t)\cos t)'|dt\right) \\
+&\le& C\mu^{-1}\lam_s^{-1/2}.
 \een
 又因为 $\pm k_R$不在在双曲线 $H$ 上， 于是当 $\xi\in H$ 时， 成立
 \ben
-|[\Np(\xi)]_{22}|\le C|\xi|^3, \ \ 
-|[\Np'(\xi)]_{22}|\le C|\xi|^2 , \ \
+|[\Ns(\xi)]_{22}|\le C|\xi|^3, \ \ 
+|[\Ns'(\xi)]_{22}|\le C|\xi|^2 , \ \
 \de(\xi)\ge Ck_s^2|\xi|^2 .
 \een
 利用引理 \ref{lem:2.7} 我们得到
 \ben
-\left|\int_{L\bks [-\frac\pi 2,\frac\pi 2]}g(t)\cos te^{\i\lam\cos t}dt\right|\le C\mu^{-1}\lam^{-1}.
+\left|\int_{L\bks [-\frac\pi 2,\frac\pi 2]}g(t)\cos te^{\i\lam_s\cos t}dt\right|\le C\mu^{-1}\lam_s^{-1}.
 \een
 于是得到 $|{\rm I}_1|\le C\mu^{-1}\lam^{-1/2}\cos\phi$ . 
 
- 类似地，我们可以得到 $|{\rm I}_2|\le C\mu^{-1}\lam^{-3/2}$.  事实上，唯一的区别在于， 因为
+ 类似地，我们可以得到 $|{\rm I}_2|\le C\mu^{-1}\lam_s^{-3/2}$.  事实上，唯一的区别在于， 因为
 \ben
 g'(t)=f'(t)(\kappa^2-\sin^2(t+\phi))^{1/2}-f(t)(\kappa^2-\sin^2(t+\phi))^{-1/2}\sin(t+\phi)\cos(t+\phi),
 \een
 所以， 利用引理 \ref{lem:2.5} 中的  (\ref{c1}) 和 (\ref{c3}) 可以得到
 \ben
-\left|\int_{-\frac\pi 2}^{\frac \pi 2}g'(t)e^{\i\lam\cos t}dt\right|\le  C\mu^{-1}\lam^{-1/2}.
+\left|\int_{-\frac\pi 2}^{\frac \pi 2}g'(t)e^{\i\lam_s\cos t}dt\right|\le  C\mu^{-1}\lam_s^{-1/2}.
 \een
 于是， 我们最终得出
  \ben
- |{\rm I}_1+{\rm I}_2|&\le& C\mu^{-1}\lam^{-1/2}\cos\phi+C\mu^{-1}\lam^{-3/2}\\
+ |{\rm I}_1+{\rm I}_2|&\le& C\mu^{-1}\lam_s^{-1/2}\cos\phi+C\mu^{-1}\lam_s^{-3/2}\\
  &\le& C\mu^{-1}(k_sy_2)/(k_s|x-y|)^{3/2},
  \een
   这里使用了条件 $k_sy_2\ge 1$.  引理得证. 
@@ -984,16 +994,16 @@ u(y)\cdot q=\GG(u(\cdot),\N(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D,\ \ \fo
 
 \begin{thm}\label{thm:4.2}
 	假设 $g\in H^{1/2}(\Ga_D)$ ，\\
-	 $u_1$ 是如下半空间散射问题的散射解，
+	 $u_1$ 满足如下方程，
 	\be\label{e11}
 & &	\Delta_e u_1 + \omega^2 u_1=0 \ \ \ \ \ \ \mbox{\rm in } \R^2_+\bks \bar{D},\ \ \\
 & &	 u_1= g \ \ \mbox{\rm on } \Ga_D,\ \ \sigma(u_1)e_2=0 \ \ \mbox{\rm on } \Ga_0, \label{e12}
 \ee
 	$u_2$是如下全空间散射问题的散射解，
-	\be\label{e21}
+	\ben\label{e21}
 & &	\Delta_e u_2 + \omega^2 u_2=0 \ \ \ \ \ \ \mbox{\rm in }\R^2\bks \bar{D},\ \ \\
 & &	u_2 = g \ \ \mbox{\rm on } \Ga_D. \label{e22}
-	\ee
+	\een
 	于是存在仅依赖于 $\kappa$ 而与 $k_s, h,d_D$ 都无关的常数 $C>0$, 成立如下估计，
 	\ben
 	& &\|\sigma(u_1-u_2)\nu\|_{H^{-1/2}(\Gamma_D)}\\

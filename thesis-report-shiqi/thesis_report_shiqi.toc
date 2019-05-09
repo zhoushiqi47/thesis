@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{研究背景}{3}{0}{1}
+\beamer@sectionintoc {2}{半空间弹性波 Green 函数}{13}{0}{2}
+\beamer@sectionintoc {3}{半空间弹性波反散射问题的直接成像法}{28}{0}{3}
+\beamer@sectionintoc {4}{数值实验}{42}{0}{4}
+\beamer@sectionintoc {5}{总结与展望}{49}{0}{5}
