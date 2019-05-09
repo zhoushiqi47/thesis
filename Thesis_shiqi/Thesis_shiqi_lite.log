@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  8 MAY 2019 17:16
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  9 MAY 2019 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1991,7 +1991,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 956--960
 
  []
 
-[39] [40] [41] [42] [43]
+[39] [40]
+
+Package hyperref Warning: Suppressing link with empty target on input line 1012
+.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 1012
+.
+
+[41]
+
+Package hyperref Warning: Suppressing link with empty target on input line 1061
+.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 1061
+.
+
+[42] [43]
 Underfull \hbox (badness 10000) in paragraph at lines 1116--1119
 
  []
@@ -2366,7 +2384,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  29965 strings out of 492970
  588214 string characters out of 6133939
- 658674 words of memory out of 5000000
+ 658644 words of memory out of 5000000
  33477 multiletter control sequences out of 15000+600000
  556028 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

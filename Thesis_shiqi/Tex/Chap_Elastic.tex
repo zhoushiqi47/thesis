@@ -721,26 +721,26 @@ $k_s(1+\i\ep), k_p(1+\i\ep)$后相应的式子一致.  于是有：
 & &\sigma(u_\ep)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
 \ee
  由于上述方程中 $(1+\i\ep)$ 的存在， 将方程转化为变分形式后， 易得相应的双线性算子是有界且椭圆的， 于是由 Lax-Milgram 定理， 可以推出方程
- (\ref{pp3})-(\ref{pp4}) 在空间 $ H^1(\R^2_+\bks\bar D)$ 中存在唯一解 $u_\ep$ . 显然， 当 $s>1/2$ 时，成立 $u^\ep
+ (\ref{pp3})-(\ref{pp4}) 在空间 $ H^1(\R^2_+\bks\bar D)$ 中存在唯一解 $u_\ep$ . 显然， 当 $s>1/2$ 时，成立 $u_\ep
  \in H^{1,-s}(\R^2_+\bks\bar D)$. 
  
 为了后文表述方便， 我们引入如下双线性形式 $\GG(\cdot,\cdot)$:  即对于任意 $u,v\in H^1(\R^2\bks\bar D)$ 且满足 $\De_e u, \De_e v\in L^2(\R^2\bks\bar D)$, 令
 \be\label{g1}
 \GG(u,v)=\int_{\Ga_D} [u(x)\cdot \sigma(v(x))\nu- \sigma(u(x))\nu\cdot v(x)]ds(x).
 \ee 
-于是， 由于 $\N_{\om(1+\i\ep)}(x,y)$ 在无穷远处指数衰减，以及 $u^\ep(x)\in H^1(\R^2_+\bks\bar D)$, 利用 Betti 公式 (\ref{betti}) 易得 $u^\ep$ 的 Green 积分表达式，即对于任意 $q\in\R^2$ 有：
+于是， 由于 $\N_{\om(1+\i\ep)}(x,y)$ 在无穷远处指数衰减，以及 $u_\ep(x)\in H^1(\R^2_+\bks\bar D)$, 利用 Betti 公式 (\ref{betti}) 易得 $u_\ep$ 的 Green 积分表达式，即对于任意 $q\in\R^2$ 有：
 \be\label{gg2}
-u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D.
+u_\ep(y)\cdot q=\GG(u_\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D.
 \ee
 
-如果当$\ep\to 0^+$ 时， $u^\ep$ 在加权 Sobolev 空间$H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中存在极限 $u\in H^{1,-s}(\R^2_+\bks\bar D)$. 显然，$u$ 满足如下方程：
+如果当$\ep\to 0^+$ 时， $u_\ep$ 在加权 Sobolev 空间$H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中存在极限 $u\in H^{1,-s}(\R^2_+\bks\bar D)$. 显然，$u$ 满足如下方程：
 \be
 & &\Delta_e u + \omega^2 u =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp1}\\
 & &u= g \ \ \mbox{\rm on }   \ \ \ \ \ \Ga_D, \ \ \ \ \\
 & &\sigma(u)e_2=0 \ \ \ \ \ \ \mbox{\rm on } \Ga_0. \label{pp2}
 \ee
 由此我们定义 $u$ 为方程(\ref{pp1})-(\ref{pp2})的散射解. 
-下面， 我们将说明 $u^\ep$ 在空间 $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中，当 $\ep\to 0^+$时，一定存在极限. 首先，
+下面， 我们将说明 $u_\ep$ 在空间 $H^{1,-s}(\R^2_+\bks\bar D)$, $s>1/2$ 中，当 $\ep\to 0^+$时，一定存在极限. 首先，
 定义微分算子 $-\De_e$ 的定义域为：
 \ben
 \mathcal{D}(\De_e,\R^2_+\bks\bar D)&=&\{v\in H^1(\R^2_+\bks\bar D): \De_e v\in L^2(\R^2_+\bks\bar D), \\
@@ -750,7 +750,7 @@ u^\ep(y)\cdot q=\GG(u^\ep(\cdot),\N_{\om(1+\i\ep)}(\cdot,y)q), \ \ \forall y\in\
  \begin{lem}\label{lap1}
  	若 $\om^2$ 不是算子 $-\De_e$ 在定义域 $\mathcal D(\De_e,\R^2_+\bks\bar D)$ 中的特征值, 则存在 $u\in H^{1,-s}(\R^2_+\bks\bar D)$ 当 $\ep\to0$ 时， $u_\ep$ 在空间  $H^{1,-s}(\R^2_+\bks\bar D)$ 中收敛到 u， 即
  	\ben
- 	\lim_{\ep\to 0} \|u^\ep-u\|_{H^{1,-s}(\R^2_+\bks\bar D)}=0,
+ 	\lim_{\ep\to 0} \|u_\ep-u\|_{H^{1,-s}(\R^2_+\bks\bar D)}=0,
  	\een 
  	且 u 满足方程 (\ref{pp1})-(\ref{pp2}). 
  \end{lem}
@@ -978,13 +978,13 @@ f=\sigma(u)\na\chi+(\lambda+\mu)(\na^2 \chi u+ \na u \na\chi)+\mu\Delta\chi u +\
 	\een
 \end{thm}
 
-关于半空间散射问题在其它边界条件的情形或是对于可穿透障碍的情形， 以上论证都可以类似推广到相应情形. 利用 $u^\ep$ 的 Green 表示公式 (\ref{gg2}), 令 $\ep\to 0$, 可以得到关于半空间弹性波问题散射解 $u$ 的 Green 表示公式: 
+关于半空间散射问题在其它边界条件的情形或是对于可穿透障碍的情形， 以上论证都可以类似推广到相应情形. 利用 $u_\ep$ 的 Green 表示公式 (\ref{gg2}), 令 $\ep\to 0$, 可以得到关于半空间弹性波问题散射解 $u$ 的 Green 表示公式: 
 \be\label{g2}
 u(y)\cdot q=\GG(u(\cdot),\N(\cdot,y)q), \ \ \forall y\in\R^2_+\bks\bar D,\ \ \forall q\in\R^2.
 \ee
 \begin{remark}
 	我们针对散射解做一说明，在通篇全文中提到的散射解， 无论方程建立在哪种背景介质或是无界区域 $\Om
-	$ 内，散射解 $u$ 都是指将原方程中的角频率 $\om$ 替换成 $\om(1+\i\ep)$ 后得到相应方程的解 $u^\ep$ 在空间 $H^{1,-s}(\Om)$, $s>1/2$ 中的极限. 特别地， 利用极限吸收原理得到的全空间散射问题的散射解 \cite{leis, cxz2016} 与所谓的 Kupradze's 辐射条件下得出的散射解等价. 
+	$ 内，散射解 $u$ 都是指将原方程中的角频率 $\om$ 替换成 $\om(1+\i\ep)$ 后得到相应方程的解 $u_\ep$ 在空间 $H^{1,-s}(\Om)$, $s>1/2$ 中的极限. 特别地， 利用极限吸收原理得到的全空间散射问题的散射解 \cite{leis, cxz2016} 与所谓的 Kupradze's 辐射条件下得出的散射解等价. 
 \end{remark}
 
 从上面的讨论， 我们得知由于半空间表面的自由边界条件存在， 使得相应的散射问题与全空间弹性波散射问题的研究截然不同. 于是， 一个自然的想法就是， 当散射体远离半空间的表面时，该自由边界条件对于散射波的影响是否可以忽略， 即此时是否可以近似看成一个全空间弹性波散射问题. 
