@@ -239,7 +239,7 @@
 
 \begin{frame}
 \frametitle{半空间弹性波散射问题}
-假设在半空间中存在障碍物 $D\subset\R^2_+$,且为有界 Lipschitz 区域. 入射场是由位于$x_s$ 处的点源沿着极化方向 $q\in \R^2$ 激发，于是相对应的弹性波总场 $u_q(x,x_s)$ 满足如下半空间弹性波方程,
+假设在半空间中存在障碍物 $D\subset\R^2_+$,且为有界 Lipschitz 区域. 入射场是由位于$x_s$ 处的点源沿着极化方向 $q\in \R^2$ 激发，于是相对应的弹性波总场 $u_q(x,x_s)\in \C^2$ 满足如下半空间弹性波方程,
 \ben\label{elastic_eq}
 & &\nabla\cdot\sigma(u_q) + \omega^2u_q= -\delta_{x_s}(x)q \ \ \ \ \mbox{in }\R_+^2\bks \bar{D},\\
 & &u_q=0 \ \ \mbox{on} \ \Ga_D  ,
@@ -276,7 +276,10 @@ $u_q^s(x,x_s)$ 满足如下方程，
 & &\Delta_e u_{q,\ep}^s(x,x_s)+ \omega^2(1+\i\ep)^2 u_{q,\ep}^s(x,x_s)= 0 \ \  \mbox{in }\R_+^2\bks \bar{D},\label{p12}\\
 & &u^s_{q,\ep}(x,x_s)=-\N(x,x_s)q \  \mbox{on} \ \  \Ga_D,\ \ \sigma(u_{q,\ep}^s(x,x_s))e_2=0 \ \  \mbox{on} \  \Ga_0 .\label{p22}
 \een
-于是， 方程(\ref{ep1})-(\ref{ep2}) 中的散射解 $u_q^s(x,x_s)$ 定义为 $u_{q,\ep}^s(x,x_s)$ 在 $\ep\to 0^+$ 时某种范数意义下的极限.
+于是， 方程(\ref{ep1})-(\ref{ep2}) 中的散射解 $u_q^s(x,x_s)$ 定义为 $u_{q,\ep}^s(x,x_s)$ 在 $\ep\to 0^+$ 时在空间$H^{1,-s}(\R^\bks\bar{D})$, $s>1/2$ 中的极限的极限, 其中
+\ben
+H^{1,s}(\Om)=\{v(x): (1+|x|^2)^{s/2}v(x)\in L^{2,s}(\Om) , \ \  (1+|x|^2)^{s/2}\nabla v(x)\in L^{2,s}(\Om)   \}.
+\een
 \end{frame}
 
 \begin{frame}
@@ -419,8 +422,8 @@ ${\delta}_y(x)$代表位于点y的Dirac源. 对$\N(x,y)$关于$x_1$变量作Four
 	:=\frac{1}{\delta(\xi)}(\Np(\xi)e^{\i\mu_p y_2}+\Ns(\xi)e^{\i\mu_s y_2}). \label{d2}
 	\een
 
-	\begin{lem}\label{lem:2.3} 令 $x\in\Ga_0 \ , y\in \R^2_+$ 以及 $\phi\in (-\pi/2,\pi/2)$ 且存在如下表达 $y_2=|x-y|\cos\phi \ ,
-		x_1-y_1=|x-y|\sin\phi$ .  假设 $x_1\not= y_1$, 于是可以得到
+	\begin{lem}\label{lem:2.3} 令 $x\in\Ga_0 \ , y\in \R^2_+$ 以及 $\phi\in (-\pi/2,\pi/2)$ 且 $y_2=|x-y|\cos\phi \ $ ,
+		$x_1-y_1=|x-y|\sin\phi$ .  假设 $x_1\not= y_1$, 于是可以得到
 		\ben\label{NGT3}
 		\N(x,y)&=&\frac{1}{2\pi}\sum_{\al=p,s}\int_L\mathbb{N}_0^\al(t)\cos(t+\phi)e^{\i\lam_\al\cos t}dt \\
 		\nn

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  9 MAY 2019 14:47
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  12 MAY 2019 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2081,7 +2081,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 
 LaTeX Font Warning: Font shape `TU/STXihei(0)/m/it' undefined
-(Font)              using `TU/STXihei(0)/m/n' instead on input line 365.
+(Font)              using `TU/STXihei(0)/m/n' instead on input line 368.
 
 [15
 
@@ -2106,13 +2106,13 @@ File: ./figure/transformation4.png Graphic file (type bmp)
  [22
 
 ]
-Overfull \vbox (4.13693pt too high) detected at line 469
+Overfull \vbox (4.13693pt too high) detected at line 472
  []
 
 [23
 
 ]
-Overfull \vbox (4.13693pt too high) detected at line 469
+Overfull \vbox (4.13693pt too high) detected at line 472
  []
 
 [24
@@ -2126,7 +2126,7 @@ Overfull \vbox (4.13693pt too high) detected at line 469
 ] (./thesis_report_shiqi.toc) [28
 
 ]
-Overfull \hbox (39.51736pt too wide) in alignment at lines 596--596
+Overfull \hbox (39.51736pt too wide) in alignment at lines 599--599
  [][][] []
  []
 
@@ -2142,16 +2142,16 @@ File: ./figure/half_forward.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 712.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 715.
  [33
 
 ] [34
 
 ]
-Invalid UTF-8 byte or sequence at line 750 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 753 replaced by U+FFFD.
 File: ./graphic/green_om_2_lm_5_mu_25_im.eps Graphic file (type eps)
 <./graphic/green_om_2_lm_5_mu_25_im.eps>
-Invalid UTF-8 byte or sequence at line 750 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 753 replaced by U+FFFD.
 File: ./graphic/psf_om_2_lm_5_mu_25_im.eps Graphic file (type eps)
 <./graphic/psf_om_2_lm_5_mu_25_im.eps>
  [35
@@ -2167,7 +2167,7 @@ File: ./graphic/psf_om_2_lm_5_mu_25_im.eps Graphic file (type eps)
 ] [40
 
 ]
-Overfull \hbox (4.49834pt too wide) in alignment at lines 876--876
+Overfull \hbox (4.49834pt too wide) in alignment at lines 879--879
  [][][] []
  []
 
@@ -2176,73 +2176,73 @@ Overfull \hbox (4.49834pt too wide) in alignment at lines 876--876
 ] (./thesis_report_shiqi.toc) [42
 
 ]
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/p_leaf_3pi.eps Graphic file (type eps)
 <./graphic/p_leaf_3pi.eps>
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/p_leaf_5pi.eps Graphic file (type eps)
 <./graphic/p_leaf_5pi.eps>
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/p_leaf.eps Graphic file (type eps)
 <./graphic/p_leaf.eps>
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/rectangle_3pi.eps Graphic file (type eps)
 <./graphic/rectangle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/rectangle_5pi.eps Graphic file (type eps)
 <./graphic/rectangle_5pi.eps>
-Invalid UTF-8 byte or sequence at line 892 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 895 replaced by U+FFFD.
 File: ./graphic/rectangle.eps Graphic file (type eps)
 <./graphic/rectangle.eps>
  [43
 
 ]
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/circle_3pi.eps Graphic file (type eps)
 <./graphic/circle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/circle_3pi_neumann.eps Graphic file (type eps)
 <./graphic/circle_3pi_neumann.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/circle_3pi_impedance_1.eps Graphic file (type eps)
 <./graphic/circle_3pi_impedance_1.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/circle_3pi_transmission.eps Graphic file (type eps)
 <./graphic/circle_3pi_transmission.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/peanut_3pi.eps Graphic file (type eps)
 <./graphic/peanut_3pi.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_neumann.eps Graphic file (type eps)
 <./graphic/peanut_3pi_neumann.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_impedance_1.eps Graphic file (type eps)
 <./graphic/peanut_3pi_impedance_1.eps>
-Invalid UTF-8 byte or sequence at line 907 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 910 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_transmission.eps Graphic file (type eps)
 <./graphic/peanut_3pi_transmission.eps>
  [44
 
 ]
-Invalid UTF-8 byte or sequence at line 921 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 924 replaced by U+FFFD.
 File: ./graphic/bi_circle_profile.eps Graphic file (type eps)
 <./graphic/bi_circle_profile.eps>
-Invalid UTF-8 byte or sequence at line 921 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 924 replaced by U+FFFD.
 File: ./graphic/bi_circle_3pi.eps Graphic file (type eps)
 <./graphic/bi_circle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 921 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 924 replaced by U+FFFD.
 File: ./graphic/bi_circle.eps Graphic file (type eps)
 <./graphic/bi_circle.eps>
  [45
 
 ]
-Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 937 replaced by U+FFFD.
 File: ./graphic/circle_0_4_peanut_1_profile.eps Graphic file (type eps)
 <./graphic/circle_0_4_peanut_1_profile.eps>
-Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 937 replaced by U+FFFD.
 File: ./graphic/circle_0_4_peanut_1_3pi_1.eps Graphic file (type eps)
 <./graphic/circle_0_4_peanut_1_3pi_1.eps>
-Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 937 replaced by U+FFFD.
 File: ./graphic/circle_0_4_peanut_1_multi_1.eps Graphic file (type eps)
 <./graphic/circle_0_4_peanut_1_multi_1.eps>
  [46
@@ -2251,31 +2251,31 @@ File: ./graphic/circle_0_4_peanut_1_multi_1.eps Graphic file (type eps)
 File: ./graphic/circle_0_4_peanut_1_profile_reverse.eps Graphic file (type eps)
 
 <./graphic/circle_0_4_peanut_1_profile_reverse.eps>
-Invalid UTF-8 byte or sequence at line 947 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 950 replaced by U+FFFD.
 File: ./graphic/circle_0_4_peanut_1_3pi_down.eps Graphic file (type eps)
 <./graphic/circle_0_4_peanut_1_3pi_down.eps>
-Invalid UTF-8 byte or sequence at line 947 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 950 replaced by U+FFFD.
 File: ./graphic/circle_0_4_peanut_1_multi_down.eps Graphic file (type eps)
 <./graphic/circle_0_4_peanut_1_multi_down.eps>
  [47
 
 ]
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_4pi_error2.eps Graphic file (type eps)
 <./graphic/bi_circle_4pi_error2.eps>
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_4pi_error4.eps Graphic file (type eps)
 <./graphic/bi_circle_4pi_error4.eps>
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_4pi_error6.eps Graphic file (type eps)
 <./graphic/bi_circle_4pi_error6.eps>
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_multi_2_8_error2.eps Graphic file (type eps)
 <./graphic/bi_circle_multi_2_8_error2.eps>
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_multi_2_8_error4.eps Graphic file (type eps)
 <./graphic/bi_circle_multi_2_8_error4.eps>
-Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
 File: ./graphic/bi_circle_multi_2_8_error6.eps Graphic file (type eps)
 <./graphic/bi_circle_multi_2_8_error6.eps>
  [48
@@ -2299,11 +2299,11 @@ File: ./graphic/bi_circle_multi_2_8_error6.eps Graphic file (type eps)
 \tf@snm=\write8
 \openout8 = `thesis_report_shiqi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 990.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 990.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 993.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 993.
  (./thesis_report_shiqi.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 990.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 990.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 993.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 993.
 Package rerunfilecheck Info: File `thesis_report_shiqi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
 
