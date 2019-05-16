@@ -265,12 +265,26 @@
 		令$u^i_q(x,x_s)=\N(x,x_s)q$为入射场，其中$\N(x,y)$为半空间Neumann格林函数，然后求解散射场$u^s_q(x,x_s)=u_q(x,x_s)-u^i_q(x,x_s)$.
 	\end{block}
 \pause
+   \begin{block}{经典的正散射问题研究方法}
+	\begin{itemize}
+		\item 给出无穷远处的边界条件即散射条件，声波(Sommerfeld 散射条件)、电磁波(Silver-Muller 散射条件)、弹性波(Kapradze 散射条件).
+		\item 在满足散射条件的前提下，证明相应的波动问题存在唯一性(Rellich 引理).
+		\item 利用经典的 Riesz-Fredholm 理论结合唯一性得到存在性.
+	\end{itemize}
+\end{block}
+\bigskip
+\pause
+由于自由表面条件的存在， 半空间弹性波中存在 Rayleigh 表面波，此时 Kapradze 散射条件不再适用.  所谓的 Rayleigh 波就是是一种沿着半空间表面传播， 在往半空间内部传播时指数式衰减的表面波. 虽然 Sommerfeld 辐射条件 或是 Kapradze's 辐射条件能保证半空间弹性波散射问题的 解的唯一性，但是由于这种条件不能刻画 Rayleigh 表面波的传播模式，所以不能保证解的存在性.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{半空间弹性波散射解的定义}
 $u_q^s(x,x_s)$ 满足如下方程，
 \be
 & &\Delta_e u_q^s(x,x_s)+ \omega^2u_q^s(x,x_s)= 0 \ \ \ \ \mbox{in }\R_+^2\bks \bar{D},\label{ep1}\\
 & &u^s_q(x,x_s)=-\N(x,x_s)q \ \ \mbox{on} \ \Ga_D,\ \ \ \sigma(u_q^s(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0.\label{ep2}
 \ee
-\pause
 利用极限吸收原理来定义半空间弹性波散射问题的解.  令$u^s_{q,\ep}$ 是满足角频率为 $\om(1+\i\ep)$ 的半空间弹性波方程，即
 \ben
 & &\Delta_e u_{q,\ep}^s(x,x_s)+ \omega^2(1+\i\ep)^2 u_{q,\ep}^s(x,x_s)= 0 \ \  \mbox{in }\R_+^2\bks \bar{D},\label{p12}\\
@@ -280,12 +294,6 @@ $u_q^s(x,x_s)$ 满足如下方程，
 \ben
 H^{1,s}(\Om)=\{v(x): (1+|x|^2)^{s/2}v(x)\in L^{2,s}(\Om) , \ \  (1+|x|^2)^{s/2}\nabla v(x)\in L^{2,s}(\Om)   \}.
 \een
-\end{frame}
-
-\begin{frame}
-    \begin{block}{经典的正散射问题研究方法}
-    	
-    \end{block}
 \end{frame}
 \begin{frame}
 	\begin{block}{反散射问题：}
