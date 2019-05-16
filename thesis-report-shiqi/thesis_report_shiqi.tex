@@ -220,7 +220,7 @@
 \section{研究背景}
 
 \begin{frame}
-\frametitle{地震勘探模型}
+\frametitle{地震波勘探模型}
 \begin{figure}
 
   \includegraphics[width=10cm,height=5cm]{./figure/seismic.png}
@@ -265,23 +265,36 @@
 		令$u^i_q(x,x_s)=\N(x,x_s)q$为入射场，其中$\N(x,y)$为半空间Neumann格林函数，然后求解散射场$u^s_q(x,x_s)=u_q(x,x_s)-u^i_q(x,x_s)$.
 	\end{block}
 \pause
+   \begin{block}{经典的正散射问题研究方法}
+	\begin{itemize}
+		\item 给出无穷远处的边界条件即散射条件，声波(Sommerfeld 散射条件)、电磁波(Silver-Muller 散射条件)、弹性波(Kapradze 散射条件).
+		\item 在满足散射条件的前提下，证明相应的波动问题存在唯一性(Rellich 引理).
+		\item 利用经典的 Riesz-Fredholm 理论结合唯一性得到存在性.
+	\end{itemize}
+\end{block}
+\bigskip
+\pause
+由于自由表面条件的存在， 半空间弹性波中存在 Rayleigh 表面波，此时 Kapradze 散射条件不再适用.  所谓的 Rayleigh 波就是是一种沿着半空间表面传播， 在往半空间内部传播时指数式衰减的表面波. 虽然 Sommerfeld 辐射条件 或是 Kapradze's 辐射条件能保证半空间弹性波散射问题的 解的唯一性，但是由于这种条件不能刻画 Rayleigh 表面波的传播模式，所以不能保证解的存在性.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{半空间弹性波散射解的定义}
 $u_q^s(x,x_s)$ 满足如下方程，
 \be
 & &\Delta_e u_q^s(x,x_s)+ \omega^2u_q^s(x,x_s)= 0 \ \ \ \ \mbox{in }\R_+^2\bks \bar{D},\label{ep1}\\
-& &u^s_q(x,x_s)=-\N(x,x_s)q \ \ \mbox{on} \ \Ga_D,\ \ \ \sigma(u_q^s(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0,\label{ep2}
+& &u^s_q(x,x_s)=-\N(x,x_s)q \ \ \mbox{on} \ \Ga_D,\ \ \ \sigma(u_q^s(x,x_s))e_2=0 \ \ \mbox{on} \ \Ga_0.\label{ep2}
 \ee
-\pause
-利用极限吸收原理来定义半空间弹性波散射问题的解.  考虑$u^s_{q,\ep}$ 是满足角频率为 $\om(1+\i\ep)$ 的半空间弹性波方程，即
+利用极限吸收原理来定义半空间弹性波散射问题的解.  令$u^s_{q,\ep}$ 是满足角频率为 $\om(1+\i\ep)$ 的半空间弹性波方程，即
 \ben
 & &\Delta_e u_{q,\ep}^s(x,x_s)+ \omega^2(1+\i\ep)^2 u_{q,\ep}^s(x,x_s)= 0 \ \  \mbox{in }\R_+^2\bks \bar{D},\label{p12}\\
 & &u^s_{q,\ep}(x,x_s)=-\N(x,x_s)q \  \mbox{on} \ \  \Ga_D,\ \ \sigma(u_{q,\ep}^s(x,x_s))e_2=0 \ \  \mbox{on} \  \Ga_0 .\label{p22}
 \een
-于是， 方程(\ref{ep1})-(\ref{ep2}) 中的散射解 $u_q^s(x,x_s)$ 定义为 $u_{q,\ep}^s(x,x_s)$ 在 $\ep\to 0^+$ 时在空间$H^{1,-s}(\R^\bks\bar{D})$, $s>1/2$ 中的极限的极限, 其中
+于是， 方程(\ref{ep1})-(\ref{ep2}) 中的散射解 $u_q^s(x,x_s)$ 定义为 $u_{q,\ep}^s(x,x_s)$ 在 $\ep\to 0^+$ 时在空间$H^{1,-s}(\R^\bks\bar{D})$, $s>1/2$ 中的极限, 其中
 \ben
 H^{1,s}(\Om)=\{v(x): (1+|x|^2)^{s/2}v(x)\in L^{2,s}(\Om) , \ \  (1+|x|^2)^{s/2}\nabla v(x)\in L^{2,s}(\Om)   \}.
 \een
 \end{frame}
-
 \begin{frame}
 	\begin{block}{反散射问题：}
 		 通过在$\textcolor{blue}{\Gamma_0}$上接受到的\textcolor{red}{散射数据}，构建算法来确定障碍物$D$ 的位置、大小和形状. 主要方法分为迭代法和直接成像法。
@@ -306,23 +319,59 @@ H^{1,s}(\Om)=\{v(x): (1+|x|^2)^{s/2}v(x)\in L^{2,s}(\Om) , \ \  (1+|x|^2)^{s/2}\
 \end{itemize} 
 \end{frame}
 
+\begin{frame}
+\frametitle{常见算法分类与介绍}
+\begin{columns}
+	
+	\column{.45\textwidth}
+	
+	\begin{block}{直接成像法}
+		\begin{itemize}
+			\item 线性采样法(LSM)，分解法(Factorization method)，点源法(Point source method)
+			\item MUSIC成像算法(MUltiple SIgnal Classification)
+			\item 叠前深度偏移(Prestack depth migration)，\textcolor{blue}{逆时偏移算法}
+		\end{itemize}
+		
+	\end{block}
+	\begin{block}{特点}
+		可以直接成像，计算速度快，但较难给出定量的介质参数信息，且严格的数学理论并不完善
+	\end{block}
+	\column{.45\textwidth}
+	
+	\begin{block}{迭代法}
+		\begin{itemize}
+			\item 微分相似优化算法(Differential semblance optimization)
+			\item 全波形反演(Full waveform inversion)
+			\item 逐步线性化算法(Recursive linearization algorithm)
+		\end{itemize}
+	\end{block}
+	\begin{block}{特点}
+		可以得到定量信息，但是需要先验信息，计算耗时，收敛性分析困难
+	\end{block}
+\end{columns}
+\begin{block}{逆时偏移算法(Reverse Time Migration)}
+	基于波动方程反传播和时逆的想法，能够对复杂地质构造进行有效成像，被广泛应用，但是之前的理论分析需要
+	\textcolor{red}{高频渐进假设}或者\textcolor{red}{几何光学近似}.
+\end{block}
+\end{frame}
+
 \section{半空间弹性波 Green 函数}
 \begin{frame}
 \frametitle{Neumann Green 函数}
 设源点$y\in\R^2_+$, 引入半空间弹性波Neumann零边界格林函数$\N(x,y)$， 对任意向量$q\in\R^2$， 其满足如下方程:
-\be
+\ben
 & & \Delta_e [\N(x;y)q] + \omega^2 [\N(x,y)q] = -\mathbf{\delta}_y(x) q \ \ \mbox{in }\R^2_+ , \label{eq_n1} \\
 & & \sigma(\N(x,y)q)e_2 = 0 \ \ \mbox{on } \Gamma_0, \label{eq_n2}
-\ee
+\een
 ${\delta}_y(x)$代表位于点y的Dirac源. 对$\N(x,y)$关于$x_1$变量作Fourier变换得到
 \ben
 \hat \N(\xi,x_2;y_2)= \int_\R\N(x_1,x_2;y) e^{-\i (x_1-y_1)\xi} dx_1,\ \ \forall \xi\in\C.
 \een
-为了利用基本解$\G(x,y)$在 $x=y$ 处的奇性，我们令：
+为了利用基本解$\G(x,y)$在 $x=y$ 处的奇性，我们令
 \ben
 \N_c(x,y)=\N(x,y)-(\G(x,y)-\G(x,y')),
 \een
-其中$y'=(y_1,-y_2)$ 为y关于$x_1$轴的镜像点. 利用常系数常微分方程组的标准解法，我们得到：
+其中$y'=(y_1,-y_2)$ 为y关于$x_1$轴的镜像点. 利用常系数常微分方程组的标准解法，我们得到
 \ben\label{NGT}
 \hat \N_c(\xi,x_2;y_2) =  \frac{\i}{\omega^2\delta(\xi)}\sum_{\alpha,\beta=p,s}\mathbb{A}_{\al\beta}(\xi)e^{\i(\mu_\al x_2+\mu_{\beta} y_2)}, 
 \een
@@ -598,41 +647,6 @@ u_q^s(x,x_s)=-\N(x,x_s)q \ \  \ \ \ \ \ \ \ &on& \ \Ga_D  \ \ \\
 \end{block}
 \end{frame}
 
-\begin{frame}
-\frametitle{常见算法分类与介绍}
-\begin{columns}
-	
-	\column{.45\textwidth}
-	
-	\begin{block}{直接成像法}
-		\begin{itemize}
-			\item 线性采样法(LSM)，分解法(Factorization method)，点源法(Point source method)
-			\item MUSIC成像算法(MUltiple SIgnal Classification)
-			\item 叠前深度偏移(Prestack depth migration)，\textcolor{blue}{逆时偏移算法}
-		\end{itemize}
-		
-	\end{block}
-	\begin{block}{特点}
-		可以直接成像，计算速度快，但较难给出定量的介质参数信息，且严格的数学理论并不完善
-	\end{block}
-	\column{.45\textwidth}
-	
-	\begin{block}{迭代法}
-		\begin{itemize}
-			\item 微分相似优化算法(Differential semblance optimization)
-			\item 全波形反演(Full waveform inversion)
-			\item 逐步线性化算法(Recursive linearization algorithm)
-		\end{itemize}
-	\end{block}
-	\begin{block}{特点}
-		可以得到定量信息，但是需要先验信息，计算耗时，收敛性分析困难
-	\end{block}
-\end{columns}
-\begin{block}{逆时偏移算法(Reverse Time Migration)}
-	基于波动方程反传播和时逆的想法，能够对复杂地质构造进行有效成像，被广泛应用，但是之前的理论分析需要
-	\textcolor{red}{高频渐进假设}或者\textcolor{red}{几何光学近似}。
-\end{block}
-\end{frame}
 
 \begin{frame}
 \frametitle{逆时偏移算法}
@@ -846,7 +860,7 @@ I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\s
 		\een
 		其中对于 $\tau=(\tau_1,\tau_2)^T\in\R^2$,， 有$\tau^\perp=(\tau_2,-\tau_1)^T$.
 	\end{deff}
-由 $\F(z,y)$ 表达式可知， $\overline{\F(z,x)}e_j$ 可以看成是弹性波 $p$ 平面波加权叠加与 $s$ 平面波的加权叠加之和。 于是，成像函数 $\hat{I}_d(z)$ 有如下近似表示
+由 $\F(z,y)$ 表达式可知， $\overline{\F(z,x)}e_j$ 可以看成是弹性波 $p$ 平面波加权叠加与 $s$ 平面波的加权叠加之和. 于是，成像函数 $\hat{I}_d(z)$ 有如下近似表示
 \ben
 \hat I_d(z)&\approx&\Im\sum^2_{j=1}\int_{\Ga_D}\left[
 \int^\pi_0\overline{\tilde A_j(\theta)}\i k_p\textcolor{red}{R_p(x;\tau(\theta))}e^{\i k_p(x-z)\cdot\tau(\theta)}d\theta\right]\cdot\overline{\F(z,x)}e_j ds(x)\\
@@ -970,7 +984,7 @@ f'(s)=x'(s)\cdot\tau(\theta),  \ \ f''(s)=x''(s) \cdot\tau(\theta).
 \begin{itemize}
 \item 利用 Fourier 变换推导出了两种半空间 Green 函数： Neumann Green 函数和 Dirichlet Green 函数. 通过研究振荡积分的衰减性质，给出了当 $x\in \Ga_0, \ y\in \R^2_+$ 时， $\N(x,y)$ 和 $\T_D(x,y)$ 随着 $x_2$ 增大的衰减估计.该估计也保证了点扩散函数的定义有意义.
 \vspace{.25cm}
-\item 针对点源成像问题，给出了点扩散函数。给出来PSF与有限孔径PSF之间的关于孔径 $d$ 的误差估计。利用极限吸收原理及 Fourier 分析找到了 $\J(z,y)$ 的主项$\F(z,y)$，并且刻画了$\J(z,y)-\F(z,y)$关于 $h$ 的衰减估计. 证明了 $\F(z,y)$ 与弹性波基本解 $\G(z,y)$ 有相似的函数性质。
+\item 针对点源成像问题，给出了点扩散函数.给出来PSF与有限孔径PSF之间的关于孔径 $d$ 的误差估计.利用极限吸收原理及 Fourier 分析找到了 $\J(z,y)$ 的主项$\F(z,y)$，并且刻画了$\J(z,y)-\F(z,y)$关于 $h$ 的衰减估计. 证明了 $\F(z,y)$ 与弹性波基本解 $\G(z,y)$ 有相似的函数性质.
 \vspace{0.25cm}
 \item 基于点扩散函数， 我们针对基于逆时偏移的直接成像法给出了严格的数学刻画： 其成像函数在远离散射体边界的时候快速衰减. 而且，该分辨率分析不需要高频渐近假设或几何光学近似，对一般的边界条件都成立. 利用 kirchhoff 逼近说明了成像函数只在散射体面向接收面的那部分形成较大的峰值.
 \end{itemize}
@@ -980,15 +994,14 @@ f'(s)=x'(s)\cdot\tau(\theta),  \ \ f''(s)=x''(s) \cdot\tau(\theta).
 \begin{itemize}
 	\item 由于半空间的Green 函数都是以震荡积分的形式表述，当频率较大时， 我们需要快速算法来计算. 其中，可否将 Green 函数进行渐近级数展开是一个有趣的问题.本文针对 Green 函数衰减性的研究局限在 $\Ga_0$ 上，将来如果可以将研究范围延拓到半空间上甚至是复数域上， 将有助于对半空间弹性波散射问题的 PML 方法的研究.
 	\vspace{.25cm}
-	\item 关于发展接收数据不是全波位移数据的算法。
+	\item 关于发展接收数据不是全波位移数据的算法.
 	在实际问题中， 数据的相位可能不好获取，由于弹性波数据中横波数据和纵波数据耦合在一起， 所以当只接收到混合波的振幅数据时， 很难效仿针对声波，电磁波的算法来构造成像函数. 进一步，针对真实的勘探模型， 一般 $e_2$ 方向的位移数据更容易得到， 于是如何只用接收到的数据 $u^s_q(x_r,x_s)\cdot e_2, \ q=e_1, \ e_2$ 甚至仅用 $u^s_{e_2}(x_r,x_s)\cdot e_2$ 去成像也是个有意义的研究问题.
 \end{itemize}
-\pause
-\vspace{1cm}
-\begin{flushright}
-	\LARGE \textcolor[rgb]{1.00,0.00,0.00}{谢谢 !}
-\end{flushright}
 \end{frame}
 
+\begin{frame}
+	\vspace{1cm}
+	\centerline{\Huge \textcolor{red}{谢谢大家！}}
+\end{frame}
 \end{document}
 
